@@ -1,0 +1,286 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Ring announcer says : " Introooooducing the Fire Ferrets ! " 
+1-1	0-4	Ring	_	_	*->1-1	*[1]
+1-2	5-14	announcer	*	PER	*->1-1	*[1]
+1-3	15-19	says	_	_	_	_
+1-4	20-21	:	_	_	_	_
+1-5	22-23	"	_	_	_	_
+1-6	24-39	Introooooducing	_	_	_	_
+1-7	40-43	the	_	_	_	_
+1-8	44-48	Fire	_	_	_	_
+1-9	49-56	Ferrets	_	_	_	_
+1-10	57-58	!	_	_	_	_
+1-11	59-60	"	_	_	_	_
+
+#Text=Fangirl says : " Aaaaaah ! 
+2-1	61-68	Fangirl	*	PER	*->2-1	*[2]
+2-2	69-73	says	_	_	_	_
+2-3	74-75	:	_	_	_	_
+2-4	76-77	"	_	_	_	_
+2-5	78-85	Aaaaaah	_	_	*->3-1	*[3]
+2-6	86-87	!	_	_	_	_
+
+#Text=I love you , Bolin ! 
+3-1	88-89	I	_	_	*->2-2	*[2]
+3-2	90-94	love	_	_	_	_
+3-3	95-98	you	_	_	*->1-2	*[1]
+3-4	99-100	,	_	_	_	_
+3-5	101-106	Bolin	*	PER	_	_
+3-6	107-108	!	_	_	_	_
+
+#Text=Aaaaaah ! 
+4-1	109-116	Aaaaaah	_	_	*->3-2	*[3]
+4-2	117-118	!	_	_	*->3-2	*[3]
+
+#Text=" Shiro Shinobi says : " The rookie Ferrets came from out of nowhere and have made it further than anyone expected this season . 
+5-1	119-120	"	_	_	_	_
+5-2	121-126	Shiro	*	PER	*->4-1	*[4]
+5-3	127-134	Shinobi	*	PER	*->4-1	*[4]
+5-4	135-139	says	_	_	_	_
+5-5	140-141	:	_	_	_	_
+5-6	142-143	"	_	_	_	_
+5-7	144-147	The	_	_	*->5-1	*[5]
+5-8	148-154	rookie	_	_	*->5-1	*[5]
+5-9	155-162	Ferrets	_	_	*->5-1	*[5]
+5-10	163-167	came	_	_	_	_
+5-11	168-172	from	_	_	_	_
+5-12	173-176	out	_	_	_	_
+5-13	177-179	of	_	_	_	_
+5-14	180-187	nowhere	_	_	_	_
+5-15	188-191	and	_	_	_	_
+5-16	192-196	have	_	_	_	_
+5-17	197-201	made	_	_	_	_
+5-18	202-204	it	_	_	*->3-3	*[3]
+5-19	205-212	further	_	_	_	_
+5-20	213-217	than	_	_	_	_
+5-21	218-224	anyone	_	_	_	_
+5-22	225-233	expected	_	_	_	_
+5-23	234-238	this	_	_	_	_
+5-24	239-245	season	_	_	_	_
+5-25	246-247	.	_	_	_	_
+
+#Text=But tonight , they face their toughest test yet , folks . 
+6-1	248-251	But	_	_	_	_
+6-2	252-259	tonight	_	_	_	_
+6-3	260-261	,	_	_	_	_
+6-4	262-266	they	_	_	*->6-1	*[6]
+6-5	267-271	face	_	_	_	_
+6-6	272-277	their	_	_	*->6-2	*[6]
+6-7	278-286	toughest	_	_	_	_
+6-8	287-291	test	_	_	_	_
+6-9	292-295	yet	_	_	_	_
+6-10	296-297	,	_	_	_	_
+6-11	298-303	folks	_	_	_	_
+6-12	304-305	.	_	_	_	_
+
+#Text=" Shiro Shinobi says : " And they 're off ! 
+7-1	306-307	"	_	_	_	_
+7-2	308-313	Shiro	*	PER	*->4-2	*[4]
+7-3	314-321	Shinobi	*	PER	*->4-2	*[4]
+7-4	322-326	says	_	_	_	_
+7-5	327-328	:	_	_	_	_
+7-6	329-330	"	_	_	_	_
+7-7	331-334	And	_	_	_	_
+7-8	335-339	they	_	_	*->6-3	*[6]
+7-9	340-343	're	_	_	_	_
+7-10	344-347	off	_	_	_	_
+7-11	348-349	!	_	_	_	_
+
+#Text=The two teams waste no time trying to blast each other out of zone one ! 
+8-1	350-353	The	_	_	_	_
+8-2	354-357	two	_	_	_	_
+8-3	358-363	teams	_	_	_	_
+8-4	364-369	waste	_	_	_	_
+8-5	370-372	no	_	_	_	_
+8-6	373-377	time	_	_	_	_
+8-7	378-384	trying	_	_	_	_
+8-8	385-387	to	_	_	_	_
+8-9	388-393	blast	_	_	_	_
+8-10	394-398	each	_	_	_	_
+8-11	399-404	other	_	_	_	_
+8-12	405-408	out	_	_	_	_
+8-13	409-411	of	_	_	_	_
+8-14	412-416	zone	_	_	_	_
+8-15	417-420	one	_	_	_	_
+8-16	421-422	!	_	_	_	_
+
+#Text=" Shiro Shinobi says : " Hasook is the first to feel the heat of the Tigerdillos ! 
+9-1	423-424	"	_	_	_	_
+9-2	425-430	Shiro	*	PER	*->4-3	*[4]
+9-3	431-438	Shinobi	*	PER	*->4-3	*[4]
+9-4	439-443	says	_	_	_	_
+9-5	444-445	:	_	_	_	_
+9-6	446-447	"	_	_	_	_
+9-7	448-454	Hasook	_	_	_	_
+9-8	455-457	is	_	_	_	_
+9-9	458-461	the	_	_	_	_
+9-10	462-467	first	_	_	_	_
+9-11	468-470	to	_	_	_	_
+9-12	471-475	feel	_	_	_	_
+9-13	476-479	the	_	_	_	_
+9-14	480-484	heat	_	_	_	_
+9-15	485-487	of	_	_	_	_
+9-16	488-491	the	_	_	_	_
+9-17	492-503	Tigerdillos	_	_	_	_
+9-18	504-505	!	_	_	_	_
+
+#Text=He tries to return the favor , but they 're too fast for him , while Mako shows off his trademark " cool under fire " style ! 
+10-1	506-508	He	_	_	_	_
+10-2	509-514	tries	_	_	_	_
+10-3	515-517	to	_	_	_	_
+10-4	518-524	return	_	_	_	_
+10-5	525-528	the	_	_	_	_
+10-6	529-534	favor	_	_	_	_
+10-7	535-536	,	_	_	_	_
+10-8	537-540	but	_	_	_	_
+10-9	541-545	they	_	_	_	_
+10-10	546-549	're	_	_	_	_
+10-11	550-553	too	_	_	_	_
+10-12	554-558	fast	_	_	_	_
+10-13	559-562	for	_	_	_	_
+10-14	563-566	him	_	_	_	_
+10-15	567-568	,	_	_	_	_
+10-16	569-574	while	_	_	_	_
+10-17	575-579	Mako	*	PER	_	_
+10-18	580-585	shows	_	_	_	_
+10-19	586-589	off	_	_	_	_
+10-20	590-593	his	_	_	_	_
+10-21	594-603	trademark	_	_	_	_
+10-22	604-605	"	_	_	_	_
+10-23	606-610	cool	_	_	_	_
+10-24	611-616	under	_	_	_	_
+10-25	617-621	fire	_	_	_	_
+10-26	622-623	"	_	_	_	_
+10-27	624-629	style	_	_	_	_
+10-28	630-631	!	_	_	_	_
+
+#Text=" Shiro Shinobi says : " Oooh , the Tigerdillos score with a walloping one - two combo ! 
+11-1	632-633	"	_	_	_	_
+11-2	634-639	Shiro	*	PER	*->4-4	*[4]
+11-3	640-647	Shinobi	*	PER	*->4-4	*[4]
+11-4	648-652	says	_	_	_	_
+11-5	653-654	:	_	_	_	_
+11-6	655-656	"	_	_	_	_
+11-7	657-661	Oooh	_	_	*->9-1	*[9]
+11-8	662-663	,	_	_	_	_
+11-9	664-667	the	_	_	*->9-2	*[9]
+11-10	668-679	Tigerdillos	_	_	*->8-1	*[8]
+11-11	680-685	score	_	_	*->9-2	*[9]
+11-12	686-690	with	_	_	*->9-2	*[9]
+11-13	691-692	a	_	_	*->9-2	*[9]
+11-14	693-702	walloping	_	_	*->9-2	*[9]
+11-15	703-706	one	_	_	*->9-2	*[9]
+11-16	707-708	-	_	_	*->9-2	*[9]
+11-17	709-712	two	_	_	*->9-2	*[9]
+11-18	713-718	combo	_	_	*->9-2	*[9]
+11-19	719-720	!	_	_	_	_
+
+#Text=" Shiro Shinobi says : " Can their teammate hold on to their zone one territory ? 
+12-1	721-722	"	_	_	_	_
+12-2	723-728	Shiro	*	PER	*->4-5	*[4]
+12-3	729-736	Shinobi	*	PER	*->4-5	*[4]
+12-4	737-741	says	_	_	_	_
+12-5	742-743	:	_	_	_	_
+12-6	744-745	"	_	_	_	_
+12-7	746-749	Can	_	_	_	_
+12-8	750-755	their	_	_	*->8-4	*[8]
+12-9	756-764	teammate	_	_	_	_
+12-10	765-769	hold	_	_	_	_
+12-11	770-772	on	_	_	_	_
+12-12	773-775	to	_	_	_	_
+12-13	776-781	their	_	_	*->8-5	*[8]
+12-14	782-786	zone	_	_	_	_
+12-15	787-790	one	_	_	_	_
+12-16	791-800	territory	_	_	_	_
+12-17	801-802	?	_	_	_	_
+
+#Text=Guess not ! 
+13-1	803-808	Guess	_	_	_	_
+13-2	809-812	not	_	_	_	_
+13-3	813-814	!	_	_	_	_
+
+#Text=Mako 's over the line ! 
+14-1	815-819	Mako	*	PER	_	_
+14-2	820-822	's	_	_	_	_
+14-3	823-827	over	_	_	_	_
+14-4	828-831	the	_	_	_	_
+14-5	832-836	line	_	_	_	_
+14-6	837-838	!	_	_	_	_
+
+#Text=The Tigerdillos get the green light and advance into Ferret territory ! 
+15-1	839-842	The	_	_	*->8-6	*[8]
+15-2	843-854	Tigerdillos	_	_	*->8-6	*[8]
+15-3	855-858	get	_	_	_	_
+15-4	859-862	the	_	_	_	_
+15-5	863-868	green	_	_	_	_
+15-6	869-874	light	_	_	_	_
+15-7	875-878	and	_	_	_	_
+15-8	879-886	advance	_	_	_	_
+15-9	887-891	into	_	_	_	_
+15-10	892-898	Ferret	_	_	_	_
+15-11	899-908	territory	_	_	_	_
+15-12	909-910	!	_	_	_	_
+
+#Text=" Korra says : " Come on , Ferrets ! 
+16-1	911-912	"	_	_	_	_
+16-2	913-918	Korra	*	PER	_	_
+16-3	919-923	says	_	_	_	_
+16-4	924-925	:	_	_	_	_
+16-5	926-927	"	_	_	_	_
+16-6	928-932	Come	_	_	_	_
+16-7	933-935	on	_	_	_	_
+16-8	936-937	,	_	_	_	_
+16-9	938-945	Ferrets	_	_	*->5-2	*[5]
+16-10	946-947	!	_	_	_	_
+
+#Text=" Shiro Shinobi says : " Looks like Hasook 's in trouble ! 
+17-1	948-949	"	_	_	_	_
+17-2	950-955	Shiro	*	PER	*->4-6	*[4]
+17-3	956-963	Shinobi	*	PER	*->4-6	*[4]
+17-4	964-968	says	_	_	_	_
+17-5	969-970	:	_	_	_	_
+17-6	971-972	"	_	_	_	_
+17-7	973-978	Looks	_	_	_	_
+17-8	979-983	like	_	_	_	_
+17-9	984-990	Hasook	*	PER	*->7-1	*[7]
+17-10	991-993	's	_	_	*->7-1	*[7]
+17-11	994-996	in	_	_	_	_
+17-12	997-1004	trouble	_	_	_	_
+17-13	1005-1006	!	_	_	_	_
+
+#Text=He 's in zone three teetering over the drink ! 
+18-1	1007-1009	He	_	_	*->7-6	*[7]
+18-2	1010-1012	's	_	_	_	_
+18-3	1013-1015	in	_	_	_	_
+18-4	1016-1020	zone	_	_	_	_
+18-5	1021-1026	three	_	_	_	_
+18-6	1027-1036	teetering	_	_	_	_
+18-7	1037-1041	over	_	_	_	_
+18-8	1042-1045	the	_	_	_	_
+18-9	1046-1051	drink	_	_	_	_
+18-10	1052-1053	!	_	_	_	_
+
+#Text=And Hasook takes a dip ! 
+19-1	1054-1057	And	_	_	_	_
+19-2	1058-1064	Hasook	*	PER	*->7-7	*[7]
+19-3	1065-1070	takes	_	_	_	_
+19-4	1071-1072	a	_	_	_	_
+19-5	1073-1076	dip	_	_	_	_
+19-6	1077-1078	!	_	_	_	_
+
+#Text=He 'll be back for round two ! 
+20-1	1079-1081	He	_	_	*->7-8	*[7]
+20-2	1082-1085	'll	_	_	_	_
+20-3	1086-1088	be	_	_	_	_
+20-4	1089-1093	back	_	_	_	_
+20-5	1094-1097	for	_	_	_	_
+20-6	1098-1103	round	_	_	_	_
+20-7	1104-1107	two	_	_	_	_
+20-8	1108-1109	!	_	_	_	_
+
+#Text=" 
+21-1	1110-1111	"	_	_	_	_

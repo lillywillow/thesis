@@ -1,0 +1,52 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Shiro Shinobi says : " Iiiiit 's pro-bending night in Republic City , and have we got a doozy for you ! 
+1-1	0-5	Shiro	*	PER	_	_
+1-2	6-13	Shinobi	*	PER	_	_
+1-3	14-18	says	_	_	_	_
+1-4	19-20	:	_	_	_	_
+1-5	21-22	"	_	_	_	_
+1-6	23-29	Iiiiit	_	_	_	_
+1-7	30-32	's	_	_	_	_
+1-8	33-44	pro-bending	_	_	_	_
+1-9	45-50	night	_	_	_	_
+1-10	51-53	in	_	_	_	_
+1-11	54-62	Republic	_	_	_	_
+1-12	63-67	City	_	_	_	_
+1-13	68-69	,	_	_	_	_
+1-14	70-73	and	_	_	_	_
+1-15	74-78	have	_	_	_	_
+1-16	79-81	we	_	_	_	_
+1-17	82-85	got	_	_	_	_
+1-18	86-87	a	_	_	_	_
+1-19	88-93	doozy	_	_	_	_
+1-20	94-97	for	_	_	_	_
+1-21	98-101	you	_	_	_	_
+1-22	102-103	!	_	_	_	_
+
+#Text=Fan favorites , the Fire Ferrets , are about to take on hot newcomers , the Rhino Lions ! 
+2-1	104-107	Fan	_	_	*->1-2	*[1]
+2-2	108-117	favorites	_	_	*->1-2	*[1]
+2-3	118-119	,	_	_	_	_
+2-4	120-123	the	_	_	*->1-1	*[1]
+2-5	124-128	Fire	_	_	*->1-1	*[1]
+2-6	129-136	Ferrets	_	_	*->1-1	*[1]
+2-7	137-138	,	_	_	_	_
+2-8	139-142	are	_	_	_	_
+2-9	143-148	about	_	_	_	_
+2-10	149-151	to	_	_	_	_
+2-11	152-156	take	_	_	_	_
+2-12	157-159	on	_	_	_	_
+2-13	160-163	hot	_	_	_	_
+2-14	164-173	newcomers	_	_	_	_
+2-15	174-175	,	_	_	_	_
+2-16	176-179	the	_	_	_	_
+2-17	180-185	Rhino	_	_	_	_
+2-18	186-191	Lions	_	_	_	_
+2-19	192-193	!	_	_	_	_
+
+#Text=" 
+3-1	194-195	"	_	_	_	_

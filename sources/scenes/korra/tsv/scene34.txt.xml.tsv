@@ -1,0 +1,84 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Varrick says : " Did ya see that ? 
+1-1	0-7	Varrick	*	PER	*->1-1	*[1]
+1-2	8-12	says	_	_	_	_
+1-3	13-14	:	_	_	_	_
+1-4	15-16	"	_	_	_	_
+1-5	17-20	Did	_	_	_	_
+1-6	21-23	ya	_	_	*->2-1	*[2]
+1-7	24-27	see	_	_	_	_
+1-8	28-32	that	_	_	*->2-2	*[2]
+1-9	33-34	?	_	_	_	_
+
+#Text=Levitation ! 
+2-1	35-45	Levitation	_	_	_	_
+2-2	46-47	!	_	_	_	_
+
+#Text=I was a foot off the ground ! 
+3-1	48-49	I	_	_	*->1-2	*[1]
+3-2	50-53	was	_	_	_	_
+3-3	54-55	a	_	_	*->3-1	*[3]
+3-4	56-60	foot	_	_	*->3-1	*[3]
+3-5	61-64	off	_	_	*->3-1	*[3]
+3-6	65-68	the	_	_	*->3-1	*[3]
+3-7	69-75	ground	_	_	*->3-1	*[3]
+3-8	76-77	!	_	_	_	_
+
+#Text=Is that incredible or what ? 
+4-1	78-80	Is	_	_	_	_
+4-2	81-85	that	_	_	*->3-2	*[3]
+4-3	86-96	incredible	_	_	_	_
+4-4	97-99	or	_	_	_	_
+4-5	100-104	what	_	_	_	_
+4-6	105-106	?	_	_	_	_
+
+#Text=" Male guest # 1 says : " How does he do that ? 
+5-1	107-108	"	_	_	_	_
+5-2	109-113	Male	_	_	_	_
+5-3	114-119	guest	_	_	_	_
+5-4	120-121	#	_	_	_	_
+5-5	122-123	1	_	_	_	_
+5-6	124-128	says	_	_	_	_
+5-7	129-130	:	_	_	_	_
+5-8	131-132	"	_	_	_	_
+5-9	133-136	How	_	_	_	_
+5-10	137-141	does	_	_	_	_
+5-11	142-144	he	_	_	*->1-3	*[1]
+5-12	145-147	do	_	_	_	_
+5-13	148-152	that	_	_	*->3-3	*[3]
+5-14	153-154	?	_	_	_	_
+
+#Text=" Male guest # 2 says : " That 's unbelievable . 
+6-1	155-156	"	_	_	_	_
+6-2	157-161	Male	_	_	_	_
+6-3	162-167	guest	_	_	_	_
+6-4	168-169	#	_	_	_	_
+6-5	170-171	2	_	_	_	_
+6-6	172-176	says	_	_	_	_
+6-7	177-178	:	_	_	_	_
+6-8	179-180	"	_	_	_	_
+6-9	181-185	That	_	_	*->3-4	*[3]
+6-10	186-188	's	_	_	_	_
+6-11	189-201	unbelievable	_	_	_	_
+6-12	202-203	.	_	_	_	_
+
+#Text=" Male guest # 3 says : " That 's amazing . 
+7-1	204-205	"	_	_	_	_
+7-2	206-210	Male	_	_	_	_
+7-3	211-216	guest	_	_	_	_
+7-4	217-218	#	_	_	_	_
+7-5	219-220	3	_	_	_	_
+7-6	221-225	says	_	_	_	_
+7-7	226-227	:	_	_	_	_
+7-8	228-229	"	_	_	_	_
+7-9	230-234	That	_	_	*->3-5	*[3]
+7-10	235-237	's	_	_	_	_
+7-11	238-245	amazing	_	_	_	_
+7-12	246-247	.	_	_	_	_
+
+#Text=" 
+8-1	248-249	"	_	_	_	_

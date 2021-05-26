@@ -1,0 +1,191 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Raava says : " We are bonded forever . " 
+1-1	0-5	Raava	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-17	We	_	_	_	_
+1-6	18-21	are	_	_	_	_
+1-7	22-28	bonded	_	_	_	_
+1-8	29-36	forever	_	_	_	_
+1-9	37-38	.	_	_	_	_
+1-10	39-40	"	_	_	_	_
+
+#Text=Wan says : " This is your prison now . 
+2-1	41-44	Wan	*	PER	*->2-1	*[2]
+2-2	45-49	says	_	_	_	_
+2-3	50-51	:	_	_	_	_
+2-4	52-53	"	_	_	_	_
+2-5	54-58	This	_	_	*->3-2	*[3]
+2-6	59-61	is	_	_	_	_
+2-7	62-66	your	_	_	*->3-1	*[3]
+2-8	67-73	prison	_	_	*->3-1	*[3]
+2-9	74-77	now	_	_	_	_
+2-10	78-79	.	_	_	_	_
+
+#Text=And I will close the portals so no human will ever be able to physically enter the Spirit World and release you . 
+3-1	80-83	And	_	_	_	_
+3-2	84-85	I	_	_	*->2-2	*[2]
+3-3	86-90	will	_	_	_	_
+3-4	91-96	close	_	_	_	_
+3-5	97-100	the	_	_	_	_
+3-6	101-108	portals	_	_	_	_
+3-7	109-111	so	_	_	_	_
+3-8	112-114	no	_	_	_	_
+3-9	115-120	human	_	_	_	_
+3-10	121-125	will	_	_	_	_
+3-11	126-130	ever	_	_	_	_
+3-12	131-133	be	_	_	_	_
+3-13	134-138	able	_	_	_	_
+3-14	139-141	to	_	_	_	_
+3-15	142-152	physically	_	_	_	_
+3-16	153-158	enter	_	_	_	_
+3-17	159-162	the	_	_	_	_
+3-18	163-169	Spirit	_	_	_	_
+3-19	170-175	World	_	_	_	_
+3-20	176-179	and	_	_	_	_
+3-21	180-187	release	_	_	_	_
+3-22	188-191	you	_	_	*->4-2	*[4]
+3-23	192-193	.	_	_	_	_
+
+#Text=" Wan says : " The spirits must stop fighting with humans and return to their home in the Spirit World . 
+4-1	194-195	"	_	_	_	_
+4-2	196-199	Wan	_	_	*->2-3	*[2]
+4-3	200-204	says	_	_	_	_
+4-4	205-206	:	_	_	_	_
+4-5	207-208	"	_	_	_	_
+4-6	209-212	The	_	_	*->7-1	*[7]
+4-7	213-220	spirits	_	_	*->7-1	*[7]
+4-8	221-225	must	_	_	_	_
+4-9	226-230	stop	_	_	_	_
+4-10	231-239	fighting	_	_	_	_
+4-11	240-244	with	_	_	_	_
+4-12	245-251	humans	_	_	*->8-1	*[8]
+4-13	252-255	and	_	_	_	_
+4-14	256-262	return	_	_	_	_
+4-15	263-265	to	_	_	_	_
+4-16	266-271	their	_	_	*->7-2	*[7]
+4-17	272-276	home	_	_	_	_
+4-18	277-279	in	_	_	_	_
+4-19	280-283	the	_	_	*->6-1	*[6]
+4-20	284-290	Spirit	_	_	*->6-1	*[6]
+4-21	291-296	World	_	_	*->6-1	*[6]
+4-22	297-298	.	_	_	_	_
+
+#Text=I will teach men to respect the spirits so that balance will be maintained . 
+5-1	299-300	I	_	_	*->2-4	*[2]
+5-2	301-305	will	_	_	_	_
+5-3	306-311	teach	_	_	_	_
+5-4	312-315	men	_	_	_	_
+5-5	316-318	to	_	_	_	_
+5-6	319-326	respect	_	_	_	_
+5-7	327-330	the	_	_	*->7-3	*[7]
+5-8	331-338	spirits	_	_	*->7-3	*[7]
+5-9	339-341	so	_	_	_	_
+5-10	342-346	that	_	_	_	_
+5-11	347-354	balance	_	_	_	_
+5-12	355-359	will	_	_	_	_
+5-13	360-362	be	_	_	_	_
+5-14	363-373	maintained	_	_	_	_
+5-15	374-375	.	_	_	_	_
+
+#Text=" Wan says : " I will be the bridge between our two worlds . 
+6-1	376-377	"	_	_	_	_
+6-2	378-381	Wan	_	_	*->2-5	*[2]
+6-3	382-386	says	_	_	_	_
+6-4	387-388	:	_	_	_	_
+6-5	389-390	"	_	_	_	_
+6-6	391-392	I	_	_	*->2-6	*[2]
+6-7	393-397	will	_	_	_	_
+6-8	398-400	be	_	_	_	_
+6-9	401-404	the	_	_	*->2-7	*[2]
+6-10	405-411	bridge	_	_	*->2-7	*[2]
+6-11	412-419	between	_	_	*->2-7	*[2]
+6-12	420-423	our	_	_	*->2-7	*[2]
+6-13	424-427	two	_	_	*->2-7	*[2]
+6-14	428-434	worlds	_	_	*->2-7	*[2]
+6-15	435-436	.	_	_	_	_
+
+#Text=" Fire lion turtle says : " The world is entering a new age . 
+7-1	437-438	"	_	_	_	_
+7-2	439-443	Fire	_	_	_	_
+7-3	444-448	lion	_	_	_	_
+7-4	449-455	turtle	_	_	_	_
+7-5	456-460	says	_	_	_	_
+7-6	461-462	:	_	_	_	_
+7-7	463-464	"	_	_	_	_
+7-8	465-468	The	_	_	*->6-3	*[6]
+7-9	469-474	world	_	_	*->6-3	*[6]
+7-10	475-477	is	_	_	_	_
+7-11	478-486	entering	_	_	_	_
+7-12	487-488	a	_	_	_	_
+7-13	489-492	new	_	_	_	_
+7-14	493-496	age	_	_	_	_
+7-15	497-498	.	_	_	_	_
+
+#Text=Our time protecting mankind is over . 
+8-1	499-502	Our	_	_	*->9-2	*[9]
+8-2	503-507	time	_	_	_	_
+8-3	508-518	protecting	_	_	_	_
+8-4	519-526	mankind	_	_	_	_
+8-5	527-529	is	_	_	_	_
+8-6	530-534	over	_	_	_	_
+8-7	535-536	.	_	_	_	_
+
+#Text=We will no longer give humans the power of the elements . 
+9-1	537-539	We	_	_	*->9-3	*[9]
+9-2	540-544	will	_	_	_	_
+9-3	545-547	no	_	_	_	_
+9-4	548-554	longer	_	_	_	_
+9-5	555-559	give	_	_	_	_
+9-6	560-566	humans	_	_	*->8-2	*[8]
+9-7	567-570	the	_	_	_	_
+9-8	571-576	power	_	_	_	_
+9-9	577-579	of	_	_	_	_
+9-10	580-583	the	_	_	_	_
+9-11	584-592	elements	_	_	_	_
+9-12	593-594	.	_	_	_	_
+
+#Text=" Wan says : " Different groups of people must learn to live together . 
+10-1	595-596	"	_	_	_	_
+10-2	597-600	Wan	_	_	*->2-8	*[2]
+10-3	601-605	says	_	_	_	_
+10-4	606-607	:	_	_	_	_
+10-5	608-609	"	_	_	_	_
+10-6	610-619	Different	_	_	_	_
+10-7	620-626	groups	_	_	_	_
+10-8	627-629	of	_	_	_	_
+10-9	630-636	people	_	_	_	_
+10-10	637-641	must	_	_	_	_
+10-11	642-647	learn	_	_	_	_
+10-12	648-650	to	_	_	_	_
+10-13	651-655	live	_	_	_	_
+10-14	656-664	together	_	_	_	_
+10-15	665-666	.	_	_	_	_
+
+#Text=This is my mission : to use Raava 's light spirit to guide the world toward peace . 
+11-1	667-671	This	_	_	*->5-2	*[5]
+11-2	672-674	is	_	_	_	_
+11-3	675-677	my	_	_	*->2-9	*[2]
+11-4	678-685	mission	_	_	*->5-1	*[5]
+11-5	686-687	:	_	_	*->5-1	*[5]
+11-6	688-690	to	_	_	*->5-1	*[5]
+11-7	691-694	use	_	_	*->5-1	*[5]
+11-8	695-700	Raava	*	PER	*->1-2	*[1]
+11-9	701-703	's	_	_	*->1-2	*[1]
+11-10	704-709	light	_	_	*->5-1	*[5]
+11-11	710-716	spirit	_	_	*->5-1	*[5]
+11-12	717-719	to	_	_	*->5-1	*[5]
+11-13	720-725	guide	_	_	*->5-1	*[5]
+11-14	726-729	the	_	_	*->5-1	*[5]
+11-15	730-735	world	_	_	*->5-1	*[5]
+11-16	736-742	toward	_	_	*->5-1	*[5]
+11-17	743-748	peace	_	_	*->5-1	*[5]
+11-18	749-750	.	_	_	_	_
+
+#Text=" 
+12-1	751-752	"	_	_	_	_

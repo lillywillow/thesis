@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " What are you doing ? " 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-20	What	_	_	_	_
+1-6	21-24	are	_	_	_	_
+1-7	25-28	you	_	_	_	_
+1-8	29-34	doing	_	_	_	_
+1-9	35-36	?	_	_	_	_
+1-10	37-38	"	_	_	_	_
+
+#Text=Zuko says : " Keeping rocks from crushing you . " 
+2-1	39-43	Zuko	*	PER	*->2-1	*[2]
+2-2	44-48	says	_	_	_	_
+2-3	49-50	:	_	_	_	_
+2-4	51-52	"	_	_	_	_
+2-5	53-60	Keeping	_	_	_	_
+2-6	61-66	rocks	_	_	*->3-1	*[3]
+2-7	67-71	from	_	_	_	_
+2-8	72-80	crushing	_	_	_	_
+2-9	81-84	you	_	_	*->1-2	*[1]
+2-10	85-86	.	_	_	_	_
+2-11	87-88	"	_	_	_	_
+
+#Text=Katara says : " Okay , I 'm not crushed . 
+3-1	89-95	Katara	*	PER	*->1-3	*[1]
+3-2	96-100	says	_	_	_	_
+3-3	101-102	:	_	_	_	_
+3-4	103-104	"	_	_	_	_
+3-5	105-109	Okay	_	_	_	_
+3-6	110-111	,	_	_	_	_
+3-7	112-113	I	_	_	*->1-4	*[1]
+3-8	114-116	'm	_	_	_	_
+3-9	117-120	not	_	_	_	_
+3-10	121-128	crushed	_	_	_	_
+3-11	129-130	.	_	_	_	_
+
+#Text=You can get off me now ! 
+4-1	131-134	You	_	_	*->2-2	*[2]
+4-2	135-138	can	_	_	_	_
+4-3	139-142	get	_	_	_	_
+4-4	143-146	off	_	_	_	_
+4-5	147-149	me	_	_	*->1-5	*[1]
+4-6	150-153	now	_	_	_	_
+4-7	154-155	!	_	_	_	_
+
+#Text=" Zuko says : " I 'll take that as a thank you . 
+5-1	156-157	"	_	_	_	_
+5-2	158-162	Zuko	*	PER	*->2-3	*[2]
+5-3	163-167	says	_	_	_	_
+5-4	168-169	:	_	_	_	_
+5-5	170-171	"	_	_	_	_
+5-6	172-173	I	_	_	*->2-4	*[2]
+5-7	174-177	'll	_	_	_	_
+5-8	178-182	take	_	_	_	_
+5-9	183-187	that	_	_	*->3-2	*[3]
+5-10	188-190	as	_	_	_	_
+5-11	191-192	a	_	_	_	_
+5-12	193-198	thank	_	_	_	_
+5-13	199-202	you	_	_	*->1-6	*[1]
+5-14	203-204	.	_	_	_	_
+
+#Text=" 
+6-1	205-206	"	_	_	_	_

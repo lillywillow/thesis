@@ -1,0 +1,91 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Toph says : " So ... you like ... flying ? 
+1-1	0-4	Toph	_	_	*->2-1	*[2]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-16	So	_	_	_	_
+1-6	17-20	...	_	_	_	_
+1-7	21-24	you	_	_	_	_
+1-8	25-29	like	_	_	_	_
+1-9	30-33	...	_	_	_	_
+1-10	34-40	flying	_	_	_	_
+1-11	41-42	?	_	_	_	_
+
+#Text=Of course , I 'm more comfortable on the ground where I can see . 
+2-1	43-45	Of	_	_	_	_
+2-2	46-52	course	_	_	_	_
+2-3	53-54	,	_	_	_	_
+2-4	55-56	I	_	_	*->2-2	*[2]
+2-5	57-59	'm	_	_	_	_
+2-6	60-64	more	_	_	_	_
+2-7	65-76	comfortable	_	_	_	_
+2-8	77-79	on	_	_	_	_
+2-9	80-83	the	_	_	_	_
+2-10	84-90	ground	_	_	_	_
+2-11	91-96	where	_	_	_	_
+2-12	97-98	I	_	_	*->2-3	*[2]
+2-13	99-102	can	_	_	_	_
+2-14	103-106	see	_	_	_	_
+2-15	107-108	.	_	_	_	_
+
+#Text=Well , I do n't see the way you do . 
+3-1	109-113	Well	_	_	_	_
+3-2	114-115	,	_	_	_	_
+3-3	116-117	I	_	_	*->2-4	*[2]
+3-4	118-120	do	_	_	_	_
+3-5	121-124	n't	_	_	_	_
+3-6	125-128	see	_	_	_	_
+3-7	129-132	the	_	_	_	_
+3-8	133-136	way	_	_	_	_
+3-9	137-140	you	_	_	_	_
+3-10	141-143	do	_	_	_	_
+3-11	144-145	.	_	_	_	_
+
+#Text=I feel the vibrations in the ground with my feet . 
+4-1	146-147	I	_	_	*->2-5	*[2]
+4-2	148-152	feel	_	_	_	_
+4-3	153-156	the	_	_	_	_
+4-4	157-167	vibrations	_	_	_	_
+4-5	168-170	in	_	_	_	_
+4-6	171-174	the	_	_	_	_
+4-7	175-181	ground	_	_	_	_
+4-8	182-186	with	_	_	_	_
+4-9	187-189	my	_	_	*->2-6	*[2]
+4-10	190-194	feet	_	_	_	_
+4-11	195-196	.	_	_	_	_
+
+#Text=But this sand is so loose and shifty , it makes everything look fuzzy . 
+5-1	197-200	But	_	_	_	_
+5-2	201-205	this	_	_	*->1-1	*[1]
+5-3	206-210	sand	_	_	*->1-1	*[1]
+5-4	211-213	is	_	_	_	_
+5-5	214-216	so	_	_	_	_
+5-6	217-222	loose	_	_	_	_
+5-7	223-226	and	_	_	_	_
+5-8	227-233	shifty	_	_	_	_
+5-9	234-235	,	_	_	_	_
+5-10	236-238	it	_	_	*->1-2	*[1]
+5-11	239-244	makes	_	_	_	_
+5-12	245-255	everything	_	_	_	_
+5-13	256-260	look	_	_	_	_
+5-14	261-266	fuzzy	_	_	_	_
+5-15	267-268	.	_	_	_	_
+
+#Text=Not that there 's anything wrong with fuzzy . 
+6-1	269-272	Not	_	_	_	_
+6-2	273-277	that	_	_	_	_
+6-3	278-283	there	_	_	_	_
+6-4	284-286	's	_	_	_	_
+6-5	287-295	anything	_	_	_	_
+6-6	296-301	wrong	_	_	_	_
+6-7	302-306	with	_	_	_	_
+6-8	307-312	fuzzy	_	_	_	_
+6-9	313-314	.	_	_	_	_
+
+#Text=" 
+7-1	315-316	"	_	_	_	_

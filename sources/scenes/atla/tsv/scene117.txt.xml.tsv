@@ -1,0 +1,108 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sozin says : " Hey , why are n't you packed yet , all - powerful Avatar ? " 
+1-1	0-5	Sozin	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Hey	_	_	_	_
+1-6	19-20	,	_	_	_	_
+1-7	21-24	why	_	_	_	_
+1-8	25-28	are	_	_	_	_
+1-9	29-32	n't	_	_	_	_
+1-10	33-36	you	_	_	_	_
+1-11	37-43	packed	_	_	_	_
+1-12	44-47	yet	_	_	_	_
+1-13	48-49	,	_	_	_	_
+1-14	50-53	all	_	_	_	_
+1-15	54-55	-	_	_	_	_
+1-16	56-64	powerful	_	_	*->2-1	*[2]
+1-17	65-71	Avatar	_	_	*->2-1	*[2]
+1-18	72-73	?	_	_	_	_
+1-19	74-75	"	_	_	_	_
+
+#Text=Sozin says : " Come on , show me how it 's done using all four kinds of bending . " 
+2-1	76-81	Sozin	*	PER	*->1-2	*[1]
+2-2	82-86	says	_	_	_	_
+2-3	87-88	:	_	_	_	_
+2-4	89-90	"	_	_	_	_
+2-5	91-95	Come	_	_	_	_
+2-6	96-98	on	_	_	_	_
+2-7	99-100	,	_	_	_	_
+2-8	101-105	show	_	_	_	_
+2-9	106-108	me	_	_	*->1-3	*[1]
+2-10	109-112	how	_	_	_	_
+2-11	113-115	it	_	_	*->2-2	*[2]
+2-12	116-118	's	_	_	_	_
+2-13	119-123	done	_	_	_	_
+2-14	124-129	using	_	_	_	_
+2-15	130-133	all	_	_	_	_
+2-16	134-138	four	_	_	_	_
+2-17	139-144	kinds	_	_	_	_
+2-18	145-147	of	_	_	_	_
+2-19	148-155	bending	_	_	_	_
+2-20	156-157	.	_	_	_	_
+2-21	158-159	"	_	_	_	_
+
+#Text=Roku says : " I started packing , but then the Fire Sages told me I wo n't need any worldly possessions anymore . " 
+3-1	160-164	Roku	*	PER	*->3-1	*[3]
+3-2	165-169	says	_	_	_	_
+3-3	170-171	:	_	_	_	_
+3-4	172-173	"	_	_	_	_
+3-5	174-175	I	_	_	*->3-2	*[3]
+3-6	176-183	started	_	_	_	_
+3-7	184-191	packing	_	_	_	_
+3-8	192-193	,	_	_	_	_
+3-9	194-197	but	_	_	_	_
+3-10	198-202	then	_	_	_	_
+3-11	203-206	the	_	_	_	_
+3-12	207-211	Fire	_	_	_	_
+3-13	212-217	Sages	_	_	_	_
+3-14	218-222	told	_	_	_	_
+3-15	223-225	me	_	_	*->3-3	*[3]
+3-16	226-227	I	_	_	*->3-4	*[3]
+3-17	228-230	wo	_	_	_	_
+3-18	231-234	n't	_	_	_	_
+3-19	235-239	need	_	_	_	_
+3-20	240-243	any	_	_	_	_
+3-21	244-251	worldly	_	_	_	_
+3-22	252-263	possessions	_	_	_	_
+3-23	264-271	anymore	_	_	_	_
+3-24	272-273	.	_	_	_	_
+3-25	274-275	"	_	_	_	_
+
+#Text=Sozin says : " Oh . " 
+4-1	276-281	Sozin	*	PER	*->1-4	*[1]
+4-2	282-286	says	_	_	_	_
+4-3	287-288	:	_	_	_	_
+4-4	289-290	"	_	_	*->4-1	*[4]
+4-5	291-293	Oh	_	_	*->4-1	*[4]
+4-6	294-295	.	_	_	_	_
+4-7	296-297	"	_	_	_	_
+
+#Text=Roku says : " It happened so fast . 
+5-1	298-302	Roku	*	PER	*->3-5	*[3]
+5-2	303-307	says	_	_	_	_
+5-3	308-309	:	_	_	_	_
+5-4	310-311	"	_	_	_	_
+5-5	312-314	It	_	_	*->4-2	*[4]
+5-6	315-323	happened	_	_	_	_
+5-7	324-326	so	_	_	_	_
+5-8	327-331	fast	_	_	_	_
+5-9	332-333	.	_	_	_	_
+
+#Text=Everything 's gon na be different now . 
+6-1	334-344	Everything	_	_	_	_
+6-2	345-347	's	_	_	_	_
+6-3	348-351	gon	_	_	_	_
+6-4	352-354	na	_	_	_	_
+6-5	355-357	be	_	_	_	_
+6-6	358-367	different	_	_	_	_
+6-7	368-371	now	_	_	_	_
+6-8	372-373	.	_	_	_	_
+
+#Text=" 
+7-1	374-375	"	_	_	_	_

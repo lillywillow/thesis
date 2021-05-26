@@ -1,0 +1,35 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Hakoda says : " There they are , the Great Gates of Azulon . " 
+1-1	0-6	Hakoda	*	PER	_	_
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-21	There	_	_	_	_
+1-6	22-26	they	_	_	_	_
+1-7	27-30	are	_	_	_	_
+1-8	31-32	,	_	_	_	_
+1-9	33-36	the	_	_	_	_
+1-10	37-42	Great	_	_	_	_
+1-11	43-48	Gates	_	_	_	_
+1-12	49-51	of	_	_	_	_
+1-13	52-58	Azulon	_	_	_	_
+1-14	59-60	.	_	_	_	_
+1-15	61-62	"	_	_	_	_
+
+#Text=Katara says : " I do n't see any gates . " 
+2-1	63-69	Katara	*	PER	*->1-1	*[1]
+2-2	70-74	says	_	_	_	_
+2-3	75-76	:	_	_	_	_
+2-4	77-78	"	_	_	_	_
+2-5	79-80	I	_	_	*->1-2	*[1]
+2-6	81-83	do	_	_	_	_
+2-7	84-87	n't	_	_	_	_
+2-8	88-91	see	_	_	_	_
+2-9	92-95	any	_	_	_	_
+2-10	96-101	gates	_	_	_	_
+2-11	102-103	.	_	_	_	_
+2-12	104-105	"	_	_	_	_

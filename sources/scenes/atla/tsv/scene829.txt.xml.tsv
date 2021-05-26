@@ -1,0 +1,103 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " I went down ! 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-15	I	_	_	*->1-2	*[1]
+1-6	16-20	went	_	_	_	_
+1-7	21-25	down	_	_	_	_
+1-8	26-27	!	_	_	_	_
+
+#Text=I did n't just get hurt , did I ? 
+2-1	28-29	I	_	_	*->1-3	*[1]
+2-2	30-33	did	_	_	_	_
+2-3	34-37	n't	_	_	_	_
+2-4	38-42	just	_	_	_	_
+2-5	43-46	get	_	_	_	_
+2-6	47-51	hurt	_	_	_	_
+2-7	52-53	,	_	_	_	_
+2-8	54-57	did	_	_	_	_
+2-9	58-59	I	_	_	*->1-4	*[1]
+2-10	60-61	?	_	_	_	_
+
+#Text=It was worse than that . 
+3-1	62-64	It	_	_	*->2-1	*[2]
+3-2	65-68	was	_	_	_	_
+3-3	69-74	worse	_	_	_	_
+3-4	75-79	than	_	_	_	_
+3-5	80-84	that	_	_	*->2-2	*[2]
+3-6	85-86	.	_	_	_	_
+
+#Text=I was gone ! 
+4-1	87-88	I	_	_	*->1-5	*[1]
+4-2	89-92	was	_	_	_	_
+4-3	93-97	gone	_	_	_	_
+4-4	98-99	!	_	_	_	_
+
+#Text=But you brought me back . 
+5-1	100-103	But	_	_	_	_
+5-2	104-107	you	_	_	_	_
+5-3	108-115	brought	_	_	_	_
+5-4	116-118	me	_	_	*->1-6	*[1]
+5-5	119-123	back	_	_	_	_
+5-6	124-125	.	_	_	_	_
+
+#Text=" Katara says : " I just used the spirit water from the North Pole . 
+6-1	126-127	"	_	_	_	_
+6-2	128-134	Katara	*	PER	*->3-1	*[3]
+6-3	135-139	says	_	_	_	_
+6-4	140-141	:	_	_	_	_
+6-5	142-143	"	_	_	_	_
+6-6	144-145	I	_	_	*->3-2	*[3]
+6-7	146-150	just	_	_	_	_
+6-8	151-155	used	_	_	_	_
+6-9	156-159	the	_	_	_	_
+6-10	160-166	spirit	_	_	_	_
+6-11	167-172	water	_	_	_	_
+6-12	173-177	from	_	_	_	_
+6-13	178-181	the	_	_	_	_
+6-14	182-187	North	_	_	_	_
+6-15	188-192	Pole	_	_	_	_
+6-16	193-194	.	_	_	_	_
+
+#Text=I do n't know what I did exactly . 
+7-1	195-196	I	_	_	*->3-3	*[3]
+7-2	197-199	do	_	_	_	_
+7-3	200-203	n't	_	_	_	_
+7-4	204-208	know	_	_	_	_
+7-5	209-213	what	_	_	_	_
+7-6	214-215	I	_	_	*->3-4	*[3]
+7-7	216-219	did	_	_	_	_
+7-8	220-227	exactly	_	_	_	_
+7-9	228-229	.	_	_	_	_
+
+#Text=" Aang says : " You saved me . 
+8-1	230-231	"	_	_	_	_
+8-2	232-236	Aang	*	PER	*->1-7	*[1]
+8-3	237-241	says	_	_	_	_
+8-4	242-243	:	_	_	_	_
+8-5	244-245	"	_	_	_	_
+8-6	246-249	You	_	_	*->3-5	*[3]
+8-7	250-255	saved	_	_	_	_
+8-8	256-258	me	_	_	*->1-8	*[1]
+8-9	259-260	.	_	_	_	_
+
+#Text=" Katara says : " You need to rest . 
+9-1	261-262	"	_	_	_	_
+9-2	263-269	Katara	*	PER	*->3-6	*[3]
+9-3	270-274	says	_	_	_	_
+9-4	275-276	:	_	_	_	_
+9-5	277-278	"	_	_	_	_
+9-6	279-282	You	_	_	*->1-9	*[1]
+9-7	283-287	need	_	_	_	_
+9-8	288-290	to	_	_	_	_
+9-9	291-295	rest	_	_	_	_
+9-10	296-297	.	_	_	_	_
+
+#Text=" 
+10-1	298-299	"	_	_	_	_

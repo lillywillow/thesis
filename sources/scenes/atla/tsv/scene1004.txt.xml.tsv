@@ -1,0 +1,77 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Zuko says : " You should get some rest . 
+1-1	0-4	Zuko	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	You	_	_	*->2-1	*[2]
+1-6	18-24	should	_	_	_	_
+1-7	25-28	get	_	_	_	_
+1-8	29-33	some	_	_	_	_
+1-9	34-38	rest	_	_	_	_
+1-10	39-40	.	_	_	_	_
+
+#Text=We 'll be there in a few hours . 
+2-1	41-43	We	_	_	_	_
+2-2	44-47	'll	_	_	_	_
+2-3	48-50	be	_	_	_	_
+2-4	51-56	there	_	_	_	_
+2-5	57-59	in	_	_	_	_
+2-6	60-61	a	_	_	_	_
+2-7	62-65	few	_	_	_	_
+2-8	66-71	hours	_	_	_	_
+2-9	72-73	.	_	_	_	_
+
+#Text=You 'll need all your strength . 
+3-1	74-77	You	_	_	*->2-2	*[2]
+3-2	78-81	'll	_	_	_	_
+3-3	82-86	need	_	_	_	_
+3-4	87-90	all	_	_	_	_
+3-5	91-95	your	_	_	*->2-3	*[2]
+3-6	96-104	strength	_	_	_	_
+3-7	105-106	.	_	_	_	_
+
+#Text=" Katara says : " Oh , do n't you worry about my strength . 
+4-1	107-108	"	_	_	_	_
+4-2	109-115	Katara	*	PER	*->3-1	*[3]
+4-3	116-120	says	_	_	_	_
+4-4	121-122	:	_	_	_	_
+4-5	123-124	"	_	_	_	_
+4-6	125-127	Oh	_	_	_	_
+4-7	128-129	,	_	_	_	_
+4-8	130-132	do	_	_	_	_
+4-9	133-136	n't	_	_	_	_
+4-10	137-140	you	_	_	*->1-2	*[1]
+4-11	141-146	worry	_	_	_	_
+4-12	147-152	about	_	_	_	_
+4-13	153-155	my	_	_	*->3-2	*[3]
+4-14	156-164	strength	_	_	_	_
+4-15	165-166	.	_	_	_	_
+
+#Text=I have plenty . 
+5-1	167-168	I	_	_	*->3-3	*[3]
+5-2	169-173	have	_	_	_	_
+5-3	174-180	plenty	_	_	_	_
+5-4	181-182	.	_	_	_	_
+
+#Text=I 'm not the helpless little girl I was when they came . 
+6-1	183-184	I	_	_	*->3-4	*[3]
+6-2	185-187	'm	_	_	_	_
+6-3	188-191	not	_	_	_	_
+6-4	192-195	the	_	_	_	_
+6-5	196-204	helpless	_	_	_	_
+6-6	205-211	little	_	_	_	_
+6-7	212-216	girl	_	_	_	_
+6-8	217-218	I	_	_	*->3-5	*[3]
+6-9	219-222	was	_	_	_	_
+6-10	223-227	when	_	_	_	_
+6-11	228-232	they	_	_	*->2-4	*[2]
+6-12	233-237	came	_	_	_	_
+6-13	238-239	.	_	_	_	_
+
+#Text=" 
+7-1	240-241	"	_	_	_	_

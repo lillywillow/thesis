@@ -1,0 +1,124 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Zuko says : " The intense cold prevents her from firebending . " 
+1-1	0-4	Zuko	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	The	_	_	_	_
+1-6	18-25	intense	_	_	_	_
+1-7	26-30	cold	_	_	_	_
+1-8	31-39	prevents	_	_	_	_
+1-9	40-43	her	_	_	_	_
+1-10	44-48	from	_	_	_	_
+1-11	49-60	firebending	_	_	_	_
+1-12	61-62	.	_	_	_	_
+1-13	63-64	"	_	_	_	_
+
+#Text=Desna says : " There 's certainly no way anyone 's breaking out of here . " 
+2-1	65-70	Desna	_	_	*->2-1	*[2]
+2-2	71-75	says	_	_	_	_
+2-3	76-77	:	_	_	_	_
+2-4	78-79	"	_	_	_	_
+2-5	80-85	There	_	_	_	_
+2-6	86-88	's	_	_	_	_
+2-7	89-98	certainly	_	_	_	_
+2-8	99-101	no	_	_	_	_
+2-9	102-105	way	_	_	_	_
+2-10	106-112	anyone	_	_	_	_
+2-11	113-115	's	_	_	_	_
+2-12	116-124	breaking	_	_	_	_
+2-13	125-128	out	_	_	_	_
+2-14	129-131	of	_	_	_	_
+2-15	132-136	here	_	_	_	_
+2-16	137-138	.	_	_	_	_
+2-17	139-140	"	_	_	_	_
+
+#Text=Zuko says : " That 's what we thought about the other three prisons . " 
+3-1	141-145	Zuko	*	PER	*->1-2	*[1]
+3-2	146-150	says	_	_	_	_
+3-3	151-152	:	_	_	_	_
+3-4	153-154	"	_	_	_	_
+3-5	155-159	That	_	_	*->2-2	*[2]
+3-6	160-162	's	_	_	_	_
+3-7	163-167	what	_	_	_	_
+3-8	168-170	we	_	_	_	_
+3-9	171-178	thought	_	_	_	_
+3-10	179-184	about	_	_	_	_
+3-11	185-188	the	_	_	_	_
+3-12	189-194	other	_	_	_	_
+3-13	195-200	three	_	_	_	_
+3-14	201-208	prisons	_	_	_	_
+3-15	209-210	.	_	_	_	_
+3-16	211-212	"	_	_	_	_
+
+#Text=P'Li says : " There must be something exciting going on . 
+4-1	213-217	P'Li	_	_	*->3-1	*[3]
+4-2	218-222	says	_	_	_	_
+4-3	223-224	:	_	_	_	_
+4-4	225-226	"	_	_	_	_
+4-5	227-232	There	_	_	_	_
+4-6	233-237	must	_	_	_	_
+4-7	238-240	be	_	_	_	_
+4-8	241-250	something	_	_	_	_
+4-9	251-259	exciting	_	_	_	_
+4-10	260-265	going	_	_	_	_
+4-11	266-268	on	_	_	_	_
+4-12	269-270	.	_	_	_	_
+
+#Text=No one interesting has visited me in thirteen years . 
+5-1	271-273	No	_	_	*->4-1	*[4]
+5-2	274-277	one	_	_	*->4-1	*[4]
+5-3	278-289	interesting	_	_	*->4-1	*[4]
+5-4	290-293	has	_	_	_	_
+5-5	294-301	visited	_	_	_	_
+5-6	302-304	me	_	_	*->3-2	*[3]
+5-7	305-307	in	_	_	_	_
+5-8	308-316	thirteen	_	_	_	_
+5-9	317-322	years	_	_	_	_
+5-10	323-324	.	_	_	_	_
+
+#Text=" Tonraq says : " Do n't get used to it . 
+6-1	325-326	"	_	_	_	_
+6-2	327-333	Tonraq	*	PER	*->5-1	*[5]
+6-3	334-338	says	_	_	_	_
+6-4	339-340	:	_	_	_	_
+6-5	341-342	"	_	_	_	_
+6-6	343-345	Do	_	_	_	_
+6-7	346-349	n't	_	_	_	_
+6-8	350-353	get	_	_	_	_
+6-9	354-358	used	_	_	_	_
+6-10	359-361	to	_	_	_	_
+6-11	362-364	it	_	_	*->4-2	*[4]
+6-12	365-366	.	_	_	_	_
+
+#Text=" P'Li says : " He 's out , is n't he ? 
+7-1	367-368	"	_	_	_	_
+7-2	369-373	P'Li	_	_	*->3-3	*[3]
+7-3	374-378	says	_	_	_	_
+7-4	379-380	:	_	_	_	_
+7-5	381-382	"	_	_	_	_
+7-6	383-385	He	_	_	*->5-2	*[5]
+7-7	386-388	's	_	_	_	_
+7-8	389-392	out	_	_	_	_
+7-9	393-394	,	_	_	_	_
+7-10	395-397	is	_	_	_	_
+7-11	398-401	n't	_	_	_	_
+7-12	402-404	he	_	_	*->5-3	*[5]
+7-13	405-406	?	_	_	_	_
+
+#Text=Mmm , I 'm feeling warmer already . 
+8-1	407-410	Mmm	_	_	_	_
+8-2	411-412	,	_	_	_	_
+8-3	413-414	I	_	_	*->3-4	*[3]
+8-4	415-417	'm	_	_	_	_
+8-5	418-425	feeling	_	_	_	_
+8-6	426-432	warmer	_	_	_	_
+8-7	433-440	already	_	_	_	_
+8-8	441-442	.	_	_	_	_
+
+#Text=" 
+9-1	443-444	"	_	_	_	_

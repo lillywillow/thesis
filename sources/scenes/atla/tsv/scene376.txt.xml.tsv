@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " What was that all about , Katara ? " 
+1-1	0-4	Aang	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	What	_	_	_	_
+1-6	19-22	was	_	_	_	_
+1-7	23-27	that	_	_	_	_
+1-8	28-31	all	_	_	_	_
+1-9	32-37	about	_	_	_	_
+1-10	38-39	,	_	_	_	_
+1-11	40-46	Katara	*	PER	*->1-1	*[1]
+1-12	47-48	?	_	_	_	_
+1-13	49-50	"	_	_	_	_
+
+#Text=Sokka says : " Yeah , I was just starting to browse through their boomerang collection . " 
+2-1	51-56	Sokka	_	_	*->2-1	*[2]
+2-2	57-61	says	_	_	_	_
+2-3	62-63	:	_	_	_	_
+2-4	64-65	"	_	_	_	_
+2-5	66-70	Yeah	_	_	_	_
+2-6	71-72	,	_	_	_	_
+2-7	73-74	I	_	_	*->2-2	*[2]
+2-8	75-78	was	_	_	_	_
+2-9	79-83	just	_	_	_	_
+2-10	84-92	starting	_	_	_	_
+2-11	93-95	to	_	_	_	_
+2-12	96-102	browse	_	_	_	_
+2-13	103-110	through	_	_	_	_
+2-14	111-116	their	_	_	*->3-1	*[3]
+2-15	117-126	boomerang	_	_	_	_
+2-16	127-137	collection	_	_	_	_
+2-17	138-139	.	_	_	_	_
+2-18	140-141	"	_	_	_	_
+
+#Text=Katara says : " I 'll just feel a lot better once we get away from here . " 
+3-1	142-148	Katara	*	PER	*->1-2	*[1]
+3-2	149-153	says	_	_	_	_
+3-3	154-155	:	_	_	_	_
+3-4	156-157	"	_	_	_	_
+3-5	158-159	I	_	_	*->1-3	*[1]
+3-6	160-163	'll	_	_	_	_
+3-7	164-168	just	_	_	_	_
+3-8	169-173	feel	_	_	_	_
+3-9	174-175	a	_	_	_	_
+3-10	176-179	lot	_	_	_	_
+3-11	180-186	better	_	_	_	_
+3-12	187-191	once	_	_	_	_
+3-13	192-194	we	_	_	*->3-2	*[3]
+3-14	195-198	get	_	_	_	_
+3-15	199-203	away	_	_	_	_
+3-16	204-208	from	_	_	_	_
+3-17	209-213	here	_	_	_	_
+3-18	214-215	.	_	_	_	_
+3-19	216-217	"	_	_	_	_

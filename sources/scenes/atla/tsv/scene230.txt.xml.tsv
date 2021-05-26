@@ -1,0 +1,72 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Yung says : " Sure he 's cute now , but when he 's older , he 'll join the Fire Nation army . 
+1-1	0-4	Yung	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	Sure	_	_	_	_
+1-6	19-21	he	_	_	_	_
+1-7	22-24	's	_	_	_	_
+1-8	25-29	cute	_	_	_	_
+1-9	30-33	now	_	_	_	_
+1-10	34-35	,	_	_	_	_
+1-11	36-39	but	_	_	_	_
+1-12	40-44	when	_	_	_	_
+1-13	45-47	he	_	_	_	_
+1-14	48-50	's	_	_	_	_
+1-15	51-56	older	_	_	_	_
+1-16	57-58	,	_	_	_	_
+1-17	59-61	he	_	_	_	_
+1-18	62-65	'll	_	_	_	_
+1-19	66-70	join	_	_	_	_
+1-20	71-74	the	_	_	_	_
+1-21	75-79	Fire	_	_	_	_
+1-22	80-86	Nation	_	_	_	_
+1-23	87-91	army	_	_	_	_
+1-24	92-93	.	_	_	_	_
+
+#Text=You wo n't think he 's so cute then . 
+2-1	94-97	You	_	_	*->3-1	*[3]
+2-2	98-100	wo	_	_	_	_
+2-3	101-104	n't	_	_	_	_
+2-4	105-110	think	_	_	_	_
+2-5	111-113	he	_	_	_	_
+2-6	114-116	's	_	_	_	_
+2-7	117-119	so	_	_	_	_
+2-8	120-124	cute	_	_	_	_
+2-9	125-129	then	_	_	_	_
+2-10	130-131	.	_	_	_	_
+
+#Text=He 'll be a killer . 
+3-1	132-134	He	_	_	*->2-6	*[2]
+3-2	135-138	'll	_	_	_	_
+3-3	139-141	be	_	_	_	_
+3-4	142-143	a	_	_	*->2-1	*[2]
+3-5	144-150	killer	_	_	*->2-1	*[2]
+3-6	151-152	.	_	_	_	_
+
+#Text=" Katara says : " Does that look like the face of a killer to you ? 
+4-1	153-154	"	_	_	_	_
+4-2	155-161	Katara	*	PER	_	_
+4-3	162-166	says	_	_	_	_
+4-4	167-168	:	_	_	_	_
+4-5	169-170	"	_	_	_	_
+4-6	171-175	Does	_	_	_	_
+4-7	176-180	that	_	_	*->3-2	*[3]
+4-8	181-185	look	_	_	_	_
+4-9	186-190	like	_	_	_	_
+4-10	191-194	the	_	_	_	_
+4-11	195-199	face	_	_	_	_
+4-12	200-202	of	_	_	_	_
+4-13	203-204	a	_	_	*->2-7	*[2]
+4-14	205-211	killer	_	_	*->2-7	*[2]
+4-15	212-214	to	_	_	_	_
+4-16	215-218	you	_	_	*->1-2	*[1]
+4-17	219-220	?	_	_	_	_
+
+#Text=" 
+5-1	221-222	"	_	_	_	_

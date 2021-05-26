@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " Get inside . " 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	Get	_	_	_	_
+1-6	20-26	inside	_	_	_	_
+1-7	27-28	.	_	_	_	_
+1-8	29-30	"	_	_	_	_
+
+#Text=Aang says : " Look what I brought to this place . " 
+2-1	31-35	Aang	*	PER	*->2-1	*[2]
+2-2	36-40	says	_	_	_	_
+2-3	41-42	:	_	_	_	_
+2-4	43-44	"	_	_	_	_
+2-5	45-49	Look	_	_	_	_
+2-6	50-54	what	_	_	_	_
+2-7	55-56	I	_	_	*->2-2	*[2]
+2-8	57-64	brought	_	_	_	_
+2-9	65-67	to	_	_	_	_
+2-10	68-72	this	_	_	*->3-1	*[3]
+2-11	73-78	place	_	_	*->3-1	*[3]
+2-12	79-80	.	_	_	_	_
+2-13	81-82	"	_	_	_	_
+
+#Text=Katara says : " It 's not your fault . " 
+3-1	83-89	Katara	*	PER	*->1-2	*[1]
+3-2	90-94	says	_	_	_	_
+3-3	95-96	:	_	_	_	_
+3-4	97-98	"	_	_	_	_
+3-5	99-101	It	_	_	*->3-2	*[3]
+3-6	102-104	's	_	_	_	_
+3-7	105-108	not	_	_	_	_
+3-8	109-113	your	_	_	*->2-3	*[2]
+3-9	114-119	fault	_	_	*->3-3	*[3]
+3-10	120-121	.	_	_	_	_
+3-11	122-123	"	_	_	_	_
+
+#Text=Aang says : " Yes , it is . 
+4-1	124-128	Aang	*	PER	*->2-4	*[2]
+4-2	129-133	says	_	_	_	_
+4-3	134-135	:	_	_	_	_
+4-4	136-137	"	_	_	_	_
+4-5	138-141	Yes	_	_	_	_
+4-6	142-143	,	_	_	_	_
+4-7	144-146	it	_	_	*->3-4	*[3]
+4-8	147-149	is	_	_	_	_
+4-9	150-151	.	_	_	_	_
+
+#Text=These people got their town destroyed trying to protect me . 
+5-1	152-157	These	_	_	*->4-1	*[4]
+5-2	158-164	people	_	_	*->4-1	*[4]
+5-3	165-168	got	_	_	_	_
+5-4	169-174	their	_	_	*->4-2	*[4]
+5-5	175-179	town	_	_	_	_
+5-6	180-189	destroyed	_	_	_	_
+5-7	190-196	trying	_	_	_	_
+5-8	197-199	to	_	_	_	_
+5-9	200-207	protect	_	_	_	_
+5-10	208-210	me	_	_	*->2-5	*[2]
+5-11	211-212	.	_	_	_	_
+
+#Text=" 
+6-1	213-214	"	_	_	_	_

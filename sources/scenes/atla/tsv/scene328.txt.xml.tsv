@@ -1,0 +1,86 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Spectators says : " Wow ! 
+1-1	0-10	Spectators	_	_	*->1-1	*[1]
+1-2	11-15	says	_	_	_	_
+1-3	16-17	:	_	_	_	_
+1-4	18-19	"	_	_	_	_
+1-5	20-23	Wow	_	_	_	_
+1-6	24-25	!	_	_	_	_
+
+#Text=Did you see that ? 
+2-1	26-29	Did	_	_	_	_
+2-2	30-33	you	_	_	*->2-1	*[2]
+2-3	34-37	see	_	_	_	_
+2-4	38-42	that	_	_	*->1-2	*[1]
+2-5	43-44	?	_	_	_	_
+
+#Text=Airbender ! 
+3-1	45-54	Airbender	_	_	*->3-1	*[3]
+3-2	55-56	!	_	_	*->3-1	*[3]
+
+#Text=" Oyaji says : " It 's true ... you are the Avatar ! 
+4-1	57-58	"	_	_	_	_
+4-2	59-64	Oyaji	_	_	_	_
+4-3	65-69	says	_	_	_	_
+4-4	70-71	:	_	_	_	_
+4-5	72-73	"	_	_	_	_
+4-6	74-76	It	_	_	*->3-2	*[3]
+4-7	77-79	's	_	_	_	_
+4-8	80-84	true	_	_	_	_
+4-9	85-88	...	_	_	_	_
+4-10	89-92	you	_	_	*->2-2	*[2]
+4-11	93-96	are	_	_	_	_
+4-12	97-100	the	_	_	_	_
+4-13	101-107	Avatar	_	_	_	_
+4-14	108-109	!	_	_	_	_
+
+#Text=" Aang says : " Now ... check this out ! 
+5-1	110-111	"	_	_	*->4-1	*[4]
+5-2	112-116	Aang	*	PER	*->4-1	*[4]
+5-3	117-121	says	_	_	_	_
+5-4	122-123	:	_	_	_	_
+5-5	124-125	"	_	_	_	_
+5-6	126-129	Now	_	_	_	_
+5-7	130-133	...	_	_	_	_
+5-8	134-139	check	_	_	_	_
+5-9	140-144	this	_	_	_	_
+5-10	145-148	out	_	_	_	_
+5-11	149-150	!	_	_	_	_
+
+#Text=" Little girl says : " Did you hear the news ? 
+6-1	151-152	"	_	_	_	_
+6-2	153-159	Little	_	_	_	_
+6-3	160-164	girl	_	_	_	_
+6-4	165-169	says	_	_	_	_
+6-5	170-171	:	_	_	_	_
+6-6	172-173	"	_	_	_	_
+6-7	174-177	Did	_	_	_	_
+6-8	178-181	you	_	_	*->4-2	*[4]
+6-9	182-186	hear	_	_	_	_
+6-10	187-190	the	_	_	_	_
+6-11	191-195	news	_	_	_	_
+6-12	196-197	?	_	_	_	_
+
+#Text=The Avatar 's on Kyoshi ! 
+7-1	198-201	The	_	_	_	_
+7-2	202-208	Avatar	_	_	_	_
+7-3	209-211	's	_	_	_	_
+7-4	212-214	on	_	_	_	_
+7-5	215-221	Kyoshi	*	PER	_	_
+7-6	222-223	!	_	_	_	_
+
+#Text=" Fisherman says : " Huh ? 
+8-1	224-225	"	_	_	_	_
+8-2	226-235	Fisherman	*	PER	_	_
+8-3	236-240	says	_	_	_	_
+8-4	241-242	:	_	_	_	_
+8-5	243-244	"	_	_	_	_
+8-6	245-248	Huh	_	_	_	_
+8-7	249-250	?	_	_	_	_
+
+#Text=" 
+9-1	251-252	"	_	_	_	_

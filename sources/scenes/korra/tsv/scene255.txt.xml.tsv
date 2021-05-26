@@ -1,0 +1,55 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Zaheer says : " Avatar Korra . 
+1-1	0-6	Zaheer	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-22	Avatar	*	PER	_	_
+1-6	23-28	Korra	*	PER	_	_
+1-7	29-30	.	_	_	_	_
+
+#Text=Misty Palms Inn . 
+2-1	31-36	Misty	_	_	_	_
+2-2	37-42	Palms	_	_	_	_
+2-3	43-46	Inn	_	_	_	_
+2-4	47-48	.	_	_	_	_
+
+#Text=Find her . 
+3-1	49-53	Find	_	_	_	_
+3-2	54-57	her	_	_	*->2-1	*[2]
+3-3	58-59	.	_	_	_	_
+
+#Text=" P - Li says : " You two go . 
+4-1	60-61	"	_	_	_	_
+4-2	62-63	P	_	_	*->3-1	*[3]
+4-3	64-65	-	_	_	*->3-1	*[3]
+4-4	66-68	Li	_	_	*->3-1	*[3]
+4-5	69-73	says	_	_	_	_
+4-6	74-75	:	_	_	_	_
+4-7	76-77	"	_	_	_	_
+4-8	78-81	You	_	_	*->2-2	*[2]
+4-9	82-85	two	_	_	*->2-2	*[2]
+4-10	86-88	go	_	_	_	_
+4-11	89-90	.	_	_	_	_
+
+#Text=I 'll stay here and make sure Zaheer 's body is safe . 
+5-1	91-92	I	_	_	*->3-2	*[3]
+5-2	93-96	'll	_	_	_	_
+5-3	97-101	stay	_	_	_	_
+5-4	102-106	here	_	_	_	_
+5-5	107-110	and	_	_	_	_
+5-6	111-115	make	_	_	_	_
+5-7	116-120	sure	_	_	_	_
+5-8	121-127	Zaheer	*	PER	*->1-2	*[1]
+5-9	128-130	's	_	_	*->1-2	*[1]
+5-10	131-135	body	_	_	_	_
+5-11	136-138	is	_	_	_	_
+5-12	139-143	safe	_	_	_	_
+5-13	144-145	.	_	_	_	_
+
+#Text=" 
+6-1	146-147	"	_	_	_	_

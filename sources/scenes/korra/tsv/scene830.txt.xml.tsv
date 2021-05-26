@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Hou - Ting says : " Bring me those airships now ! 
+1-1	0-3	Hou	*	PER	*->1-1	*[1]
+1-2	4-5	-	*	PER	*->1-1	*[1]
+1-3	6-10	Ting	*	PER	*->1-1	*[1]
+1-4	11-15	says	_	_	_	_
+1-5	16-17	:	_	_	_	_
+1-6	18-19	"	_	_	_	_
+1-7	20-25	Bring	_	_	_	_
+1-8	26-28	me	_	_	*->1-2	*[1]
+1-9	29-34	those	_	_	_	_
+1-10	35-43	airships	_	_	_	_
+1-11	44-47	now	_	_	_	_
+1-12	48-49	!	_	_	_	_
+
+#Text=Oh , get it off me ! 
+2-1	50-52	Oh	_	_	_	_
+2-2	53-54	,	_	_	_	_
+2-3	55-58	get	_	_	_	_
+2-4	59-61	it	_	_	_	_
+2-5	62-65	off	_	_	_	_
+2-6	66-68	me	_	_	*->1-3	*[1]
+2-7	69-70	!	_	_	_	_
+
+#Text=Get this fur off my - " 
+3-1	71-74	Get	_	_	_	_
+3-2	75-79	this	_	_	_	_
+3-3	80-83	fur	_	_	_	_
+3-4	84-87	off	_	_	_	_
+3-5	88-90	my	_	_	*->1-4	*[1]
+3-6	91-92	-	_	_	_	_
+3-7	93-94	"	_	_	_	_

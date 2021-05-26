@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bumi says : " Well , here we are . 
+1-1	0-4	Bumi	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	Well	_	_	_	_
+1-6	19-20	,	_	_	_	_
+1-7	21-25	here	_	_	_	_
+1-8	26-28	we	_	_	_	_
+1-9	29-32	are	_	_	_	_
+1-10	33-34	.	_	_	_	_
+
+#Text=Welcome to Old People Camp . 
+2-1	35-42	Welcome	_	_	_	_
+2-2	43-45	to	_	_	_	_
+2-3	46-49	Old	_	_	_	_
+2-4	50-56	People	_	_	_	_
+2-5	57-61	Camp	_	_	_	_
+2-6	62-63	.	_	_	_	_
+
+#Text=" Zuko says : " Where ... where is he ? 
+3-1	64-65	"	_	_	_	_
+3-2	66-70	Zuko	*	PER	_	_
+3-3	71-75	says	_	_	_	_
+3-4	76-77	:	_	_	_	_
+3-5	78-79	"	_	_	_	_
+3-6	80-85	Where	_	_	_	_
+3-7	86-89	...	_	_	_	_
+3-8	90-95	where	_	_	_	_
+3-9	96-98	is	_	_	_	_
+3-10	99-101	he	_	_	*->1-2	*[1]
+3-11	102-103	?	_	_	_	_
+
+#Text=" Piandao says : " Your uncle 's in there , Prince Zuko . 
+4-1	104-105	"	_	_	_	_
+4-2	106-113	Piandao	*	PER	_	_
+4-3	114-118	says	_	_	_	_
+4-4	119-120	:	_	_	_	_
+4-5	121-122	"	_	_	_	_
+4-6	123-127	Your	_	_	*->2-3	*[2]
+4-7	128-133	uncle	_	_	*->2-3	*[2]
+4-8	134-136	's	_	_	*->2-3	*[2]
+4-9	137-139	in	_	_	*->2-3	*[2]
+4-10	140-145	there	_	_	*->2-3	*[2]
+4-11	146-147	,	_	_	_	_
+4-12	148-154	Prince	*	PER	*->2-1	*[2]
+4-13	155-159	Zuko	*	PER	*->2-1	*[2]
+4-14	160-161	.	_	_	_	_
+
+#Text=" 
+5-1	162-163	"	_	_	_	_

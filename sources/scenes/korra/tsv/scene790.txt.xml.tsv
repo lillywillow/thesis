@@ -1,0 +1,131 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bolin says : " Mister President , get back , I 'm here to help . " 
+1-1	0-5	Bolin	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-21	Mister	_	_	*->2-1	*[2]
+1-6	22-31	President	*	PER	*->2-1	*[2]
+1-7	32-33	,	_	_	_	_
+1-8	34-37	get	_	_	_	_
+1-9	38-42	back	_	_	_	_
+1-10	43-44	,	_	_	_	_
+1-11	45-46	I	_	_	*->1-2	*[1]
+1-12	47-49	'm	_	_	_	_
+1-13	50-54	here	_	_	_	_
+1-14	55-57	to	_	_	_	_
+1-15	58-62	help	_	_	_	_
+1-16	63-64	.	_	_	_	_
+1-17	65-66	"	_	_	_	_
+
+#Text=Bolin says : " Looks like there 's no where to go . " 
+2-1	67-72	Bolin	*	PER	*->1-3	*[1]
+2-2	73-77	says	_	_	_	_
+2-3	78-79	:	_	_	_	_
+2-4	80-81	"	_	_	_	_
+2-5	82-87	Looks	_	_	_	_
+2-6	88-92	like	_	_	_	_
+2-7	93-98	there	_	_	_	_
+2-8	99-101	's	_	_	_	_
+2-9	102-104	no	_	_	_	_
+2-10	105-110	where	_	_	_	_
+2-11	111-113	to	_	_	_	_
+2-12	114-116	go	_	_	_	_
+2-13	117-118	.	_	_	_	_
+2-14	119-120	"	_	_	_	_
+
+#Text=Lin Beifong says : " Secure the president and call for backup immediately ! " 
+3-1	121-124	Lin	*	PER	_	_
+3-2	125-132	Beifong	*	PER	_	_
+3-3	133-137	says	_	_	_	_
+3-4	138-139	:	_	_	_	_
+3-5	140-141	"	_	_	_	_
+3-6	142-148	Secure	_	_	_	_
+3-7	149-152	the	_	_	*->2-2	*[2]
+3-8	153-162	president	*	PER	*->2-2	*[2]
+3-9	163-166	and	_	_	_	_
+3-10	167-171	call	_	_	_	_
+3-11	172-175	for	_	_	_	_
+3-12	176-182	backup	_	_	_	_
+3-13	183-194	immediately	_	_	_	_
+3-14	195-196	!	_	_	_	_
+3-15	197-198	"	_	_	_	_
+
+#Text=Ginger / Actress Ginger says : " Bolin , look out ! 
+4-1	199-205	Ginger	_	_	_	_
+4-2	206-207	/	_	_	_	_
+4-3	208-215	Actress	*	PER	_	_
+4-4	216-222	Ginger	_	_	_	_
+4-5	223-227	says	_	_	_	_
+4-6	228-229	:	_	_	_	_
+4-7	230-231	"	_	_	_	_
+4-8	232-237	Bolin	*	PER	*->1-4	*[1]
+4-9	238-239	,	_	_	_	_
+4-10	240-244	look	_	_	_	_
+4-11	245-248	out	_	_	_	_
+4-12	249-250	!	_	_	_	_
+
+#Text=/ Nuktuk , look out ! 
+5-1	251-252	/	_	_	_	_
+5-2	253-259	Nuktuk	_	_	_	_
+5-3	260-261	,	_	_	_	_
+5-4	262-266	look	_	_	_	_
+5-5	267-270	out	_	_	_	_
+5-6	271-272	!	_	_	_	_
+
+#Text=" Shiro Shinobi says : " This is unbelievable ! 
+6-1	273-274	"	_	_	_	_
+6-2	275-280	Shiro	*	PER	_	_
+6-3	281-288	Shinobi	*	PER	_	_
+6-4	289-293	says	_	_	_	_
+6-5	294-295	:	_	_	_	_
+6-6	296-297	"	_	_	_	_
+6-7	298-302	This	_	_	_	_
+6-8	303-305	is	_	_	_	_
+6-9	306-318	unbelievable	_	_	_	_
+6-10	319-320	!	_	_	_	_
+
+#Text=Bolin is bending two full stacks of earth disks at once , which would normally be illegal , but then again , he 's fighting three waterbenders , so all rules are out the window ! 
+7-1	321-326	Bolin	*	PER	*->1-5	*[1]
+7-2	327-329	is	_	_	_	_
+7-3	330-337	bending	_	_	_	_
+7-4	338-341	two	_	_	_	_
+7-5	342-346	full	_	_	_	_
+7-6	347-353	stacks	_	_	_	_
+7-7	354-356	of	_	_	_	_
+7-8	357-362	earth	_	_	_	_
+7-9	363-368	disks	_	_	_	_
+7-10	369-371	at	_	_	_	_
+7-11	372-376	once	_	_	_	_
+7-12	377-378	,	_	_	_	_
+7-13	379-384	which	_	_	_	_
+7-14	385-390	would	_	_	_	_
+7-15	391-399	normally	_	_	_	_
+7-16	400-402	be	_	_	_	_
+7-17	403-410	illegal	_	_	_	_
+7-18	411-412	,	_	_	_	_
+7-19	413-416	but	_	_	_	_
+7-20	417-421	then	_	_	_	_
+7-21	422-427	again	_	_	_	_
+7-22	428-429	,	_	_	_	_
+7-23	430-432	he	_	_	*->1-6	*[1]
+7-24	433-435	's	_	_	_	_
+7-25	436-444	fighting	_	_	_	_
+7-26	445-450	three	_	_	_	_
+7-27	451-463	waterbenders	_	_	_	_
+7-28	464-465	,	_	_	_	_
+7-29	466-468	so	_	_	_	_
+7-30	469-472	all	_	_	_	_
+7-31	473-478	rules	_	_	_	_
+7-32	479-482	are	_	_	_	_
+7-33	483-486	out	_	_	_	_
+7-34	487-490	the	_	_	_	_
+7-35	491-497	window	_	_	_	_
+7-36	498-499	!	_	_	_	_
+
+#Text=" 
+8-1	500-501	"	_	_	_	_

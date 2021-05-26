@@ -1,0 +1,55 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Hey ! 
+1-1	0-4	Aang	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	Hey	_	_	_	_
+1-6	18-19	!	_	_	_	_
+
+#Text=Come back ! 
+2-1	20-24	Come	_	_	_	_
+2-2	25-29	back	_	_	_	_
+2-3	30-31	!	_	_	_	_
+
+#Text=Come on out , little lemur ! 
+3-1	32-36	Come	_	_	_	_
+3-2	37-39	on	_	_	_	_
+3-3	40-43	out	_	_	_	_
+3-4	44-45	,	_	_	_	_
+3-5	46-52	little	_	_	_	_
+3-6	53-58	lemur	_	_	_	_
+3-7	59-60	!	_	_	_	_
+
+#Text=That hungry guy wo n't bother you anymore . 
+4-1	61-65	That	_	_	_	_
+4-2	66-72	hungry	_	_	_	_
+4-3	73-76	guy	_	_	_	_
+4-4	77-79	wo	_	_	_	_
+4-5	80-83	n't	_	_	_	_
+4-6	84-90	bother	_	_	_	_
+4-7	91-94	you	_	_	_	_
+4-8	95-102	anymore	_	_	_	_
+4-9	103-104	.	_	_	_	_
+
+#Text=" Aang says : " Firebenders ? 
+5-1	105-106	"	_	_	*->1-1	*[1]
+5-2	107-111	Aang	*	PER	*->1-1	*[1]
+5-3	112-116	says	_	_	_	_
+5-4	117-118	:	_	_	_	_
+5-5	119-120	"	_	_	_	_
+5-6	121-132	Firebenders	_	_	*->2-1	*[2]
+5-7	133-134	?	_	_	_	_
+
+#Text=They were here ? 
+6-1	135-139	They	_	_	*->2-2	*[2]
+6-2	140-144	were	_	_	_	_
+6-3	145-149	here	_	_	_	_
+6-4	150-151	?	_	_	_	_
+
+#Text=" 
+7-1	152-153	"	_	_	_	_

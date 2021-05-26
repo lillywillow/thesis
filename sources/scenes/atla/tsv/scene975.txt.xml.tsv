@@ -1,0 +1,66 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Oh no . 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-16	Oh	_	_	_	_
+1-6	17-19	no	_	_	_	_
+1-7	20-21	.	_	_	_	_
+
+#Text=Aunt Wu was wrong . 
+2-1	22-26	Aunt	_	_	_	_
+2-2	27-29	Wu	*	PER	_	_
+2-3	30-33	was	_	_	_	_
+2-4	34-39	wrong	_	_	_	_
+2-5	40-41	.	_	_	_	_
+
+#Text=" Sokka says : " Those people all think they 're safe ! 
+3-1	42-43	"	_	_	_	_
+3-2	44-49	Sokka	_	_	_	_
+3-3	50-54	says	_	_	_	_
+3-4	55-56	:	_	_	_	_
+3-5	57-58	"	_	_	_	_
+3-6	59-64	Those	_	_	*->2-1	*[2]
+3-7	65-71	people	_	_	*->2-1	*[2]
+3-8	72-75	all	_	_	_	_
+3-9	76-81	think	_	_	_	_
+3-10	82-86	they	_	_	*->2-2	*[2]
+3-11	87-90	're	_	_	_	_
+3-12	91-95	safe	_	_	_	_
+3-13	96-97	!	_	_	_	_
+
+#Text=We 've got to warn them ! 
+4-1	98-100	We	_	_	_	_
+4-2	101-104	've	_	_	_	_
+4-3	105-108	got	_	_	_	_
+4-4	109-111	to	_	_	_	_
+4-5	112-116	warn	_	_	_	_
+4-6	117-121	them	_	_	*->2-3	*[2]
+4-7	122-123	!	_	_	_	_
+
+#Text=" Aang says : " There 's no time to walk ! 
+5-1	124-125	"	_	_	_	_
+5-2	126-130	Aang	*	PER	*->1-2	*[1]
+5-3	131-135	says	_	_	_	_
+5-4	136-137	:	_	_	_	_
+5-5	138-139	"	_	_	_	_
+5-6	140-145	There	_	_	_	_
+5-7	146-148	's	_	_	_	_
+5-8	149-151	no	_	_	_	_
+5-9	152-156	time	_	_	_	_
+5-10	157-159	to	_	_	_	_
+5-11	160-164	walk	_	_	_	_
+5-12	165-166	!	_	_	_	_
+
+#Text=Grab on ! 
+6-1	167-171	Grab	_	_	_	_
+6-2	172-174	on	_	_	_	_
+6-3	175-176	!	_	_	_	_
+
+#Text=" 
+7-1	177-178	"	_	_	_	_

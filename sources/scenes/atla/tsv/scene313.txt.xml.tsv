@@ -1,0 +1,107 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Iroh says : " You really should open a window in here . " 
+1-1	0-4	Iroh	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	You	_	_	_	_
+1-6	18-24	really	_	_	_	_
+1-7	25-31	should	_	_	_	_
+1-8	32-36	open	_	_	_	_
+1-9	37-38	a	_	_	_	_
+1-10	39-45	window	_	_	_	_
+1-11	46-48	in	_	_	_	_
+1-12	49-53	here	_	_	_	_
+1-13	54-55	.	_	_	_	_
+1-14	56-57	"	_	_	_	_
+
+#Text=Zuko says : " Give me the map ! " 
+2-1	58-62	Zuko	*	PER	*->2-1	*[2]
+2-2	63-67	says	_	_	_	_
+2-3	68-69	:	_	_	_	_
+2-4	70-71	"	_	_	_	_
+2-5	72-76	Give	_	_	_	_
+2-6	77-79	me	_	_	*->2-2	*[2]
+2-7	80-83	the	_	_	_	_
+2-8	84-87	map	_	_	_	_
+2-9	88-89	!	_	_	_	_
+2-10	90-91	"	_	_	_	_
+
+#Text=Iroh says : " Well , there have been multiple sightings of the Avatar , but he is impossible to track down . " 
+3-1	92-96	Iroh	*	PER	*->1-2	*[1]
+3-2	97-101	says	_	_	_	_
+3-3	102-103	:	_	_	_	_
+3-4	104-105	"	_	_	_	_
+3-5	106-110	Well	_	_	_	_
+3-6	111-112	,	_	_	_	_
+3-7	113-118	there	_	_	_	_
+3-8	119-123	have	_	_	_	_
+3-9	124-128	been	_	_	_	_
+3-10	129-137	multiple	_	_	_	_
+3-11	138-147	sightings	_	_	_	_
+3-12	148-150	of	_	_	_	_
+3-13	151-154	the	_	_	_	_
+3-14	155-161	Avatar	_	_	_	_
+3-15	162-163	,	_	_	_	_
+3-16	164-167	but	_	_	_	_
+3-17	168-170	he	_	_	*->2-3	*[2]
+3-18	171-173	is	_	_	_	_
+3-19	174-184	impossible	_	_	_	_
+3-20	185-187	to	_	_	_	_
+3-21	188-193	track	_	_	_	_
+3-22	194-198	down	_	_	_	_
+3-23	199-200	.	_	_	_	_
+3-24	201-202	"	_	_	_	_
+
+#Text=Zuko says : " How am I going to find him , Uncle ? 
+4-1	203-207	Zuko	*	PER	*->2-4	*[2]
+4-2	208-212	says	_	_	_	_
+4-3	213-214	:	_	_	_	_
+4-4	215-216	"	_	_	_	_
+4-5	217-220	How	_	_	_	_
+4-6	221-223	am	_	_	_	_
+4-7	224-225	I	_	_	*->2-5	*[2]
+4-8	226-231	going	_	_	_	_
+4-9	232-234	to	_	_	_	_
+4-10	235-239	find	_	_	_	_
+4-11	240-243	him	_	_	*->1-3	*[1]
+4-12	244-245	,	_	_	_	_
+4-13	246-251	Uncle	*	PER	_	_
+4-14	252-253	?	_	_	_	_
+
+#Text=He is clearly a master of evasive maneuvering . 
+5-1	254-256	He	_	_	*->1-4	*[1]
+5-2	257-259	is	_	_	_	_
+5-3	260-267	clearly	_	_	_	_
+5-4	268-269	a	_	_	*->1-5	*[1]
+5-5	270-276	master	_	_	*->1-5	*[1]
+5-6	277-279	of	_	_	*->1-5	*[1]
+5-7	280-287	evasive	_	_	*->1-5	*[1]
+5-8	288-299	maneuvering	_	_	*->1-5	*[1]
+5-9	300-301	.	_	_	_	_
+
+#Text=" Sokka says : " You have no idea where you 're going , do you ? 
+6-1	302-303	"	_	_	_	_
+6-2	304-309	Sokka	_	_	_	_
+6-3	310-314	says	_	_	_	_
+6-4	315-316	:	_	_	_	_
+6-5	317-318	"	_	_	_	_
+6-6	319-322	You	_	_	*->2-6	*[2]
+6-7	323-327	have	_	_	_	_
+6-8	328-330	no	_	_	_	_
+6-9	331-335	idea	_	_	_	_
+6-10	336-341	where	_	_	_	_
+6-11	342-345	you	_	_	*->2-7	*[2]
+6-12	346-349	're	_	_	_	_
+6-13	350-355	going	_	_	_	_
+6-14	356-357	,	_	_	_	_
+6-15	358-360	do	_	_	_	_
+6-16	361-364	you	_	_	*->2-8	*[2]
+6-17	365-366	?	_	_	_	_
+
+#Text=" 
+7-1	367-368	"	_	_	_	_

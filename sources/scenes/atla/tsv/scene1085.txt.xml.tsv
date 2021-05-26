@@ -1,0 +1,131 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Shop owner says : " If this is for a romantic picnic , may I suggest this lavender one ? " 
+1-1	0-4	Shop	_	_	_	_
+1-2	5-10	owner	*	PER	_	_
+1-3	11-15	says	_	_	_	_
+1-4	16-17	:	_	_	_	_
+1-5	18-19	"	_	_	_	_
+1-6	20-22	If	_	_	_	_
+1-7	23-27	this	_	_	_	_
+1-8	28-30	is	_	_	_	_
+1-9	31-34	for	_	_	_	_
+1-10	35-36	a	_	_	*->2-1	*[2]
+1-11	37-45	romantic	_	_	*->2-1	*[2]
+1-12	46-52	picnic	_	_	*->2-1	*[2]
+1-13	53-54	,	_	_	_	_
+1-14	55-58	may	_	_	_	_
+1-15	59-60	I	_	_	_	_
+1-16	61-68	suggest	_	_	_	_
+1-17	69-73	this	_	_	_	_
+1-18	74-82	lavender	_	_	_	_
+1-19	83-86	one	_	_	_	_
+1-20	87-88	?	_	_	_	_
+1-21	89-90	"	_	_	_	_
+
+#Text=Iroh says : " No , it 's not a romantic picnic , but it is a special occasion . 
+2-1	91-95	Iroh	*	PER	*->3-1	*[3]
+2-2	96-100	says	_	_	_	_
+2-3	101-102	:	_	_	_	_
+2-4	103-104	"	_	_	_	_
+2-5	105-107	No	_	_	_	_
+2-6	108-109	,	_	_	_	_
+2-7	110-112	it	_	_	*->1-3	*[1]
+2-8	113-115	's	_	_	_	_
+2-9	116-119	not	_	_	_	_
+2-10	120-121	a	_	_	*->2-2	*[2]
+2-11	122-130	romantic	_	_	*->2-2	*[2]
+2-12	131-137	picnic	_	_	*->2-2	*[2]
+2-13	138-139	,	_	_	_	_
+2-14	140-143	but	_	_	_	_
+2-15	144-146	it	_	_	*->1-4	*[1]
+2-16	147-149	is	_	_	_	_
+2-17	150-151	a	_	_	*->1-1	*[1]
+2-18	152-159	special	_	_	*->1-1	*[1]
+2-19	160-168	occasion	_	_	*->1-1	*[1]
+2-20	169-170	.	_	_	_	_
+
+#Text=The moon flower likes partial shade . 
+3-1	171-174	The	_	_	_	_
+3-2	175-179	moon	_	_	_	_
+3-3	180-186	flower	_	_	_	_
+3-4	187-192	likes	_	_	_	_
+3-5	193-200	partial	_	_	_	_
+3-6	201-206	shade	_	_	_	_
+3-7	207-208	.	_	_	_	_
+
+#Text=" Boy 's mother says : " Shhh . 
+4-1	209-210	"	_	_	_	_
+4-2	211-214	Boy	_	_	_	_
+4-3	215-217	's	_	_	_	_
+4-4	218-224	mother	_	_	_	_
+4-5	225-229	says	_	_	_	_
+4-6	230-231	:	_	_	_	_
+4-7	232-233	"	_	_	*->4-1	*[4]
+4-8	234-238	Shhh	_	_	*->4-1	*[4]
+4-9	239-240	.	_	_	_	_
+
+#Text=It 's okay . 
+5-1	241-243	It	_	_	*->4-2	*[4]
+5-2	244-246	's	_	_	_	_
+5-3	247-251	okay	_	_	_	_
+5-4	252-253	.	_	_	_	_
+
+#Text=Shhh . 
+6-1	254-258	Shhh	_	_	*->4-3	*[4]
+6-2	259-260	.	_	_	*->4-3	*[4]
+
+#Text=" Iroh says : " Leaves from the vine , falling so slow . 
+7-1	261-262	"	_	_	_	_
+7-2	263-267	Iroh	*	PER	*->3-2	*[3]
+7-3	268-272	says	_	_	_	_
+7-4	273-274	:	_	_	_	_
+7-5	275-276	"	_	_	_	_
+7-6	277-283	Leaves	_	_	_	_
+7-7	284-288	from	_	_	_	_
+7-8	289-292	the	_	_	_	_
+7-9	293-297	vine	_	_	_	_
+7-10	298-299	,	_	_	_	_
+7-11	300-307	falling	_	_	_	_
+7-12	308-310	so	_	_	_	_
+7-13	311-315	slow	_	_	_	_
+7-14	316-317	.	_	_	_	_
+
+#Text=Like fragile , tiny shells , drifting in the foam . 
+8-1	318-322	Like	_	_	_	_
+8-2	323-330	fragile	_	_	_	_
+8-3	331-332	,	_	_	_	_
+8-4	333-337	tiny	_	_	_	_
+8-5	338-344	shells	_	_	_	_
+8-6	345-346	,	_	_	_	_
+8-7	347-355	drifting	_	_	_	_
+8-8	356-358	in	_	_	_	_
+8-9	359-362	the	_	_	_	_
+8-10	363-367	foam	_	_	_	_
+8-11	368-369	.	_	_	_	_
+
+#Text=Little soldier boy , come marching home . 
+9-1	370-376	Little	_	_	_	_
+9-2	377-384	soldier	*	PER	_	_
+9-3	385-388	boy	_	_	_	_
+9-4	389-390	,	_	_	_	_
+9-5	391-395	come	_	_	_	_
+9-6	396-404	marching	_	_	_	_
+9-7	405-409	home	_	_	_	_
+9-8	410-411	.	_	_	_	_
+
+#Text=Brave soldier boy , comes marching home . 
+10-1	412-417	Brave	_	_	_	_
+10-2	418-425	soldier	*	PER	_	_
+10-3	426-429	boy	_	_	_	_
+10-4	430-431	,	_	_	_	_
+10-5	432-437	comes	_	_	_	_
+10-6	438-446	marching	_	_	_	_
+10-7	447-451	home	_	_	_	_
+10-8	452-453	.	_	_	_	_
+
+#Text=" 
+11-1	454-455	"	_	_	_	_

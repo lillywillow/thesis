@@ -1,0 +1,87 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Iroh says : " Good news for the Fire Lord . 
+1-1	0-4	Iroh	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	Good	_	_	_	_
+1-6	19-23	news	_	_	_	_
+1-7	24-27	for	_	_	_	_
+1-8	28-31	the	_	_	_	_
+1-9	32-36	Fire	_	_	_	_
+1-10	37-41	Lord	_	_	_	_
+1-11	42-43	.	_	_	_	_
+
+#Text=The Fire Nation 's greatest threat is just a little kid . 
+2-1	44-47	The	_	_	_	_
+2-2	48-52	Fire	_	_	_	_
+2-3	53-59	Nation	_	_	_	_
+2-4	60-62	's	_	_	_	_
+2-5	63-71	greatest	_	_	_	_
+2-6	72-78	threat	_	_	_	_
+2-7	79-81	is	_	_	_	_
+2-8	82-86	just	_	_	_	_
+2-9	87-88	a	_	_	_	_
+2-10	89-95	little	_	_	_	_
+2-11	96-99	kid	_	_	_	_
+2-12	100-101	.	_	_	_	_
+
+#Text=" Zuko says : " That " kid " , Uncle , just did this . 
+3-1	102-103	"	_	_	_	_
+3-2	104-108	Zuko	*	PER	*->2-1	*[2]
+3-3	109-113	says	_	_	_	_
+3-4	114-115	:	_	_	_	_
+3-5	116-117	"	_	_	_	_
+3-6	118-122	That	_	_	*->3-2	*[3]
+3-7	123-124	"	_	_	*->3-2	*[3]
+3-8	125-128	kid	_	_	*->3-2	*[3]
+3-9	129-130	"	_	_	*->3-2	*[3]
+3-10	131-132	,	_	_	_	_
+3-11	133-138	Uncle	*	PER	*->3-1	*[3]
+3-12	139-140	,	_	_	_	_
+3-13	141-145	just	_	_	_	_
+3-14	146-149	did	_	_	_	_
+3-15	150-154	this	_	_	*->4-1	*[4]
+3-16	155-156	.	_	_	_	_
+
+#Text=I wo n't underestimate him again . 
+4-1	157-158	I	_	_	*->2-2	*[2]
+4-2	159-161	wo	_	_	_	_
+4-3	162-165	n't	_	_	_	_
+4-4	166-179	underestimate	_	_	_	_
+4-5	180-183	him	_	_	*->3-3	*[3]
+4-6	184-189	again	_	_	_	_
+4-7	190-191	.	_	_	_	_
+
+#Text=Dig the ship out and follow them ! 
+5-1	192-195	Dig	_	_	_	_
+5-2	196-199	the	_	_	_	_
+5-3	200-204	ship	_	_	_	_
+5-4	205-208	out	_	_	_	_
+5-5	209-212	and	_	_	_	_
+5-6	213-219	follow	_	_	_	_
+5-7	220-224	them	_	_	*->4-2	*[4]
+5-8	225-226	!	_	_	_	_
+
+#Text=" Zuko says : " As soon as you 're done with that . 
+6-1	227-228	"	_	_	_	_
+6-2	229-233	Zuko	*	PER	*->2-3	*[2]
+6-3	234-238	says	_	_	_	_
+6-4	239-240	:	_	_	_	_
+6-5	241-242	"	_	_	_	_
+6-6	243-245	As	_	_	_	_
+6-7	246-250	soon	_	_	_	_
+6-8	251-253	as	_	_	_	_
+6-9	254-257	you	_	_	*->1-1	*[1]
+6-10	258-261	're	_	_	_	_
+6-11	262-266	done	_	_	_	_
+6-12	267-271	with	_	_	_	_
+6-13	272-276	that	_	_	*->1-2	*[1]
+6-14	277-278	.	_	_	_	_
+
+#Text=" 
+7-1	279-280	"	_	_	_	_

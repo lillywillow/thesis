@@ -1,0 +1,61 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Someone 's being attacked by a platypus bear ! " 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-21	Someone	_	_	_	_
+1-6	22-24	's	_	_	_	_
+1-7	25-30	being	_	_	_	_
+1-8	31-39	attacked	_	_	_	_
+1-9	40-42	by	_	_	_	_
+1-10	43-44	a	_	_	_	_
+1-11	45-53	platypus	_	_	_	_
+1-12	54-58	bear	_	_	_	_
+1-13	59-60	!	_	_	_	_
+1-14	61-62	"	_	_	_	_
+
+#Text=Calm man says : " Well , hello there ! 
+2-1	63-67	Calm	_	_	_	_
+2-2	68-71	man	_	_	_	_
+2-3	72-76	says	_	_	_	_
+2-4	77-78	:	_	_	_	_
+2-5	79-80	"	_	_	_	_
+2-6	81-85	Well	_	_	*->2-1	*[2]
+2-7	86-87	,	_	_	*->2-1	*[2]
+2-8	88-93	hello	_	_	*->2-1	*[2]
+2-9	94-99	there	_	_	*->2-1	*[2]
+2-10	100-101	!	_	_	_	_
+
+#Text=Nice day , is n't it ? 
+3-1	102-106	Nice	_	_	_	_
+3-2	107-110	day	_	_	_	_
+3-3	111-112	,	_	_	_	_
+3-4	113-115	is	_	_	_	_
+3-5	116-119	n't	_	_	_	_
+3-6	120-122	it	_	_	*->2-2	*[2]
+3-7	123-124	?	_	_	_	_
+
+#Text=" Aang says : " Make noise ! 
+4-1	125-126	"	_	_	_	_
+4-2	127-131	Aang	*	PER	*->1-2	*[1]
+4-3	132-136	says	_	_	_	_
+4-4	137-138	:	_	_	_	_
+4-5	139-140	"	_	_	_	_
+4-6	141-145	Make	_	_	_	_
+4-7	146-151	noise	_	_	_	_
+4-8	152-153	!	_	_	_	_
+
+#Text=He 'll run off ! 
+5-1	154-156	He	_	_	_	_
+5-2	157-160	'll	_	_	_	_
+5-3	161-164	run	_	_	_	_
+5-4	165-168	off	_	_	_	_
+5-5	169-170	!	_	_	_	_
+
+#Text=" 
+6-1	171-172	"	_	_	_	_

@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " Hey Toph , I wanted to apologize for earlier . 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	Hey	_	_	_	_
+1-6	20-24	Toph	_	_	*->2-1	*[2]
+1-7	25-26	,	_	_	_	_
+1-8	27-28	I	_	_	*->1-2	*[1]
+1-9	29-35	wanted	_	_	_	_
+1-10	36-38	to	_	_	_	_
+1-11	39-48	apologize	_	_	_	_
+1-12	49-52	for	_	_	_	_
+1-13	53-60	earlier	_	_	_	_
+1-14	61-62	.	_	_	_	_
+
+#Text=I think we 're all just a little tired and getting on each other 's nerves . 
+2-1	63-64	I	_	_	*->1-3	*[1]
+2-2	65-70	think	_	_	_	_
+2-3	71-73	we	_	_	_	_
+2-4	74-77	're	_	_	_	_
+2-5	78-81	all	_	_	_	_
+2-6	82-86	just	_	_	_	_
+2-7	87-88	a	_	_	_	_
+2-8	89-95	little	_	_	_	_
+2-9	96-101	tired	_	_	_	_
+2-10	102-105	and	_	_	_	_
+2-11	106-113	getting	_	_	_	_
+2-12	114-116	on	_	_	_	_
+2-13	117-121	each	_	_	_	_
+2-14	122-127	other	_	_	_	_
+2-15	128-130	's	_	_	_	_
+2-16	131-137	nerves	_	_	_	_
+2-17	138-139	.	_	_	_	_
+
+#Text=" Toph says : " Yeah , you do seem pretty tired . 
+3-1	140-141	"	_	_	_	_
+3-2	142-146	Toph	_	_	*->2-2	*[2]
+3-3	147-151	says	_	_	_	_
+3-4	152-153	:	_	_	_	_
+3-5	154-155	"	_	_	_	_
+3-6	156-160	Yeah	_	_	_	_
+3-7	161-162	,	_	_	_	_
+3-8	163-166	you	_	_	*->1-4	*[1]
+3-9	167-169	do	_	_	_	_
+3-10	170-174	seem	_	_	_	_
+3-11	175-181	pretty	_	_	_	_
+3-12	182-187	tired	_	_	_	_
+3-13	188-189	.	_	_	_	_
+
+#Text=" Katara says : " I meant all of us . 
+4-1	190-191	"	_	_	_	_
+4-2	192-198	Katara	*	PER	*->1-5	*[1]
+4-3	199-203	says	_	_	_	_
+4-4	204-205	:	_	_	_	_
+4-5	206-207	"	_	_	_	_
+4-6	208-209	I	_	_	*->1-6	*[1]
+4-7	210-215	meant	_	_	_	_
+4-8	216-219	all	_	_	_	_
+4-9	220-222	of	_	_	_	_
+4-10	223-225	us	_	_	_	_
+4-11	226-227	.	_	_	_	_
+
+#Text=" 
+5-1	228-229	"	_	_	_	_

@@ -1,0 +1,50 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Jinora says : " It 's like an awesome tree house ! 
+1-1	0-6	Jinora	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-18	It	_	_	_	_
+1-6	19-21	's	_	_	_	_
+1-7	22-26	like	_	_	_	_
+1-8	27-29	an	_	_	_	_
+1-9	30-37	awesome	_	_	_	_
+1-10	38-42	tree	_	_	_	_
+1-11	43-48	house	_	_	_	_
+1-12	49-50	!	_	_	_	_
+
+#Text=Wait , I 've read about this place . 
+2-1	51-55	Wait	_	_	_	_
+2-2	56-57	,	_	_	_	_
+2-3	58-59	I	_	_	*->1-2	*[1]
+2-4	60-63	've	_	_	_	_
+2-5	64-68	read	_	_	_	_
+2-6	69-74	about	_	_	_	_
+2-7	75-79	this	_	_	_	_
+2-8	80-85	place	_	_	_	_
+2-9	86-87	.	_	_	_	_
+
+#Text=Grandpa Aang came here . 
+3-1	88-95	Grandpa	_	_	_	_
+3-2	96-100	Aang	_	_	_	_
+3-3	101-105	came	_	_	_	_
+3-4	106-110	here	_	_	_	_
+3-5	111-112	.	_	_	_	_
+
+#Text=It 's Wan Shi Tong 's Spirit Library . 
+4-1	113-115	It	_	_	*->2-3	*[2]
+4-2	116-118	's	_	_	_	_
+4-3	119-122	Wan	*	PER	*->2-1	*[2]
+4-4	123-126	Shi	*	PER	*->2-1	*[2]
+4-5	127-131	Tong	*	PER	*->2-1	*[2]
+4-6	132-134	's	_	_	*->2-1	*[2]
+4-7	135-141	Spirit	_	_	*->2-1	*[2]
+4-8	142-149	Library	_	_	*->2-1	*[2]
+4-9	150-151	.	_	_	_	_
+
+#Text=" 
+5-1	152-153	"	_	_	_	_

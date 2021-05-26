@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Hakoda says : " Keep it up , we 're almost through ! " 
+1-1	0-6	Hakoda	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-20	Keep	_	_	_	_
+1-6	21-23	it	_	_	_	_
+1-7	24-26	up	_	_	_	_
+1-8	27-28	,	_	_	_	_
+1-9	29-31	we	_	_	_	_
+1-10	32-35	're	_	_	_	_
+1-11	36-42	almost	_	_	_	_
+1-12	43-50	through	_	_	_	_
+1-13	51-52	!	_	_	_	_
+1-14	53-54	"	_	_	_	_
+
+#Text=Hakoda says : " Everyone below deck ! 
+2-1	55-61	Hakoda	*	PER	*->1-2	*[1]
+2-2	62-66	says	_	_	_	_
+2-3	67-68	:	_	_	_	_
+2-4	69-70	"	_	_	_	_
+2-5	71-79	Everyone	_	_	*->2-1	*[2]
+2-6	80-85	below	_	_	*->2-1	*[2]
+2-7	86-90	deck	_	_	*->2-1	*[2]
+2-8	91-92	!	_	_	_	_
+
+#Text=Let 's hope your invention works . 
+3-1	93-96	Let	_	_	_	_
+3-2	97-99	's	_	_	*->2-2	*[2]
+3-3	100-104	hope	_	_	_	_
+3-4	105-109	your	_	_	_	_
+3-5	110-119	invention	_	_	_	_
+3-6	120-125	works	_	_	_	_
+3-7	126-127	.	_	_	_	_
+
+#Text=" 
+4-1	128-129	"	_	_	_	_

@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Pao says : " Well , you certainly look like official tea servers . 
+1-1	0-3	Pao	*	PER	_	_
+1-2	4-8	says	_	_	_	_
+1-3	9-10	:	_	_	_	_
+1-4	11-12	"	_	_	_	_
+1-5	13-17	Well	_	_	_	_
+1-6	18-19	,	_	_	_	_
+1-7	20-23	you	_	_	*->1-1	*[1]
+1-8	24-33	certainly	_	_	_	_
+1-9	34-38	look	_	_	_	_
+1-10	39-43	like	_	_	_	_
+1-11	44-52	official	_	_	_	_
+1-12	53-56	tea	_	_	_	_
+1-13	57-64	servers	_	_	_	_
+1-14	65-66	.	_	_	_	_
+
+#Text=How do you feel ? 
+2-1	67-70	How	_	_	_	_
+2-2	71-73	do	_	_	_	_
+2-3	74-77	you	_	_	*->1-2	*[1]
+2-4	78-82	feel	_	_	_	_
+2-5	83-84	?	_	_	_	_
+
+#Text=" 
+3-1	85-86	"	_	_	_	_

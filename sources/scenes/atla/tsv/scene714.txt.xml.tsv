@@ -1,0 +1,126 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " I ca n't believe I missed you . " 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-17	I	_	_	*->1-2	*[1]
+1-6	18-20	ca	_	_	_	_
+1-7	21-24	n't	_	_	_	_
+1-8	25-32	believe	_	_	_	_
+1-9	33-34	I	_	_	*->1-3	*[1]
+1-10	35-41	missed	_	_	_	_
+1-11	42-45	you	_	_	_	_
+1-12	46-47	.	_	_	_	_
+1-13	48-49	"	_	_	_	_
+
+#Text=Main Aang Appa Iroh Katara Momo Piandao Sokka Toph says : " Minor Fat Poon Weapons store shopkeeper " Sokka says : " So , what kind of trouble is Katara in ? " 
+2-1	50-54	Main	_	_	*->3-1	*[3]
+2-2	55-59	Aang	_	_	*->3-1	*[3]
+2-3	60-64	Appa	_	_	*->3-1	*[3]
+2-4	65-69	Iroh	*	PER	*->3-1	*[3]
+2-5	70-76	Katara	*	PER	*->3-1	*[3]
+2-6	77-81	Momo	*	PER	*->3-1	*[3]
+2-7	82-89	Piandao	*	PER	*->3-1	*[3]
+2-8	90-95	Sokka	*	PER	*->3-1	*[3]
+2-9	96-100	Toph	*	PER	*->3-1	*[3]
+2-10	101-105	says	_	_	_	_
+2-11	106-107	:	_	_	_	_
+2-12	108-109	"	_	_	_	_
+2-13	110-115	Minor	_	_	_	_
+2-14	116-119	Fat	_	_	_	_
+2-15	120-124	Poon	_	_	_	_
+2-16	125-132	Weapons	_	_	_	_
+2-17	133-138	store	_	_	_	_
+2-18	139-149	shopkeeper	*	PER	_	_
+2-19	150-151	"	_	_	_	_
+2-20	152-157	Sokka	_	_	*->4-1	*[4]
+2-21	158-162	says	_	_	_	_
+2-22	163-164	:	_	_	_	_
+2-23	165-166	"	_	_	_	_
+2-24	167-169	So	_	_	_	_
+2-25	170-171	,	_	_	_	_
+2-26	172-176	what	_	_	_	_
+2-27	177-181	kind	_	_	_	_
+2-28	182-184	of	_	_	_	_
+2-29	185-192	trouble	_	_	_	_
+2-30	193-195	is	_	_	_	_
+2-31	196-202	Katara	_	_	*->1-4	*[1]
+2-32	203-205	in	_	_	_	_
+2-33	206-207	?	_	_	_	_
+2-34	208-209	"	_	_	_	_
+
+#Text=Aang says : " I do n't know . 
+3-1	210-214	Aang	*	PER	*->3-2	*[3]
+3-2	215-219	says	_	_	_	_
+3-3	220-221	:	_	_	_	_
+3-4	222-223	"	_	_	_	_
+3-5	224-225	I	_	_	*->3-3	*[3]
+3-6	226-228	do	_	_	_	_
+3-7	229-232	n't	_	_	_	_
+3-8	233-237	know	_	_	_	_
+3-9	238-239	.	_	_	_	_
+
+#Text=In my vision , I just knew she needed help . 
+4-1	240-242	In	_	_	_	_
+4-2	243-245	my	_	_	*->3-4	*[3]
+4-3	246-252	vision	_	_	_	_
+4-4	253-254	,	_	_	_	_
+4-5	255-256	I	_	_	*->3-5	*[3]
+4-6	257-261	just	_	_	_	_
+4-7	262-266	knew	_	_	_	_
+4-8	267-270	she	_	_	*->4-2	*[4]
+4-9	271-277	needed	_	_	_	_
+4-10	278-282	help	_	_	_	_
+4-11	283-284	.	_	_	_	_
+
+#Text=" Sokka says : " It would be nice if your Avatar powers could be just a little more specific from time to time . 
+5-1	285-286	"	_	_	_	_
+5-2	287-292	Sokka	_	_	*->4-3	*[4]
+5-3	293-297	says	_	_	_	_
+5-4	298-299	:	_	_	_	_
+5-5	300-301	"	_	_	_	_
+5-6	302-304	It	_	_	_	_
+5-7	305-310	would	_	_	_	_
+5-8	311-313	be	_	_	_	_
+5-9	314-318	nice	_	_	_	_
+5-10	319-321	if	_	_	_	_
+5-11	322-326	your	_	_	*->3-6	*[3]
+5-12	327-333	Avatar	_	_	*->5-1	*[5]
+5-13	334-340	powers	_	_	*->5-1	*[5]
+5-14	341-346	could	_	_	_	_
+5-15	347-349	be	_	_	_	_
+5-16	350-354	just	_	_	_	_
+5-17	355-356	a	_	_	_	_
+5-18	357-363	little	_	_	_	_
+5-19	364-368	more	_	_	_	_
+5-20	369-377	specific	_	_	_	_
+5-21	378-382	from	_	_	_	_
+5-22	383-387	time	_	_	*->2-1	*[2]
+5-23	388-390	to	_	_	_	_
+5-24	391-395	time	_	_	*->2-2	*[2]
+5-25	396-397	.	_	_	_	_
+
+#Text=What is that ? 
+6-1	398-402	What	_	_	_	_
+6-2	403-405	is	_	_	_	_
+6-3	406-410	that	_	_	*->5-2	*[5]
+6-4	411-412	?	_	_	_	_
+
+#Text=" Sokka says : " Need a ride ? 
+7-1	413-414	"	_	_	_	_
+7-2	415-420	Sokka	_	_	*->4-4	*[4]
+7-3	421-425	says	_	_	_	_
+7-4	426-427	:	_	_	_	_
+7-5	428-429	"	_	_	_	_
+7-6	430-434	Need	_	_	_	_
+7-7	435-436	a	_	_	_	_
+7-8	437-441	ride	_	_	_	_
+7-9	442-443	?	_	_	_	_
+
+#Text=" 
+8-1	444-445	"	_	_	_	_

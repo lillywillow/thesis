@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Ozai says : " You 're weak , just like the rest of your people ! 
+1-1	0-4	Ozai	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	You	_	_	*->2-1	*[2]
+1-6	18-21	're	_	_	_	_
+1-7	22-26	weak	_	_	_	_
+1-8	27-28	,	_	_	_	_
+1-9	29-33	just	_	_	_	_
+1-10	34-38	like	_	_	_	_
+1-11	39-42	the	_	_	_	_
+1-12	43-47	rest	_	_	_	_
+1-13	48-50	of	_	_	_	_
+1-14	51-55	your	_	_	*->2-2	*[2]
+1-15	56-62	people	_	_	*->3-1	*[3]
+1-16	63-64	!	_	_	_	_
+
+#Text=They did not deserve to exist in this world ... in my world ! 
+2-1	65-69	They	_	_	*->3-2	*[3]
+2-2	70-73	did	_	_	_	_
+2-3	74-77	not	_	_	_	_
+2-4	78-85	deserve	_	_	_	_
+2-5	86-88	to	_	_	_	_
+2-6	89-94	exist	_	_	_	_
+2-7	95-97	in	_	_	_	_
+2-8	98-102	this	_	_	*->4-1	*[4]
+2-9	103-108	world	_	_	*->4-1	*[4]
+2-10	109-112	...	_	_	_	_
+2-11	113-115	in	_	_	_	_
+2-12	116-118	my	_	_	*->1-2	*[1]
+2-13	119-124	world	_	_	*->4-2	*[4]
+2-14	125-126	!	_	_	_	_
+
+#Text=Prepare to join them . 
+3-1	127-134	Prepare	_	_	_	_
+3-2	135-137	to	_	_	_	_
+3-3	138-142	join	_	_	_	_
+3-4	143-147	them	_	_	*->3-3	*[3]
+3-5	148-149	.	_	_	_	_
+
+#Text=Prepare to die ! 
+4-1	150-157	Prepare	_	_	_	_
+4-2	158-160	to	_	_	_	_
+4-3	161-164	die	_	_	_	_
+4-4	165-166	!	_	_	_	_
+
+#Text=" 
+5-1	167-168	"	_	_	_	_

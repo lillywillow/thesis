@@ -1,0 +1,109 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Zuko says : " He 's paralyzed . " 
+1-1	0-4	Zuko	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-16	He	_	_	_	_
+1-6	17-19	's	_	_	_	_
+1-7	20-29	paralyzed	_	_	_	_
+1-8	30-31	.	_	_	_	_
+1-9	32-33	"	_	_	_	_
+
+#Text=June says : " Only temporarily . 
+2-1	34-38	June	_	_	*->2-1	*[2]
+2-2	39-43	says	_	_	_	_
+2-3	44-45	:	_	_	_	_
+2-4	46-47	"	_	_	_	_
+2-5	48-52	Only	_	_	_	_
+2-6	53-64	temporarily	_	_	_	_
+2-7	65-66	.	_	_	_	_
+
+#Text=The toxins will wear off in about an hour . 
+3-1	67-70	The	_	_	_	_
+3-2	71-77	toxins	_	_	_	_
+3-3	78-82	will	_	_	_	_
+3-4	83-87	wear	_	_	_	_
+3-5	88-91	off	_	_	_	_
+3-6	92-94	in	_	_	_	_
+3-7	95-100	about	_	_	_	_
+3-8	101-103	an	_	_	_	_
+3-9	104-108	hour	_	_	_	_
+3-10	109-110	.	_	_	_	_
+
+#Text=But by then , he 'll be in jail and I 'll have my money . 
+4-1	111-114	But	_	_	_	_
+4-2	115-117	by	_	_	_	_
+4-3	118-122	then	_	_	_	_
+4-4	123-124	,	_	_	_	_
+4-5	125-127	he	_	_	*->1-2	*[1]
+4-6	128-131	'll	_	_	_	_
+4-7	132-134	be	_	_	_	_
+4-8	135-137	in	_	_	_	_
+4-9	138-142	jail	_	_	_	_
+4-10	143-146	and	_	_	_	_
+4-11	147-148	I	_	_	*->2-2	*[2]
+4-12	149-152	'll	_	_	_	_
+4-13	153-157	have	_	_	_	_
+4-14	158-160	my	_	_	*->2-3	*[2]
+4-15	161-166	money	_	_	_	_
+4-16	167-168	.	_	_	_	_
+
+#Text=" Zuko says : " But how did you find him on my ship ? 
+5-1	169-170	"	_	_	_	_
+5-2	171-175	Zuko	*	PER	*->1-3	*[1]
+5-3	176-180	says	_	_	_	_
+5-4	181-182	:	_	_	_	_
+5-5	183-184	"	_	_	_	_
+5-6	185-188	But	_	_	_	_
+5-7	189-192	how	_	_	_	_
+5-8	193-196	did	_	_	_	_
+5-9	197-200	you	_	_	*->2-4	*[2]
+5-10	201-205	find	_	_	_	_
+5-11	206-209	him	_	_	_	_
+5-12	210-212	on	_	_	_	_
+5-13	213-215	my	_	_	*->1-4	*[1]
+5-14	216-220	ship	_	_	_	_
+5-15	221-222	?	_	_	_	_
+
+#Text=" June says : " My shirshu can smell a rat a continent away . 
+6-1	223-224	"	_	_	_	_
+6-2	225-229	June	_	_	*->2-5	*[2]
+6-3	230-234	says	_	_	_	_
+6-4	235-236	:	_	_	_	_
+6-5	237-238	"	_	_	_	_
+6-6	239-241	My	_	_	*->2-6	*[2]
+6-7	242-249	shirshu	_	_	_	_
+6-8	250-253	can	_	_	_	_
+6-9	254-259	smell	_	_	_	_
+6-10	260-261	a	_	_	_	_
+6-11	262-265	rat	_	_	_	_
+6-12	266-267	a	_	_	_	_
+6-13	268-277	continent	_	_	_	_
+6-14	278-282	away	_	_	_	_
+6-15	283-284	.	_	_	_	_
+
+#Text=" Iroh says : " Well , I 'm impressed . 
+7-1	285-286	"	_	_	_	_
+7-2	287-291	Iroh	*	PER	*->3-1	*[3]
+7-3	292-296	says	_	_	_	_
+7-4	297-298	:	_	_	_	_
+7-5	299-300	"	_	_	_	_
+7-6	301-305	Well	_	_	_	_
+7-7	306-307	,	_	_	_	_
+7-8	308-309	I	_	_	*->3-2	*[3]
+7-9	310-312	'm	_	_	_	_
+7-10	313-322	impressed	_	_	_	_
+7-11	323-324	.	_	_	_	_
+
+#Text=Very impressed . 
+8-1	325-329	Very	_	_	_	_
+8-2	330-339	impressed	_	_	_	_
+8-3	340-341	.	_	_	_	_
+
+#Text=" 
+9-1	342-343	"	_	_	_	_

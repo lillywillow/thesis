@@ -1,0 +1,99 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sokka says : " You did everything you could , and now we need to do everything we can to get him back . 
+1-1	0-5	Sokka	_	_	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	You	_	_	*->2-1	*[2]
+1-6	19-22	did	_	_	_	_
+1-7	23-33	everything	_	_	_	_
+1-8	34-37	you	_	_	*->2-2	*[2]
+1-9	38-43	could	_	_	_	_
+1-10	44-45	,	_	_	_	_
+1-11	46-49	and	_	_	_	_
+1-12	50-53	now	_	_	_	_
+1-13	54-56	we	_	_	*->4-1	*[4]
+1-14	57-61	need	_	_	_	_
+1-15	62-64	to	_	_	_	_
+1-16	65-67	do	_	_	_	_
+1-17	68-78	everything	_	_	_	_
+1-18	79-81	we	_	_	*->4-2	*[4]
+1-19	82-85	can	_	_	_	_
+1-20	86-88	to	_	_	_	_
+1-21	89-92	get	_	_	_	_
+1-22	93-96	him	_	_	_	_
+1-23	97-101	back	_	_	_	_
+1-24	102-103	.	_	_	_	_
+
+#Text=Zuko ca n't have gotten far . 
+2-1	104-108	Zuko	*	PER	*->5-1	*[5]
+2-2	109-111	ca	_	_	_	_
+2-3	112-115	n't	_	_	_	_
+2-4	116-120	have	_	_	_	_
+2-5	121-127	gotten	_	_	_	_
+2-6	128-131	far	_	_	_	_
+2-7	132-133	.	_	_	_	_
+
+#Text=We 'll find him . 
+3-1	134-136	We	_	_	*->4-3	*[4]
+3-2	137-140	'll	_	_	_	_
+3-3	141-145	find	_	_	_	_
+3-4	146-149	him	_	_	*->5-2	*[5]
+3-5	150-151	.	_	_	_	_
+
+#Text=Aang 's gon na be fine . 
+4-1	152-156	Aang	*	PER	*->6-1	*[6]
+4-2	157-159	's	_	_	*->6-1	*[6]
+4-3	160-163	gon	_	_	_	_
+4-4	164-166	na	_	_	_	_
+4-5	167-169	be	_	_	_	_
+4-6	170-174	fine	_	_	_	_
+4-7	175-176	.	_	_	_	_
+
+#Text=" Katara says : " Okay . 
+5-1	177-178	"	_	_	_	_
+5-2	179-185	Katara	*	PER	_	_
+5-3	186-190	says	_	_	_	_
+5-4	191-192	:	_	_	_	_
+5-5	193-194	"	_	_	_	_
+5-6	195-199	Okay	_	_	_	_
+5-7	200-201	.	_	_	_	_
+
+#Text=It 's all right . 
+6-1	202-204	It	_	_	_	_
+6-2	205-207	's	_	_	_	_
+6-3	208-211	all	_	_	_	_
+6-4	212-217	right	_	_	_	_
+6-5	218-219	.	_	_	_	_
+
+#Text=You stay here , Momo , in case Aang comes back . 
+7-1	220-223	You	_	_	*->1-2	*[1]
+7-2	224-228	stay	_	_	_	_
+7-3	229-233	here	_	_	_	_
+7-4	234-235	,	_	_	_	_
+7-5	236-240	Momo	*	PER	_	_
+7-6	241-242	,	_	_	_	_
+7-7	243-245	in	_	_	_	_
+7-8	246-250	case	_	_	_	_
+7-9	251-255	Aang	*	PER	*->6-2	*[6]
+7-10	256-261	comes	_	_	_	_
+7-11	262-266	back	_	_	_	_
+7-12	267-268	.	_	_	_	_
+
+#Text=" Sokka says : " Yip , yip . 
+8-1	269-270	"	_	_	_	_
+8-2	271-276	Sokka	_	_	*->1-3	*[1]
+8-3	277-281	says	_	_	_	_
+8-4	282-283	:	_	_	_	_
+8-5	284-285	"	_	_	_	_
+8-6	286-289	Yip	_	_	*->3-1	*[3]
+8-7	290-291	,	_	_	_	_
+8-8	292-295	yip	_	_	*->3-2	*[3]
+8-9	296-297	.	_	_	_	_
+
+#Text=" 
+9-1	298-299	"	_	_	_	_

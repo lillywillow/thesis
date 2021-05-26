@@ -1,0 +1,35 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Jet says : " You see that ?! 
+1-1	0-3	Jet	_	_	_	_
+1-2	4-8	says	_	_	_	_
+1-3	9-10	:	_	_	_	_
+1-4	11-12	"	_	_	_	_
+1-5	13-16	You	_	_	_	_
+1-6	17-20	see	_	_	_	_
+1-7	21-25	that	_	_	_	_
+1-8	26-28	?!	_	_	_	_
+
+#Text=The Fire Nation is trying to silence me . 
+2-1	29-32	The	_	_	*->1-1	*[1]
+2-2	33-37	Fire	_	_	*->1-1	*[1]
+2-3	38-44	Nation	_	_	*->1-1	*[1]
+2-4	45-47	is	_	_	_	_
+2-5	48-54	trying	_	_	_	_
+2-6	55-57	to	_	_	_	_
+2-7	58-65	silence	_	_	_	_
+2-8	66-68	me	_	_	_	_
+2-9	69-70	.	_	_	_	_
+
+#Text=It 'll never happen . 
+3-1	71-73	It	_	_	*->1-2	*[1]
+3-2	74-77	'll	_	_	_	_
+3-3	78-83	never	_	_	_	_
+3-4	84-90	happen	_	_	_	_
+3-5	91-92	.	_	_	_	_
+
+#Text=" 
+4-1	93-94	"	_	_	_	_

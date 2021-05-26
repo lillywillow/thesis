@@ -1,0 +1,115 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Kuruk says : " I was arrogant , proud , and boastful ... I never thought about settling down until I met the love of my life . 
+1-1	0-5	Kuruk	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-16	I	_	_	*->1-2	*[1]
+1-6	17-20	was	_	_	_	_
+1-7	21-29	arrogant	_	_	_	_
+1-8	30-31	,	_	_	_	_
+1-9	32-37	proud	_	_	_	_
+1-10	38-39	,	_	_	_	_
+1-11	40-43	and	_	_	_	_
+1-12	44-52	boastful	_	_	_	_
+1-13	53-56	...	_	_	_	_
+1-14	57-58	I	_	_	*->1-3	*[1]
+1-15	59-64	never	_	_	_	_
+1-16	65-72	thought	_	_	_	_
+1-17	73-78	about	_	_	_	_
+1-18	79-87	settling	_	_	_	_
+1-19	88-92	down	_	_	_	_
+1-20	93-98	until	_	_	_	_
+1-21	99-100	I	_	_	*->1-4	*[1]
+1-22	101-104	met	_	_	_	_
+1-23	105-108	the	_	_	_	_
+1-24	109-113	love	_	_	_	_
+1-25	114-116	of	_	_	_	_
+1-26	117-119	my	_	_	*->1-5	*[1]
+1-27	120-124	life	_	_	*->2-1	*[2]
+1-28	125-126	.	_	_	_	_
+
+#Text=We met during the New Moon Celebration , when the sister tribes would come together as one . 
+2-1	127-129	We	_	_	_	_
+2-2	130-133	met	_	_	_	_
+2-3	134-140	during	_	_	_	_
+2-4	141-144	the	_	_	_	_
+2-5	145-148	New	_	_	*->3-1	*[3]
+2-6	149-153	Moon	_	_	*->3-1	*[3]
+2-7	154-165	Celebration	_	_	*->3-1	*[3]
+2-8	166-167	,	_	_	_	_
+2-9	168-172	when	_	_	_	_
+2-10	173-176	the	_	_	_	_
+2-11	177-183	sister	_	_	_	_
+2-12	184-190	tribes	_	_	_	_
+2-13	191-196	would	_	_	_	_
+2-14	197-201	come	_	_	_	_
+2-15	202-210	together	_	_	_	_
+2-16	211-213	as	_	_	_	_
+2-17	214-217	one	_	_	_	_
+2-18	218-219	.	_	_	_	_
+
+#Text=It was love at first sight . 
+3-1	220-222	It	_	_	*->3-2	*[3]
+3-2	223-226	was	_	_	_	_
+3-3	227-231	love	_	_	*->3-3	*[3]
+3-4	232-234	at	_	_	*->3-3	*[3]
+3-5	235-240	first	_	_	*->3-3	*[3]
+3-6	241-246	sight	_	_	*->3-3	*[3]
+3-7	247-248	.	_	_	_	_
+
+#Text=Her name was Ummi . 
+4-1	249-252	Her	_	_	_	_
+4-2	253-257	name	_	_	_	_
+4-3	258-261	was	_	_	_	_
+4-4	262-266	Ummi	*	PER	_	_
+4-5	267-268	.	_	_	_	_
+
+#Text=She was from the Southern Tribe . 
+5-1	269-272	She	_	_	_	_
+5-2	273-276	was	_	_	_	_
+5-3	277-281	from	_	_	_	_
+5-4	282-285	the	_	_	_	_
+5-5	286-294	Southern	_	_	_	_
+5-6	295-300	Tribe	_	_	_	_
+5-7	301-302	.	_	_	_	_
+
+#Text=And she was the most beautiful woman I 'd ever seen . 
+6-1	303-306	And	_	_	_	_
+6-2	307-310	she	_	_	*->4-4	*[4]
+6-3	311-314	was	_	_	_	_
+6-4	315-318	the	_	_	*->4-1	*[4]
+6-5	319-323	most	_	_	*->4-1	*[4]
+6-6	324-333	beautiful	_	_	*->4-1	*[4]
+6-7	334-339	woman	_	_	*->4-1	*[4]
+6-8	340-341	I	_	_	*->1-6	*[1]
+6-9	342-344	'd	_	_	*->4-1	*[4]
+6-10	345-349	ever	_	_	*->4-1	*[4]
+6-11	350-354	seen	_	_	*->4-1	*[4]
+6-12	355-356	.	_	_	_	_
+
+#Text=With Ummi in my life , I decided to change my irresponsible ways and settle down . 
+7-1	357-361	With	_	_	_	_
+7-2	362-366	Ummi	*	PER	_	_
+7-3	367-369	in	_	_	_	_
+7-4	370-372	my	_	_	*->1-7	*[1]
+7-5	373-377	life	_	_	*->2-2	*[2]
+7-6	378-379	,	_	_	_	_
+7-7	380-381	I	_	_	*->1-8	*[1]
+7-8	382-389	decided	_	_	_	_
+7-9	390-392	to	_	_	_	_
+7-10	393-399	change	_	_	_	_
+7-11	400-402	my	_	_	*->1-9	*[1]
+7-12	403-416	irresponsible	_	_	_	_
+7-13	417-421	ways	_	_	_	_
+7-14	422-425	and	_	_	_	_
+7-15	426-432	settle	_	_	_	_
+7-16	433-437	down	_	_	_	_
+7-17	438-439	.	_	_	_	_
+
+#Text=" 
+8-1	440-441	"	_	_	_	_

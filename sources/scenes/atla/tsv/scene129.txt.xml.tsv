@@ -1,0 +1,49 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Roku says : " Sozin ! 
+1-1	0-4	Roku	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-19	Sozin	_	_	_	_
+1-6	20-21	!	_	_	_	_
+
+#Text=Or should I say , Fire Lord ! 
+2-1	22-24	Or	_	_	_	_
+2-2	25-31	should	_	_	_	_
+2-3	32-33	I	_	_	*->1-2	*[1]
+2-4	34-37	say	_	_	_	_
+2-5	38-39	,	_	_	_	_
+2-6	40-44	Fire	_	_	_	_
+2-7	45-49	Lord	_	_	_	_
+2-8	50-51	!	_	_	_	_
+
+#Text=" Sozin says : " Customarily , my subjects bow before greeting me . 
+3-1	52-53	"	_	_	_	_
+3-2	54-59	Sozin	*	PER	*->2-1	*[2]
+3-3	60-64	says	_	_	_	_
+3-4	65-66	:	_	_	_	_
+3-5	67-68	"	_	_	_	_
+3-6	69-80	Customarily	_	_	_	_
+3-7	81-82	,	_	_	_	_
+3-8	83-85	my	_	_	*->2-3	*[2]
+3-9	86-94	subjects	_	_	_	_
+3-10	95-98	bow	_	_	_	_
+3-11	99-105	before	_	_	_	_
+3-12	106-114	greeting	_	_	_	_
+3-13	115-117	me	_	_	*->2-4	*[2]
+3-14	118-119	.	_	_	_	_
+
+#Text=But you 're the exception . 
+4-1	120-123	But	_	_	_	_
+4-2	124-127	you	_	_	*->1-3	*[1]
+4-3	128-131	're	_	_	_	_
+4-4	132-135	the	_	_	_	_
+4-5	136-145	exception	_	_	_	_
+4-6	146-147	.	_	_	_	_
+
+#Text=" 
+5-1	148-149	"	_	_	_	_

@@ -1,0 +1,109 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " Thanks for letting us stay here tonight . 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-22	Thanks	_	_	_	_
+1-6	23-26	for	_	_	_	_
+1-7	27-34	letting	_	_	_	_
+1-8	35-37	us	_	_	_	_
+1-9	38-42	stay	_	_	_	_
+1-10	43-47	here	_	_	_	_
+1-11	48-55	tonight	_	_	_	_
+1-12	56-57	.	_	_	_	_
+
+#Text=You have a lovely inn . 
+2-1	58-61	You	_	_	_	_
+2-2	62-66	have	_	_	_	_
+2-3	67-68	a	_	_	_	_
+2-4	69-75	lovely	_	_	_	_
+2-5	76-79	inn	_	_	_	_
+2-6	80-81	.	_	_	_	_
+
+#Text=" Hama says : " Are n't you sweet ? 
+3-1	82-83	"	_	_	_	_
+3-2	84-88	Hama	*	PER	_	_
+3-3	89-93	says	_	_	_	_
+3-4	94-95	:	_	_	_	_
+3-5	96-97	"	_	_	_	_
+3-6	98-101	Are	_	_	_	_
+3-7	102-105	n't	_	_	_	_
+3-8	106-109	you	_	_	*->1-2	*[1]
+3-9	110-115	sweet	_	_	_	_
+3-10	116-117	?	_	_	_	_
+
+#Text=You know you should be careful . 
+4-1	118-121	You	_	_	*->1-3	*[1]
+4-2	122-126	know	_	_	_	_
+4-3	127-130	you	_	_	*->1-4	*[1]
+4-4	131-137	should	_	_	_	_
+4-5	138-140	be	_	_	_	_
+4-6	141-148	careful	_	_	_	_
+4-7	149-150	.	_	_	_	_
+
+#Text=People have been disappearing in those woods you were camping in . 
+5-1	151-157	People	_	_	*->2-1	*[2]
+5-2	158-162	have	_	_	_	_
+5-3	163-167	been	_	_	_	_
+5-4	168-180	disappearing	_	_	_	_
+5-5	181-183	in	_	_	_	_
+5-6	184-189	those	_	_	_	_
+5-7	190-195	woods	_	_	_	_
+5-8	196-199	you	_	_	*->1-5	*[1]
+5-9	200-204	were	_	_	_	_
+5-10	205-212	camping	_	_	_	_
+5-11	213-215	in	_	_	_	_
+5-12	216-217	.	_	_	_	_
+
+#Text=" Sokka says : " What do you mean " disappearing " ? 
+6-1	218-219	"	_	_	_	_
+6-2	220-225	Sokka	_	_	_	_
+6-3	226-230	says	_	_	_	_
+6-4	231-232	:	_	_	_	_
+6-5	233-234	"	_	_	_	_
+6-6	235-239	What	_	_	_	_
+6-7	240-242	do	_	_	_	_
+6-8	243-246	you	_	_	_	_
+6-9	247-251	mean	_	_	_	_
+6-10	252-253	"	_	_	_	_
+6-11	254-266	disappearing	_	_	_	_
+6-12	267-268	"	_	_	_	_
+6-13	269-270	?	_	_	_	_
+
+#Text=" Hama says : " When the moon turns full , people walk in and they do n't come out . 
+7-1	271-272	"	_	_	_	_
+7-2	273-277	Hama	*	PER	_	_
+7-3	278-282	says	_	_	_	_
+7-4	283-284	:	_	_	_	_
+7-5	285-286	"	_	_	_	_
+7-6	287-291	When	_	_	_	_
+7-7	292-295	the	_	_	_	_
+7-8	296-300	moon	_	_	_	_
+7-9	301-306	turns	_	_	_	_
+7-10	307-311	full	_	_	_	_
+7-11	312-313	,	_	_	_	_
+7-12	314-320	people	_	_	*->2-2	*[2]
+7-13	321-325	walk	_	_	_	_
+7-14	326-328	in	_	_	_	_
+7-15	329-332	and	_	_	_	_
+7-16	333-337	they	_	_	*->2-3	*[2]
+7-17	338-340	do	_	_	_	_
+7-18	341-344	n't	_	_	_	_
+7-19	345-349	come	_	_	_	_
+7-20	350-353	out	_	_	_	_
+7-21	354-355	.	_	_	_	_
+
+#Text=Who wants more tea ? 
+8-1	356-359	Who	_	_	_	_
+8-2	360-365	wants	_	_	_	_
+8-3	366-370	more	_	_	_	_
+8-4	371-374	tea	_	_	_	_
+8-5	375-376	?	_	_	_	_
+
+#Text=" 
+9-1	377-378	"	_	_	_	_

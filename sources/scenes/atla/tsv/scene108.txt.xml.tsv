@@ -1,0 +1,25 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " There it is . 
+1-1	0-4	Aang	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-19	There	_	_	_	_
+1-6	20-22	it	_	_	_	_
+1-7	23-25	is	_	_	_	_
+1-8	26-27	.	_	_	_	_
+
+#Text=That 's Roku 's home . 
+2-1	28-32	That	_	_	*->1-3	*[1]
+2-2	33-35	's	_	_	_	_
+2-3	36-40	Roku	*	PER	*->1-1	*[1]
+2-4	41-43	's	_	_	*->1-1	*[1]
+2-5	44-48	home	_	_	*->1-1	*[1]
+2-6	49-50	.	_	_	_	_
+
+#Text=" 
+3-1	51-52	"	_	_	_	_

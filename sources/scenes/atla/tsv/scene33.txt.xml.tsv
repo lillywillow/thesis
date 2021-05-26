@@ -1,0 +1,58 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " I 'll never forget the day the monks told me I was the Avatar . 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-15	I	_	_	*->1-2	*[1]
+1-6	16-19	'll	_	_	_	_
+1-7	20-25	never	_	_	_	_
+1-8	26-32	forget	_	_	_	_
+1-9	33-36	the	_	_	_	_
+1-10	37-40	day	_	_	_	_
+1-11	41-44	the	_	_	_	_
+1-12	45-50	monks	_	_	_	_
+1-13	51-55	told	_	_	_	_
+1-14	56-58	me	_	_	*->1-3	*[1]
+1-15	59-60	I	_	_	*->1-4	*[1]
+1-16	61-64	was	_	_	_	_
+1-17	65-68	the	_	_	_	_
+1-18	69-75	Avatar	_	_	_	_
+1-19	76-77	.	_	_	_	_
+
+#Text=I was playing with some other kids just outside the South Wall . 
+2-1	78-79	I	_	_	*->1-5	*[1]
+2-2	80-83	was	_	_	_	_
+2-3	84-91	playing	_	_	_	_
+2-4	92-96	with	_	_	_	_
+2-5	97-101	some	_	_	*->2-1	*[2]
+2-6	102-107	other	_	_	*->2-1	*[2]
+2-7	108-112	kids	_	_	*->2-1	*[2]
+2-8	113-117	just	_	_	_	_
+2-9	118-125	outside	_	_	_	_
+2-10	126-129	the	_	_	_	_
+2-11	130-135	South	_	_	_	_
+2-12	136-140	Wall	_	_	_	_
+2-13	141-142	.	_	_	_	_
+
+#Text=I was trying to teach them how to do the air scooter . 
+3-1	143-144	I	_	_	*->1-6	*[1]
+3-2	145-148	was	_	_	_	_
+3-3	149-155	trying	_	_	_	_
+3-4	156-158	to	_	_	_	_
+3-5	159-164	teach	_	_	_	_
+3-6	165-169	them	_	_	*->2-2	*[2]
+3-7	170-173	how	_	_	_	_
+3-8	174-176	to	_	_	_	_
+3-9	177-179	do	_	_	_	_
+3-10	180-183	the	_	_	_	_
+3-11	184-187	air	_	_	_	_
+3-12	188-195	scooter	_	_	_	_
+3-13	196-197	.	_	_	_	_
+
+#Text=" 
+4-1	198-199	"	_	_	_	_

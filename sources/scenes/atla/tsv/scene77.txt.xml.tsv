@@ -1,0 +1,89 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " Are you all right ? " 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	Are	_	_	_	_
+1-6	20-23	you	_	_	_	_
+1-7	24-27	all	_	_	_	_
+1-8	28-33	right	_	_	_	_
+1-9	34-35	?	_	_	_	_
+1-10	36-37	"	_	_	_	_
+
+#Text=Aang says : " No , I 'm not ! 
+2-1	38-42	Aang	*	PER	*->2-1	*[2]
+2-2	43-47	says	_	_	_	_
+2-3	48-49	:	_	_	_	_
+2-4	50-51	"	_	_	_	_
+2-5	52-54	No	_	_	_	_
+2-6	55-56	,	_	_	_	_
+2-7	57-58	I	_	_	*->2-2	*[2]
+2-8	59-61	'm	_	_	_	_
+2-9	62-65	not	_	_	_	_
+2-10	66-67	!	_	_	_	_
+
+#Text=I hate this play ! 
+3-1	68-69	I	_	_	*->2-3	*[2]
+3-2	70-74	hate	_	_	_	_
+3-3	75-79	this	_	_	*->3-1	*[3]
+3-4	80-84	play	_	_	*->3-1	*[3]
+3-5	85-86	!	_	_	_	_
+
+#Text=" Katara says : " I know it 's upsetting , but it sounds like you 're overreacting . 
+4-1	87-88	"	_	_	_	_
+4-2	89-95	Katara	*	PER	*->1-2	*[1]
+4-3	96-100	says	_	_	_	_
+4-4	101-102	:	_	_	_	_
+4-5	103-104	"	_	_	_	_
+4-6	105-106	I	_	_	*->1-3	*[1]
+4-7	107-111	know	_	_	_	_
+4-8	112-114	it	_	_	*->3-2	*[3]
+4-9	115-117	's	_	_	_	_
+4-10	118-127	upsetting	_	_	_	_
+4-11	128-129	,	_	_	_	_
+4-12	130-133	but	_	_	_	_
+4-13	134-136	it	_	_	*->3-3	*[3]
+4-14	137-143	sounds	_	_	_	_
+4-15	144-148	like	_	_	_	_
+4-16	149-152	you	_	_	*->2-4	*[2]
+4-17	153-156	're	_	_	_	_
+4-18	157-169	overreacting	_	_	_	_
+4-19	170-171	.	_	_	_	_
+
+#Text=" Aang says : " Overreacting ? 
+5-1	172-173	"	_	_	_	_
+5-2	174-178	Aang	*	PER	*->2-5	*[2]
+5-3	179-183	says	_	_	_	_
+5-4	184-185	:	_	_	_	_
+5-5	186-187	"	_	_	_	_
+5-6	188-200	Overreacting	_	_	_	_
+5-7	201-202	?	_	_	_	_
+
+#Text=If I had n't blocked my chakra , I 'd probably be in the Avatar State right now ! 
+6-1	203-205	If	_	_	_	_
+6-2	206-207	I	_	_	*->2-6	*[2]
+6-3	208-211	had	_	_	_	_
+6-4	212-215	n't	_	_	_	_
+6-5	216-223	blocked	_	_	_	_
+6-6	224-226	my	_	_	*->2-7	*[2]
+6-7	227-233	chakra	_	_	_	_
+6-8	234-235	,	_	_	_	_
+6-9	236-237	I	_	_	*->2-8	*[2]
+6-10	238-240	'd	_	_	_	_
+6-11	241-249	probably	_	_	_	_
+6-12	250-252	be	_	_	_	_
+6-13	253-255	in	_	_	_	_
+6-14	256-259	the	_	_	_	_
+6-15	260-266	Avatar	_	_	_	_
+6-16	267-272	State	_	_	_	_
+6-17	273-278	right	_	_	_	_
+6-18	279-282	now	_	_	_	_
+6-19	283-284	!	_	_	_	_
+
+#Text=" 
+7-1	285-286	"	_	_	_	_

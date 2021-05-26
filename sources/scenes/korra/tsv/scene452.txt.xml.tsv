@@ -1,0 +1,103 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Tenzin says : " All right , Meelo , the first thing you need to do as a trainer is establish dominance . 
+1-1	0-6	Tenzin	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	All	_	_	_	_
+1-6	20-25	right	_	_	_	_
+1-7	26-27	,	_	_	_	_
+1-8	28-33	Meelo	_	_	_	_
+1-9	34-35	,	_	_	_	_
+1-10	36-39	the	_	_	_	_
+1-11	40-45	first	_	_	_	_
+1-12	46-51	thing	_	_	_	_
+1-13	52-55	you	_	_	*->3-1	*[3]
+1-14	56-60	need	_	_	_	_
+1-15	61-63	to	_	_	_	_
+1-16	64-66	do	_	_	_	_
+1-17	67-69	as	_	_	_	_
+1-18	70-71	a	_	_	_	_
+1-19	72-79	trainer	*	PER	_	_
+1-20	80-82	is	_	_	_	_
+1-21	83-92	establish	_	_	_	_
+1-22	93-102	dominance	_	_	_	_
+1-23	103-104	.	_	_	_	_
+
+#Text=You are in charge . 
+2-1	105-108	You	_	_	*->3-2	*[3]
+2-2	109-112	are	_	_	_	_
+2-3	113-115	in	_	_	_	_
+2-4	116-122	charge	_	_	_	_
+2-5	123-124	.	_	_	_	_
+
+#Text=Never forget that . 
+3-1	125-130	Never	_	_	_	_
+3-2	131-137	forget	_	_	_	_
+3-3	138-142	that	_	_	*->3-3	*[3]
+3-4	143-144	.	_	_	_	_
+
+#Text=Now call Poki . 
+4-1	145-148	Now	_	_	_	_
+4-2	149-153	call	_	_	_	_
+4-3	154-158	Poki	*	PER	*->4-1	*[4]
+4-4	159-160	.	_	_	_	_
+
+#Text=" Meelo says : " Poki , come here ! 
+5-1	161-162	"	_	_	_	_
+5-2	163-168	Meelo	*	PER	*->2-1	*[2]
+5-3	169-173	says	_	_	_	_
+5-4	174-175	:	_	_	_	_
+5-5	176-177	"	_	_	_	_
+5-6	178-182	Poki	_	_	*->4-2	*[4]
+5-7	183-184	,	_	_	_	_
+5-8	185-189	come	_	_	_	_
+5-9	190-194	here	_	_	_	_
+5-10	195-196	!	_	_	_	_
+
+#Text=Poki . 
+6-1	197-201	Poki	*	PER	*->4-3	*[4]
+6-2	202-203	.	_	_	*->4-3	*[4]
+
+#Text=Poki , no ! 
+7-1	204-208	Poki	*	PER	*->4-4	*[4]
+7-2	209-210	,	_	_	_	_
+7-3	211-213	no	_	_	_	_
+7-4	214-215	!	_	_	_	_
+
+#Text=" Tenzin says : " Meelo ... you 're rewarding him for bad behavior . 
+8-1	216-217	"	_	_	_	_
+8-2	218-224	Tenzin	*	PER	*->1-2	*[1]
+8-3	225-229	says	_	_	_	_
+8-4	230-231	:	_	_	_	_
+8-5	232-233	"	_	_	_	_
+8-6	234-239	Meelo	_	_	*->2-3	*[2]
+8-7	240-243	...	_	_	_	_
+8-8	244-247	you	_	_	_	_
+8-9	248-251	're	_	_	_	_
+8-10	252-261	rewarding	_	_	_	_
+8-11	262-265	him	_	_	*->2-4	*[2]
+8-12	266-269	for	_	_	_	_
+8-13	270-273	bad	_	_	_	_
+8-14	274-282	behavior	_	_	_	_
+8-15	283-284	.	_	_	_	_
+
+#Text=" Meelo says : " But he 's tickling me . 
+9-1	285-286	"	_	_	_	_
+9-2	287-292	Meelo	*	PER	*->2-5	*[2]
+9-3	293-297	says	_	_	_	_
+9-4	298-299	:	_	_	_	_
+9-5	300-301	"	_	_	_	_
+9-6	302-305	But	_	_	_	_
+9-7	306-308	he	_	_	*->1-3	*[1]
+9-8	309-311	's	_	_	_	_
+9-9	312-320	tickling	_	_	_	_
+9-10	321-323	me	_	_	*->2-6	*[2]
+9-11	324-325	.	_	_	_	_
+
+#Text=" 
+10-1	326-327	"	_	_	_	_

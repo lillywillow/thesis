@@ -1,0 +1,81 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Iroh says : " Aahh ! 
+1-1	0-4	Iroh	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	Aahh	_	_	_	_
+1-6	19-20	!	_	_	_	_
+
+#Text=See Prince Zuko , a moment of quiet is good for your mental well - being . 
+2-1	21-24	See	_	_	_	_
+2-2	25-31	Prince	*	PER	_	_
+2-3	32-36	Zuko	*	PER	*->1-1	*[1]
+2-4	37-38	,	_	_	_	_
+2-5	39-40	a	_	_	*->2-2	*[2]
+2-6	41-47	moment	_	_	*->2-2	*[2]
+2-7	48-50	of	_	_	*->2-2	*[2]
+2-8	51-56	quiet	_	_	*->2-2	*[2]
+2-9	57-59	is	_	_	_	_
+2-10	60-64	good	_	_	_	_
+2-11	65-68	for	_	_	_	_
+2-12	69-73	your	_	_	*->2-1	*[2]
+2-13	74-80	mental	_	_	*->2-1	*[2]
+2-14	81-85	well	_	_	*->2-1	*[2]
+2-15	86-87	-	_	_	*->2-1	*[2]
+2-16	88-93	being	_	_	*->2-1	*[2]
+2-17	94-95	.	_	_	_	_
+
+#Text=" Firebenders says : " Look out ! 
+3-1	96-97	"	_	_	_	_
+3-2	98-109	Firebenders	_	_	_	_
+3-3	110-114	says	_	_	_	_
+3-4	115-116	:	_	_	_	_
+3-5	117-118	"	_	_	_	_
+3-6	119-123	Look	_	_	_	_
+3-7	124-127	out	_	_	_	_
+3-8	128-129	!	_	_	_	_
+
+#Text=Argh ! 
+4-1	130-134	Argh	_	_	_	_
+4-2	135-136	!	_	_	_	_
+
+#Text=" June says : " Get back ! 
+5-1	137-138	"	_	_	_	_
+5-2	139-143	June	_	_	_	_
+5-3	144-148	says	_	_	_	_
+5-4	149-150	:	_	_	_	_
+5-5	151-152	"	_	_	_	_
+5-6	153-156	Get	_	_	_	_
+5-7	157-161	back	_	_	_	_
+5-8	162-163	!	_	_	_	_
+
+#Text=We 're after a stowaway ! 
+6-1	164-166	We	_	_	_	_
+6-2	167-170	're	_	_	_	_
+6-3	171-176	after	_	_	_	_
+6-4	177-178	a	_	_	_	_
+6-5	179-187	stowaway	_	_	_	_
+6-6	188-189	!	_	_	_	_
+
+#Text=" Zuko says : " There are no stowaways on my ship . 
+7-1	190-191	"	_	_	_	_
+7-2	192-196	Zuko	*	PER	*->1-2	*[1]
+7-3	197-201	says	_	_	_	_
+7-4	202-203	:	_	_	_	_
+7-5	204-205	"	_	_	_	_
+7-6	206-211	There	_	_	_	_
+7-7	212-215	are	_	_	_	_
+7-8	216-218	no	_	_	_	_
+7-9	219-228	stowaways	_	_	_	_
+7-10	229-231	on	_	_	_	_
+7-11	232-234	my	_	_	*->1-3	*[1]
+7-12	235-239	ship	_	_	_	_
+7-13	240-241	.	_	_	_	_
+
+#Text=" 
+8-1	242-243	"	_	_	_	_

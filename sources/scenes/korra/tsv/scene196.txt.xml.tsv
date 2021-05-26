@@ -1,0 +1,162 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Announcer says : " Whatever happened to her anyway ? " 
+1-1	0-9	Announcer	*	PER	_	_
+1-2	10-14	says	_	_	_	_
+1-3	15-16	:	_	_	_	_
+1-4	17-18	"	_	_	_	_
+1-5	19-27	Whatever	_	_	_	_
+1-6	28-36	happened	_	_	_	_
+1-7	37-39	to	_	_	_	_
+1-8	40-43	her	_	_	_	_
+1-9	44-50	anyway	_	_	_	_
+1-10	51-52	?	_	_	_	_
+1-11	53-54	"	_	_	_	_
+
+#Text=Korra says : " I would n't know . " 
+2-1	55-60	Korra	*	PER	*->1-1	*[1]
+2-2	61-65	says	_	_	_	_
+2-3	66-67	:	_	_	_	_
+2-4	68-69	"	_	_	_	_
+2-5	70-71	I	_	_	*->1-2	*[1]
+2-6	72-77	would	_	_	_	_
+2-7	78-81	n't	_	_	_	_
+2-8	82-86	know	_	_	_	_
+2-9	87-88	.	_	_	_	_
+2-10	89-90	"	_	_	_	_
+
+#Text=Main Asami Bolin Kai Lin Beifong Mako Opal Beifong Tenzin Antagonists Baatar Jr. . 
+3-1	91-95	Main	_	_	*->2-1	*[2]
+3-2	96-101	Asami	*	PER	*->2-1	*[2]
+3-3	102-107	Bolin	*	PER	*->2-1	*[2]
+3-4	108-111	Kai	*	PER	_	_
+3-5	112-115	Lin	*	PER	_	_
+3-6	116-123	Beifong	*	PER	_	_
+3-7	124-128	Mako	*	PER	_	_
+3-8	129-133	Opal	*	PER	_	_
+3-9	134-141	Beifong	*	PER	_	_
+3-10	142-148	Tenzin	*	PER	_	_
+3-11	149-160	Antagonists	_	_	_	_
+3-12	161-167	Baatar	_	_	_	_
+3-13	168-171	Jr.	_	_	_	_
+3-14	172-173	.	_	_	_	_
+
+#Text=Kuvira says : " Minor Governor Ikki Jinora Korra Lefty Meelo Pema Raiko Rohan Tonraq Wu " Shiro Shinobi says : " Kuvira threatens to take Zaofu by force ! 
+4-1	174-180	Kuvira	*	PER	*->3-1	*[3]
+4-2	181-185	says	_	_	_	_
+4-3	186-187	:	_	_	_	_
+4-4	188-189	"	_	_	_	_
+4-5	190-195	Minor	_	_	_	_
+4-6	196-204	Governor	*	PER	_	_
+4-7	205-209	Ikki	*	PER	_	_
+4-8	210-216	Jinora	*	PER	_	_
+4-9	217-222	Korra	*	PER	_	_
+4-10	223-228	Lefty	*	PER	_	_
+4-11	229-234	Meelo	*	PER	_	_
+4-12	235-239	Pema	*	PER	_	_
+4-13	240-245	Raiko	*	PER	_	_
+4-14	246-251	Rohan	*	PER	_	_
+4-15	252-258	Tonraq	*	PER	_	_
+4-16	259-261	Wu	*	PER	_	_
+4-17	262-263	"	_	_	_	_
+4-18	264-269	Shiro	*	PER	_	_
+4-19	270-277	Shinobi	*	PER	_	_
+4-20	278-282	says	_	_	_	_
+4-21	283-284	:	_	_	_	_
+4-22	285-286	"	_	_	_	_
+4-23	287-293	Kuvira	*	PER	*->3-2	*[3]
+4-24	294-303	threatens	_	_	_	_
+4-25	304-306	to	_	_	_	_
+4-26	307-311	take	_	_	_	_
+4-27	312-317	Zaofu	*	PER	_	_
+4-28	318-320	by	_	_	_	_
+4-29	321-326	force	_	_	_	_
+4-30	327-328	!	_	_	_	_
+
+#Text=After tensions flared between Su Beifong and her former protégé , Korra brokered a truce , but it was too late . 
+5-1	329-334	After	_	_	_	_
+5-2	335-343	tensions	_	_	_	_
+5-3	344-350	flared	_	_	_	_
+5-4	351-358	between	_	_	_	_
+5-5	359-361	Su	*	PER	*->4-1	*[4]
+5-6	362-369	Beifong	*	PER	*->4-1	*[4]
+5-7	370-373	and	_	_	_	_
+5-8	374-377	her	_	_	*->4-2	*[4]
+5-9	378-384	former	_	_	_	_
+5-10	385-392	protégé	_	_	_	_
+5-11	393-394	,	_	_	_	_
+5-12	395-400	Korra	*	PER	*->1-3	*[1]
+5-13	401-409	brokered	_	_	_	_
+5-14	410-411	a	_	_	*->5-1	*[5]
+5-15	412-417	truce	_	_	*->5-1	*[5]
+5-16	418-419	,	_	_	_	_
+5-17	420-423	but	_	_	_	_
+5-18	424-426	it	_	_	*->5-2	*[5]
+5-19	427-430	was	_	_	_	_
+5-20	431-434	too	_	_	_	_
+5-21	435-439	late	_	_	_	_
+5-22	440-441	.	_	_	_	_
+
+#Text=Su and her sons were already on their way to put an end to Kuvira . 
+6-1	442-444	Su	_	_	_	_
+6-2	445-448	and	_	_	_	_
+6-3	449-452	her	_	_	*->4-3	*[4]
+6-4	453-457	sons	_	_	*->6-1	*[6]
+6-5	458-462	were	_	_	_	_
+6-6	463-470	already	_	_	_	_
+6-7	471-473	on	_	_	_	_
+6-8	474-479	their	_	_	*->6-2	*[6]
+6-9	480-483	way	_	_	_	_
+6-10	484-486	to	_	_	_	_
+6-11	487-490	put	_	_	_	_
+6-12	491-493	an	_	_	_	_
+6-13	494-497	end	_	_	_	_
+6-14	498-500	to	_	_	_	_
+6-15	501-507	Kuvira	_	_	*->3-3	*[3]
+6-16	508-509	.	_	_	_	_
+
+#Text=Meanwhile , Bolin and Varrick learned of Kuvira 's true tyrannical intent and deserted her army , but they were captured and betrayed by Zhu Li . 
+7-1	510-519	Meanwhile	_	_	_	_
+7-2	520-521	,	_	_	_	_
+7-3	522-527	Bolin	*	PER	*->2-2	*[2]
+7-4	528-531	and	_	_	*->8-1	*[8]
+7-5	532-539	Varrick	*	PER	*->7-1	*[7]
+7-6	540-547	learned	_	_	_	_
+7-7	548-550	of	_	_	_	_
+7-8	551-557	Kuvira	*	PER	*->3-4	*[3]
+7-9	558-560	's	_	_	*->3-4	*[3]
+7-10	561-565	true	_	_	_	_
+7-11	566-576	tyrannical	_	_	_	_
+7-12	577-583	intent	_	_	_	_
+7-13	584-587	and	_	_	_	_
+7-14	588-596	deserted	_	_	_	_
+7-15	597-600	her	_	_	*->7-2	*[7]
+7-16	601-605	army	_	_	_	_
+7-17	606-607	,	_	_	_	_
+7-18	608-611	but	_	_	_	_
+7-19	612-616	they	_	_	*->8-2	*[8]
+7-20	617-621	were	_	_	_	_
+7-21	622-630	captured	_	_	_	_
+7-22	631-634	and	_	_	_	_
+7-23	635-643	betrayed	_	_	_	_
+7-24	644-646	by	_	_	_	_
+7-25	647-650	Zhu	*	PER	_	_
+7-26	651-653	Li	*	PER	_	_
+7-27	654-655	.	_	_	_	_
+
+#Text=Now they 're being held against their will ! 
+8-1	656-659	Now	_	_	_	_
+8-2	660-664	they	_	_	*->8-3	*[8]
+8-3	665-668	're	_	_	_	_
+8-4	669-674	being	_	_	_	_
+8-5	675-679	held	_	_	_	_
+8-6	680-687	against	_	_	_	_
+8-7	688-693	their	_	_	*->8-4	*[8]
+8-8	694-698	will	_	_	_	_
+8-9	699-700	!	_	_	_	_
+
+#Text=" 
+9-1	701-702	"	_	_	_	_

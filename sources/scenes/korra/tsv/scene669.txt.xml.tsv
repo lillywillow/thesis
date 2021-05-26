@@ -1,0 +1,80 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bolin says : " Asami ! " 
+1-1	0-5	Bolin	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-20	Asami	*	PER	*->1-1	*[1]
+1-6	21-22	!	_	_	_	_
+1-7	23-24	"	_	_	_	_
+
+#Text=Asami says : " Get ready ! 
+2-1	25-30	Asami	*	PER	*->1-2	*[1]
+2-2	31-35	says	_	_	_	_
+2-3	36-37	:	_	_	_	_
+2-4	38-39	"	_	_	_	_
+2-5	40-43	Get	_	_	_	_
+2-6	44-49	ready	_	_	_	_
+2-7	50-51	!	_	_	_	_
+
+#Text=Fire ! 
+3-1	52-56	Fire	_	_	_	_
+3-2	57-58	!	_	_	_	_
+
+#Text=" Korra says : " There are spirits everywhere . 
+4-1	59-60	"	_	_	_	_
+4-2	61-66	Korra	*	PER	*->2-1	*[2]
+4-3	67-71	says	_	_	_	_
+4-4	72-73	:	_	_	_	_
+4-5	74-75	"	_	_	_	_
+4-6	76-81	There	_	_	_	_
+4-7	82-85	are	_	_	_	_
+4-8	86-93	spirits	_	_	*->3-1	*[3]
+4-9	94-104	everywhere	_	_	_	_
+4-10	105-106	.	_	_	_	_
+
+#Text=I do n't see an opening . 
+5-1	107-108	I	_	_	*->2-2	*[2]
+5-2	109-111	do	_	_	_	_
+5-3	112-115	n't	_	_	_	_
+5-4	116-119	see	_	_	_	_
+5-5	120-122	an	_	_	_	_
+5-6	123-130	opening	_	_	_	_
+5-7	131-132	.	_	_	_	_
+
+#Text=" Tenzin says : " Let 's circle around and see if we can find a way in from the other side . 
+6-1	133-134	"	_	_	_	_
+6-2	135-141	Tenzin	*	PER	_	_
+6-3	142-146	says	_	_	_	_
+6-4	147-148	:	_	_	_	_
+6-5	149-150	"	_	_	_	_
+6-6	151-154	Let	_	_	_	_
+6-7	155-157	's	_	_	*->2-3	*[2]
+6-8	158-164	circle	_	_	_	_
+6-9	165-171	around	_	_	_	_
+6-10	172-175	and	_	_	_	_
+6-11	176-179	see	_	_	_	_
+6-12	180-182	if	_	_	_	_
+6-13	183-185	we	_	_	*->3-2	*[3]
+6-14	186-189	can	_	_	_	_
+6-15	190-194	find	_	_	_	_
+6-16	195-196	a	_	_	_	_
+6-17	197-200	way	_	_	_	_
+6-18	201-203	in	_	_	_	_
+6-19	204-208	from	_	_	_	_
+6-20	209-212	the	_	_	_	_
+6-21	213-218	other	_	_	_	_
+6-22	219-223	side	_	_	_	_
+6-23	224-225	.	_	_	_	_
+
+#Text=Hold on ! 
+7-1	226-230	Hold	_	_	_	_
+7-2	231-233	on	_	_	_	_
+7-3	234-235	!	_	_	_	_
+
+#Text=" 
+8-1	236-237	"	_	_	_	_

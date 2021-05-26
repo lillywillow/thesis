@@ -1,0 +1,74 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Announcer says : " Here . 
+1-1	0-9	Announcer	*	PER	_	_
+1-2	10-14	says	_	_	_	_
+1-3	15-16	:	_	_	_	_
+1-4	17-18	"	_	_	_	_
+1-5	19-23	Here	_	_	_	_
+1-6	24-25	.	_	_	_	_
+
+#Text=For your lackluster participation . 
+2-1	26-29	For	_	_	_	_
+2-2	30-34	your	_	_	*->1-1	*[1]
+2-3	35-45	lackluster	_	_	_	_
+2-4	46-59	participation	_	_	_	_
+2-5	60-61	.	_	_	_	_
+
+#Text=" Korra says : " Thanks . 
+3-1	62-63	"	_	_	*->2-1	*[2]
+3-2	64-69	Korra	*	PER	*->2-1	*[2]
+3-3	70-74	says	_	_	_	_
+3-4	75-76	:	_	_	_	_
+3-5	77-78	"	_	_	_	_
+3-6	79-85	Thanks	_	_	_	_
+3-7	86-87	.	_	_	_	_
+
+#Text=" Announcer says : " You know , you look very familiar . 
+4-1	88-89	"	_	_	_	_
+4-2	90-99	Announcer	*	PER	_	_
+4-3	100-104	says	_	_	_	_
+4-4	105-106	:	_	_	_	_
+4-5	107-108	"	_	_	_	_
+4-6	109-112	You	_	_	*->1-2	*[1]
+4-7	113-117	know	_	_	_	_
+4-8	118-119	,	_	_	_	_
+4-9	120-123	you	_	_	*->1-3	*[1]
+4-10	124-128	look	_	_	_	_
+4-11	129-133	very	_	_	_	_
+4-12	134-142	familiar	_	_	_	_
+4-13	143-144	.	_	_	_	_
+
+#Text=Yeah , you ... you kind of look like that Avatar girl ! 
+5-1	145-149	Yeah	_	_	_	_
+5-2	150-151	,	_	_	_	_
+5-3	152-155	you	_	_	*->1-4	*[1]
+5-4	156-159	...	_	_	_	_
+5-5	160-163	you	_	_	*->1-5	*[1]
+5-6	164-168	kind	_	_	_	_
+5-7	169-171	of	_	_	_	_
+5-8	172-176	look	_	_	_	_
+5-9	177-181	like	_	_	_	_
+5-10	182-186	that	_	_	_	_
+5-11	187-193	Avatar	_	_	_	_
+5-12	194-198	girl	_	_	_	_
+5-13	199-200	!	_	_	_	_
+
+#Text=" Korra says : " I get that a lot . 
+6-1	201-202	"	_	_	_	_
+6-2	203-208	Korra	*	PER	*->2-2	*[2]
+6-3	209-213	says	_	_	_	_
+6-4	214-215	:	_	_	_	_
+6-5	216-217	"	_	_	_	_
+6-6	218-219	I	_	_	*->2-3	*[2]
+6-7	220-223	get	_	_	_	_
+6-8	224-228	that	_	_	_	_
+6-9	229-230	a	_	_	_	_
+6-10	231-234	lot	_	_	_	_
+6-11	235-236	.	_	_	_	_
+
+#Text=" 
+7-1	237-238	"	_	_	_	_

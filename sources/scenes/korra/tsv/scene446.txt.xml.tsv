@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bolin says : " Wow . 
+1-1	0-5	Bolin	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Wow	_	_	_	_
+1-6	19-20	.	_	_	_	_
+
+#Text=Usually , when I see flashing lights like this , it 's because I got hit in the head with a rock . 
+2-1	21-28	Usually	_	_	_	_
+2-2	29-30	,	_	_	_	_
+2-3	31-35	when	_	_	_	_
+2-4	36-37	I	_	_	_	_
+2-5	38-41	see	_	_	_	_
+2-6	42-50	flashing	_	_	_	_
+2-7	51-57	lights	_	_	_	_
+2-8	58-62	like	_	_	_	_
+2-9	63-67	this	_	_	*->2-1	*[2]
+2-10	68-69	,	_	_	_	_
+2-11	70-72	it	_	_	*->2-2	*[2]
+2-12	73-75	's	_	_	_	_
+2-13	76-83	because	_	_	_	_
+2-14	84-85	I	_	_	_	_
+2-15	86-89	got	_	_	_	_
+2-16	90-93	hit	_	_	_	_
+2-17	94-96	in	_	_	_	_
+2-18	97-100	the	_	_	_	_
+2-19	101-105	head	_	_	_	_
+2-20	106-110	with	_	_	_	_
+2-21	111-112	a	_	_	*->3-1	*[3]
+2-22	113-117	rock	_	_	*->3-1	*[3]
+2-23	118-119	.	_	_	_	_
+
+#Text=" Varrick says : " Being famous is like getting hit with a rock all the time . 
+3-1	120-121	"	_	_	_	_
+3-2	122-129	Varrick	*	PER	*->1-1	*[1]
+3-3	130-134	says	_	_	_	_
+3-4	135-136	:	_	_	_	_
+3-5	137-138	"	_	_	_	_
+3-6	139-144	Being	_	_	_	_
+3-7	145-151	famous	_	_	_	_
+3-8	152-154	is	_	_	_	_
+3-9	155-159	like	_	_	_	_
+3-10	160-167	getting	_	_	_	_
+3-11	168-171	hit	_	_	_	_
+3-12	172-176	with	_	_	_	_
+3-13	177-178	a	_	_	*->3-2	*[3]
+3-14	179-183	rock	_	_	*->3-2	*[3]
+3-15	184-187	all	_	_	_	_
+3-16	188-191	the	_	_	_	_
+3-17	192-196	time	_	_	_	_
+3-18	197-198	.	_	_	_	_
+
+#Text=" 
+4-1	199-200	"	_	_	_	_

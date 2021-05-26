@@ -1,0 +1,133 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Toph says : " Who 's there ? " 
+1-1	0-4	Toph	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	Who	_	_	_	_
+1-6	18-20	's	_	_	_	_
+1-7	21-26	there	_	_	_	_
+1-8	27-28	?	_	_	_	_
+1-9	29-30	"	_	_	_	_
+
+#Text=Aang says : " Why are we doing this ? " 
+2-1	31-35	Aang	*	PER	*->1-1	*[1]
+2-2	36-40	says	_	_	_	_
+2-3	41-42	:	_	_	_	_
+2-4	43-44	"	_	_	_	_
+2-5	45-48	Why	_	_	_	_
+2-6	49-52	are	_	_	_	_
+2-7	53-55	we	_	_	*->2-1	*[2]
+2-8	56-61	doing	_	_	_	_
+2-9	62-66	this	_	_	_	_
+2-10	67-68	?	_	_	_	_
+2-11	69-70	"	_	_	_	_
+
+#Text=Sokka says : " Because if this calendar can tell us about eclipses in the past , then maybe it can project when the next one will be . " 
+3-1	71-76	Sokka	_	_	*->3-1	*[3]
+3-2	77-81	says	_	_	_	_
+3-3	82-83	:	_	_	_	_
+3-4	84-85	"	_	_	_	_
+3-5	86-93	Because	_	_	_	_
+3-6	94-96	if	_	_	_	_
+3-7	97-101	this	_	_	*->4-1	*[4]
+3-8	102-110	calendar	_	_	*->4-1	*[4]
+3-9	111-114	can	_	_	_	_
+3-10	115-119	tell	_	_	_	_
+3-11	120-122	us	_	_	*->2-2	*[2]
+3-12	123-128	about	_	_	_	_
+3-13	129-137	eclipses	_	_	_	_
+3-14	138-140	in	_	_	_	_
+3-15	141-144	the	_	_	_	_
+3-16	145-149	past	_	_	_	_
+3-17	150-151	,	_	_	_	_
+3-18	152-156	then	_	_	_	_
+3-19	157-162	maybe	_	_	_	_
+3-20	163-165	it	_	_	*->4-2	*[4]
+3-21	166-169	can	_	_	_	_
+3-22	170-177	project	_	_	_	_
+3-23	178-182	when	_	_	_	_
+3-24	183-186	the	_	_	_	_
+3-25	187-191	next	_	_	_	_
+3-26	192-195	one	_	_	_	_
+3-27	196-200	will	_	_	_	_
+3-28	201-203	be	_	_	_	_
+3-29	204-205	.	_	_	_	_
+3-30	206-207	"	_	_	_	_
+
+#Text=Aang says : " You ca n't possibly check every single date . " 
+4-1	208-212	Aang	*	PER	*->1-2	*[1]
+4-2	213-217	says	_	_	_	_
+4-3	218-219	:	_	_	_	_
+4-4	220-221	"	_	_	_	_
+4-5	222-225	You	_	_	*->3-2	*[3]
+4-6	226-228	ca	_	_	_	_
+4-7	229-232	n't	_	_	_	_
+4-8	233-241	possibly	_	_	_	_
+4-9	242-247	check	_	_	_	_
+4-10	248-253	every	_	_	_	_
+4-11	254-260	single	_	_	_	_
+4-12	261-265	date	_	_	_	_
+4-13	266-267	.	_	_	_	_
+4-14	268-269	"	_	_	_	_
+
+#Text=Sokka says : " I do n't have to . 
+5-1	270-275	Sokka	_	_	*->3-3	*[3]
+5-2	276-280	says	_	_	_	_
+5-3	281-282	:	_	_	_	_
+5-4	283-284	"	_	_	_	_
+5-5	285-286	I	_	_	*->3-4	*[3]
+5-6	287-289	do	_	_	_	_
+5-7	290-293	n't	_	_	_	_
+5-8	294-298	have	_	_	_	_
+5-9	299-301	to	_	_	_	_
+5-10	302-303	.	_	_	_	_
+
+#Text=We just need to check every date before Sozin 's Comet arrives . 
+6-1	304-306	We	_	_	*->2-3	*[2]
+6-2	307-311	just	_	_	_	_
+6-3	312-316	need	_	_	_	_
+6-4	317-319	to	_	_	_	_
+6-5	320-325	check	_	_	_	_
+6-6	326-331	every	_	_	_	_
+6-7	332-336	date	_	_	_	_
+6-8	337-343	before	_	_	_	_
+6-9	344-349	Sozin	_	_	_	_
+6-10	350-352	's	_	_	_	_
+6-11	353-358	Comet	_	_	_	_
+6-12	359-366	arrives	_	_	_	_
+6-13	367-368	.	_	_	_	_
+
+#Text=Because after that - well , try not to think about that . 
+7-1	369-376	Because	_	_	_	_
+7-2	377-382	after	_	_	_	_
+7-3	383-387	that	_	_	*->2-4	*[2]
+7-4	388-389	-	_	_	_	_
+7-5	390-394	well	_	_	_	_
+7-6	395-396	,	_	_	_	_
+7-7	397-400	try	_	_	_	_
+7-8	401-404	not	_	_	_	_
+7-9	405-407	to	_	_	_	_
+7-10	408-413	think	_	_	_	_
+7-11	414-419	about	_	_	_	_
+7-12	420-424	that	_	_	*->2-5	*[2]
+7-13	425-426	.	_	_	_	_
+
+#Text=" Aang says : " Come on , eclipse . 
+8-1	427-428	"	_	_	_	_
+8-2	429-433	Aang	*	PER	*->1-3	*[1]
+8-3	434-438	says	_	_	_	_
+8-4	439-440	:	_	_	_	_
+8-5	441-442	"	_	_	_	_
+8-6	443-447	Come	_	_	_	_
+8-7	448-450	on	_	_	_	_
+8-8	451-452	,	_	_	_	_
+8-9	453-460	eclipse	_	_	_	_
+8-10	461-462	.	_	_	_	_
+
+#Text=" 
+9-1	463-464	"	_	_	_	_

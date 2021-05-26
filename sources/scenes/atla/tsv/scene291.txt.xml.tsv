@@ -1,0 +1,109 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bumi says : " First , Avatar , what do you think of my new outfit ? 
+1-1	0-4	Bumi	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-19	First	_	_	*->2-1	*[2]
+1-6	20-21	,	_	_	_	_
+1-7	22-28	Avatar	_	_	_	_
+1-8	29-30	,	_	_	_	_
+1-9	31-35	what	_	_	_	_
+1-10	36-38	do	_	_	_	_
+1-11	39-42	you	_	_	*->3-1	*[3]
+1-12	43-48	think	_	_	_	_
+1-13	49-51	of	_	_	_	_
+1-14	52-54	my	_	_	_	_
+1-15	55-58	new	_	_	_	_
+1-16	59-65	outfit	_	_	_	_
+1-17	66-67	?	_	_	_	_
+
+#Text=I want your honest opinion . 
+2-1	68-69	I	_	_	_	_
+2-2	70-74	want	_	_	_	_
+2-3	75-79	your	_	_	*->3-2	*[3]
+2-4	80-86	honest	_	_	*->4-1	*[4]
+2-5	87-94	opinion	_	_	*->4-1	*[4]
+2-6	95-96	.	_	_	_	_
+
+#Text=I 'm waiting . 
+3-1	97-98	I	_	_	_	_
+3-2	99-101	'm	_	_	_	_
+3-3	102-109	waiting	_	_	_	_
+3-4	110-111	.	_	_	_	_
+
+#Text=" Aang says : " I ... guess it 's fine . 
+4-1	112-113	"	_	_	_	_
+4-2	114-118	Aang	*	PER	*->5-1	*[5]
+4-3	119-123	says	_	_	_	_
+4-4	124-125	:	_	_	_	_
+4-5	126-127	"	_	_	_	_
+4-6	128-129	I	_	_	*->5-2	*[5]
+4-7	130-133	...	_	_	_	_
+4-8	134-139	guess	_	_	_	_
+4-9	140-142	it	_	_	*->4-2	*[4]
+4-10	143-145	's	_	_	_	_
+4-11	146-150	fine	_	_	_	_
+4-12	151-152	.	_	_	_	_
+
+#Text=" Bumi says : " Excellent ! 
+5-1	153-154	"	_	_	*->1-1	*[1]
+5-2	155-159	Bumi	*	PER	*->1-1	*[1]
+5-3	160-164	says	_	_	_	_
+5-4	165-166	:	_	_	_	_
+5-5	167-168	"	_	_	_	_
+5-6	169-178	Excellent	_	_	_	_
+5-7	179-180	!	_	_	_	_
+
+#Text=You passed the first test . 
+6-1	181-184	You	_	_	*->5-3	*[5]
+6-2	185-191	passed	_	_	_	_
+6-3	192-195	the	_	_	_	_
+6-4	196-201	first	_	_	*->2-2	*[2]
+6-5	202-206	test	_	_	_	_
+6-6	207-208	.	_	_	_	_
+
+#Text=" Aang says : " Really ? 
+7-1	209-210	"	_	_	_	_
+7-2	211-215	Aang	*	PER	*->5-4	*[5]
+7-3	216-220	says	_	_	_	_
+7-4	221-222	:	_	_	_	_
+7-5	223-224	"	_	_	_	_
+7-6	225-231	Really	_	_	_	_
+7-7	232-233	?	_	_	_	_
+
+#Text=" Bumi says : " Well , not one of the deadly tests . 
+8-1	234-235	"	_	_	_	_
+8-2	236-240	Bumi	*	PER	*->1-6	*[1]
+8-3	241-245	says	_	_	_	_
+8-4	246-247	:	_	_	_	_
+8-5	248-249	"	_	_	_	_
+8-6	250-254	Well	_	_	_	_
+8-7	255-256	,	_	_	_	_
+8-8	257-260	not	_	_	_	_
+8-9	261-264	one	_	_	_	_
+8-10	265-267	of	_	_	_	_
+8-11	268-271	the	_	_	_	_
+8-12	272-278	deadly	_	_	_	_
+8-13	279-284	tests	_	_	_	_
+8-14	285-286	.	_	_	_	_
+
+#Text=The real challenges are much more , uh , challenging . 
+9-1	287-290	The	_	_	_	_
+9-2	291-295	real	_	_	_	_
+9-3	296-306	challenges	_	_	_	_
+9-4	307-310	are	_	_	_	_
+9-5	311-315	much	_	_	_	_
+9-6	316-320	more	_	_	_	_
+9-7	321-322	,	_	_	_	_
+9-8	323-325	uh	_	_	_	_
+9-9	326-327	,	_	_	_	_
+9-10	328-339	challenging	_	_	_	_
+9-11	340-341	.	_	_	_	_
+
+#Text=" 
+10-1	342-343	"	_	_	_	_

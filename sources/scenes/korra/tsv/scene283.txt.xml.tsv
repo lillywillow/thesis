@@ -1,0 +1,32 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " The poison did a lot of internal damage . " 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	The	_	_	*->2-1	*[2]
+1-6	20-26	poison	_	_	*->2-1	*[2]
+1-7	27-30	did	_	_	_	_
+1-8	31-32	a	_	_	_	_
+1-9	33-36	lot	_	_	_	_
+1-10	37-39	of	_	_	_	_
+1-11	40-48	internal	_	_	_	_
+1-12	49-55	damage	_	_	_	_
+1-13	56-57	.	_	_	_	_
+1-14	58-59	"	_	_	_	_
+
+#Text=Korra says : " Can you fix it ? " 
+2-1	60-65	Korra	*	PER	_	_
+2-2	66-70	says	_	_	_	_
+2-3	71-72	:	_	_	_	_
+2-4	73-74	"	_	_	_	_
+2-5	75-78	Can	_	_	_	_
+2-6	79-82	you	_	_	*->1-2	*[1]
+2-7	83-86	fix	_	_	_	_
+2-8	87-89	it	_	_	*->2-2	*[2]
+2-9	90-91	?	_	_	_	_
+2-10	92-93	"	_	_	_	_

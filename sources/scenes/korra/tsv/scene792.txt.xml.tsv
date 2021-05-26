@@ -1,0 +1,135 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Tonraq says : " They 're falling back ! " 
+1-1	0-6	Tonraq	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-20	They	_	_	_	_
+1-6	21-24	're	_	_	_	_
+1-7	25-32	falling	_	_	_	_
+1-8	33-37	back	_	_	_	_
+1-9	38-39	!	_	_	_	_
+1-10	40-41	"	_	_	_	_
+
+#Text=Lin Beifong says : " Varrick 's plan was to kidnap you and blame it on the North . 
+2-1	42-45	Lin	*	PER	*->2-1	*[2]
+2-2	46-53	Beifong	*	PER	*->2-1	*[2]
+2-3	54-58	says	_	_	_	_
+2-4	59-60	:	_	_	_	_
+2-5	61-62	"	_	_	_	_
+2-6	63-70	Varrick	*	PER	*->3-1	*[3]
+2-7	71-73	's	_	_	*->3-1	*[3]
+2-8	74-78	plan	_	_	*->4-1	*[4]
+2-9	79-82	was	_	_	_	_
+2-10	83-85	to	_	_	_	_
+2-11	86-92	kidnap	_	_	_	_
+2-12	93-96	you	_	_	*->1-2	*[1]
+2-13	97-100	and	_	_	_	_
+2-14	101-106	blame	_	_	_	_
+2-15	107-109	it	_	_	*->4-2	*[4]
+2-16	110-112	on	_	_	_	_
+2-17	113-116	the	_	_	_	_
+2-18	117-122	North	_	_	_	_
+2-19	123-124	.	_	_	_	_
+
+#Text=Then Republic City would have no choice , but to join the war on the side of the South . 
+3-1	125-129	Then	_	_	_	_
+3-2	130-138	Republic	_	_	_	_
+3-3	139-143	City	_	_	_	_
+3-4	144-149	would	_	_	_	_
+3-5	150-154	have	_	_	_	_
+3-6	155-157	no	_	_	_	_
+3-7	158-164	choice	_	_	_	_
+3-8	165-166	,	_	_	_	_
+3-9	167-170	but	_	_	_	_
+3-10	171-173	to	_	_	_	_
+3-11	174-178	join	_	_	_	_
+3-12	179-182	the	_	_	_	_
+3-13	183-186	war	_	_	_	_
+3-14	187-189	on	_	_	_	_
+3-15	190-193	the	_	_	_	_
+3-16	194-198	side	_	_	_	_
+3-17	199-201	of	_	_	_	_
+3-18	202-205	the	_	_	_	_
+3-19	206-211	South	_	_	_	_
+3-20	212-213	.	_	_	_	_
+
+#Text=" Raiko says : " I ca n't believe Varrick would do something like this , and no one saw it coming . 
+4-1	214-215	"	_	_	_	_
+4-2	216-221	Raiko	*	PER	*->5-1	*[5]
+4-3	222-226	says	_	_	_	_
+4-4	227-228	:	_	_	_	_
+4-5	229-230	"	_	_	_	_
+4-6	231-232	I	_	_	*->5-2	*[5]
+4-7	233-235	ca	_	_	_	_
+4-8	236-239	n't	_	_	_	_
+4-9	240-247	believe	_	_	_	_
+4-10	248-255	Varrick	*	PER	*->3-2	*[3]
+4-11	256-261	would	_	_	_	_
+4-12	262-264	do	_	_	_	_
+4-13	265-274	something	_	_	_	_
+4-14	275-279	like	_	_	_	_
+4-15	280-284	this	_	_	_	_
+4-16	285-286	,	_	_	_	_
+4-17	287-290	and	_	_	_	_
+4-18	291-293	no	_	_	*->6-1	*[6]
+4-19	294-297	one	_	_	*->6-1	*[6]
+4-20	298-301	saw	_	_	_	_
+4-21	302-304	it	_	_	*->6-2	*[6]
+4-22	305-311	coming	_	_	_	_
+4-23	312-313	.	_	_	_	_
+
+#Text=" Lin Beifong says : " Actually someone did . 
+5-1	314-315	"	_	_	_	_
+5-2	316-319	Lin	*	PER	*->2-2	*[2]
+5-3	320-327	Beifong	*	PER	*->2-2	*[2]
+5-4	328-332	says	_	_	_	_
+5-5	333-334	:	_	_	_	_
+5-6	335-336	"	_	_	_	_
+5-7	337-345	Actually	_	_	_	_
+5-8	346-353	someone	_	_	_	_
+5-9	354-357	did	_	_	_	_
+5-10	358-359	.	_	_	_	_
+
+#Text=Remember Mako ? 
+6-1	360-368	Remember	_	_	_	_
+6-2	369-373	Mako	*	PER	_	_
+6-3	374-375	?	_	_	_	_
+
+#Text=" Raiko says : " You got a great officer on your hands . 
+7-1	376-377	"	_	_	_	_
+7-2	378-383	Raiko	*	PER	*->5-3	*[5]
+7-3	384-388	says	_	_	_	_
+7-4	389-390	:	_	_	_	_
+7-5	391-392	"	_	_	_	_
+7-6	393-396	You	_	_	*->2-3	*[2]
+7-7	397-400	got	_	_	_	_
+7-8	401-402	a	_	_	_	_
+7-9	403-408	great	_	_	_	_
+7-10	409-416	officer	_	_	_	_
+7-11	417-419	on	_	_	_	_
+7-12	420-424	your	_	_	*->2-4	*[2]
+7-13	425-430	hands	_	_	_	_
+7-14	431-432	.	_	_	_	_
+
+#Text=" Lin Beifong says : " He 's one of the best . 
+8-1	433-434	"	_	_	_	_
+8-2	435-438	Lin	*	PER	*->2-5	*[2]
+8-3	439-446	Beifong	*	PER	*->2-5	*[2]
+8-4	447-451	says	_	_	_	_
+8-5	452-453	:	_	_	_	_
+8-6	454-455	"	_	_	_	_
+8-7	456-458	He	_	_	*->5-4	*[5]
+8-8	459-461	's	_	_	_	_
+8-9	462-465	one	_	_	_	_
+8-10	466-468	of	_	_	_	_
+8-11	469-472	the	_	_	_	_
+8-12	473-477	best	_	_	_	_
+8-13	478-479	.	_	_	_	_
+
+#Text=" 
+9-1	480-481	"	_	_	_	_

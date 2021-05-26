@@ -1,0 +1,56 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Ozai says : " You will fight for your honor . " 
+1-1	0-4	Ozai	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	You	_	_	*->2-1	*[2]
+1-6	18-22	will	_	_	_	_
+1-7	23-28	fight	_	_	_	_
+1-8	29-32	for	_	_	_	_
+1-9	33-37	your	_	_	*->2-2	*[2]
+1-10	38-43	honor	_	_	_	_
+1-11	44-45	.	_	_	_	_
+1-12	46-47	"	_	_	_	_
+
+#Text=Young Zuko says : " I meant you no disrespect . 
+2-1	48-53	Young	_	_	*->3-1	*[3]
+2-2	54-58	Zuko	*	PER	*->3-1	*[3]
+2-3	59-63	says	_	_	_	_
+2-4	64-65	:	_	_	_	_
+2-5	66-67	"	_	_	_	_
+2-6	68-69	I	_	_	*->3-2	*[3]
+2-7	70-75	meant	_	_	_	_
+2-8	76-79	you	_	_	*->1-2	*[1]
+2-9	80-82	no	_	_	_	_
+2-10	83-93	disrespect	_	_	_	_
+2-11	94-95	.	_	_	_	_
+
+#Text=I am your loyal son . 
+3-1	96-97	I	_	_	*->3-3	*[3]
+3-2	98-100	am	_	_	_	_
+3-3	101-105	your	_	_	*->1-3	*[1]
+3-4	106-111	loyal	_	_	*->3-4	*[3]
+3-5	112-115	son	_	_	*->3-4	*[3]
+3-6	116-117	.	_	_	_	_
+
+#Text=" Ozai says : " Rise and fight , Prince Zuko ! 
+4-1	118-119	"	_	_	_	_
+4-2	120-124	Ozai	*	PER	*->1-4	*[1]
+4-3	125-129	says	_	_	_	_
+4-4	130-131	:	_	_	_	_
+4-5	132-133	"	_	_	_	_
+4-6	134-138	Rise	_	_	_	_
+4-7	139-142	and	_	_	_	_
+4-8	143-148	fight	_	_	_	_
+4-9	149-150	,	_	_	_	_
+4-10	151-157	Prince	*	PER	*->3-5	*[3]
+4-11	158-162	Zuko	*	PER	*->3-5	*[3]
+4-12	163-164	!	_	_	_	_
+
+#Text=" 
+5-1	165-166	"	_	_	_	_

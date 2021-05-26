@@ -1,0 +1,31 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Zuko says : " Now show me what you 've got . 
+1-1	0-4	Zuko	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	Now	_	_	_	_
+1-6	18-22	show	_	_	_	_
+1-7	23-25	me	_	_	*->1-2	*[1]
+1-8	26-30	what	_	_	_	_
+1-9	31-34	you	_	_	*->2-1	*[2]
+1-10	35-38	've	_	_	_	_
+1-11	39-42	got	_	_	_	_
+1-12	43-44	.	_	_	_	_
+
+#Text=Any amount of fire you can make . 
+2-1	45-48	Any	_	_	_	_
+2-2	49-55	amount	_	_	_	_
+2-3	56-58	of	_	_	_	_
+2-4	59-63	fire	_	_	_	_
+2-5	64-67	you	_	_	*->2-2	*[2]
+2-6	68-71	can	_	_	_	_
+2-7	72-76	make	_	_	_	_
+2-8	77-78	.	_	_	_	_
+
+#Text=" 
+3-1	79-80	"	_	_	_	_

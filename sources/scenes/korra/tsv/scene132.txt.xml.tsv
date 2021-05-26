@@ -1,0 +1,102 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Toph says : " The guards are on the other side of that door . 
+1-1	0-4	Toph	_	_	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	The	_	_	_	_
+1-6	18-24	guards	_	_	_	_
+1-7	25-28	are	_	_	_	_
+1-8	29-31	on	_	_	_	_
+1-9	32-35	the	_	_	_	_
+1-10	36-41	other	_	_	_	_
+1-11	42-46	side	_	_	_	_
+1-12	47-49	of	_	_	_	_
+1-13	50-54	that	_	_	_	_
+1-14	55-59	door	_	_	_	_
+1-15	60-61	.	_	_	_	_
+
+#Text=We 'll have to be quiet . 
+2-1	62-64	We	_	_	*->2-1	*[2]
+2-2	65-68	'll	_	_	_	_
+2-3	69-73	have	_	_	_	_
+2-4	74-76	to	_	_	_	_
+2-5	77-79	be	_	_	_	_
+2-6	80-85	quiet	_	_	_	_
+2-7	86-87	.	_	_	_	_
+
+#Text=" Lin says : " Shoot me over to the cage and I can swing them back on my cable . 
+3-1	88-89	"	_	_	_	_
+3-2	90-93	Lin	*	PER	*->3-1	*[3]
+3-3	94-98	says	_	_	_	_
+3-4	99-100	:	_	_	_	_
+3-5	101-102	"	_	_	_	_
+3-6	103-108	Shoot	_	_	_	_
+3-7	109-111	me	_	_	*->3-2	*[3]
+3-8	112-116	over	_	_	_	_
+3-9	117-119	to	_	_	_	_
+3-10	120-123	the	_	_	_	_
+3-11	124-128	cage	_	_	_	_
+3-12	129-132	and	_	_	_	_
+3-13	133-134	I	_	_	*->3-3	*[3]
+3-14	135-138	can	_	_	_	_
+3-15	139-144	swing	_	_	_	_
+3-16	145-149	them	_	_	*->2-2	*[2]
+3-17	150-154	back	_	_	_	_
+3-18	155-157	on	_	_	_	_
+3-19	158-160	my	_	_	*->3-4	*[3]
+3-20	161-166	cable	_	_	_	_
+3-21	167-168	.	_	_	_	_
+
+#Text=Bolin , you 'll have to catch them since mom wo n't be able to see them . 
+4-1	169-174	Bolin	*	PER	_	_
+4-2	175-176	,	_	_	_	_
+4-3	177-180	you	_	_	*->1-2	*[1]
+4-4	181-184	'll	_	_	_	_
+4-5	185-189	have	_	_	_	_
+4-6	190-192	to	_	_	_	_
+4-7	193-198	catch	_	_	_	_
+4-8	199-203	them	_	_	*->2-3	*[2]
+4-9	204-209	since	_	_	_	_
+4-10	210-213	mom	_	_	_	_
+4-11	214-216	wo	_	_	_	_
+4-12	217-220	n't	_	_	_	_
+4-13	221-223	be	_	_	_	_
+4-14	224-228	able	_	_	_	_
+4-15	229-231	to	_	_	_	_
+4-16	232-235	see	_	_	_	_
+4-17	236-240	them	_	_	*->2-4	*[2]
+4-18	241-242	.	_	_	_	_
+
+#Text=Ready ? 
+5-1	243-248	Ready	_	_	_	_
+5-2	249-250	?	_	_	_	_
+
+#Text=" Lin says : " We 'll get you out one at a time . 
+6-1	251-252	"	_	_	_	_
+6-2	253-256	Lin	*	PER	*->3-5	*[3]
+6-3	257-261	says	_	_	_	_
+6-4	262-263	:	_	_	_	_
+6-5	264-265	"	_	_	_	_
+6-6	266-268	We	_	_	_	_
+6-7	269-272	'll	_	_	_	_
+6-8	273-276	get	_	_	_	_
+6-9	277-280	you	_	_	_	_
+6-10	281-284	out	_	_	_	_
+6-11	285-288	one	_	_	_	_
+6-12	289-291	at	_	_	_	_
+6-13	292-293	a	_	_	_	_
+6-14	294-298	time	_	_	_	_
+6-15	299-300	.	_	_	_	_
+
+#Text=Come on . 
+7-1	301-305	Come	_	_	_	_
+7-2	306-308	on	_	_	_	_
+7-3	309-310	.	_	_	_	_
+
+#Text=" 
+8-1	311-312	"	_	_	_	_

@@ -1,0 +1,195 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Lin says : " How many of those things are you going to stick in me ? " 
+1-1	0-3	Lin	*	PER	*->1-1	*[1]
+1-2	4-8	says	_	_	_	_
+1-3	9-10	:	_	_	_	_
+1-4	11-12	"	_	_	_	_
+1-5	13-16	How	_	_	_	_
+1-6	17-21	many	_	_	_	_
+1-7	22-24	of	_	_	_	_
+1-8	25-30	those	_	_	_	_
+1-9	31-37	things	_	_	_	_
+1-10	38-41	are	_	_	_	_
+1-11	42-45	you	_	_	_	_
+1-12	46-51	going	_	_	_	_
+1-13	52-54	to	_	_	_	_
+1-14	55-60	stick	_	_	_	_
+1-15	61-63	in	_	_	_	_
+1-16	64-66	me	_	_	*->1-2	*[1]
+1-17	67-68	?	_	_	_	_
+1-18	69-70	"	_	_	_	_
+
+#Text=Guo says : " I 'll be placing several needles on each of your acu - points . 
+2-1	71-74	Guo	*	PER	*->3-1	*[3]
+2-2	75-79	says	_	_	_	_
+2-3	80-81	:	_	_	_	_
+2-4	82-83	"	_	_	_	_
+2-5	84-85	I	_	_	*->3-2	*[3]
+2-6	86-89	'll	_	_	_	_
+2-7	90-92	be	_	_	_	_
+2-8	93-100	placing	_	_	_	_
+2-9	101-108	several	_	_	*->4-1	*[4]
+2-10	109-116	needles	_	_	*->4-1	*[4]
+2-11	117-119	on	_	_	_	_
+2-12	120-124	each	_	_	_	_
+2-13	125-127	of	_	_	_	_
+2-14	128-132	your	_	_	*->1-3	*[1]
+2-15	133-136	acu	_	_	_	_
+2-16	137-138	-	_	_	_	_
+2-17	139-145	points	_	_	_	_
+2-18	146-147	.	_	_	_	_
+
+#Text=There 's nothing to be scared about . 
+3-1	148-153	There	_	_	_	_
+3-2	154-156	's	_	_	_	_
+3-3	157-164	nothing	_	_	_	_
+3-4	165-167	to	_	_	_	_
+3-5	168-170	be	_	_	_	_
+3-6	171-177	scared	_	_	_	_
+3-7	178-183	about	_	_	_	_
+3-8	184-185	.	_	_	_	_
+
+#Text=" Lin says : " I 'm not afraid of needles ! 
+4-1	186-187	"	_	_	_	_
+4-2	188-191	Lin	*	PER	*->1-4	*[1]
+4-3	192-196	says	_	_	_	_
+4-4	197-198	:	_	_	_	_
+4-5	199-200	"	_	_	_	_
+4-6	201-202	I	_	_	*->1-5	*[1]
+4-7	203-205	'm	_	_	_	_
+4-8	206-209	not	_	_	_	_
+4-9	210-216	afraid	_	_	_	_
+4-10	217-219	of	_	_	_	_
+4-11	220-227	needles	_	_	*->4-2	*[4]
+4-12	228-229	!	_	_	_	_
+
+#Text=" Guo says : " Please , close your eyes and take a deep breath . 
+5-1	230-231	"	_	_	_	_
+5-2	232-235	Guo	*	PER	*->3-3	*[3]
+5-3	236-240	says	_	_	_	_
+5-4	241-242	:	_	_	_	_
+5-5	243-244	"	_	_	_	_
+5-6	245-251	Please	_	_	_	_
+5-7	252-253	,	_	_	_	_
+5-8	254-259	close	_	_	_	_
+5-9	260-264	your	_	_	*->1-6	*[1]
+5-10	265-269	eyes	_	_	_	_
+5-11	270-273	and	_	_	_	_
+5-12	274-278	take	_	_	_	_
+5-13	279-280	a	_	_	_	_
+5-14	281-285	deep	_	_	_	_
+5-15	286-292	breath	_	_	_	_
+5-16	293-294	.	_	_	_	_
+
+#Text=This process corrects an imbalance in your chi . 
+6-1	295-299	This	_	_	_	_
+6-2	300-307	process	_	_	_	_
+6-3	308-316	corrects	_	_	_	_
+6-4	317-319	an	_	_	_	_
+6-5	320-329	imbalance	_	_	_	_
+6-6	330-332	in	_	_	_	_
+6-7	333-337	your	_	_	*->1-7	*[1]
+6-8	338-341	chi	_	_	*->5-1	*[5]
+6-9	342-343	.	_	_	_	_
+
+#Text=Please tell me if you feel any pain or pressure . 
+7-1	344-350	Please	_	_	_	_
+7-2	351-355	tell	_	_	_	_
+7-3	356-358	me	_	_	*->3-4	*[3]
+7-4	359-361	if	_	_	_	_
+7-5	362-365	you	_	_	*->1-8	*[1]
+7-6	366-370	feel	_	_	_	_
+7-7	371-374	any	_	_	_	_
+7-8	375-379	pain	_	_	_	_
+7-9	380-382	or	_	_	_	_
+7-10	383-391	pressure	_	_	_	_
+7-11	392-393	.	_	_	_	_
+
+#Text=" Lin says : " I ca n't feel a thing . 
+8-1	394-395	"	_	_	_	_
+8-2	396-399	Lin	*	PER	*->1-9	*[1]
+8-3	400-404	says	_	_	_	_
+8-4	405-406	:	_	_	_	_
+8-5	407-408	"	_	_	_	_
+8-6	409-410	I	_	_	*->1-10	*[1]
+8-7	411-413	ca	_	_	_	_
+8-8	414-417	n't	_	_	_	_
+8-9	418-422	feel	_	_	_	_
+8-10	423-424	a	_	_	*->6-1	*[6]
+8-11	425-430	thing	_	_	*->6-1	*[6]
+8-12	431-432	.	_	_	_	_
+
+#Text=" Guo says : " That 's unusual . 
+9-1	433-434	"	_	_	_	_
+9-2	435-438	Guo	*	PER	*->3-5	*[3]
+9-3	439-443	says	_	_	_	_
+9-4	444-445	:	_	_	_	_
+9-5	446-447	"	_	_	_	_
+9-6	448-452	That	_	_	*->6-2	*[6]
+9-7	453-455	's	_	_	_	_
+9-8	456-463	unusual	_	_	_	_
+9-9	464-465	.	_	_	_	_
+
+#Text=Your chi must be powerfully blocked . 
+10-1	466-470	Your	_	_	*->1-11	*[1]
+10-2	471-474	chi	_	_	*->5-2	*[5]
+10-3	475-479	must	_	_	_	_
+10-4	480-482	be	_	_	_	_
+10-5	483-493	powerfully	_	_	_	_
+10-6	494-501	blocked	_	_	_	_
+10-7	502-503	.	_	_	_	_
+
+#Text=We 're going to need more needles . 
+11-1	504-506	We	_	_	_	_
+11-2	507-510	're	_	_	_	_
+11-3	511-516	going	_	_	_	_
+11-4	517-519	to	_	_	_	_
+11-5	520-524	need	_	_	_	_
+11-6	525-529	more	_	_	_	_
+11-7	530-537	needles	_	_	_	_
+11-8	538-539	.	_	_	_	_
+
+#Text=Acupuncture often taps into peoples ' buried memories . 
+12-1	540-551	Acupuncture	_	_	_	_
+12-2	552-557	often	_	_	_	_
+12-3	558-562	taps	_	_	_	_
+12-4	563-567	into	_	_	_	_
+12-5	568-575	peoples	_	_	*->2-1	*[2]
+12-6	576-577	'	_	_	*->2-1	*[2]
+12-7	578-584	buried	_	_	*->2-1	*[2]
+12-8	585-593	memories	_	_	*->2-1	*[2]
+12-9	594-595	.	_	_	_	_
+
+#Text=These memories can sometimes be difficult to process . 
+13-1	596-601	These	_	_	*->2-2	*[2]
+13-2	602-610	memories	_	_	*->2-2	*[2]
+13-3	611-614	can	_	_	_	_
+13-4	615-624	sometimes	_	_	_	_
+13-5	625-627	be	_	_	_	_
+13-6	628-637	difficult	_	_	_	_
+13-7	638-640	to	_	_	_	_
+13-8	641-648	process	_	_	_	_
+13-9	649-650	.	_	_	_	_
+
+#Text=" Lin says : " Huh , buried memories . 
+14-1	651-652	"	_	_	_	_
+14-2	653-656	Lin	*	PER	*->1-12	*[1]
+14-3	657-661	says	_	_	_	_
+14-4	662-663	:	_	_	_	_
+14-5	664-665	"	_	_	_	_
+14-6	666-669	Huh	_	_	_	_
+14-7	670-671	,	_	_	_	_
+14-8	672-678	buried	_	_	_	_
+14-9	679-687	memories	_	_	*->2-3	*[2]
+14-10	688-689	.	_	_	_	_
+
+#Text=Uh-huh . 
+15-1	690-696	Uh-huh	_	_	_	_
+15-2	697-698	.	_	_	_	_
+
+#Text=" 
+16-1	699-700	"	_	_	_	_

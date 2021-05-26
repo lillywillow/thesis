@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <docId>scene148.txt</docId>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Terra</word>
+            <lemma>Terra</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>Team</word>
+            <lemma>Team</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>leader</word>
+            <lemma>leader</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>TITLE</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>says</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>:</word>
+            <lemma>:</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>"</word>
+            <lemma>"</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>Ready</word>
+            <lemma>ready</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>2</Speaker>
+          </token>
+          <token id="8">
+            <word>...</word>
+            <lemma>...</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+            <Speaker>2</Speaker>
+          </token>
+          <token id="9">
+            <word>attack</word>
+            <lemma>attack</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>CAUSE_OF_DEATH</NER>
+            <Speaker>2</Speaker>
+          </token>
+          <token id="10">
+            <word>!</word>
+            <lemma>!</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+            <Speaker>2</Speaker>
+          </token>
+          <token id="11">
+            <word>"</word>
+            <lemma>"</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT
+          (S
+          (NP (NNP Terra) (NNP Team) (NN leader))
+          (VP (VBZ says) (: :) (`` ")
+          (NP
+          (NP (JJ Ready))
+          (: ...)
+          (NP (NN attack))))
+          (. !) ('' ")))
+          
+          </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">says</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="1">Terra</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="2">Team</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">says</governor>
+            <dependent idx="3">leader</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="5">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="6">"</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">says</governor>
+            <dependent idx="7">Ready</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">Ready</governor>
+            <dependent idx="8">...</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Ready</governor>
+            <dependent idx="9">attack</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="10">!</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="11">"</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">says</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="1">Terra</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="2">Team</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">says</governor>
+            <dependent idx="3">leader</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="5">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="6">"</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">says</governor>
+            <dependent idx="7">Ready</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">Ready</governor>
+            <dependent idx="8">...</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Ready</governor>
+            <dependent idx="9">attack</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="10">!</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="11">"</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">says</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="1">Terra</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="2">Team</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">says</governor>
+            <dependent idx="3">leader</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="5">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="6">"</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">says</governor>
+            <dependent idx="7">Ready</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">Ready</governor>
+            <dependent idx="8">...</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Ready</governor>
+            <dependent idx="9">attack</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="10">!</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="11">"</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">says</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="1">Terra</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="2">Team</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">says</governor>
+            <dependent idx="3">leader</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="5">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="6">"</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">says</governor>
+            <dependent idx="7">Ready</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">Ready</governor>
+            <dependent idx="8">...</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Ready</governor>
+            <dependent idx="9">attack</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="10">!</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="11">"</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="enhanced-plus-plus-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">says</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="1">Terra</dependent>
+          </dep>
+          <dep type="compound">
+            <governor idx="3">leader</governor>
+            <dependent idx="2">Team</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">says</governor>
+            <dependent idx="3">leader</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="5">:</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="6">"</dependent>
+          </dep>
+          <dep type="obj">
+            <governor idx="4">says</governor>
+            <dependent idx="7">Ready</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="7">Ready</governor>
+            <dependent idx="8">...</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Ready</governor>
+            <dependent idx="9">attack</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="10">!</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="4">says</governor>
+            <dependent idx="11">"</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+    <coreference/>
+  </document>
+</root>

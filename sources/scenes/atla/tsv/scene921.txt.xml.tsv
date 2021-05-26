@@ -1,0 +1,80 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Iroh says : " We 're on a collision course ! " 
+1-1	0-4	Iroh	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-16	We	_	_	*->1-1	*[1]
+1-6	17-20	're	_	_	_	_
+1-7	21-23	on	_	_	_	_
+1-8	24-25	a	_	_	*->2-1	*[2]
+1-9	26-35	collision	_	_	*->2-1	*[2]
+1-10	36-42	course	_	_	*->2-1	*[2]
+1-11	43-44	!	_	_	_	_
+1-12	45-46	"	_	_	_	_
+
+#Text=Zuko says : " We can make it ! " 
+2-1	47-51	Zuko	*	PER	_	_
+2-2	52-56	says	_	_	_	_
+2-3	57-58	:	_	_	_	_
+2-4	59-60	"	_	_	_	_
+2-5	61-63	We	_	_	*->1-2	*[1]
+2-6	64-67	can	_	_	_	_
+2-7	68-72	make	_	_	_	_
+2-8	73-75	it	_	_	*->2-2	*[2]
+2-9	76-77	!	_	_	_	_
+2-10	78-79	"	_	_	_	_
+
+#Text=Captain says : " The boarding party is ready to apprehend Prince Zuko , sir . " 
+3-1	80-87	Captain	*	PER	_	_
+3-2	88-92	says	_	_	_	_
+3-3	93-94	:	_	_	_	_
+3-4	95-96	"	_	_	_	_
+3-5	97-100	The	_	_	_	_
+3-6	101-109	boarding	_	_	_	_
+3-7	110-115	party	_	_	_	_
+3-8	116-118	is	_	_	_	_
+3-9	119-124	ready	_	_	_	_
+3-10	125-127	to	_	_	_	_
+3-11	128-137	apprehend	_	_	_	_
+3-12	138-144	Prince	*	PER	*->3-1	*[3]
+3-13	145-149	Zuko	*	PER	*->3-1	*[3]
+3-14	150-151	,	_	_	*->3-1	*[3]
+3-15	152-155	sir	_	_	*->3-1	*[3]
+3-16	156-157	.	_	_	_	_
+3-17	158-159	"	_	_	_	_
+
+#Text=Zhao says : " Wait ! 
+4-1	160-164	Zhao	*	PER	_	_
+4-2	165-169	says	_	_	_	_
+4-3	170-171	:	_	_	_	_
+4-4	172-173	"	_	_	_	_
+4-5	174-178	Wait	_	_	_	_
+4-6	179-180	!	_	_	_	_
+
+#Text=Cut the engines , and let them pass . 
+5-1	181-184	Cut	_	_	_	_
+5-2	185-188	the	_	_	_	_
+5-3	189-196	engines	_	_	_	_
+5-4	197-198	,	_	_	_	_
+5-5	199-202	and	_	_	_	_
+5-6	203-206	let	_	_	_	_
+5-7	207-211	them	_	_	*->1-3	*[1]
+5-8	212-216	pass	_	_	_	_
+5-9	217-218	.	_	_	_	_
+
+#Text=" Captain says : " Sir ? 
+6-1	219-220	"	_	_	*->4-1	*[4]
+6-2	221-228	Captain	*	PER	*->4-1	*[4]
+6-3	229-233	says	_	_	_	_
+6-4	234-235	:	_	_	_	_
+6-5	236-237	"	_	_	_	_
+6-6	238-241	Sir	_	_	*->5-2	*[5]
+6-7	242-243	?	_	_	_	_
+
+#Text=" 
+7-1	244-245	"	_	_	_	_

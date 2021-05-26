@@ -1,0 +1,83 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Joo Dee says : " You do want to watch your step , though . " 
+1-1	0-3	Joo	*	PER	_	_
+1-2	4-7	Dee	*	PER	_	_
+1-3	8-12	says	_	_	_	_
+1-4	13-14	:	_	_	_	_
+1-5	15-16	"	_	_	_	_
+1-6	17-20	You	_	_	*->1-1	*[1]
+1-7	21-23	do	_	_	_	_
+1-8	24-28	want	_	_	_	_
+1-9	29-31	to	_	_	_	_
+1-10	32-37	watch	_	_	_	_
+1-11	38-42	your	_	_	*->1-2	*[1]
+1-12	43-47	step	_	_	_	_
+1-13	48-49	,	_	_	_	_
+1-14	50-56	though	_	_	_	_
+1-15	57-58	.	_	_	_	_
+1-16	59-60	"	_	_	_	_
+
+#Text=Katara says : " Why do they have all these poor people blocked off in one part of the city ? " 
+2-1	61-67	Katara	*	PER	_	_
+2-2	68-72	says	_	_	_	_
+2-3	73-74	:	_	_	_	_
+2-4	75-76	"	_	_	_	_
+2-5	77-80	Why	_	_	_	_
+2-6	81-83	do	_	_	_	_
+2-7	84-88	they	_	_	*->1-3	*[1]
+2-8	89-93	have	_	_	_	_
+2-9	94-97	all	_	_	_	_
+2-10	98-103	these	_	_	_	_
+2-11	104-108	poor	_	_	_	_
+2-12	109-115	people	_	_	_	_
+2-13	116-123	blocked	_	_	_	_
+2-14	124-127	off	_	_	_	_
+2-15	128-130	in	_	_	_	_
+2-16	131-134	one	_	_	_	_
+2-17	135-139	part	_	_	_	_
+2-18	140-142	of	_	_	_	_
+2-19	143-146	the	_	_	_	_
+2-20	147-151	city	_	_	_	_
+2-21	152-153	?	_	_	_	_
+2-22	154-155	"	_	_	_	_
+
+#Text=Aang says : " This is why I never came here before . 
+3-1	156-160	Aang	*	PER	*->2-1	*[2]
+3-2	161-165	says	_	_	_	_
+3-3	166-167	:	_	_	_	_
+3-4	168-169	"	_	_	_	_
+3-5	170-174	This	_	_	*->3-1	*[3]
+3-6	175-177	is	_	_	_	_
+3-7	178-181	why	_	_	_	_
+3-8	182-183	I	_	_	*->2-2	*[2]
+3-9	184-189	never	_	_	_	_
+3-10	190-194	came	_	_	_	_
+3-11	195-199	here	_	_	_	_
+3-12	200-206	before	_	_	_	_
+3-13	207-208	.	_	_	_	_
+
+#Text=I always heard it was so different from the way the monks taught us to live . 
+4-1	209-210	I	_	_	*->2-3	*[2]
+4-2	211-217	always	_	_	_	_
+4-3	218-223	heard	_	_	_	_
+4-4	224-226	it	_	_	*->3-2	*[3]
+4-5	227-230	was	_	_	_	_
+4-6	231-233	so	_	_	_	_
+4-7	234-243	different	_	_	_	_
+4-8	244-248	from	_	_	_	_
+4-9	249-252	the	_	_	_	_
+4-10	253-256	way	_	_	_	_
+4-11	257-260	the	_	_	_	_
+4-12	261-266	monks	_	_	_	_
+4-13	267-273	taught	_	_	_	_
+4-14	274-276	us	_	_	*->1-4	*[1]
+4-15	277-279	to	_	_	_	_
+4-16	280-284	live	_	_	_	_
+4-17	285-286	.	_	_	_	_
+
+#Text=" 
+5-1	287-288	"	_	_	_	_

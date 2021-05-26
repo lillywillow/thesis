@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bolin says : " No Korra for practice again ? " 
+1-1	0-5	Bolin	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-17	No	_	_	*->1-1	*[1]
+1-6	18-23	Korra	_	_	*->1-1	*[1]
+1-7	24-27	for	_	_	*->1-1	*[1]
+1-8	28-36	practice	_	_	*->1-1	*[1]
+1-9	37-42	again	_	_	*->1-1	*[1]
+1-10	43-44	?	_	_	_	_
+1-11	45-46	"	_	_	_	_
+
+#Text=Mako says : " Does n't look like it . " 
+2-1	47-51	Mako	*	PER	_	_
+2-2	52-56	says	_	_	_	_
+2-3	57-58	:	_	_	_	_
+2-4	59-60	"	_	_	_	_
+2-5	61-65	Does	_	_	_	_
+2-6	66-69	n't	_	_	_	_
+2-7	70-74	look	_	_	_	_
+2-8	75-79	like	_	_	_	_
+2-9	80-82	it	_	_	*->1-2	*[1]
+2-10	83-84	.	_	_	_	_
+2-11	85-86	"	_	_	_	_
