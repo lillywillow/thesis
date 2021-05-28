@@ -1,0 +1,87 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Citizen # 1 says : " What happened in the wilds ? " 
+1-1	0-7	Citizen	_	_	_	_
+1-2	8-9	#	_	_	_	_
+1-3	10-11	1	_	_	_	_
+1-4	12-16	says	_	_	_	_
+1-5	17-18	:	_	_	_	_
+1-6	19-20	"	_	_	_	_
+1-7	21-25	What	_	_	_	_
+1-8	26-34	happened	_	_	_	_
+1-9	35-37	in	_	_	_	_
+1-10	38-41	the	_	_	_	_
+1-11	42-47	wilds	_	_	_	_
+1-12	48-49	?	_	_	_	_
+1-13	50-51	"	_	_	_	_
+
+#Text=Citizen # 2 says : " Where are the others ? " 
+2-1	52-59	Citizen	_	_	_	_
+2-2	60-61	#	_	_	_	_
+2-3	62-63	2	_	_	_	_
+2-4	64-68	says	_	_	_	_
+2-5	69-70	:	_	_	_	_
+2-6	71-72	"	_	_	_	_
+2-7	73-78	Where	_	_	_	_
+2-8	79-82	are	_	_	_	_
+2-9	83-86	the	_	_	_	_
+2-10	87-93	others	_	_	_	_
+2-11	94-95	?	_	_	_	_
+2-12	96-97	"	_	_	_	_
+
+#Text=Huntsman says : " Gone . 
+3-1	98-106	Huntsman	*	PER	*->1-1	*[1]
+3-2	107-111	says	_	_	_	_
+3-3	112-113	:	_	_	_	_
+3-4	114-115	"	_	_	_	_
+3-5	116-120	Gone	_	_	_	_
+3-6	121-122	.	_	_	_	_
+
+#Text=Spirits took them . 
+4-1	123-130	Spirits	_	_	*->2-1	*[2]
+4-2	131-135	took	_	_	_	_
+4-3	136-140	them	_	_	*->2-2	*[2]
+4-4	141-142	.	_	_	_	_
+
+#Text=They were protecting that kid , Wan , like he was one of their own . 
+5-1	143-147	They	_	_	*->2-3	*[2]
+5-2	148-152	were	_	_	_	_
+5-3	153-163	protecting	_	_	_	_
+5-4	164-168	that	_	_	_	_
+5-5	169-172	kid	_	_	_	_
+5-6	173-174	,	_	_	_	_
+5-7	175-178	Wan	_	_	_	_
+5-8	179-180	,	_	_	_	_
+5-9	181-185	like	_	_	_	_
+5-10	186-188	he	_	_	_	_
+5-11	189-192	was	_	_	_	_
+5-12	193-196	one	_	_	_	_
+5-13	197-199	of	_	_	_	_
+5-14	200-205	their	_	_	_	_
+5-15	206-209	own	_	_	_	_
+5-16	210-211	.	_	_	_	_
+
+#Text=" Jaya says : " Did you hear that ? 
+6-1	212-213	"	_	_	_	_
+6-2	214-218	Jaya	*	PER	_	_
+6-3	219-223	says	_	_	_	_
+6-4	224-225	:	_	_	_	_
+6-5	226-227	"	_	_	_	_
+6-6	228-231	Did	_	_	_	_
+6-7	232-235	you	_	_	*->1-2	*[1]
+6-8	236-240	hear	_	_	_	_
+6-9	241-245	that	_	_	*->2-4	*[2]
+6-10	246-247	?	_	_	_	_
+
+#Text=Wan 's still alive . 
+7-1	248-251	Wan	_	_	_	_
+7-2	252-254	's	_	_	_	_
+7-3	255-260	still	_	_	_	_
+7-4	261-266	alive	_	_	_	_
+7-5	267-268	.	_	_	_	_
+
+#Text=" 
+8-1	269-270	"	_	_	_	_

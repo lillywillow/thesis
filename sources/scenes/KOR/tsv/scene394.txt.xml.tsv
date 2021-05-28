@@ -1,0 +1,160 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sentry says : " There 's something out there ! " 
+1-1	0-6	Sentry	_	_	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-21	There	_	_	_	_
+1-6	22-24	's	_	_	_	_
+1-7	25-34	something	_	_	_	_
+1-8	35-38	out	_	_	_	_
+1-9	39-44	there	_	_	_	_
+1-10	45-46	!	_	_	_	_
+1-11	47-48	"	_	_	_	_
+
+#Text=Sentry says : " It 's Kuvira 's army ! 
+2-1	49-55	Sentry	_	_	*->1-2	*[1]
+2-2	56-60	says	_	_	_	_
+2-3	61-62	:	_	_	_	_
+2-4	63-64	"	_	_	_	_
+2-5	65-67	It	_	_	*->3-2	*[3]
+2-6	68-70	's	_	_	_	_
+2-7	71-77	Kuvira	*	PER	*->2-1	*[2]
+2-8	78-80	's	_	_	*->2-1	*[2]
+2-9	81-85	army	_	_	*->3-1	*[3]
+2-10	86-87	!	_	_	_	_
+
+#Text=They 're a week early ! 
+3-1	88-92	They	_	_	_	_
+3-2	93-96	're	_	_	_	_
+3-3	97-98	a	_	_	*->4-1	*[4]
+3-4	99-103	week	_	_	*->4-1	*[4]
+3-5	104-109	early	_	_	_	_
+3-6	110-111	!	_	_	_	_
+
+#Text=Get the commander immediately and radio Republic City ! 
+4-1	112-115	Get	_	_	_	_
+4-2	116-119	the	_	_	_	_
+4-3	120-129	commander	*	PER	_	_
+4-4	130-141	immediately	_	_	_	_
+4-5	142-145	and	_	_	_	_
+4-6	146-151	radio	_	_	_	_
+4-7	152-160	Republic	_	_	_	_
+4-8	161-165	City	_	_	_	_
+4-9	166-167	!	_	_	_	_
+
+#Text=" Bolin says : " Guys ! 
+5-1	168-169	"	_	_	*->5-1	*[5]
+5-2	170-175	Bolin	*	PER	*->5-1	*[5]
+5-3	176-180	says	_	_	_	_
+5-4	181-182	:	_	_	_	_
+5-5	183-184	"	_	_	_	_
+5-6	185-189	Guys	_	_	*->6-1	*[6]
+5-7	190-191	!	_	_	_	_
+
+#Text=I see something . 
+6-1	192-193	I	_	_	*->5-2	*[5]
+6-2	194-197	see	_	_	_	_
+6-3	198-207	something	_	_	_	_
+6-4	208-209	.	_	_	_	_
+
+#Text=Down there ! 
+7-1	210-214	Down	_	_	_	_
+7-2	215-220	there	_	_	_	_
+7-3	221-222	!	_	_	_	_
+
+#Text=" Asami says : " Is that – ? 
+8-1	223-224	"	_	_	_	_
+8-2	225-230	Asami	*	PER	*->7-1	*[7]
+8-3	231-235	says	_	_	_	_
+8-4	236-237	:	_	_	_	_
+8-5	238-239	"	_	_	_	_
+8-6	240-242	Is	_	_	_	_
+8-7	243-247	that	_	_	*->6-2	*[6]
+8-8	248-249	–	_	_	_	_
+8-9	250-251	?	_	_	_	_
+
+#Text=" Korra says : " Kuvira . 
+9-1	252-253	"	_	_	_	_
+9-2	254-259	Korra	*	PER	_	_
+9-3	260-264	says	_	_	_	_
+9-4	265-266	:	_	_	_	_
+9-5	267-268	"	_	_	_	_
+9-6	269-275	Kuvira	_	_	*->2-2	*[2]
+9-7	276-277	.	_	_	_	_
+
+#Text=She 's already crossed into United Republic territory . 
+10-1	278-281	She	_	_	*->2-3	*[2]
+10-2	282-284	's	_	_	_	_
+10-3	285-292	already	_	_	_	_
+10-4	293-300	crossed	_	_	_	_
+10-5	301-305	into	_	_	_	_
+10-6	306-312	United	_	_	_	_
+10-7	313-321	Republic	_	_	_	_
+10-8	322-331	territory	_	_	_	_
+10-9	332-333	.	_	_	_	_
+
+#Text=She 's a week early . 
+11-1	334-337	She	_	_	*->2-4	*[2]
+11-2	338-340	's	_	_	_	_
+11-3	341-342	a	_	_	*->4-2	*[4]
+11-4	343-347	week	_	_	*->4-2	*[4]
+11-5	348-353	early	_	_	_	_
+11-6	354-355	.	_	_	_	_
+
+#Text=" Mako says : " This does n't make sense . 
+12-1	356-357	"	_	_	_	_
+12-2	358-362	Mako	*	PER	_	_
+12-3	363-367	says	_	_	_	_
+12-4	368-369	:	_	_	_	_
+12-5	370-371	"	_	_	_	_
+12-6	372-376	This	_	_	*->8-1	*[8]
+12-7	377-381	does	_	_	_	_
+12-8	382-385	n't	_	_	_	_
+12-9	386-390	make	_	_	_	_
+12-10	391-396	sense	_	_	_	_
+12-11	397-398	.	_	_	_	_
+
+#Text=There are n't any train tracks this way . 
+13-1	399-404	There	_	_	_	_
+13-2	405-408	are	_	_	_	_
+13-3	409-412	n't	_	_	_	_
+13-4	413-416	any	_	_	_	_
+13-5	417-422	train	_	_	_	_
+13-6	423-429	tracks	_	_	_	_
+13-7	430-434	this	_	_	_	_
+13-8	435-438	way	_	_	_	_
+13-9	439-440	.	_	_	_	_
+
+#Text=How are they transporting that super weapon of theirs ? 
+14-1	441-444	How	_	_	_	_
+14-2	445-448	are	_	_	_	_
+14-3	449-453	they	_	_	*->8-2	*[8]
+14-4	454-466	transporting	_	_	_	_
+14-5	467-471	that	_	_	_	_
+14-6	472-477	super	_	_	_	_
+14-7	478-484	weapon	_	_	_	_
+14-8	485-487	of	_	_	_	_
+14-9	488-494	theirs	_	_	*->8-3	*[8]
+14-10	495-496	?	_	_	_	_
+
+#Text=" Asami says : " Apparently on a giant mecha suit ! 
+15-1	497-498	"	_	_	_	_
+15-2	499-504	Asami	*	PER	*->7-2	*[7]
+15-3	505-509	says	_	_	_	_
+15-4	510-511	:	_	_	_	_
+15-5	512-513	"	_	_	_	_
+15-6	514-524	Apparently	_	_	_	_
+15-7	525-527	on	_	_	_	_
+15-8	528-529	a	_	_	_	_
+15-9	530-535	giant	_	_	_	_
+15-10	536-541	mecha	_	_	_	_
+15-11	542-546	suit	_	_	_	_
+15-12	547-548	!	_	_	_	_
+
+#Text=" 
+16-1	549-550	"	_	_	_	_

@@ -1,0 +1,64 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " Got an idea about who I am now , chumps ? " 
+1-1	0-5	Korra	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Got	_	_	_	_
+1-6	19-21	an	_	_	_	_
+1-7	22-26	idea	_	_	_	_
+1-8	27-32	about	_	_	_	_
+1-9	33-36	who	_	_	_	_
+1-10	37-38	I	_	_	*->1-2	*[1]
+1-11	39-41	am	_	_	_	_
+1-12	42-45	now	_	_	_	_
+1-13	46-47	,	_	_	_	_
+1-14	48-54	chumps	_	_	_	_
+1-15	55-56	?	_	_	_	_
+1-16	57-58	"	_	_	_	_
+
+#Text=Mushi says : " Come on ! " 
+2-1	59-64	Mushi	*	PER	*->2-1	*[2]
+2-2	65-69	says	_	_	_	_
+2-3	70-71	:	_	_	_	_
+2-4	72-73	"	_	_	_	_
+2-5	74-78	Come	_	_	_	_
+2-6	79-81	on	_	_	_	_
+2-7	82-83	!	_	_	_	_
+2-8	84-85	"	_	_	_	_
+
+#Text=Korra says : " You 're not getting away ! " 
+3-1	86-91	Korra	*	PER	*->1-3	*[1]
+3-2	92-96	says	_	_	_	_
+3-3	97-98	:	_	_	_	_
+3-4	99-100	"	_	_	_	_
+3-5	101-104	You	_	_	*->2-2	*[2]
+3-6	105-108	're	_	_	_	_
+3-7	109-112	not	_	_	_	_
+3-8	113-120	getting	_	_	_	_
+3-9	121-125	away	_	_	_	_
+3-10	126-127	!	_	_	_	_
+3-11	128-129	"	_	_	_	_
+
+#Text=Metalbending cops says : " Police ! 
+4-1	130-142	Metalbending	_	_	_	_
+4-2	143-147	cops	_	_	_	_
+4-3	148-152	says	_	_	_	_
+4-4	153-154	:	_	_	_	_
+4-5	155-156	"	_	_	_	_
+4-6	157-163	Police	_	_	_	_
+4-7	164-165	!	_	_	_	_
+
+#Text=Freeze where you are ! 
+5-1	166-172	Freeze	_	_	_	_
+5-2	173-178	where	_	_	_	_
+5-3	179-182	you	_	_	*->1-4	*[1]
+5-4	183-186	are	_	_	_	_
+5-5	187-188	!	_	_	_	_
+
+#Text=" 
+6-1	189-190	"	_	_	_	_

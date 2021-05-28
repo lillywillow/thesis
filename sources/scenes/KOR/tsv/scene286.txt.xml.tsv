@@ -1,0 +1,274 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Asami says : " Dear Korra . 
+1-1	0-5	Asami	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-19	Dear	_	_	_	_
+1-6	20-25	Korra	_	_	_	_
+1-7	26-27	.	_	_	_	_
+
+#Text=I miss you . 
+2-1	28-29	I	_	_	*->1-2	*[1]
+2-2	30-34	miss	_	_	_	_
+2-3	35-38	you	_	_	*->3-1	*[3]
+2-4	39-40	.	_	_	_	_
+
+#Text=It 's not the same in Republic City without you . 
+3-1	41-43	It	_	_	*->4-2	*[4]
+3-2	44-46	's	_	_	_	_
+3-3	47-50	not	_	_	_	_
+3-4	51-54	the	_	_	*->4-1	*[4]
+3-5	55-59	same	_	_	*->4-1	*[4]
+3-6	60-62	in	_	_	*->4-1	*[4]
+3-7	63-71	Republic	_	_	*->4-1	*[4]
+3-8	72-76	City	_	_	*->4-1	*[4]
+3-9	77-84	without	_	_	*->4-1	*[4]
+3-10	85-88	you	_	_	*->3-2	*[3]
+3-11	89-90	.	_	_	_	_
+
+#Text=How are you feeling ? 
+4-1	91-94	How	_	_	_	_
+4-2	95-98	are	_	_	_	_
+4-3	99-102	you	_	_	*->3-3	*[3]
+4-4	103-110	feeling	_	_	_	_
+4-5	111-112	?	_	_	_	_
+
+#Text=Things are going well here . 
+5-1	113-119	Things	_	_	_	_
+5-2	120-123	are	_	_	_	_
+5-3	124-129	going	_	_	_	_
+5-4	130-134	well	_	_	_	_
+5-5	135-139	here	_	_	_	_
+5-6	140-141	.	_	_	_	_
+
+#Text=I just got a big contract to help redesign the city 's infrastructure , so I 'll be keeping pretty busy for a while . 
+6-1	142-143	I	_	_	*->1-3	*[1]
+6-2	144-148	just	_	_	_	_
+6-3	149-152	got	_	_	_	_
+6-4	153-154	a	_	_	_	_
+6-5	155-158	big	_	_	_	_
+6-6	159-167	contract	_	_	_	_
+6-7	168-170	to	_	_	_	_
+6-8	171-175	help	_	_	_	_
+6-9	176-184	redesign	_	_	_	_
+6-10	185-188	the	_	_	*->5-2	*[5]
+6-11	189-193	city	_	_	*->5-2	*[5]
+6-12	194-196	's	_	_	*->5-2	*[5]
+6-13	197-211	infrastructure	_	_	_	_
+6-14	212-213	,	_	_	_	_
+6-15	214-216	so	_	_	_	_
+6-16	217-218	I	_	_	*->1-4	*[1]
+6-17	219-222	'll	_	_	_	_
+6-18	223-225	be	_	_	_	_
+6-19	226-233	keeping	_	_	_	_
+6-20	234-240	pretty	_	_	_	_
+6-21	241-245	busy	_	_	_	_
+6-22	246-249	for	_	_	_	_
+6-23	250-251	a	_	_	_	_
+6-24	252-257	while	_	_	_	_
+6-25	258-259	.	_	_	_	_
+
+#Text=" Mako says : " Hey , Korra ! 
+7-1	260-261	"	_	_	_	_
+7-2	262-266	Mako	*	PER	*->7-1	*[7]
+7-3	267-271	says	_	_	_	_
+7-4	272-273	:	_	_	_	_
+7-5	274-275	"	_	_	_	_
+7-6	276-279	Hey	_	_	_	_
+7-7	280-281	,	_	_	_	_
+7-8	282-287	Korra	_	_	_	_
+7-9	288-289	!	_	_	_	_
+
+#Text=Sooo , I 'm not very good at writing letters . 
+8-1	290-294	Sooo	_	_	_	_
+8-2	295-296	,	_	_	_	_
+8-3	297-298	I	_	_	*->7-2	*[7]
+8-4	299-301	'm	_	_	_	_
+8-5	302-305	not	_	_	_	_
+8-6	306-310	very	_	_	_	_
+8-7	311-315	good	_	_	_	_
+8-8	316-318	at	_	_	_	_
+8-9	319-326	writing	_	_	_	_
+8-10	327-334	letters	_	_	_	_
+8-11	335-336	.	_	_	_	_
+
+#Text=It 's 2:15 in the afternoon . 
+9-1	337-339	It	_	_	*->6-3	*[6]
+9-2	340-342	's	_	_	_	_
+9-3	343-347	2:15	_	_	*->6-1	*[6]
+9-4	348-350	in	_	_	*->6-1	*[6]
+9-5	351-354	the	_	_	*->6-1	*[6]
+9-6	355-364	afternoon	_	_	*->6-1	*[6]
+9-7	365-366	.	_	_	_	_
+
+#Text=Weather is fair . 
+10-1	367-374	Weather	_	_	_	_
+10-2	375-377	is	_	_	_	_
+10-3	378-382	fair	_	_	_	_
+10-4	383-384	.	_	_	_	_
+
+#Text=Chance of snow showers later today . 
+11-1	385-391	Chance	_	_	_	_
+11-2	392-394	of	_	_	_	_
+11-3	395-399	snow	_	_	_	_
+11-4	400-407	showers	_	_	_	_
+11-5	408-413	later	_	_	_	_
+11-6	414-419	today	_	_	_	_
+11-7	420-421	.	_	_	_	_
+
+#Text=But enough joking around . 
+12-1	422-425	But	_	_	_	_
+12-2	426-432	enough	_	_	_	_
+12-3	433-439	joking	_	_	_	_
+12-4	440-446	around	_	_	_	_
+12-5	447-448	.	_	_	_	_
+
+#Text=I hope you 're dong well . 
+13-1	449-450	I	_	_	*->7-3	*[7]
+13-2	451-455	hope	_	_	_	_
+13-3	456-459	you	_	_	*->1-5	*[1]
+13-4	460-463	're	_	_	_	_
+13-5	464-468	dong	_	_	_	_
+13-6	469-473	well	_	_	_	_
+13-7	474-475	.	_	_	_	_
+
+#Text=Me ? 
+14-1	476-478	Me	_	_	_	_
+14-2	479-480	?	_	_	_	_
+
+#Text=I 'm back on the beat . 
+15-1	481-482	I	_	_	*->7-4	*[7]
+15-2	483-485	'm	_	_	_	_
+15-3	486-490	back	_	_	_	_
+15-4	491-493	on	_	_	_	_
+15-5	494-497	the	_	_	_	_
+15-6	498-502	beat	_	_	_	_
+15-7	503-504	.	_	_	_	_
+
+#Text=Beifong has me staking out the Red Monsoon hideout . 
+16-1	505-512	Beifong	*	PER	_	_
+16-2	513-516	has	_	_	_	_
+16-3	517-519	me	_	_	*->7-5	*[7]
+16-4	520-527	staking	_	_	_	_
+16-5	528-531	out	_	_	_	_
+16-6	532-535	the	_	_	_	_
+16-7	536-539	Red	_	_	_	_
+16-8	540-547	Monsoon	_	_	_	_
+16-9	548-555	hideout	_	_	_	_
+16-10	556-557	.	_	_	_	_
+
+#Text=You wo n't believe what 's going down . 
+17-1	558-561	You	_	_	*->1-6	*[1]
+17-2	562-564	wo	_	_	_	_
+17-3	565-568	n't	_	_	_	_
+17-4	569-576	believe	_	_	_	_
+17-5	577-581	what	_	_	_	_
+17-6	582-584	's	_	_	_	_
+17-7	585-590	going	_	_	_	_
+17-8	591-595	down	_	_	_	_
+17-9	596-597	.	_	_	_	_
+
+#Text=" Bolin says : " My dearest Avatar Korra . 
+18-1	598-599	"	_	_	_	_
+18-2	600-605	Bolin	*	PER	*->8-1	*[8]
+18-3	606-610	says	_	_	_	_
+18-4	611-612	:	_	_	_	_
+18-5	613-614	"	_	_	_	_
+18-6	615-617	My	_	_	*->8-2	*[8]
+18-7	618-625	dearest	_	_	_	_
+18-8	626-632	Avatar	*	PER	*->2-1	*[2]
+18-9	633-638	Korra	*	PER	*->2-1	*[2]
+18-10	639-640	.	_	_	_	_
+
+#Text=Though several fortnights have passed since your departure to convalesce in the homeland of your tribesmen , I feel our friendship knows neither time ... nor distance . 
+19-1	641-647	Though	_	_	_	_
+19-2	648-655	several	_	_	_	_
+19-3	656-666	fortnights	_	_	_	_
+19-4	667-671	have	_	_	_	_
+19-5	672-678	passed	_	_	_	_
+19-6	679-684	since	_	_	_	_
+19-7	685-689	your	_	_	*->9-1	*[9]
+19-8	690-699	departure	_	_	_	_
+19-9	700-702	to	_	_	_	_
+19-10	703-713	convalesce	_	_	_	_
+19-11	714-716	in	_	_	_	_
+19-12	717-720	the	_	_	_	_
+19-13	721-729	homeland	_	_	_	_
+19-14	730-732	of	_	_	_	_
+19-15	733-737	your	_	_	*->9-2	*[9]
+19-16	738-747	tribesmen	_	_	_	_
+19-17	748-749	,	_	_	_	_
+19-18	750-751	I	_	_	*->8-3	*[8]
+19-19	752-756	feel	_	_	_	_
+19-20	757-760	our	_	_	_	_
+19-21	761-771	friendship	_	_	_	_
+19-22	772-777	knows	_	_	_	_
+19-23	778-785	neither	_	_	_	_
+19-24	786-790	time	_	_	_	_
+19-25	791-794	...	_	_	_	_
+19-26	795-798	nor	_	_	_	_
+19-27	799-807	distance	_	_	_	_
+19-28	808-809	.	_	_	_	_
+
+#Text=" Bolin says : " You will be most pleased to learn that I found gainful employment with Sir Varrick and the Lady Kuvira . 
+20-1	810-811	"	_	_	_	_
+20-2	812-817	Bolin	*	PER	*->8-4	*[8]
+20-3	818-822	says	_	_	_	_
+20-4	823-824	:	_	_	_	_
+20-5	825-826	"	_	_	_	_
+20-6	827-830	You	_	_	*->9-3	*[9]
+20-7	831-835	will	_	_	_	_
+20-8	836-838	be	_	_	_	_
+20-9	839-843	most	_	_	_	_
+20-10	844-851	pleased	_	_	_	_
+20-11	852-854	to	_	_	_	_
+20-12	855-860	learn	_	_	_	_
+20-13	861-865	that	_	_	_	_
+20-14	866-867	I	_	_	*->8-5	*[8]
+20-15	868-873	found	_	_	_	_
+20-16	874-881	gainful	_	_	_	_
+20-17	882-892	employment	_	_	_	_
+20-18	893-897	with	_	_	_	_
+20-19	898-901	Sir	_	_	_	_
+20-20	902-909	Varrick	*	PER	_	_
+20-21	910-913	and	_	_	_	_
+20-22	914-917	the	_	_	_	_
+20-23	918-922	Lady	*	PER	_	_
+20-24	923-929	Kuvira	*	PER	_	_
+20-25	930-931	.	_	_	_	_
+
+#Text=I set off on the morrow with some trepidation , but I am eager to offer any aid I can in stabilizing the Earth Kingdom ! 
+21-1	932-933	I	_	_	*->8-6	*[8]
+21-2	934-937	set	_	_	_	_
+21-3	938-941	off	_	_	_	_
+21-4	942-944	on	_	_	_	_
+21-5	945-948	the	_	_	_	_
+21-6	949-955	morrow	_	_	_	_
+21-7	956-960	with	_	_	_	_
+21-8	961-965	some	_	_	_	_
+21-9	966-977	trepidation	_	_	_	_
+21-10	978-979	,	_	_	_	_
+21-11	980-983	but	_	_	_	_
+21-12	984-985	I	_	_	*->8-7	*[8]
+21-13	986-988	am	_	_	_	_
+21-14	989-994	eager	_	_	_	_
+21-15	995-997	to	_	_	_	_
+21-16	998-1003	offer	_	_	_	_
+21-17	1004-1007	any	_	_	_	_
+21-18	1008-1011	aid	_	_	_	_
+21-19	1012-1013	I	_	_	*->8-8	*[8]
+21-20	1014-1017	can	_	_	_	_
+21-21	1018-1020	in	_	_	_	_
+21-22	1021-1032	stabilizing	_	_	_	_
+21-23	1033-1036	the	_	_	_	_
+21-24	1037-1042	Earth	_	_	_	_
+21-25	1043-1050	Kingdom	_	_	_	_
+21-26	1051-1052	!	_	_	_	_
+
+#Text=" 
+22-1	1053-1054	"	_	_	_	_

@@ -1,0 +1,232 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " When I get out of here , none of you will survive ! " 
+1-1	0-5	Korra	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-19	When	_	_	_	_
+1-6	20-21	I	_	_	_	_
+1-7	22-25	get	_	_	_	_
+1-8	26-29	out	_	_	_	_
+1-9	30-32	of	_	_	_	_
+1-10	33-37	here	_	_	_	_
+1-11	38-39	,	_	_	_	_
+1-12	40-44	none	_	_	_	_
+1-13	45-47	of	_	_	_	_
+1-14	48-51	you	_	_	*->2-1	*[2]
+1-15	52-56	will	_	_	_	_
+1-16	57-64	survive	_	_	_	_
+1-17	65-66	!	_	_	_	_
+1-18	67-68	"	_	_	_	_
+
+#Text=Zaheer says : " You wo n't get out , unless the Metal Clan has taught you a way to bend platinum . 
+2-1	69-75	Zaheer	*	PER	*->3-1	*[3]
+2-2	76-80	says	_	_	_	_
+2-3	81-82	:	_	_	_	_
+2-4	83-84	"	_	_	_	_
+2-5	85-88	You	_	_	*->4-1	*[4]
+2-6	89-91	wo	_	_	_	_
+2-7	92-95	n't	_	_	_	_
+2-8	96-99	get	_	_	_	_
+2-9	100-103	out	_	_	_	_
+2-10	104-105	,	_	_	_	_
+2-11	106-112	unless	_	_	_	_
+2-12	113-116	the	_	_	_	_
+2-13	117-122	Metal	_	_	_	_
+2-14	123-127	Clan	_	_	_	_
+2-15	128-131	has	_	_	_	_
+2-16	132-138	taught	_	_	_	_
+2-17	139-142	you	_	_	*->4-2	*[4]
+2-18	143-144	a	_	_	_	_
+2-19	145-148	way	_	_	_	_
+2-20	149-151	to	_	_	_	_
+2-21	152-156	bend	_	_	_	_
+2-22	157-165	platinum	_	_	_	_
+2-23	166-167	.	_	_	_	_
+
+#Text=Once we administer this poison , your body will naturally react , forcing you into the Avatar State in an effort to keep you alive . 
+3-1	168-172	Once	_	_	_	_
+3-2	173-175	we	_	_	*->2-2	*[2]
+3-3	176-186	administer	_	_	_	_
+3-4	187-191	this	_	_	*->5-1	*[5]
+3-5	192-198	poison	_	_	*->5-1	*[5]
+3-6	199-200	,	_	_	_	_
+3-7	201-205	your	_	_	*->4-3	*[4]
+3-8	206-210	body	_	_	_	_
+3-9	211-215	will	_	_	_	_
+3-10	216-225	naturally	_	_	_	_
+3-11	226-231	react	_	_	_	_
+3-12	232-233	,	_	_	_	_
+3-13	234-241	forcing	_	_	_	_
+3-14	242-245	you	_	_	*->4-4	*[4]
+3-15	246-250	into	_	_	_	_
+3-16	251-254	the	_	_	*->6-1	*[6]
+3-17	255-261	Avatar	_	_	*->6-1	*[6]
+3-18	262-267	State	_	_	*->6-1	*[6]
+3-19	268-270	in	_	_	*->6-1	*[6]
+3-20	271-273	an	_	_	*->6-1	*[6]
+3-21	274-280	effort	_	_	*->6-1	*[6]
+3-22	281-283	to	_	_	_	_
+3-23	284-288	keep	_	_	_	_
+3-24	289-292	you	_	_	*->4-5	*[4]
+3-25	293-298	alive	_	_	_	_
+3-26	299-300	.	_	_	_	_
+
+#Text=Sadly for you , you 'll be entering it for the last time . 
+4-1	301-306	Sadly	_	_	_	_
+4-2	307-310	for	_	_	_	_
+4-3	311-314	you	_	_	*->4-6	*[4]
+4-4	315-316	,	_	_	_	_
+4-5	317-320	you	_	_	*->4-7	*[4]
+4-6	321-324	'll	_	_	_	_
+4-7	325-327	be	_	_	_	_
+4-8	328-336	entering	_	_	_	_
+4-9	337-339	it	_	_	*->5-2	*[5]
+4-10	340-343	for	_	_	_	_
+4-11	344-347	the	_	_	_	_
+4-12	348-352	last	_	_	_	_
+4-13	353-357	time	_	_	_	_
+4-14	358-359	.	_	_	_	_
+
+#Text=" Korra says : " No ! 
+5-1	360-361	"	_	_	*->1-1	*[1]
+5-2	362-367	Korra	*	PER	*->1-1	*[1]
+5-3	368-372	says	_	_	_	_
+5-4	373-374	:	_	_	_	_
+5-5	375-376	"	_	_	_	_
+5-6	377-379	No	_	_	_	_
+5-7	380-381	!	_	_	_	_
+
+#Text=The Avatar Cycle . 
+6-1	382-385	The	_	_	*->7-1	*[7]
+6-2	386-392	Avatar	_	_	*->7-1	*[7]
+6-3	393-398	Cycle	_	_	*->7-1	*[7]
+6-4	399-400	.	_	_	_	_
+
+#Text=" Zaheer says : " Yes . 
+7-1	401-402	"	_	_	_	_
+7-2	403-409	Zaheer	*	PER	*->3-2	*[3]
+7-3	410-414	says	_	_	_	_
+7-4	415-416	:	_	_	_	_
+7-5	417-418	"	_	_	_	_
+7-6	419-422	Yes	_	_	_	_
+7-7	423-424	.	_	_	_	_
+
+#Text=When we dispatch you in the Avatar State , the cycle will end . 
+8-1	425-429	When	_	_	_	_
+8-2	430-432	we	_	_	*->8-1	*[8]
+8-3	433-441	dispatch	_	_	_	_
+8-4	442-445	you	_	_	*->9-1	*[9]
+8-5	446-448	in	_	_	_	_
+8-6	449-452	the	_	_	*->6-2	*[6]
+8-7	453-459	Avatar	_	_	*->6-2	*[6]
+8-8	460-465	State	_	_	*->6-2	*[6]
+8-9	466-467	,	_	_	_	_
+8-10	468-471	the	_	_	*->7-2	*[7]
+8-11	472-477	cycle	_	_	*->7-2	*[7]
+8-12	478-482	will	_	_	_	_
+8-13	483-486	end	_	_	_	_
+8-14	487-488	.	_	_	_	_
+
+#Text=So we lucky few , this band of brothers and sisters in anarchy , are witnessing the beginning of an era of true freedom . 
+9-1	489-491	So	_	_	_	_
+9-2	492-494	we	_	_	*->8-2	*[8]
+9-3	495-500	lucky	_	_	_	_
+9-4	501-504	few	_	_	_	_
+9-5	505-506	,	_	_	_	_
+9-6	507-511	this	_	_	_	_
+9-7	512-516	band	_	_	_	_
+9-8	517-519	of	_	_	_	_
+9-9	520-528	brothers	_	_	_	_
+9-10	529-532	and	_	_	_	_
+9-11	533-540	sisters	_	_	_	_
+9-12	541-543	in	_	_	_	_
+9-13	544-551	anarchy	_	_	_	_
+9-14	552-553	,	_	_	_	_
+9-15	554-557	are	_	_	_	_
+9-16	558-568	witnessing	_	_	_	_
+9-17	569-572	the	_	_	_	_
+9-18	573-582	beginning	_	_	_	_
+9-19	583-585	of	_	_	_	_
+9-20	586-588	an	_	_	_	_
+9-21	589-592	era	_	_	_	_
+9-22	593-595	of	_	_	_	_
+9-23	596-600	true	_	_	_	_
+9-24	601-608	freedom	_	_	_	_
+9-25	609-610	.	_	_	_	_
+
+#Text=Together , we will forge a world without kings and queens , without borders or nations , where Man 's only allegiance is to himself and those he loves . 
+10-1	611-619	Together	_	_	_	_
+10-2	620-621	,	_	_	_	_
+10-3	622-624	we	_	_	*->8-3	*[8]
+10-4	625-629	will	_	_	_	_
+10-5	630-635	forge	_	_	_	_
+10-6	636-637	a	_	_	_	_
+10-7	638-643	world	_	_	_	_
+10-8	644-651	without	_	_	_	_
+10-9	652-657	kings	_	_	_	_
+10-10	658-661	and	_	_	_	_
+10-11	662-668	queens	_	_	_	_
+10-12	669-670	,	_	_	_	_
+10-13	671-678	without	_	_	_	_
+10-14	679-686	borders	_	_	_	_
+10-15	687-689	or	_	_	_	_
+10-16	690-697	nations	_	_	_	_
+10-17	698-699	,	_	_	_	_
+10-18	700-705	where	_	_	_	_
+10-19	706-709	Man	_	_	*->10-1	*[10]
+10-20	710-712	's	_	_	*->10-1	*[10]
+10-21	713-717	only	_	_	_	_
+10-22	718-728	allegiance	_	_	_	_
+10-23	729-731	is	_	_	_	_
+10-24	732-734	to	_	_	_	_
+10-25	735-742	himself	_	_	*->10-2	*[10]
+10-26	743-746	and	_	_	_	_
+10-27	747-752	those	_	_	*->10-3	*[10]
+10-28	753-755	he	_	_	*->10-3	*[10]
+10-29	756-761	loves	_	_	_	_
+10-30	762-763	.	_	_	_	_
+
+#Text=We will return to the true balance of natural order . 
+11-1	764-766	We	_	_	*->8-4	*[8]
+11-2	767-771	will	_	_	_	_
+11-3	772-778	return	_	_	_	_
+11-4	779-781	to	_	_	_	_
+11-5	782-785	the	_	_	_	_
+11-6	786-790	true	_	_	_	_
+11-7	791-798	balance	_	_	_	_
+11-8	799-801	of	_	_	_	_
+11-9	802-809	natural	_	_	_	_
+11-10	810-815	order	_	_	_	_
+11-11	816-817	.	_	_	_	_
+
+#Text=And though you will never again be reborn , your name will echo throughout history : Korra , the last Avatar . 
+12-1	818-821	And	_	_	_	_
+12-2	822-828	though	_	_	_	_
+12-3	829-832	you	_	_	*->9-2	*[9]
+12-4	833-837	will	_	_	_	_
+12-5	838-843	never	_	_	_	_
+12-6	844-849	again	_	_	_	_
+12-7	850-852	be	_	_	_	_
+12-8	853-859	reborn	_	_	_	_
+12-9	860-861	,	_	_	_	_
+12-10	862-866	your	_	_	*->9-3	*[9]
+12-11	867-871	name	_	_	_	_
+12-12	872-876	will	_	_	_	_
+12-13	877-881	echo	_	_	_	_
+12-14	882-892	throughout	_	_	_	_
+12-15	893-900	history	_	_	_	_
+12-16	901-902	:	_	_	_	_
+12-17	903-908	Korra	*	PER	*->1-4	*[1]
+12-18	909-910	,	_	_	*->1-4	*[1]
+12-19	911-914	the	_	_	*->1-4	*[1]
+12-20	915-919	last	_	_	*->1-4	*[1]
+12-21	920-926	Avatar	_	_	*->1-4	*[1]
+12-22	927-928	.	_	_	_	_
+
+#Text=" 
+13-1	929-930	"	_	_	_	_

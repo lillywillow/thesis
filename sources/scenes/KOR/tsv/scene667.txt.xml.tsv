@@ -1,0 +1,67 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Asami says : " Are you ready ?! " 
+1-1	0-5	Asami	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Are	_	_	_	_
+1-6	19-22	you	_	_	_	_
+1-7	23-28	ready	_	_	_	_
+1-8	29-31	?!	_	_	_	_
+1-9	32-33	"	_	_	_	_
+
+#Text=Bolin says : " I 'm an earthbender , strapped to the wing of a plane , hundreds of feet in the air , so , no ? " 
+2-1	34-39	Bolin	*	PER	*->1-1	*[1]
+2-2	40-44	says	_	_	_	_
+2-3	45-46	:	_	_	_	_
+2-4	47-48	"	_	_	_	_
+2-5	49-50	I	_	_	*->1-2	*[1]
+2-6	51-53	'm	_	_	_	_
+2-7	54-56	an	_	_	*->2-1	*[2]
+2-8	57-68	earthbender	_	_	*->2-1	*[2]
+2-9	69-70	,	_	_	_	_
+2-10	71-79	strapped	_	_	_	_
+2-11	80-82	to	_	_	_	_
+2-12	83-86	the	_	_	_	_
+2-13	87-91	wing	_	_	_	_
+2-14	92-94	of	_	_	_	_
+2-15	95-96	a	_	_	_	_
+2-16	97-102	plane	_	_	_	_
+2-17	103-104	,	_	_	_	_
+2-18	105-113	hundreds	_	_	_	_
+2-19	114-116	of	_	_	_	_
+2-20	117-121	feet	_	_	_	_
+2-21	122-124	in	_	_	_	_
+2-22	125-128	the	_	_	_	_
+2-23	129-132	air	_	_	_	_
+2-24	133-134	,	_	_	_	_
+2-25	135-137	so	_	_	_	_
+2-26	138-139	,	_	_	_	_
+2-27	140-142	no	_	_	_	_
+2-28	143-144	?	_	_	_	_
+2-29	145-146	"	_	_	_	_
+
+#Text=Mako says : " Do n't worry , there 's no way they 'll be expecting this . " 
+3-1	147-151	Mako	*	PER	_	_
+3-2	152-156	says	_	_	_	_
+3-3	157-158	:	_	_	_	_
+3-4	159-160	"	_	_	_	_
+3-5	161-163	Do	_	_	_	_
+3-6	164-167	n't	_	_	_	_
+3-7	168-173	worry	_	_	_	_
+3-8	174-175	,	_	_	_	_
+3-9	176-181	there	_	_	_	_
+3-10	182-184	's	_	_	_	_
+3-11	185-187	no	_	_	_	_
+3-12	188-191	way	_	_	_	_
+3-13	192-196	they	_	_	*->2-2	*[2]
+3-14	197-200	'll	_	_	_	_
+3-15	201-203	be	_	_	_	_
+3-16	204-213	expecting	_	_	_	_
+3-17	214-218	this	_	_	_	_
+3-18	219-220	.	_	_	_	_
+3-19	221-222	"	_	_	_	_

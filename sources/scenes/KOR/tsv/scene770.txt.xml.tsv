@@ -1,0 +1,30 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Old woman says : " Can she firebend , too ? " 
+1-1	0-3	Old	_	_	_	_
+1-2	4-9	woman	_	_	_	_
+1-3	10-14	says	_	_	_	_
+1-4	15-16	:	_	_	_	_
+1-5	17-18	"	_	_	_	_
+1-6	19-22	Can	_	_	_	_
+1-7	23-26	she	_	_	*->1-1	*[1]
+1-8	27-35	firebend	_	_	_	_
+1-9	36-37	,	_	_	_	_
+1-10	38-41	too	_	_	_	_
+1-11	42-43	?	_	_	_	_
+1-12	44-45	"	_	_	_	_
+
+#Text=Young man says : " Could she be ? " 
+2-1	46-51	Young	_	_	_	_
+2-2	52-55	man	_	_	_	_
+2-3	56-60	says	_	_	_	_
+2-4	61-62	:	_	_	_	_
+2-5	63-64	"	_	_	_	_
+2-6	65-70	Could	_	_	_	_
+2-7	71-74	she	_	_	*->1-2	*[1]
+2-8	75-77	be	_	_	_	_
+2-9	78-79	?	_	_	_	_
+2-10	80-81	"	_	_	_	_

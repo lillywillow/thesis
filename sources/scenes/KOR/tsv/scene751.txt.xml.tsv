@@ -1,0 +1,28 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " She 's strong . " 
+1-1	0-6	Katara	*	PER	_	_
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	She	_	_	*->1-1	*[1]
+1-6	20-22	's	_	_	_	_
+1-7	23-29	strong	_	_	_	_
+1-8	30-31	.	_	_	_	_
+1-9	32-33	"	_	_	_	_
+
+#Text=White Lotus leader says : " She lacks restraint . " 
+2-1	34-39	White	_	_	_	_
+2-2	40-45	Lotus	_	_	_	_
+2-3	46-52	leader	*	PER	_	_
+2-4	53-57	says	_	_	_	_
+2-5	58-59	:	_	_	_	_
+2-6	60-61	"	_	_	_	_
+2-7	62-65	She	_	_	*->1-2	*[1]
+2-8	66-71	lacks	_	_	_	_
+2-9	72-81	restraint	_	_	_	_
+2-10	82-83	.	_	_	_	_
+2-11	84-85	"	_	_	_	_

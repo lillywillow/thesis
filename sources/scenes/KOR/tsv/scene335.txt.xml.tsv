@@ -1,0 +1,105 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " We need to move fast . 
+1-1	0-5	Korra	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-17	We	_	_	_	_
+1-6	18-22	need	_	_	_	_
+1-7	23-25	to	_	_	_	_
+1-8	26-30	move	_	_	_	_
+1-9	31-35	fast	_	_	_	_
+1-10	36-37	.	_	_	_	_
+
+#Text=Su , Lin , climb up to the arm and try to disable that weapon . 
+2-1	38-40	Su	_	_	_	_
+2-2	41-42	,	_	_	_	_
+2-3	43-46	Lin	*	PER	_	_
+2-4	47-48	,	_	_	_	_
+2-5	49-54	climb	_	_	_	_
+2-6	55-57	up	_	_	_	_
+2-7	58-60	to	_	_	_	_
+2-8	61-64	the	_	_	_	_
+2-9	65-68	arm	_	_	_	_
+2-10	69-72	and	_	_	_	_
+2-11	73-76	try	_	_	_	_
+2-12	77-79	to	_	_	_	_
+2-13	80-87	disable	_	_	_	_
+2-14	88-92	that	_	_	_	_
+2-15	93-99	weapon	_	_	_	_
+2-16	100-101	.	_	_	_	_
+
+#Text=Mako , Bolin , get to the engine and see if you can power this thing down . 
+3-1	102-106	Mako	*	PER	_	_
+3-2	107-108	,	_	_	_	_
+3-3	109-114	Bolin	*	PER	_	_
+3-4	115-116	,	_	_	_	_
+3-5	117-120	get	_	_	_	_
+3-6	121-123	to	_	_	_	_
+3-7	124-127	the	_	_	_	_
+3-8	128-134	engine	_	_	_	_
+3-9	135-138	and	_	_	_	_
+3-10	139-142	see	_	_	_	_
+3-11	143-145	if	_	_	_	_
+3-12	146-149	you	_	_	_	_
+3-13	150-153	can	_	_	_	_
+3-14	154-159	power	_	_	_	_
+3-15	160-164	this	_	_	_	_
+3-16	165-170	thing	_	_	_	_
+3-17	171-175	down	_	_	_	_
+3-18	176-177	.	_	_	_	_
+
+#Text=I 'm going after Kuvira . 
+4-1	178-179	I	_	_	*->1-2	*[1]
+4-2	180-182	'm	_	_	_	_
+4-3	183-188	going	_	_	_	_
+4-4	189-194	after	_	_	_	_
+4-5	195-201	Kuvira	*	PER	*->2-1	*[2]
+4-6	202-203	.	_	_	_	_
+
+#Text=" Suyin says : " Are you sure ? 
+5-1	204-205	"	_	_	_	_
+5-2	206-211	Suyin	*	PER	_	_
+5-3	212-216	says	_	_	_	_
+5-4	217-218	:	_	_	_	_
+5-5	219-220	"	_	_	_	_
+5-6	221-224	Are	_	_	_	_
+5-7	225-228	you	_	_	*->1-3	*[1]
+5-8	229-233	sure	_	_	_	_
+5-9	234-235	?	_	_	_	_
+
+#Text=When you fought Kuvira before ... " Korra says : " I know . 
+6-1	236-240	When	_	_	_	_
+6-2	241-244	you	_	_	*->1-4	*[1]
+6-3	245-251	fought	_	_	_	_
+6-4	252-258	Kuvira	*	PER	*->2-2	*[2]
+6-5	259-265	before	_	_	_	_
+6-6	266-269	...	_	_	_	_
+6-7	270-271	"	_	_	_	_
+6-8	272-277	Korra	*	PER	*->1-5	*[1]
+6-9	278-282	says	_	_	_	_
+6-10	283-284	:	_	_	_	_
+6-11	285-286	"	_	_	_	_
+6-12	287-288	I	_	_	*->1-6	*[1]
+6-13	289-293	know	_	_	_	_
+6-14	294-295	.	_	_	_	_
+
+#Text=She almost destroyed me . 
+7-1	296-299	She	_	_	*->2-3	*[2]
+7-2	300-306	almost	_	_	_	_
+7-3	307-316	destroyed	_	_	_	_
+7-4	317-319	me	_	_	*->1-7	*[1]
+7-5	320-321	.	_	_	_	_
+
+#Text=Not this time . 
+8-1	322-325	Not	_	_	_	_
+8-2	326-330	this	_	_	_	_
+8-3	331-335	time	_	_	_	_
+8-4	336-337	.	_	_	_	_
+
+#Text=" 
+9-1	338-339	"	_	_	_	_

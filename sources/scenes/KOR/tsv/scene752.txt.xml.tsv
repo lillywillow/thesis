@@ -1,0 +1,164 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " Woohoo ! 
+1-1	0-5	Korra	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-21	Woohoo	_	_	_	_
+1-6	22-23	!	_	_	_	_
+
+#Text=Hey , why all the doom and gloom , people ? 
+2-1	24-27	Hey	_	_	_	_
+2-2	28-29	,	_	_	_	_
+2-3	30-33	why	_	_	_	_
+2-4	34-37	all	_	_	_	_
+2-5	38-41	the	_	_	_	_
+2-6	42-46	doom	_	_	_	_
+2-7	47-50	and	_	_	_	_
+2-8	51-56	gloom	_	_	_	_
+2-9	57-58	,	_	_	_	_
+2-10	59-65	people	_	_	_	_
+2-11	66-67	?	_	_	_	_
+
+#Text=We should be celebrating ! 
+3-1	68-70	We	_	_	*->2-1	*[2]
+3-2	71-77	should	_	_	_	_
+3-3	78-80	be	_	_	_	_
+3-4	81-92	celebrating	_	_	_	_
+3-5	93-94	!	_	_	_	_
+
+#Text=Three elements down , one to go ! 
+4-1	95-100	Three	_	_	_	_
+4-2	101-109	elements	_	_	_	_
+4-3	110-114	down	_	_	_	_
+4-4	115-116	,	_	_	_	_
+4-5	117-120	one	_	_	_	_
+4-6	121-123	to	_	_	_	_
+4-7	124-126	go	_	_	_	_
+4-8	127-128	!	_	_	_	_
+
+#Text=" Firebending master says : " You 're getting ahead of yourself as usual , Korra . 
+5-1	129-130	"	_	_	_	_
+5-2	131-142	Firebending	_	_	_	_
+5-3	143-149	master	_	_	_	_
+5-4	150-154	says	_	_	_	_
+5-5	155-156	:	_	_	_	_
+5-6	157-158	"	_	_	_	_
+5-7	159-162	You	_	_	*->3-1	*[3]
+5-8	163-166	're	_	_	_	_
+5-9	167-174	getting	_	_	_	_
+5-10	175-180	ahead	_	_	_	_
+5-11	181-183	of	_	_	_	_
+5-12	184-192	yourself	_	_	*->3-2	*[3]
+5-13	193-195	as	_	_	_	_
+5-14	196-201	usual	_	_	_	_
+5-15	202-203	,	_	_	_	_
+5-16	204-209	Korra	_	_	*->1-2	*[1]
+5-17	210-211	.	_	_	_	_
+
+#Text=We have n't decided if you passed your firebending test yet . 
+6-1	212-214	We	_	_	*->2-2	*[2]
+6-2	215-219	have	_	_	_	_
+6-3	220-223	n't	_	_	_	_
+6-4	224-231	decided	_	_	_	_
+6-5	232-234	if	_	_	_	_
+6-6	235-238	you	_	_	*->3-3	*[3]
+6-7	239-245	passed	_	_	_	_
+6-8	246-250	your	_	_	*->3-4	*[3]
+6-9	251-262	firebending	_	_	_	_
+6-10	263-267	test	_	_	_	_
+6-11	268-271	yet	_	_	_	_
+6-12	272-273	.	_	_	_	_
+
+#Text=" White Lotus leader says : " Ever since you were a little girl , you 've excelled at the physical side of bending , but completely ignored the spiritual side . 
+7-1	274-275	"	_	_	_	_
+7-2	276-281	White	_	_	_	_
+7-3	282-287	Lotus	_	_	_	_
+7-4	288-294	leader	*	PER	_	_
+7-5	295-299	says	_	_	_	_
+7-6	300-301	:	_	_	_	_
+7-7	302-303	"	_	_	_	_
+7-8	304-308	Ever	_	_	_	_
+7-9	309-314	since	_	_	_	_
+7-10	315-318	you	_	_	*->3-5	*[3]
+7-11	319-323	were	_	_	_	_
+7-12	324-325	a	_	_	_	_
+7-13	326-332	little	_	_	_	_
+7-14	333-337	girl	_	_	_	_
+7-15	338-339	,	_	_	_	_
+7-16	340-343	you	_	_	*->3-6	*[3]
+7-17	344-347	've	_	_	_	_
+7-18	348-356	excelled	_	_	_	_
+7-19	357-359	at	_	_	_	_
+7-20	360-363	the	_	_	_	_
+7-21	364-372	physical	_	_	_	_
+7-22	373-377	side	_	_	_	_
+7-23	378-380	of	_	_	_	_
+7-24	381-388	bending	_	_	_	_
+7-25	389-390	,	_	_	_	_
+7-26	391-394	but	_	_	_	_
+7-27	395-405	completely	_	_	_	_
+7-28	406-413	ignored	_	_	_	_
+7-29	414-417	the	_	_	_	_
+7-30	418-427	spiritual	_	_	_	_
+7-31	428-432	side	_	_	_	_
+7-32	433-434	.	_	_	_	_
+
+#Text=The Avatar must master both . 
+8-1	435-438	The	_	_	*->4-1	*[4]
+8-2	439-445	Avatar	_	_	*->4-1	*[4]
+8-3	446-450	must	_	_	_	_
+8-4	451-457	master	_	_	_	_
+8-5	458-462	both	_	_	_	_
+8-6	463-464	.	_	_	_	_
+
+#Text=" Korra says : " I have n't ignored it , it just does n't come as easy to me . 
+9-1	465-466	"	_	_	_	_
+9-2	467-472	Korra	*	PER	*->1-3	*[1]
+9-3	473-477	says	_	_	_	_
+9-4	478-479	:	_	_	_	_
+9-5	480-481	"	_	_	_	_
+9-6	482-483	I	_	_	*->1-4	*[1]
+9-7	484-488	have	_	_	_	_
+9-8	489-492	n't	_	_	_	_
+9-9	493-500	ignored	_	_	_	_
+9-10	501-503	it	_	_	*->4-2	*[4]
+9-11	504-505	,	_	_	_	_
+9-12	506-508	it	_	_	*->4-3	*[4]
+9-13	509-513	just	_	_	_	_
+9-14	514-518	does	_	_	_	_
+9-15	519-522	n't	_	_	_	_
+9-16	523-527	come	_	_	_	_
+9-17	528-530	as	_	_	_	_
+9-18	531-535	easy	_	_	_	_
+9-19	536-538	to	_	_	_	_
+9-20	539-541	me	_	_	*->1-5	*[1]
+9-21	542-543	.	_	_	_	_
+
+#Text=But that 's why I should start training with Tenzin immediately . 
+10-1	544-547	But	_	_	_	_
+10-2	548-552	that	_	_	*->4-4	*[4]
+10-3	553-555	's	_	_	_	_
+10-4	556-559	why	_	_	_	_
+10-5	560-561	I	_	_	*->1-6	*[1]
+10-6	562-568	should	_	_	_	_
+10-7	569-574	start	_	_	_	_
+10-8	575-583	training	_	_	_	_
+10-9	584-588	with	_	_	_	_
+10-10	589-595	Tenzin	*	PER	*->5-1	*[5]
+10-11	596-607	immediately	_	_	_	_
+10-12	608-609	.	_	_	_	_
+
+#Text=He 's Mister Spiritual . 
+11-1	610-612	He	_	_	*->5-2	*[5]
+11-2	613-615	's	_	_	_	_
+11-3	616-622	Mister	_	_	_	_
+11-4	623-632	Spiritual	_	_	_	_
+11-5	633-634	.	_	_	_	_
+
+#Text=" 
+12-1	635-636	"	_	_	_	_

@@ -1,0 +1,238 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " Get away from me ! " 
+1-1	0-5	Korra	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Get	_	_	_	_
+1-6	19-23	away	_	_	_	_
+1-7	24-28	from	_	_	_	_
+1-8	29-31	me	_	_	_	_
+1-9	32-33	!	_	_	_	_
+1-10	34-35	"	_	_	_	_
+
+#Text=Karu says : " It 's okay , we 're here to help you , Avatar Korra . " 
+2-1	36-40	Karu	*	PER	*->2-1	*[2]
+2-2	41-45	says	_	_	_	_
+2-3	46-47	:	_	_	_	_
+2-4	48-49	"	_	_	_	_
+2-5	50-52	It	_	_	_	_
+2-6	53-55	's	_	_	_	_
+2-7	56-60	okay	_	_	_	_
+2-8	61-62	,	_	_	_	_
+2-9	63-65	we	_	_	*->4-1	*[4]
+2-10	66-69	're	_	_	_	_
+2-11	70-74	here	_	_	_	_
+2-12	75-77	to	_	_	_	_
+2-13	78-82	help	_	_	_	_
+2-14	83-86	you	_	_	_	_
+2-15	87-88	,	_	_	_	_
+2-16	89-95	Avatar	*	PER	*->1-1	*[1]
+2-17	96-101	Korra	*	PER	*->1-1	*[1]
+2-18	102-103	.	_	_	_	_
+2-19	104-105	"	_	_	_	_
+
+#Text=Korra says : " Who 's - who 's " Avatar Korra " ? " 
+3-1	106-111	Korra	*	PER	*->1-4	*[1]
+3-2	112-116	says	_	_	_	_
+3-3	117-118	:	_	_	_	_
+3-4	119-120	"	_	_	_	_
+3-5	121-124	Who	_	_	_	_
+3-6	125-127	's	_	_	_	_
+3-7	128-129	-	_	_	_	_
+3-8	130-133	who	_	_	_	_
+3-9	134-136	's	_	_	_	_
+3-10	137-138	"	_	_	_	_
+3-11	139-145	Avatar	_	_	*->1-5	*[1]
+3-12	146-151	Korra	_	_	*->1-5	*[1]
+3-13	152-153	"	_	_	_	_
+3-14	154-155	?	_	_	_	_
+3-15	156-157	"	_	_	_	_
+
+#Text=Karu says : " What happened to you ? 
+4-1	158-162	Karu	*	PER	*->2-2	*[2]
+4-2	163-167	says	_	_	_	_
+4-3	168-169	:	_	_	_	_
+4-4	170-171	"	_	_	_	_
+4-5	172-176	What	_	_	_	_
+4-6	177-185	happened	_	_	_	_
+4-7	186-188	to	_	_	_	_
+4-8	189-192	you	_	_	_	_
+4-9	193-194	?	_	_	_	_
+
+#Text=How did you end up on our island ? 
+5-1	195-198	How	_	_	_	_
+5-2	199-202	did	_	_	_	_
+5-3	203-206	you	_	_	_	_
+5-4	207-210	end	_	_	_	_
+5-5	211-213	up	_	_	_	_
+5-6	214-216	on	_	_	_	_
+5-7	217-220	our	_	_	*->4-2	*[4]
+5-8	221-227	island	_	_	_	_
+5-9	228-229	?	_	_	_	_
+
+#Text=" Korra says : " I ... do n't know . 
+6-1	230-231	"	_	_	_	_
+6-2	232-237	Korra	*	PER	*->1-6	*[1]
+6-3	238-242	says	_	_	_	_
+6-4	243-244	:	_	_	_	_
+6-5	245-246	"	_	_	*->6-1	*[6]
+6-6	247-248	I	_	_	*->6-1	*[6]
+6-7	249-252	...	_	_	_	_
+6-8	253-255	do	_	_	_	_
+6-9	256-259	n't	_	_	_	_
+6-10	260-264	know	_	_	_	_
+6-11	265-266	.	_	_	_	_
+
+#Text=I ca n't remember anything . 
+7-1	267-268	I	_	_	*->1-7	*[1]
+7-2	269-271	ca	_	_	_	_
+7-3	272-275	n't	_	_	_	_
+7-4	276-284	remember	_	_	_	_
+7-5	285-293	anything	_	_	_	_
+7-6	294-295	.	_	_	_	_
+
+#Text=" Main Asami Sato Bolin Mako Varrick Antagonists Triple Threat Triad Shady Shin Two Toed Ping Viper says : " Minor Desna and Eska Ginger Karu Korra Lin Beifong Lu and Gang Naga Pabu Unalaq Zhu Li " Shiro Shinobi says : " The Avatar has gone missing ! 
+8-1	296-297	"	_	_	_	_
+8-2	298-302	Main	_	_	_	_
+8-3	303-308	Asami	_	_	_	_
+8-4	309-313	Sato	_	_	_	_
+8-5	314-319	Bolin	_	_	_	_
+8-6	320-324	Mako	_	_	_	_
+8-7	325-332	Varrick	_	_	_	_
+8-8	333-344	Antagonists	_	_	_	_
+8-9	345-351	Triple	_	_	_	_
+8-10	352-358	Threat	_	_	_	_
+8-11	359-364	Triad	_	_	_	_
+8-12	365-370	Shady	_	_	_	_
+8-13	371-375	Shin	_	_	_	_
+8-14	376-379	Two	_	_	_	_
+8-15	380-384	Toed	_	_	_	_
+8-16	385-389	Ping	_	_	_	_
+8-17	390-395	Viper	_	_	_	_
+8-18	396-400	says	_	_	_	_
+8-19	401-402	:	_	_	_	_
+8-20	403-404	"	_	_	_	_
+8-21	405-410	Minor	_	_	_	_
+8-22	411-416	Desna	_	_	_	_
+8-23	417-420	and	_	_	_	_
+8-24	421-425	Eska	*	PER	*->7-1	*[7]
+8-25	426-432	Ginger	*	PER	*->7-1	*[7]
+8-26	433-437	Karu	*	PER	*->7-1	*[7]
+8-27	438-443	Korra	*	PER	*->7-1	*[7]
+8-28	444-447	Lin	*	PER	*->7-1	*[7]
+8-29	448-455	Beifong	*	PER	*->7-1	*[7]
+8-30	456-458	Lu	*	PER	*->7-1	*[7]
+8-31	459-462	and	_	_	_	_
+8-32	463-467	Gang	*	PER	_	_
+8-33	468-472	Naga	*	PER	_	_
+8-34	473-477	Pabu	*	PER	_	_
+8-35	478-484	Unalaq	*	PER	_	_
+8-36	485-488	Zhu	*	PER	_	_
+8-37	489-491	Li	*	PER	_	_
+8-38	492-493	"	_	_	_	_
+8-39	494-499	Shiro	*	PER	_	_
+8-40	500-507	Shinobi	*	PER	_	_
+8-41	508-512	says	_	_	_	_
+8-42	513-514	:	_	_	_	_
+8-43	515-516	"	_	_	_	_
+8-44	517-520	The	_	_	*->8-1	*[8]
+8-45	521-527	Avatar	_	_	*->8-1	*[8]
+8-46	528-531	has	_	_	_	_
+8-47	532-536	gone	_	_	_	_
+8-48	537-544	missing	_	_	_	_
+8-49	545-546	!	_	_	_	_
+
+#Text=Three years ago , Zaheer poisoned Korra , severely injuring her . 
+9-1	547-552	Three	_	_	_	_
+9-2	553-558	years	_	_	_	_
+9-3	559-562	ago	_	_	_	_
+9-4	563-564	,	_	_	_	_
+9-5	565-571	Zaheer	*	PER	_	_
+9-6	572-580	poisoned	_	_	_	_
+9-7	581-586	Korra	*	PER	*->1-8	*[1]
+9-8	587-588	,	_	_	_	_
+9-9	589-597	severely	_	_	_	_
+9-10	598-606	injuring	_	_	_	_
+9-11	607-610	her	_	_	*->7-2	*[7]
+9-12	611-612	.	_	_	_	_
+
+#Text=While her friends moved on with their lives , Korra remained in the South Pole . 
+10-1	613-618	While	_	_	_	_
+10-2	619-622	her	_	_	*->7-3	*[7]
+10-3	623-630	friends	_	_	*->9-1	*[9]
+10-4	631-636	moved	_	_	_	_
+10-5	637-639	on	_	_	_	_
+10-6	640-644	with	_	_	_	_
+10-7	645-650	their	_	_	*->9-2	*[9]
+10-8	651-656	lives	_	_	_	_
+10-9	657-658	,	_	_	_	_
+10-10	659-664	Korra	*	PER	*->1-9	*[1]
+10-11	665-673	remained	_	_	_	_
+10-12	674-676	in	_	_	_	_
+10-13	677-680	the	_	_	_	_
+10-14	681-686	South	_	_	_	_
+10-15	687-691	Pole	_	_	_	_
+10-16	692-693	.	_	_	_	_
+
+#Text=Everyone thought she was still recuperating , but six months ago , Korra left home and has n't been seen since . 
+11-1	694-702	Everyone	_	_	_	_
+11-2	703-710	thought	_	_	_	_
+11-3	711-714	she	_	_	*->7-4	*[7]
+11-4	715-718	was	_	_	_	_
+11-5	719-724	still	_	_	_	_
+11-6	725-737	recuperating	_	_	_	_
+11-7	738-739	,	_	_	_	_
+11-8	740-743	but	_	_	_	_
+11-9	744-747	six	_	_	_	_
+11-10	748-754	months	_	_	_	_
+11-11	755-758	ago	_	_	_	_
+11-12	759-760	,	_	_	_	_
+11-13	761-766	Korra	*	PER	*->1-10	*[1]
+11-14	767-771	left	_	_	_	_
+11-15	772-776	home	_	_	_	_
+11-16	777-780	and	_	_	_	_
+11-17	781-784	has	_	_	_	_
+11-18	785-788	n't	_	_	_	_
+11-19	789-793	been	_	_	_	_
+11-20	794-798	seen	_	_	_	_
+11-21	799-804	since	_	_	_	_
+11-22	805-806	.	_	_	_	_
+
+#Text=Even Chief Tonraq was shocked to learn that his daughter 's whereabouts are unknown . 
+12-1	807-811	Even	_	_	_	_
+12-2	812-817	Chief	_	_	*->3-1	*[3]
+12-3	818-824	Tonraq	*	PER	*->3-1	*[3]
+12-4	825-828	was	_	_	_	_
+12-5	829-836	shocked	_	_	_	_
+12-6	837-839	to	_	_	_	_
+12-7	840-845	learn	_	_	_	_
+12-8	846-850	that	_	_	_	_
+12-9	851-854	his	_	_	*->3-2	*[3]
+12-10	855-863	daughter	_	_	*->5-1	*[5]
+12-11	864-866	's	_	_	*->5-1	*[5]
+12-12	867-878	whereabouts	_	_	_	_
+12-13	879-882	are	_	_	_	_
+12-14	883-890	unknown	_	_	_	_
+12-15	891-892	.	_	_	_	_
+
+#Text=What has become of the Avatar and when will she return ? 
+13-1	893-897	What	_	_	_	_
+13-2	898-901	has	_	_	_	_
+13-3	902-908	become	_	_	_	_
+13-4	909-911	of	_	_	_	_
+13-5	912-915	the	_	_	*->8-2	*[8]
+13-6	916-922	Avatar	_	_	*->8-2	*[8]
+13-7	923-926	and	_	_	_	_
+13-8	927-931	when	_	_	_	_
+13-9	932-936	will	_	_	_	_
+13-10	937-940	she	_	_	*->5-2	*[5]
+13-11	941-947	return	_	_	_	_
+13-12	948-949	?	_	_	_	_
+
+#Text=" 
+14-1	950-951	"	_	_	_	_

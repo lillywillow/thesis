@@ -1,0 +1,104 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " I 'm not afraid of you . 
+1-1	0-5	Korra	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-16	I	_	_	*->1-2	*[1]
+1-6	17-19	'm	_	_	_	_
+1-7	20-23	not	_	_	_	_
+1-8	24-30	afraid	_	_	_	_
+1-9	31-33	of	_	_	_	_
+1-10	34-37	you	_	_	_	_
+1-11	38-39	.	_	_	_	_
+
+#Text=You 're not scary ! 
+2-1	40-43	You	_	_	_	_
+2-2	44-47	're	_	_	_	_
+2-3	48-51	not	_	_	_	_
+2-4	52-57	scary	_	_	_	_
+2-5	58-59	!	_	_	_	_
+
+#Text=You just look that way . 
+3-1	60-63	You	_	_	_	_
+3-2	64-68	just	_	_	_	_
+3-3	69-73	look	_	_	_	_
+3-4	74-78	that	_	_	*->3-1	*[3]
+3-5	79-82	way	_	_	*->3-1	*[3]
+3-6	83-84	.	_	_	_	_
+
+#Text=I have light inside ! 
+4-1	85-86	I	_	_	*->1-3	*[1]
+4-2	87-91	have	_	_	_	_
+4-3	92-97	light	_	_	_	_
+4-4	98-104	inside	_	_	_	_
+4-5	105-106	!	_	_	_	_
+
+#Text=It 's okay , you can be my friends . 
+5-1	107-109	It	_	_	*->3-2	*[3]
+5-2	110-112	's	_	_	_	_
+5-3	113-117	okay	_	_	_	_
+5-4	118-119	,	_	_	_	_
+5-5	120-123	you	_	_	*->2-5	*[2]
+5-6	124-127	can	_	_	_	_
+5-7	128-130	be	_	_	_	_
+5-8	131-133	my	_	_	*->1-4	*[1]
+5-9	134-141	friends	_	_	*->2-1	*[2]
+5-10	142-143	.	_	_	_	_
+
+#Text=My name is Korra , and I 'm taking this dragon bird home ! 
+6-1	144-146	My	_	_	*->1-5	*[1]
+6-2	147-151	name	_	_	_	_
+6-3	152-154	is	_	_	_	_
+6-4	155-160	Korra	*	PER	_	_
+6-5	161-162	,	_	_	_	_
+6-6	163-166	and	_	_	_	_
+6-7	167-168	I	_	_	*->1-6	*[1]
+6-8	169-171	'm	_	_	_	_
+6-9	172-178	taking	_	_	_	_
+6-10	179-183	this	_	_	_	_
+6-11	184-190	dragon	_	_	_	_
+6-12	191-195	bird	_	_	_	_
+6-13	196-200	home	_	_	_	_
+6-14	201-202	!	_	_	_	_
+
+#Text=Iroh said you could be nice . 
+7-1	203-207	Iroh	*	PER	_	_
+7-2	208-212	said	_	_	_	_
+7-3	213-216	you	_	_	*->2-6	*[2]
+7-4	217-222	could	_	_	_	_
+7-5	223-225	be	_	_	_	_
+7-6	226-230	nice	_	_	_	_
+7-7	231-232	.	_	_	_	_
+
+#Text=Do you wan na help me ? 
+8-1	233-235	Do	_	_	_	_
+8-2	236-239	you	_	_	*->2-7	*[2]
+8-3	240-243	wan	_	_	_	_
+8-4	244-246	na	_	_	_	_
+8-5	247-251	help	_	_	_	_
+8-6	252-254	me	_	_	*->1-7	*[1]
+8-7	255-256	?	_	_	_	_
+
+#Text=All right , now let 's close that portal and go find Jinora . 
+9-1	257-260	All	_	_	_	_
+9-2	261-266	right	_	_	_	_
+9-3	267-268	,	_	_	_	_
+9-4	269-272	now	_	_	_	_
+9-5	273-276	let	_	_	_	_
+9-6	277-279	's	_	_	*->2-8	*[2]
+9-7	280-285	close	_	_	_	_
+9-8	286-290	that	_	_	_	_
+9-9	291-297	portal	_	_	_	_
+9-10	298-301	and	_	_	_	_
+9-11	302-304	go	_	_	_	_
+9-12	305-309	find	_	_	_	_
+9-13	310-316	Jinora	*	PER	_	_
+9-14	317-318	.	_	_	_	_
+
+#Text=" 
+10-1	319-320	"	_	_	_	_

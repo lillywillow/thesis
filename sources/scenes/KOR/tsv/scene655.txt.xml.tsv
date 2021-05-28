@@ -1,0 +1,64 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Asami says : " You 're leaving ? 
+1-1	0-5	Asami	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	You	_	_	_	_
+1-6	19-22	're	_	_	_	_
+1-7	23-30	leaving	_	_	_	_
+1-8	31-32	?	_	_	_	_
+
+#Text=But I - I thought ... " Korra says : " Uh , sorry ! 
+2-1	33-36	But	_	_	_	_
+2-2	37-38	I	_	_	*->1-2	*[1]
+2-3	39-40	-	_	_	_	_
+2-4	41-42	I	_	_	*->1-3	*[1]
+2-5	43-50	thought	_	_	_	_
+2-6	51-54	...	_	_	_	_
+2-7	55-56	"	_	_	_	_
+2-8	57-62	Korra	*	PER	*->2-1	*[2]
+2-9	63-67	says	_	_	_	_
+2-10	68-69	:	_	_	_	_
+2-11	70-71	"	_	_	_	_
+2-12	72-74	Uh	_	_	_	_
+2-13	75-76	,	_	_	_	_
+2-14	77-82	sorry	_	_	_	_
+2-15	83-84	!	_	_	_	_
+
+#Text=I forgot , I 'm supposed to airsit , I mean babybend , I - I mean babysit the airbender kids . 
+3-1	85-86	I	_	_	*->2-2	*[2]
+3-2	87-93	forgot	_	_	_	_
+3-3	94-95	,	_	_	_	_
+3-4	96-97	I	_	_	*->2-3	*[2]
+3-5	98-100	'm	_	_	_	_
+3-6	101-109	supposed	_	_	_	_
+3-7	110-112	to	_	_	_	_
+3-8	113-119	airsit	_	_	_	_
+3-9	120-121	,	_	_	_	_
+3-10	122-123	I	_	_	*->2-4	*[2]
+3-11	124-128	mean	_	_	_	_
+3-12	129-137	babybend	_	_	_	_
+3-13	138-139	,	_	_	_	_
+3-14	140-141	I	_	_	*->2-5	*[2]
+3-15	142-143	-	_	_	_	_
+3-16	144-145	I	_	_	*->2-6	*[2]
+3-17	146-150	mean	_	_	_	_
+3-18	151-158	babysit	_	_	_	_
+3-19	159-162	the	_	_	_	_
+3-20	163-172	airbender	_	_	_	_
+3-21	173-177	kids	_	_	_	_
+3-22	178-179	.	_	_	_	_
+
+#Text=See you later ! 
+4-1	180-183	See	_	_	_	_
+4-2	184-187	you	_	_	*->1-4	*[1]
+4-3	188-193	later	_	_	_	_
+4-4	194-195	!	_	_	_	_
+
+#Text=" 
+5-1	196-197	"	_	_	_	_

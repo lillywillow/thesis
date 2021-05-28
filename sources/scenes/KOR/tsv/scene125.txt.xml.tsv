@@ -1,0 +1,227 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Baatar Jr. says : " All right , everybody , let 's test the power core . 
+1-1	0-6	Baatar	*	PER	*->1-1	*[1]
+1-2	7-10	Jr.	*	PER	*->1-1	*[1]
+1-3	11-15	says	_	_	_	_
+1-4	16-17	:	_	_	_	_
+1-5	18-19	"	_	_	_	_
+1-6	20-23	All	_	_	_	_
+1-7	24-29	right	_	_	_	_
+1-8	30-31	,	_	_	_	_
+1-9	32-41	everybody	_	_	_	_
+1-10	42-43	,	_	_	_	_
+1-11	44-47	let	_	_	_	_
+1-12	48-50	's	_	_	_	_
+1-13	51-55	test	_	_	_	_
+1-14	56-59	the	_	_	_	_
+1-15	60-65	power	_	_	_	_
+1-16	66-70	core	_	_	_	_
+1-17	71-72	.	_	_	_	_
+
+#Text=I want everything in order for the full demonstration for Kuvira tomorrow . 
+2-1	73-74	I	_	_	*->1-2	*[1]
+2-2	75-79	want	_	_	_	_
+2-3	80-90	everything	_	_	_	_
+2-4	91-93	in	_	_	_	_
+2-5	94-99	order	_	_	_	_
+2-6	100-103	for	_	_	_	_
+2-7	104-107	the	_	_	_	_
+2-8	108-112	full	_	_	_	_
+2-9	113-126	demonstration	_	_	_	_
+2-10	127-130	for	_	_	_	_
+2-11	131-137	Kuvira	*	PER	_	_
+2-12	138-146	tomorrow	_	_	*->2-1	*[2]
+2-13	147-148	.	_	_	_	_
+
+#Text=Load the energy capsule . 
+3-1	149-153	Load	_	_	_	_
+3-2	154-157	the	_	_	_	_
+3-3	158-164	energy	_	_	_	_
+3-4	165-172	capsule	_	_	_	_
+3-5	173-174	.	_	_	_	_
+
+#Text=" Baatar Jr. says : " Zhu Li , initialize phase one . 
+4-1	175-176	"	_	_	_	_
+4-2	177-183	Baatar	*	PER	*->1-3	*[1]
+4-3	184-187	Jr.	*	PER	*->1-3	*[1]
+4-4	188-192	says	_	_	_	_
+4-5	193-194	:	_	_	_	_
+4-6	195-196	"	_	_	_	_
+4-7	197-200	Zhu	*	PER	*->3-1	*[3]
+4-8	201-203	Li	*	PER	*->3-1	*[3]
+4-9	204-205	,	_	_	_	_
+4-10	206-216	initialize	_	_	_	_
+4-11	217-222	phase	_	_	_	_
+4-12	223-226	one	_	_	_	_
+4-13	227-228	.	_	_	_	_
+
+#Text=" Zhu Li says : " There 's a problem with the condenser . 
+5-1	229-230	"	_	_	_	_
+5-2	231-234	Zhu	*	PER	*->3-2	*[3]
+5-3	235-237	Li	*	PER	*->3-2	*[3]
+5-4	238-242	says	_	_	_	_
+5-5	243-244	:	_	_	_	_
+5-6	245-246	"	_	_	_	_
+5-7	247-252	There	_	_	_	_
+5-8	253-255	's	_	_	_	_
+5-9	256-257	a	_	_	*->4-1	*[4]
+5-10	258-265	problem	_	_	*->4-1	*[4]
+5-11	266-270	with	_	_	*->4-1	*[4]
+5-12	271-274	the	_	_	*->4-1	*[4]
+5-13	275-284	condenser	_	_	*->4-1	*[4]
+5-14	285-286	.	_	_	_	_
+
+#Text=It 's backing up ! 
+6-1	287-289	It	_	_	*->4-2	*[4]
+6-2	290-292	's	_	_	_	_
+6-3	293-300	backing	_	_	_	_
+6-4	301-303	up	_	_	_	_
+6-5	304-305	!	_	_	_	_
+
+#Text=" Baatar Jr. says : " Shut it down . 
+7-1	306-307	"	_	_	_	_
+7-2	308-314	Baatar	*	PER	*->1-4	*[1]
+7-3	315-318	Jr.	*	PER	*->1-4	*[1]
+7-4	319-323	says	_	_	_	_
+7-5	324-325	:	_	_	_	_
+7-6	326-327	"	_	_	_	_
+7-7	328-332	Shut	_	_	_	_
+7-8	333-335	it	_	_	*->4-3	*[4]
+7-9	336-340	down	_	_	_	_
+7-10	341-342	.	_	_	_	_
+
+#Text=" Zhu Li says : " I ca n't . 
+8-1	343-344	"	_	_	_	_
+8-2	345-348	Zhu	*	PER	*->3-3	*[3]
+8-3	349-351	Li	*	PER	*->3-3	*[3]
+8-4	352-356	says	_	_	_	_
+8-5	357-358	:	_	_	_	_
+8-6	359-360	"	_	_	_	_
+8-7	361-362	I	_	_	*->3-4	*[3]
+8-8	363-365	ca	_	_	_	_
+8-9	366-369	n't	_	_	_	_
+8-10	370-371	.	_	_	_	_
+
+#Text=The override is n't working . 
+9-1	372-375	The	_	_	_	_
+9-2	376-384	override	_	_	_	_
+9-3	385-387	is	_	_	_	_
+9-4	388-391	n't	_	_	_	_
+9-5	392-399	working	_	_	_	_
+9-6	400-401	.	_	_	_	_
+
+#Text=Everyone needs to evacuate . 
+10-1	402-410	Everyone	_	_	_	_
+10-2	411-416	needs	_	_	_	_
+10-3	417-419	to	_	_	_	_
+10-4	420-428	evacuate	_	_	_	_
+10-5	429-430	.	_	_	_	_
+
+#Text=This thing is going to blow ! 
+11-1	431-435	This	_	_	_	_
+11-2	436-441	thing	_	_	_	_
+11-3	442-444	is	_	_	_	_
+11-4	445-450	going	_	_	_	_
+11-5	451-453	to	_	_	_	_
+11-6	454-458	blow	_	_	_	_
+11-7	459-460	!	_	_	_	_
+
+#Text=" Baatar Jr. says : " Everyone get out ! 
+12-1	461-462	"	_	_	_	_
+12-2	463-469	Baatar	*	PER	*->1-5	*[1]
+12-3	470-473	Jr.	*	PER	*->1-5	*[1]
+12-4	474-478	says	_	_	_	_
+12-5	479-480	:	_	_	_	_
+12-6	481-482	"	_	_	_	_
+12-7	483-491	Everyone	_	_	_	_
+12-8	492-495	get	_	_	_	_
+12-9	496-499	out	_	_	_	_
+12-10	500-501	!	_	_	_	_
+
+#Text=Now ! 
+13-1	502-505	Now	_	_	_	_
+13-2	506-507	!	_	_	_	_
+
+#Text=" Zhu Li says : " Come on , Baatar ! 
+14-1	508-509	"	_	_	_	_
+14-2	510-513	Zhu	*	PER	*->3-5	*[3]
+14-3	514-516	Li	*	PER	*->3-5	*[3]
+14-4	517-521	says	_	_	_	_
+14-5	522-523	:	_	_	_	_
+14-6	524-525	"	_	_	_	_
+14-7	526-530	Come	_	_	_	_
+14-8	531-533	on	_	_	_	_
+14-9	534-535	,	_	_	_	_
+14-10	536-542	Baatar	*	PER	*->1-6	*[1]
+14-11	543-544	!	_	_	_	_
+
+#Text=It 's too late ! 
+15-1	545-547	It	_	_	_	_
+15-2	548-550	's	_	_	_	_
+15-3	551-554	too	_	_	_	_
+15-4	555-559	late	_	_	_	_
+15-5	560-561	!	_	_	_	_
+
+#Text=" Baatar Jr. says : " This channeling ring was cracked . 
+16-1	562-563	"	_	_	_	_
+16-2	564-570	Baatar	*	PER	*->1-7	*[1]
+16-3	571-574	Jr.	*	PER	*->1-7	*[1]
+16-4	575-579	says	_	_	_	_
+16-5	580-581	:	_	_	_	_
+16-6	582-583	"	_	_	_	_
+16-7	584-588	This	_	_	*->5-1	*[5]
+16-8	589-599	channeling	_	_	*->5-1	*[5]
+16-9	600-604	ring	_	_	*->5-1	*[5]
+16-10	605-608	was	_	_	_	_
+16-11	609-616	cracked	_	_	_	_
+16-12	617-618	.	_	_	_	_
+
+#Text=That 's what caused the reaction to overload . 
+17-1	619-623	That	_	_	*->5-2	*[5]
+17-2	624-626	's	_	_	_	_
+17-3	627-631	what	_	_	_	_
+17-4	632-638	caused	_	_	_	_
+17-5	639-642	the	_	_	_	_
+17-6	643-651	reaction	_	_	_	_
+17-7	652-654	to	_	_	_	_
+17-8	655-663	overload	_	_	_	_
+17-9	664-665	.	_	_	_	_
+
+#Text=Now we 're taking this whole thing apart tonight and checking everything ! 
+18-1	666-669	Now	_	_	_	_
+18-2	670-672	we	_	_	_	_
+18-3	673-676	're	_	_	_	_
+18-4	677-683	taking	_	_	_	_
+18-5	684-688	this	_	_	_	_
+18-6	689-694	whole	_	_	_	_
+18-7	695-700	thing	_	_	_	_
+18-8	701-706	apart	_	_	_	_
+18-9	707-714	tonight	_	_	_	_
+18-10	715-718	and	_	_	_	_
+18-11	719-727	checking	_	_	_	_
+18-12	728-738	everything	_	_	_	_
+18-13	739-740	!	_	_	_	_
+
+#Text=Nothing is too small . 
+19-1	741-748	Nothing	_	_	_	_
+19-2	749-751	is	_	_	_	_
+19-3	752-755	too	_	_	_	_
+19-4	756-761	small	_	_	_	_
+19-5	762-763	.	_	_	_	_
+
+#Text=This has to be ready by tomorrow . 
+20-1	764-768	This	_	_	_	_
+20-2	769-772	has	_	_	_	_
+20-3	773-775	to	_	_	_	_
+20-4	776-778	be	_	_	_	_
+20-5	779-784	ready	_	_	_	_
+20-6	785-787	by	_	_	_	_
+20-7	788-796	tomorrow	_	_	*->2-2	*[2]
+20-8	797-798	.	_	_	_	_
+
+#Text=" 
+21-1	799-800	"	_	_	_	_

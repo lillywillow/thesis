@@ -1,0 +1,45 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Lin says : " Fine . 
+1-1	0-3	Lin	*	PER	*->1-1	*[1]
+1-2	4-8	says	_	_	_	_
+1-3	9-10	:	_	_	_	_
+1-4	11-12	"	_	_	_	_
+1-5	13-17	Fine	_	_	_	_
+1-6	18-19	.	_	_	_	_
+
+#Text=Get her out of my city . 
+2-1	20-23	Get	_	_	_	_
+2-2	24-27	her	_	_	_	_
+2-3	28-31	out	_	_	_	_
+2-4	32-34	of	_	_	_	_
+2-5	35-37	my	_	_	*->1-2	*[1]
+2-6	38-42	city	_	_	_	_
+2-7	43-44	.	_	_	_	_
+
+#Text=" Tenzin says : " Always a pleasure , Lin . 
+3-1	45-46	"	_	_	_	_
+3-2	47-53	Tenzin	*	PER	_	_
+3-3	54-58	says	_	_	_	_
+3-4	59-60	:	_	_	_	_
+3-5	61-62	"	_	_	_	_
+3-6	63-69	Always	_	_	*->2-1	*[2]
+3-7	70-71	a	_	_	*->2-1	*[2]
+3-8	72-80	pleasure	_	_	*->2-1	*[2]
+3-9	81-82	,	_	_	_	_
+3-10	83-86	Lin	*	PER	*->1-3	*[1]
+3-11	87-88	.	_	_	_	_
+
+#Text=Let 's go , Korra . 
+4-1	89-92	Let	_	_	_	_
+4-2	93-95	's	_	_	*->2-2	*[2]
+4-3	96-98	go	_	_	_	_
+4-4	99-100	,	_	_	_	_
+4-5	101-106	Korra	_	_	_	_
+4-6	107-108	.	_	_	_	_
+
+#Text=" 
+5-1	109-110	"	_	_	_	_

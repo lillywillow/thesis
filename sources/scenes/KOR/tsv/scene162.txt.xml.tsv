@@ -1,0 +1,38 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Yin says : " No , not Mako 's scarf ! 
+1-1	0-3	Yin	*	PER	*->1-1	*[1]
+1-2	4-8	says	_	_	_	_
+1-3	9-10	:	_	_	_	_
+1-4	11-12	"	_	_	_	_
+1-5	13-15	No	_	_	_	_
+1-6	16-17	,	_	_	_	_
+1-7	18-21	not	_	_	_	_
+1-8	22-26	Mako	*	PER	*->2-1	*[2]
+1-9	27-29	's	_	_	*->2-1	*[2]
+1-10	30-35	scarf	_	_	_	_
+1-11	36-37	!	_	_	_	_
+
+#Text=Bad dog and rat thingy ! 
+2-1	38-41	Bad	_	_	_	_
+2-2	42-45	dog	_	_	_	_
+2-3	46-49	and	_	_	_	_
+2-4	50-53	rat	_	_	_	_
+2-5	54-60	thingy	_	_	_	_
+2-6	61-62	!	_	_	_	_
+
+#Text=I 'm very disappointed in you two . 
+3-1	63-64	I	_	_	*->1-2	*[1]
+3-2	65-67	'm	_	_	_	_
+3-3	68-72	very	_	_	_	_
+3-4	73-85	disappointed	_	_	_	_
+3-5	86-88	in	_	_	_	_
+3-6	89-92	you	_	_	*->2-2	*[2]
+3-7	93-96	two	_	_	*->2-2	*[2]
+3-8	97-98	.	_	_	_	_
+
+#Text=" 
+4-1	99-100	"	_	_	_	_

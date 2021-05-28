@@ -1,0 +1,206 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Lin says : " I ca n't believe Amon did this . 
+1-1	0-3	Lin	*	PER	*->1-1	*[1]
+1-2	4-8	says	_	_	_	_
+1-3	9-10	:	_	_	_	_
+1-4	11-12	"	_	_	_	_
+1-5	13-14	I	_	_	*->1-2	*[1]
+1-6	15-17	ca	_	_	_	_
+1-7	18-21	n't	_	_	_	_
+1-8	22-29	believe	_	_	_	_
+1-9	30-34	Amon	*	PER	*->2-1	*[2]
+1-10	35-38	did	_	_	_	_
+1-11	39-43	this	_	_	*->3-1	*[3]
+1-12	44-45	.	_	_	_	_
+
+#Text=I played right into his hand . 
+2-1	46-47	I	_	_	*->1-3	*[1]
+2-2	48-54	played	_	_	_	_
+2-3	55-60	right	_	_	_	_
+2-4	61-65	into	_	_	_	_
+2-5	66-69	his	_	_	*->2-2	*[2]
+2-6	70-74	hand	_	_	_	_
+2-7	75-76	.	_	_	_	_
+
+#Text=" Tenzin says : " He played us all . 
+3-1	77-78	"	_	_	_	_
+3-2	79-85	Tenzin	*	PER	_	_
+3-3	86-90	says	_	_	_	_
+3-4	91-92	:	_	_	_	_
+3-5	93-94	"	_	_	_	_
+3-6	95-97	He	_	_	*->1-4	*[1]
+3-7	98-104	played	_	_	_	_
+3-8	105-107	us	_	_	*->3-2	*[3]
+3-9	108-111	all	_	_	_	_
+3-10	112-113	.	_	_	_	_
+
+#Text=Republic City is at war . 
+4-1	114-122	Republic	_	_	*->4-1	*[4]
+4-2	123-127	City	_	_	*->4-1	*[4]
+4-3	128-130	is	_	_	_	_
+4-4	131-133	at	_	_	_	_
+4-5	134-137	war	_	_	_	_
+4-6	138-139	.	_	_	_	_
+
+#Text=" Main Bolin Korra Lin Beifong Mako Tenzin Antagonists Amon Equalists Lieutenant White Falls Wolfbats Ming Shaozu Tahno says : " Minor Aang ( flashback only ) Asami Sato Fire Ferrets cosplayers Hiroshi Sato Pabu Pro-bending referee Radio host Ring announcer Shiro Shinobi Sokka ( flashback only ) Tarrlok Toph ( flashback only ) White Falls Wolfbats fangirls Yakone ( flashback only ) " Shiro Shinobi says : " After three years , Kuvira has finally united the former Earth Kingdom states under her new Earth Empire banner ! 
+5-1	140-141	"	_	_	_	_
+5-2	142-146	Main	_	_	_	_
+5-3	147-152	Bolin	*	PER	*->5-1	*[5]
+5-4	153-158	Korra	*	PER	*->5-1	*[5]
+5-5	159-162	Lin	*	PER	*->5-1	*[5]
+5-6	163-170	Beifong	*	PER	*->5-1	*[5]
+5-7	171-175	Mako	*	PER	*->5-1	*[5]
+5-8	176-182	Tenzin	*	PER	*->5-1	*[5]
+5-9	183-194	Antagonists	_	_	_	_
+5-10	195-199	Amon	_	_	_	_
+5-11	200-209	Equalists	_	_	_	_
+5-12	210-220	Lieutenant	*	PER	_	_
+5-13	221-226	White	_	_	_	_
+5-14	227-232	Falls	_	_	_	_
+5-15	233-241	Wolfbats	_	_	_	_
+5-16	242-246	Ming	_	_	_	_
+5-17	247-253	Shaozu	*	PER	_	_
+5-18	254-259	Tahno	*	PER	_	_
+5-19	260-264	says	_	_	_	_
+5-20	265-266	:	_	_	_	_
+5-21	267-268	"	_	_	_	_
+5-22	269-274	Minor	_	_	_	_
+5-23	275-279	Aang	_	_	_	_
+5-24	280-281	(	_	_	_	_
+5-25	282-291	flashback	_	_	*->8-1	*[8]
+5-26	292-296	only	_	_	*->8-1	*[8]
+5-27	297-298	)	_	_	_	_
+5-28	299-304	Asami	*	PER	*->6-1	*[6]
+5-29	305-309	Sato	*	PER	*->6-1	*[6]
+5-30	310-314	Fire	_	_	_	_
+5-31	315-322	Ferrets	_	_	_	_
+5-32	323-333	cosplayers	_	_	_	_
+5-33	334-341	Hiroshi	_	_	_	_
+5-34	342-346	Sato	_	_	_	_
+5-35	347-351	Pabu	_	_	_	_
+5-36	352-363	Pro-bending	_	_	_	_
+5-37	364-371	referee	*	PER	_	_
+5-38	372-377	Radio	_	_	_	_
+5-39	378-382	host	*	PER	_	_
+5-40	383-387	Ring	_	_	_	_
+5-41	388-397	announcer	*	PER	_	_
+5-42	398-403	Shiro	*	PER	*->9-1	*[9]
+5-43	404-411	Shinobi	*	PER	*->9-1	*[9]
+5-44	412-417	Sokka	*	PER	*->9-1	*[9]
+5-45	418-419	(	_	_	*->9-1	*[9]
+5-46	420-429	flashback	_	_	*->8-2	*[8]
+5-47	430-434	only	_	_	*->8-2	*[8]
+5-48	435-436	)	_	_	*->9-1	*[9]
+5-49	437-444	Tarrlok	*	PER	*->9-1	*[9]
+5-50	445-449	Toph	*	PER	*->9-1	*[9]
+5-51	450-451	(	_	_	*->9-1	*[9]
+5-52	452-461	flashback	_	_	*->8-3	*[8]
+5-53	462-466	only	_	_	*->8-3	*[8]
+5-54	467-468	)	_	_	*->9-1	*[9]
+5-55	469-474	White	_	_	_	_
+5-56	475-480	Falls	_	_	_	_
+5-57	481-489	Wolfbats	_	_	_	_
+5-58	490-498	fangirls	_	_	_	_
+5-59	499-505	Yakone	_	_	_	_
+5-60	506-507	(	_	_	_	_
+5-61	508-517	flashback	_	_	*->8-4	*[8]
+5-62	518-522	only	_	_	*->8-4	*[8]
+5-63	523-524	)	_	_	_	_
+5-64	525-526	"	_	_	_	_
+5-65	527-532	Shiro	*	PER	*->9-2	*[9]
+5-66	533-540	Shinobi	*	PER	*->9-2	*[9]
+5-67	541-545	says	_	_	_	_
+5-68	546-547	:	_	_	_	_
+5-69	548-549	"	_	_	_	_
+5-70	550-555	After	_	_	_	_
+5-71	556-561	three	_	_	_	_
+5-72	562-567	years	_	_	_	_
+5-73	568-569	,	_	_	_	_
+5-74	570-576	Kuvira	*	PER	*->7-1	*[7]
+5-75	577-580	has	_	_	_	_
+5-76	581-588	finally	_	_	_	_
+5-77	589-595	united	_	_	_	_
+5-78	596-599	the	_	_	_	_
+5-79	600-606	former	_	_	_	_
+5-80	607-612	Earth	_	_	_	_
+5-81	613-620	Kingdom	_	_	_	_
+5-82	621-627	states	_	_	_	_
+5-83	628-633	under	_	_	_	_
+5-84	634-637	her	_	_	*->7-2	*[7]
+5-85	638-641	new	_	_	_	_
+5-86	642-647	Earth	_	_	_	_
+5-87	648-654	Empire	_	_	_	_
+5-88	655-661	banner	_	_	_	_
+5-89	662-663	!	_	_	_	_
+
+#Text=But one holdout remains : Zaofu . 
+6-1	664-667	But	_	_	_	_
+6-2	668-671	one	_	_	_	_
+6-3	672-679	holdout	_	_	_	_
+6-4	680-687	remains	_	_	_	_
+6-5	688-689	:	_	_	_	_
+6-6	690-695	Zaofu	_	_	*->10-1	*[10]
+6-7	696-697	.	_	_	_	_
+
+#Text=During that same time , Asami rebuilt the company her father created and helped redesign the city 's infrastructure . 
+7-1	698-704	During	_	_	_	_
+7-2	705-709	that	_	_	_	_
+7-3	710-714	same	_	_	_	_
+7-4	715-719	time	_	_	_	_
+7-5	720-721	,	_	_	_	_
+7-6	722-727	Asami	*	PER	*->6-2	*[6]
+7-7	728-735	rebuilt	_	_	_	_
+7-8	736-739	the	_	_	_	_
+7-9	740-747	company	_	_	_	_
+7-10	748-751	her	_	_	*->10-2	*[10]
+7-11	752-758	father	_	_	_	_
+7-12	759-766	created	_	_	_	_
+7-13	767-770	and	_	_	_	_
+7-14	771-777	helped	_	_	_	_
+7-15	778-786	redesign	_	_	_	_
+7-16	787-790	the	_	_	*->4-2	*[4]
+7-17	791-795	city	_	_	*->4-2	*[4]
+7-18	796-798	's	_	_	*->4-2	*[4]
+7-19	799-813	infrastructure	_	_	_	_
+7-20	814-815	.	_	_	_	_
+
+#Text=And , most recently , the airbender kids found the Avatar ! 
+8-1	816-819	And	_	_	_	_
+8-2	820-821	,	_	_	_	_
+8-3	822-826	most	_	_	_	_
+8-4	827-835	recently	_	_	_	_
+8-5	836-837	,	_	_	_	_
+8-6	838-841	the	_	_	_	_
+8-7	842-851	airbender	_	_	_	_
+8-8	852-856	kids	_	_	_	_
+8-9	857-862	found	_	_	_	_
+8-10	863-866	the	_	_	_	_
+8-11	867-873	Avatar	_	_	_	_
+8-12	874-875	!	_	_	_	_
+
+#Text=Korra rid herself of the residual poison in her body and is ready to return to action ! 
+9-1	876-881	Korra	*	PER	*->5-2	*[5]
+9-2	882-885	rid	_	_	_	_
+9-3	886-893	herself	_	_	*->5-3	*[5]
+9-4	894-896	of	_	_	_	_
+9-5	897-900	the	_	_	_	_
+9-6	901-909	residual	_	_	_	_
+9-7	910-916	poison	_	_	_	_
+9-8	917-919	in	_	_	_	_
+9-9	920-923	her	_	_	*->10-3	*[10]
+9-10	924-928	body	_	_	_	_
+9-11	929-932	and	_	_	_	_
+9-12	933-935	is	_	_	_	_
+9-13	936-941	ready	_	_	_	_
+9-14	942-944	to	_	_	_	_
+9-15	945-951	return	_	_	_	_
+9-16	952-954	to	_	_	_	_
+9-17	955-961	action	_	_	_	_
+9-18	962-963	!	_	_	_	_
+
+#Text=" 
+10-1	964-965	"	_	_	_	_

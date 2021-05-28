@@ -1,0 +1,127 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Gommu says : " Honored to oblige . 
+1-1	0-5	Gommu	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-22	Honored	_	_	_	_
+1-6	23-25	to	_	_	_	_
+1-7	26-32	oblige	_	_	_	_
+1-8	33-34	.	_	_	_	_
+
+#Text=My associates and I heartily oppose Amon 's so - called " Equalist " policies . 
+2-1	35-37	My	_	_	*->1-2	*[1]
+2-2	38-48	associates	_	_	*->2-1	*[2]
+2-3	49-52	and	_	_	_	_
+2-4	53-54	I	_	_	*->1-3	*[1]
+2-5	55-63	heartily	_	_	_	_
+2-6	64-70	oppose	_	_	_	_
+2-7	71-75	Amon	*	PER	_	_
+2-8	76-78	's	_	_	_	_
+2-9	79-81	so	_	_	_	_
+2-10	82-83	-	_	_	_	_
+2-11	84-90	called	_	_	_	_
+2-12	91-92	"	_	_	_	_
+2-13	93-101	Equalist	_	_	_	_
+2-14	102-103	"	_	_	_	_
+2-15	104-112	policies	_	_	_	_
+2-16	113-114	.	_	_	_	_
+
+#Text=We got benders and nonbenders living together down here , but do you see us fightin ' ? 
+3-1	115-117	We	_	_	*->2-2	*[2]
+3-2	118-121	got	_	_	_	_
+3-3	122-129	benders	_	_	_	_
+3-4	130-133	and	_	_	_	_
+3-5	134-144	nonbenders	_	_	_	_
+3-6	145-151	living	_	_	_	_
+3-7	152-160	together	_	_	_	_
+3-8	161-165	down	_	_	_	_
+3-9	166-170	here	_	_	_	_
+3-10	171-172	,	_	_	_	_
+3-11	173-176	but	_	_	_	_
+3-12	177-179	do	_	_	_	_
+3-13	180-183	you	_	_	_	_
+3-14	184-187	see	_	_	_	_
+3-15	188-190	us	_	_	*->2-3	*[2]
+3-16	191-198	fightin	_	_	_	_
+3-17	199-200	'	_	_	_	_
+3-18	201-202	?	_	_	_	_
+
+#Text=No siree ; we 've figured out how to harmoniously co-exist . 
+4-1	203-205	No	_	_	_	_
+4-2	206-211	siree	_	_	_	_
+4-3	212-213	;	_	_	_	_
+4-4	214-216	we	_	_	*->2-4	*[2]
+4-5	217-220	've	_	_	_	_
+4-6	221-228	figured	_	_	_	_
+4-7	229-232	out	_	_	_	_
+4-8	233-236	how	_	_	_	_
+4-9	237-239	to	_	_	_	_
+4-10	240-252	harmoniously	_	_	_	_
+4-11	253-261	co-exist	_	_	_	_
+4-12	262-263	.	_	_	_	_
+
+#Text=" Bolin says : " You are a wise and noble hobo . 
+5-1	264-265	"	_	_	_	_
+5-2	266-271	Bolin	*	PER	*->4-1	*[4]
+5-3	272-276	says	_	_	_	_
+5-4	277-278	:	_	_	_	_
+5-5	279-280	"	_	_	_	_
+5-6	281-284	You	_	_	*->3-3	*[3]
+5-7	285-288	are	_	_	_	_
+5-8	289-290	a	_	_	*->3-1	*[3]
+5-9	291-295	wise	_	_	*->3-1	*[3]
+5-10	296-299	and	_	_	*->3-1	*[3]
+5-11	300-305	noble	_	_	*->3-1	*[3]
+5-12	306-310	hobo	_	_	*->3-1	*[3]
+5-13	311-312	.	_	_	_	_
+
+#Text=Mmmm . 
+6-1	313-317	Mmmm	_	_	_	_
+6-2	318-319	.	_	_	_	_
+
+#Text=This is the best - tasting street gruel I 've ever had . 
+7-1	320-324	This	_	_	*->5-2	*[5]
+7-2	325-327	is	_	_	_	_
+7-3	328-331	the	_	_	*->5-1	*[5]
+7-4	332-336	best	_	_	*->5-1	*[5]
+7-5	337-338	-	_	_	*->5-1	*[5]
+7-6	339-346	tasting	_	_	*->5-1	*[5]
+7-7	347-353	street	_	_	*->5-1	*[5]
+7-8	354-359	gruel	_	_	*->5-1	*[5]
+7-9	360-361	I	_	_	*->4-2	*[4]
+7-10	362-365	've	_	_	*->5-1	*[5]
+7-11	366-370	ever	_	_	*->5-1	*[5]
+7-12	371-374	had	_	_	*->5-1	*[5]
+7-13	375-376	.	_	_	_	_
+
+#Text=Seriously ! 
+8-1	377-386	Seriously	_	_	_	_
+8-2	387-388	!	_	_	_	_
+
+#Text=" Gommu says : " I culled it from the finest dumpsters the city has to offer ! 
+9-1	389-390	"	_	_	_	_
+9-2	391-396	Gommu	*	PER	*->1-4	*[1]
+9-3	397-401	says	_	_	_	_
+9-4	402-403	:	_	_	_	_
+9-5	404-405	"	_	_	_	_
+9-6	406-407	I	_	_	*->1-5	*[1]
+9-7	408-414	culled	_	_	_	_
+9-8	415-417	it	_	_	*->5-3	*[5]
+9-9	418-422	from	_	_	_	_
+9-10	423-426	the	_	_	_	_
+9-11	427-433	finest	_	_	_	_
+9-12	434-443	dumpsters	_	_	_	_
+9-13	444-447	the	_	_	_	_
+9-14	448-452	city	_	_	_	_
+9-15	453-456	has	_	_	_	_
+9-16	457-459	to	_	_	_	_
+9-17	460-465	offer	_	_	_	_
+9-18	466-467	!	_	_	_	_
+
+#Text=" 
+10-1	468-469	"	_	_	_	_

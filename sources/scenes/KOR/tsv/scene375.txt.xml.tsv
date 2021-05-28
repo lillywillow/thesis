@@ -1,0 +1,82 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " Did you have any luck getting through to Tenzin ? " 
+1-1	0-5	Korra	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Did	_	_	_	_
+1-6	19-22	you	_	_	_	_
+1-7	23-27	have	_	_	_	_
+1-8	28-31	any	_	_	_	_
+1-9	32-36	luck	_	_	_	_
+1-10	37-44	getting	_	_	_	_
+1-11	45-52	through	_	_	_	_
+1-12	53-55	to	_	_	_	_
+1-13	56-62	Tenzin	*	PER	_	_
+1-14	63-64	?	_	_	_	_
+1-15	65-66	"	_	_	_	_
+
+#Text=Suyin says : " No one 's answering . 
+2-1	67-72	Suyin	*	PER	*->1-1	*[1]
+2-2	73-77	says	_	_	_	_
+2-3	78-79	:	_	_	_	_
+2-4	80-81	"	_	_	_	_
+2-5	82-84	No	_	_	_	_
+2-6	85-88	one	_	_	_	_
+2-7	89-91	's	_	_	_	_
+2-8	92-101	answering	_	_	_	_
+2-9	102-103	.	_	_	_	_
+
+#Text=What if Zaheer 's already up there ? 
+3-1	104-108	What	_	_	_	_
+3-2	109-111	if	_	_	_	_
+3-3	112-118	Zaheer	*	PER	*->2-1	*[2]
+3-4	119-121	's	_	_	*->2-1	*[2]
+3-5	122-129	already	_	_	*->2-1	*[2]
+3-6	130-132	up	_	_	*->2-1	*[2]
+3-7	133-138	there	_	_	*->2-1	*[2]
+3-8	139-140	?	_	_	_	_
+
+#Text=I should never have let Opal go . 
+4-1	141-142	I	_	_	*->1-2	*[1]
+4-2	143-149	should	_	_	_	_
+4-3	150-155	never	_	_	_	_
+4-4	156-160	have	_	_	_	_
+4-5	161-164	let	_	_	_	_
+4-6	165-169	Opal	*	PER	_	_
+4-7	170-172	go	_	_	_	_
+4-8	173-174	.	_	_	_	_
+
+#Text=" Lin says : " It 's going to be okay , Su . 
+5-1	175-176	"	_	_	_	_
+5-2	177-180	Lin	*	PER	_	_
+5-3	181-185	says	_	_	_	_
+5-4	186-187	:	_	_	_	_
+5-5	188-189	"	_	_	_	_
+5-6	190-192	It	_	_	*->2-2	*[2]
+5-7	193-195	's	_	_	_	_
+5-8	196-201	going	_	_	_	_
+5-9	202-204	to	_	_	_	_
+5-10	205-207	be	_	_	_	_
+5-11	208-212	okay	_	_	_	_
+5-12	213-214	,	_	_	_	_
+5-13	215-217	Su	*	PER	_	_
+5-14	218-219	.	_	_	_	_
+
+#Text=" Suyin says : " I hope so . 
+6-1	220-221	"	_	_	_	_
+6-2	222-227	Suyin	*	PER	*->1-3	*[1]
+6-3	228-232	says	_	_	_	_
+6-4	233-234	:	_	_	_	_
+6-5	235-236	"	_	_	_	_
+6-6	237-238	I	_	_	*->1-4	*[1]
+6-7	239-243	hope	_	_	_	_
+6-8	244-246	so	_	_	_	_
+6-9	247-248	.	_	_	_	_
+
+#Text=" 
+7-1	249-250	"	_	_	_	_

@@ -1,0 +1,86 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Iroh says : " Mister President , do I have your order to engage ? " 
+1-1	0-4	Iroh	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-20	Mister	_	_	_	_
+1-6	21-30	President	*	PER	_	_
+1-7	31-32	,	_	_	_	_
+1-8	33-35	do	_	_	_	_
+1-9	36-37	I	_	_	*->1-2	*[1]
+1-10	38-42	have	_	_	_	_
+1-11	43-47	your	_	_	_	_
+1-12	48-53	order	_	_	_	_
+1-13	54-56	to	_	_	_	_
+1-14	57-63	engage	_	_	_	_
+1-15	64-65	?	_	_	_	_
+1-16	66-67	"	_	_	_	_
+
+#Text=Kuvira says : " You have three seconds before I wipe out your army . " 
+2-1	68-74	Kuvira	*	PER	*->3-1	*[3]
+2-2	75-79	says	_	_	_	_
+2-3	80-81	:	_	_	_	_
+2-4	82-83	"	_	_	_	_
+2-5	84-87	You	_	_	*->1-3	*[1]
+2-6	88-92	have	_	_	_	_
+2-7	93-98	three	_	_	_	_
+2-8	99-106	seconds	_	_	_	_
+2-9	107-113	before	_	_	_	_
+2-10	114-115	I	_	_	*->3-2	*[3]
+2-11	116-120	wipe	_	_	_	_
+2-12	121-124	out	_	_	_	_
+2-13	125-129	your	_	_	*->1-4	*[1]
+2-14	130-134	army	_	_	_	_
+2-15	135-136	.	_	_	_	_
+2-16	137-138	"	_	_	_	_
+
+#Text=Raiko says : " I have no choice . " 
+3-1	139-144	Raiko	*	PER	*->4-1	*[4]
+3-2	145-149	says	_	_	_	_
+3-3	150-151	:	_	_	_	_
+3-4	152-153	"	_	_	_	_
+3-5	154-155	I	_	_	*->4-2	*[4]
+3-6	156-160	have	_	_	_	_
+3-7	161-163	no	_	_	_	_
+3-8	164-170	choice	_	_	_	_
+3-9	171-172	.	_	_	_	_
+3-10	173-174	"	_	_	_	_
+
+#Text=Kuvira says : " Time 's up ! " 
+4-1	175-181	Kuvira	*	PER	*->3-3	*[3]
+4-2	182-186	says	_	_	_	_
+4-3	187-188	:	_	_	_	_
+4-4	189-190	"	_	_	_	_
+4-5	191-195	Time	_	_	_	_
+4-6	196-198	's	_	_	_	_
+4-7	199-201	up	_	_	*->2-1	*[2]
+4-8	202-203	!	_	_	_	_
+4-9	204-205	"	_	_	_	_
+
+#Text=Raiko says : " Stop ! 
+5-1	206-211	Raiko	*	PER	*->4-3	*[4]
+5-2	212-216	says	_	_	_	_
+5-3	217-218	:	_	_	_	_
+5-4	219-220	"	_	_	_	_
+5-5	221-225	Stop	_	_	_	_
+5-6	226-227	!	_	_	_	_
+
+#Text=We surrender . 
+6-1	228-230	We	_	_	*->2-2	*[2]
+6-2	231-240	surrender	_	_	_	_
+6-3	241-242	.	_	_	_	_
+
+#Text=Republic City is yours . 
+7-1	243-251	Republic	_	_	_	_
+7-2	252-256	City	_	_	_	_
+7-3	257-259	is	_	_	_	_
+7-4	260-265	yours	_	_	*->3-4	*[3]
+7-5	266-267	.	_	_	_	_
+
+#Text=" 
+8-1	268-269	"	_	_	_	_

@@ -1,0 +1,120 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " Airbend ! 
+1-1	0-5	Korra	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-22	Airbend	_	_	*->2-1	*[2]
+1-6	23-24	!	_	_	_	_
+
+#Text=What is wrong with me ? 
+2-1	25-29	What	_	_	_	_
+2-2	30-32	is	_	_	_	_
+2-3	33-38	wrong	_	_	_	_
+2-4	39-43	with	_	_	_	_
+2-5	44-46	me	_	_	_	_
+2-6	47-48	?	_	_	_	_
+
+#Text=Airbend ! 
+3-1	49-56	Airbend	_	_	*->2-2	*[2]
+3-2	57-58	!	_	_	*->2-2	*[2]
+
+#Text=" Korra says : " Aargh ! 
+4-1	59-60	"	_	_	*->1-1	*[1]
+4-2	61-66	Korra	*	PER	*->1-1	*[1]
+4-3	67-71	says	_	_	_	_
+4-4	72-73	:	_	_	_	_
+4-5	74-75	"	_	_	_	_
+4-6	76-81	Aargh	_	_	_	_
+4-7	82-83	!	_	_	_	_
+
+#Text=Maybe I 'm just not cut out to be an airbender , huh , Naga ? 
+5-1	84-89	Maybe	_	_	_	_
+5-2	90-91	I	_	_	*->1-4	*[1]
+5-3	92-94	'm	_	_	_	_
+5-4	95-99	just	_	_	_	_
+5-5	100-103	not	_	_	_	_
+5-6	104-107	cut	_	_	_	_
+5-7	108-111	out	_	_	_	_
+5-8	112-114	to	_	_	_	_
+5-9	115-117	be	_	_	_	_
+5-10	118-120	an	_	_	_	_
+5-11	121-130	airbender	_	_	_	_
+5-12	131-132	,	_	_	_	_
+5-13	133-136	huh	_	_	_	_
+5-14	137-138	,	_	_	_	_
+5-15	139-143	Naga	_	_	_	_
+5-16	144-145	?	_	_	_	_
+
+#Text=" Shiro Shinobi says : " Ladies and gentlemen ! 
+6-1	146-147	"	_	_	_	_
+6-2	148-153	Shiro	*	PER	*->3-1	*[3]
+6-3	154-161	Shinobi	*	PER	*->3-1	*[3]
+6-4	162-166	says	_	_	_	_
+6-5	167-168	:	_	_	_	_
+6-6	169-170	"	_	_	_	_
+6-7	171-177	Ladies	_	_	*->4-1	*[4]
+6-8	178-181	and	_	_	_	_
+6-9	182-191	gentlemen	_	_	_	_
+6-10	192-193	!	_	_	_	_
+
+#Text=I 'm coming to you live from Republic City 's Pro-bending Arena , where tonight the best in the world continue their quest for a spot in the upcoming championship tournament . 
+7-1	194-195	I	_	_	*->3-2	*[3]
+7-2	196-198	'm	_	_	_	_
+7-3	199-205	coming	_	_	_	_
+7-4	206-208	to	_	_	_	_
+7-5	209-212	you	_	_	*->1-5	*[1]
+7-6	213-217	live	_	_	_	_
+7-7	218-222	from	_	_	_	_
+7-8	223-231	Republic	_	_	_	_
+7-9	232-236	City	_	_	_	_
+7-10	237-239	's	_	_	_	_
+7-11	240-251	Pro-bending	_	_	_	_
+7-12	252-257	Arena	_	_	_	_
+7-13	258-259	,	_	_	_	_
+7-14	260-265	where	_	_	_	_
+7-15	266-273	tonight	_	_	_	_
+7-16	274-277	the	_	_	_	_
+7-17	278-282	best	_	_	_	_
+7-18	283-285	in	_	_	_	_
+7-19	286-289	the	_	_	_	_
+7-20	290-295	world	_	_	_	_
+7-21	296-304	continue	_	_	_	_
+7-22	305-310	their	_	_	*->4-2	*[4]
+7-23	311-316	quest	_	_	_	_
+7-24	317-320	for	_	_	_	_
+7-25	321-322	a	_	_	_	_
+7-26	323-327	spot	_	_	_	_
+7-27	328-330	in	_	_	_	_
+7-28	331-334	the	_	_	_	_
+7-29	335-343	upcoming	_	_	_	_
+7-30	344-356	championship	_	_	_	_
+7-31	357-367	tournament	_	_	_	_
+7-32	368-369	.	_	_	_	_
+
+#Text=Grab your snacks and grab your kids because this next match is gon na be a doozy ! 
+8-1	370-374	Grab	_	_	_	_
+8-2	375-379	your	_	_	*->1-6	*[1]
+8-3	380-386	snacks	_	_	_	_
+8-4	387-390	and	_	_	_	_
+8-5	391-395	grab	_	_	_	_
+8-6	396-400	your	_	_	*->1-7	*[1]
+8-7	401-405	kids	_	_	_	_
+8-8	406-413	because	_	_	_	_
+8-9	414-418	this	_	_	_	_
+8-10	419-423	next	_	_	_	_
+8-11	424-429	match	_	_	_	_
+8-12	430-432	is	_	_	_	_
+8-13	433-436	gon	_	_	_	_
+8-14	437-439	na	_	_	_	_
+8-15	440-442	be	_	_	_	_
+8-16	443-444	a	_	_	_	_
+8-17	445-450	doozy	_	_	_	_
+8-18	451-452	!	_	_	_	_
+
+#Text=" 
+9-1	453-454	"	_	_	_	_

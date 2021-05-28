@@ -1,0 +1,159 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Tarrlok says : " Avatar Korra has bravely answered the call to action . 
+1-1	0-7	Tarrlok	*	PER	*->1-1	*[1]
+1-2	8-12	says	_	_	_	_
+1-3	13-14	:	_	_	_	_
+1-4	15-16	"	_	_	_	_
+1-5	17-23	Avatar	*	PER	*->2-1	*[2]
+1-6	24-29	Korra	*	PER	*->2-1	*[2]
+1-7	30-33	has	_	_	_	_
+1-8	34-41	bravely	_	_	_	_
+1-9	42-50	answered	_	_	_	_
+1-10	51-54	the	_	_	_	_
+1-11	55-59	call	_	_	_	_
+1-12	60-62	to	_	_	_	_
+1-13	63-69	action	_	_	_	_
+1-14	70-71	.	_	_	_	_
+
+#Text=With the two of us leading the charge , Republic City has nothing to fear from Amon and the Equalists . 
+2-1	72-76	With	_	_	_	_
+2-2	77-80	the	_	_	_	_
+2-3	81-84	two	_	_	_	_
+2-4	85-87	of	_	_	_	_
+2-5	88-90	us	_	_	_	_
+2-6	91-98	leading	_	_	_	_
+2-7	99-102	the	_	_	_	_
+2-8	103-109	charge	_	_	_	_
+2-9	110-111	,	_	_	_	_
+2-10	112-120	Republic	_	_	_	_
+2-11	121-125	City	_	_	_	_
+2-12	126-129	has	_	_	_	_
+2-13	130-137	nothing	_	_	_	_
+2-14	138-140	to	_	_	_	_
+2-15	141-145	fear	_	_	_	_
+2-16	146-150	from	_	_	_	_
+2-17	151-155	Amon	*	PER	*->3-1	*[3]
+2-18	156-159	and	_	_	_	_
+2-19	160-163	the	_	_	_	_
+2-20	164-173	Equalists	_	_	_	_
+2-21	174-175	.	_	_	_	_
+
+#Text=" Female reporter says : " Question for the Avatar ! 
+3-1	176-177	"	_	_	_	_
+3-2	178-184	Female	_	_	_	_
+3-3	185-193	reporter	*	PER	_	_
+3-4	194-198	says	_	_	_	_
+3-5	199-200	:	_	_	_	_
+3-6	201-202	"	_	_	_	_
+3-7	203-211	Question	_	_	_	_
+3-8	212-215	for	_	_	_	_
+3-9	216-219	the	_	_	_	_
+3-10	220-226	Avatar	_	_	_	_
+3-11	227-228	!	_	_	_	_
+
+#Text=Amon remains at large . 
+4-1	229-233	Amon	*	PER	*->3-2	*[3]
+4-2	234-241	remains	_	_	_	_
+4-3	242-244	at	_	_	_	_
+4-4	245-250	large	_	_	_	_
+4-5	251-252	.	_	_	_	_
+
+#Text=Why have you failed to locate him ? 
+5-1	253-256	Why	_	_	_	_
+5-2	257-261	have	_	_	_	_
+5-3	262-265	you	_	_	*->1-2	*[1]
+5-4	266-272	failed	_	_	_	_
+5-5	273-275	to	_	_	_	_
+5-6	276-282	locate	_	_	_	_
+5-7	283-286	him	_	_	*->3-3	*[3]
+5-8	287-288	?	_	_	_	_
+
+#Text=" Korra says : " You want to know why ? 
+6-1	289-290	"	_	_	_	_
+6-2	291-296	Korra	*	PER	*->2-2	*[2]
+6-3	297-301	says	_	_	_	_
+6-4	302-303	:	_	_	_	_
+6-5	304-305	"	_	_	_	_
+6-6	306-309	You	_	_	*->5-1	*[5]
+6-7	310-314	want	_	_	_	_
+6-8	315-317	to	_	_	_	_
+6-9	318-322	know	_	_	_	_
+6-10	323-326	why	_	_	_	_
+6-11	327-328	?	_	_	_	_
+
+#Text=Because Amon is hiding in the shadows like a coward . 
+7-1	329-336	Because	_	_	_	_
+7-2	337-341	Amon	*	PER	*->3-4	*[3]
+7-3	342-344	is	_	_	_	_
+7-4	345-351	hiding	_	_	_	_
+7-5	352-354	in	_	_	_	_
+7-6	355-358	the	_	_	_	_
+7-7	359-366	shadows	_	_	_	_
+7-8	367-371	like	_	_	_	_
+7-9	372-373	a	_	_	_	_
+7-10	374-380	coward	_	_	_	_
+7-11	381-382	.	_	_	_	_
+
+#Text=Amon , I challenge you to a duel ! 
+8-1	383-387	Amon	*	PER	*->3-5	*[3]
+8-2	388-389	,	_	_	_	_
+8-3	390-391	I	_	_	*->2-3	*[2]
+8-4	392-401	challenge	_	_	_	_
+8-5	402-405	you	_	_	*->5-2	*[5]
+8-6	406-408	to	_	_	_	_
+8-7	409-410	a	_	_	_	_
+8-8	411-415	duel	_	_	_	_
+8-9	416-417	!	_	_	_	_
+
+#Text=No task force , no chi blockers , just the two of us tonight at midnight on Avatar Aang Memorial Island . 
+9-1	418-420	No	_	_	*->4-3	*[4]
+9-2	421-425	task	_	_	*->4-3	*[4]
+9-3	426-431	force	_	_	*->4-3	*[4]
+9-4	432-433	,	_	_	_	_
+9-5	434-436	no	_	_	_	_
+9-6	437-440	chi	_	_	_	_
+9-7	441-449	blockers	_	_	_	_
+9-8	450-451	,	_	_	_	_
+9-9	452-456	just	_	_	*->4-1	*[4]
+9-10	457-460	the	_	_	*->4-1	*[4]
+9-11	461-464	two	_	_	*->4-1	*[4]
+9-12	465-467	of	_	_	*->4-1	*[4]
+9-13	468-470	us	_	_	*->4-1	*[4]
+9-14	471-478	tonight	_	_	_	_
+9-15	479-481	at	_	_	_	_
+9-16	482-490	midnight	_	_	_	_
+9-17	491-493	on	_	_	_	_
+9-18	494-500	Avatar	_	_	_	_
+9-19	501-505	Aang	_	_	_	_
+9-20	506-514	Memorial	_	_	_	_
+9-21	515-521	Island	_	_	_	_
+9-22	522-523	.	_	_	_	_
+
+#Text=Let 's cut to the chase and settle this thing , if you 're man enough to face me . 
+10-1	524-527	Let	_	_	_	_
+10-2	528-530	's	_	_	*->4-4	*[4]
+10-3	531-534	cut	_	_	_	_
+10-4	535-537	to	_	_	_	_
+10-5	538-541	the	_	_	_	_
+10-6	542-547	chase	_	_	_	_
+10-7	548-551	and	_	_	_	_
+10-8	552-558	settle	_	_	_	_
+10-9	559-563	this	_	_	_	_
+10-10	564-569	thing	_	_	_	_
+10-11	570-571	,	_	_	_	_
+10-12	572-574	if	_	_	_	_
+10-13	575-578	you	_	_	*->5-3	*[5]
+10-14	579-582	're	_	_	_	_
+10-15	583-586	man	_	_	_	_
+10-16	587-593	enough	_	_	_	_
+10-17	594-596	to	_	_	_	_
+10-18	597-601	face	_	_	_	_
+10-19	602-604	me	_	_	*->2-4	*[2]
+10-20	605-606	.	_	_	_	_
+
+#Text=" 
+11-1	607-608	"	_	_	_	_

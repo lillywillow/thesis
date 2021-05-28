@@ -1,0 +1,51 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Korra says : " Air Temple Island . 
+1-1	0-5	Korra	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Air	_	_	*->1-1	*[1]
+1-6	19-25	Temple	_	_	*->1-1	*[1]
+1-7	26-32	Island	_	_	*->1-1	*[1]
+1-8	33-34	.	_	_	_	_
+
+#Text=That 's where Tenzin lives . 
+2-1	35-39	That	_	_	*->1-2	*[1]
+2-2	40-42	's	_	_	_	_
+2-3	43-48	where	_	_	_	_
+2-4	49-55	Tenzin	*	PER	_	_
+2-5	56-61	lives	_	_	_	_
+2-6	62-63	.	_	_	_	_
+
+#Text=You ready for a little swim , girl ? 
+3-1	64-67	You	_	_	_	_
+3-2	68-73	ready	_	_	_	_
+3-3	74-77	for	_	_	_	_
+3-4	78-79	a	_	_	_	_
+3-5	80-86	little	_	_	_	_
+3-6	87-91	swim	_	_	_	_
+3-7	92-93	,	_	_	_	_
+3-8	94-98	girl	_	_	_	_
+3-9	99-100	?	_	_	_	_
+
+#Text=Okay , okay ! 
+4-1	101-105	Okay	_	_	_	_
+4-2	106-107	,	_	_	_	_
+4-3	108-112	okay	_	_	_	_
+4-4	113-114	!	_	_	_	_
+
+#Text=Food first , then air temple ! 
+5-1	115-119	Food	_	_	_	_
+5-2	120-125	first	_	_	_	_
+5-3	126-127	,	_	_	_	_
+5-4	128-132	then	_	_	_	_
+5-5	133-136	air	_	_	_	_
+5-6	137-143	temple	_	_	_	_
+5-7	144-145	!	_	_	_	_
+
+#Text=" 
+6-1	146-147	"	_	_	_	_

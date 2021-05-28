@@ -1,0 +1,34 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Baatar Jr. says : " Was this your best idea ? 
+1-1	0-6	Baatar	*	PER	_	_
+1-2	7-10	Jr.	*	PER	_	_
+1-3	11-15	says	_	_	_	_
+1-4	16-17	:	_	_	_	_
+1-5	18-19	"	_	_	_	_
+1-6	20-23	Was	_	_	_	_
+1-7	24-28	this	_	_	*->1-1	*[1]
+1-8	29-33	your	_	_	*->2-1	*[2]
+1-9	34-38	best	_	_	_	_
+1-10	39-43	idea	_	_	_	_
+1-11	44-45	?	_	_	_	_
+
+#Text=You 've lost , only you have n't accepted it yet . 
+2-1	46-49	You	_	_	*->2-2	*[2]
+2-2	50-53	've	_	_	_	_
+2-3	54-58	lost	_	_	_	_
+2-4	59-60	,	_	_	_	_
+2-5	61-65	only	_	_	_	_
+2-6	66-69	you	_	_	*->2-3	*[2]
+2-7	70-74	have	_	_	_	_
+2-8	75-78	n't	_	_	_	_
+2-9	79-87	accepted	_	_	_	_
+2-10	88-90	it	_	_	*->1-2	*[1]
+2-11	91-94	yet	_	_	_	_
+2-12	95-96	.	_	_	_	_
+
+#Text=" 
+3-1	97-98	"	_	_	_	_

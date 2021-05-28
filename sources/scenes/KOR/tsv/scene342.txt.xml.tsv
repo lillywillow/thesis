@@ -1,0 +1,85 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bolin says : " Look ! " 
+1-1	0-5	Bolin	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-19	Look	_	_	_	_
+1-6	20-21	!	_	_	_	_
+1-7	22-23	"	_	_	_	_
+
+#Text=Tenzin says : " A new spirit portal . " 
+2-1	24-30	Tenzin	*	PER	*->1-1	*[1]
+2-2	31-35	says	_	_	_	_
+2-3	36-37	:	_	_	_	_
+2-4	38-39	"	_	_	_	_
+2-5	40-41	A	_	_	_	_
+2-6	42-45	new	_	_	_	_
+2-7	46-52	spirit	_	_	_	_
+2-8	53-59	portal	_	_	_	_
+2-9	60-61	.	_	_	_	_
+2-10	62-63	"	_	_	_	_
+
+#Text=Mecha suit captain says : " Spread out and find Kuvira ! " 
+3-1	64-69	Mecha	_	_	_	_
+3-2	70-74	suit	_	_	_	_
+3-3	75-82	captain	*	PER	_	_
+3-4	83-87	says	_	_	_	_
+3-5	88-89	:	_	_	_	_
+3-6	90-91	"	_	_	_	_
+3-7	92-98	Spread	_	_	_	_
+3-8	99-102	out	_	_	_	_
+3-9	103-106	and	_	_	_	_
+3-10	107-111	find	_	_	_	_
+3-11	112-118	Kuvira	_	_	_	_
+3-12	119-120	!	_	_	_	_
+3-13	121-122	"	_	_	_	_
+
+#Text=Mako says : " Korra ! " 
+4-1	123-127	Mako	*	PER	*->2-1	*[2]
+4-2	128-132	says	_	_	_	_
+4-3	133-134	:	_	_	_	_
+4-4	135-136	"	_	_	_	_
+4-5	137-142	Korra	_	_	*->3-1	*[3]
+4-6	143-144	!	_	_	_	_
+4-7	145-146	"	_	_	_	_
+
+#Text=Mako says : " Tenzin , there 's no sign of her . " 
+5-1	147-151	Mako	*	PER	*->2-2	*[2]
+5-2	152-156	says	_	_	_	_
+5-3	157-158	:	_	_	_	_
+5-4	159-160	"	_	_	_	_
+5-5	161-167	Tenzin	*	PER	*->1-2	*[1]
+5-6	168-169	,	_	_	_	_
+5-7	170-175	there	_	_	_	_
+5-8	176-178	's	_	_	_	_
+5-9	179-181	no	_	_	_	_
+5-10	182-186	sign	_	_	_	_
+5-11	187-189	of	_	_	_	_
+5-12	190-193	her	_	_	*->3-2	*[3]
+5-13	194-195	.	_	_	_	_
+5-14	196-197	"	_	_	_	_
+
+#Text=Tenzin says : " Keep looking ! 
+6-1	198-204	Tenzin	*	PER	*->1-3	*[1]
+6-2	205-209	says	_	_	_	_
+6-3	210-211	:	_	_	_	_
+6-4	212-213	"	_	_	_	_
+6-5	214-218	Keep	_	_	_	_
+6-6	219-226	looking	_	_	_	_
+6-7	227-228	!	_	_	_	_
+
+#Text=Korra ! 
+7-1	229-234	Korra	_	_	*->3-3	*[3]
+7-2	235-236	!	_	_	*->3-3	*[3]
+
+#Text=Korra ! 
+8-1	237-242	Korra	_	_	*->3-4	*[3]
+8-2	243-244	!	_	_	*->3-4	*[3]
+
+#Text=" 
+9-1	245-246	"	_	_	_	_

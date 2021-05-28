@@ -1,0 +1,136 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " What happened ? " 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-20	What	_	_	_	_
+1-6	21-29	happened	_	_	_	_
+1-7	30-31	?	_	_	_	_
+1-8	32-33	"	_	_	_	_
+
+#Text=Tenzin says : " Her soul is trapped in the Spirit World . " 
+2-1	34-40	Tenzin	*	PER	*->2-1	*[2]
+2-2	41-45	says	_	_	_	_
+2-3	46-47	:	_	_	_	_
+2-4	48-49	"	_	_	_	_
+2-5	50-53	Her	_	_	*->3-1	*[3]
+2-6	54-58	soul	_	_	_	_
+2-7	59-61	is	_	_	_	_
+2-8	62-69	trapped	_	_	_	_
+2-9	70-72	in	_	_	_	_
+2-10	73-76	the	_	_	_	_
+2-11	77-83	Spirit	_	_	_	_
+2-12	84-89	World	_	_	_	_
+2-13	90-91	.	_	_	_	_
+2-14	92-93	"	_	_	_	_
+
+#Text=Katara says : " Oh my goodness ! 
+3-1	94-100	Katara	*	PER	*->1-2	*[1]
+3-2	101-105	says	_	_	_	_
+3-3	106-107	:	_	_	_	_
+3-4	108-109	"	_	_	_	_
+3-5	110-112	Oh	_	_	_	_
+3-6	113-115	my	_	_	_	_
+3-7	116-124	goodness	_	_	_	_
+3-8	125-126	!	_	_	_	_
+
+#Text=How long has she been away ? 
+4-1	127-130	How	_	_	_	_
+4-2	131-135	long	_	_	_	_
+4-3	136-139	has	_	_	_	_
+4-4	140-143	she	_	_	*->3-2	*[3]
+4-5	144-148	been	_	_	_	_
+4-6	149-153	away	_	_	_	_
+4-7	154-155	?	_	_	_	_
+
+#Text=" Kya says : " Almost a week . 
+5-1	156-157	"	_	_	_	_
+5-2	158-161	Kya	*	PER	*->4-1	*[4]
+5-3	162-166	says	_	_	_	_
+5-4	167-168	:	_	_	_	_
+5-5	169-170	"	_	_	_	_
+5-6	171-177	Almost	_	_	*->5-1	*[5]
+5-7	178-179	a	_	_	*->5-1	*[5]
+5-8	180-184	week	_	_	*->5-1	*[5]
+5-9	185-186	.	_	_	_	_
+
+#Text=I 've tried to keep her energy flowing , but I can feel her slipping away . 
+6-1	187-188	I	_	_	*->4-2	*[4]
+6-2	189-192	've	_	_	_	_
+6-3	193-198	tried	_	_	_	_
+6-4	199-201	to	_	_	_	_
+6-5	202-206	keep	_	_	_	_
+6-6	207-210	her	_	_	*->5-2	*[5]
+6-7	211-217	energy	_	_	_	_
+6-8	218-225	flowing	_	_	_	_
+6-9	226-227	,	_	_	_	_
+6-10	228-231	but	_	_	_	_
+6-11	232-233	I	_	_	*->4-3	*[4]
+6-12	234-237	can	_	_	_	_
+6-13	238-242	feel	_	_	_	_
+6-14	243-246	her	_	_	*->5-3	*[5]
+6-15	247-255	slipping	_	_	*->5-3	*[5]
+6-16	256-260	away	_	_	_	_
+6-17	261-262	.	_	_	_	_
+
+#Text=You 're the only one who can help her now , Mom . 
+7-1	263-266	You	_	_	*->1-3	*[1]
+7-2	267-270	're	_	_	_	_
+7-3	271-274	the	_	_	_	_
+7-4	275-279	only	_	_	_	_
+7-5	280-283	one	_	_	_	_
+7-6	284-287	who	_	_	_	_
+7-7	288-291	can	_	_	_	_
+7-8	292-296	help	_	_	_	_
+7-9	297-300	her	_	_	*->5-4	*[5]
+7-10	301-304	now	_	_	_	_
+7-11	305-306	,	_	_	_	_
+7-12	307-310	Mom	_	_	_	_
+7-13	311-312	.	_	_	_	_
+
+#Text=" Tenzin says : " How much longer can she survive like this ? 
+8-1	313-314	"	_	_	_	_
+8-2	315-321	Tenzin	*	PER	*->2-2	*[2]
+8-3	322-326	says	_	_	_	_
+8-4	327-328	:	_	_	_	_
+8-5	329-330	"	_	_	_	_
+8-6	331-334	How	_	_	_	_
+8-7	335-339	much	_	_	_	_
+8-8	340-346	longer	_	_	_	_
+8-9	347-350	can	_	_	_	_
+8-10	351-354	she	_	_	*->5-5	*[5]
+8-11	355-362	survive	_	_	_	_
+8-12	363-367	like	_	_	_	_
+8-13	368-372	this	_	_	_	_
+8-14	373-374	?	_	_	_	_
+
+#Text=" Katara says : " I do n't know , but she is very strong to have lasted this long . 
+9-1	375-376	"	_	_	_	_
+9-2	377-383	Katara	*	PER	*->1-4	*[1]
+9-3	384-388	says	_	_	_	_
+9-4	389-390	:	_	_	_	_
+9-5	391-392	"	_	_	_	_
+9-6	393-394	I	_	_	*->1-5	*[1]
+9-7	395-397	do	_	_	_	_
+9-8	398-401	n't	_	_	_	_
+9-9	402-406	know	_	_	_	_
+9-10	407-408	,	_	_	_	_
+9-11	409-412	but	_	_	_	_
+9-12	413-416	she	_	_	*->5-6	*[5]
+9-13	417-419	is	_	_	_	_
+9-14	420-424	very	_	_	_	_
+9-15	425-431	strong	_	_	_	_
+9-16	432-434	to	_	_	_	_
+9-17	435-439	have	_	_	_	_
+9-18	440-446	lasted	_	_	_	_
+9-19	447-451	this	_	_	_	_
+9-20	452-456	long	_	_	_	_
+9-21	457-458	.	_	_	_	_
+
+#Text=" 
+10-1	459-460	"	_	_	_	_

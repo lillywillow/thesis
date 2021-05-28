@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Shiro Shinobi says : " It looks like Toza has overstayed his welcome in the ring folks . 
+1-1	0-5	Shiro	*	PER	*->1-1	*[1]
+1-2	6-13	Shinobi	*	PER	*->1-1	*[1]
+1-3	14-18	says	_	_	_	_
+1-4	19-20	:	_	_	_	_
+1-5	21-22	"	_	_	_	_
+1-6	23-25	It	_	_	_	_
+1-7	26-31	looks	_	_	_	_
+1-8	32-36	like	_	_	_	_
+1-9	37-41	Toza	*	PER	*->2-1	*[2]
+1-10	42-45	has	_	_	_	_
+1-11	46-56	overstayed	_	_	_	_
+1-12	57-60	his	_	_	*->2-2	*[2]
+1-13	61-68	welcome	_	_	_	_
+1-14	69-71	in	_	_	_	_
+1-15	72-75	the	_	_	*->3-1	*[3]
+1-16	76-80	ring	_	_	*->3-1	*[3]
+1-17	81-86	folks	_	_	*->3-1	*[3]
+1-18	87-88	.	_	_	_	_
+
+#Text=He 's single - handedly costing his team the match . 
+2-1	89-91	He	_	_	*->2-3	*[2]
+2-2	92-94	's	_	_	_	_
+2-3	95-101	single	_	_	_	_
+2-4	102-103	-	_	_	_	_
+2-5	104-112	handedly	_	_	_	_
+2-6	113-120	costing	_	_	_	_
+2-7	121-124	his	_	_	*->2-4	*[2]
+2-8	125-129	team	_	_	_	_
+2-9	130-133	the	_	_	_	_
+2-10	134-139	match	_	_	_	_
+2-11	140-141	.	_	_	_	_
+
+#Text=" Shady Shin says : " All those bets you boys collected for the Boar - q - pines are about to wind up in our pockets . 
+3-1	142-143	"	_	_	_	_
+3-2	144-149	Shady	_	_	_	_
+3-3	150-154	Shin	*	PER	_	_
+3-4	155-159	says	_	_	_	_
+3-5	160-161	:	_	_	_	_
+3-6	162-163	"	_	_	_	_
+3-7	164-167	All	_	_	_	_
+3-8	168-173	those	_	_	_	_
+3-9	174-178	bets	_	_	_	_
+3-10	179-182	you	_	_	*->1-2	*[1]
+3-11	183-187	boys	_	_	_	_
+3-12	188-197	collected	_	_	_	_
+3-13	198-201	for	_	_	_	_
+3-14	202-205	the	_	_	_	_
+3-15	206-210	Boar	_	_	_	_
+3-16	211-212	-	_	_	_	_
+3-17	213-214	q	_	_	_	_
+3-18	215-216	-	_	_	_	_
+3-19	217-222	pines	_	_	_	_
+3-20	223-226	are	_	_	_	_
+3-21	227-232	about	_	_	_	_
+3-22	233-235	to	_	_	_	_
+3-23	236-240	wind	_	_	_	_
+3-24	241-243	up	_	_	_	_
+3-25	244-246	in	_	_	_	_
+3-26	247-250	our	_	_	*->3-2	*[3]
+3-27	251-258	pockets	_	_	_	_
+3-28	259-260	.	_	_	_	_
+
+#Text=" 
+4-1	261-262	"	_	_	_	_

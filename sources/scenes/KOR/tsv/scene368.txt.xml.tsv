@@ -1,0 +1,21 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Opal says : " Mom , Dad , can I talk to you ? " 
+1-1	0-4	Opal	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	Mom	_	_	_	_
+1-6	18-19	,	_	_	_	_
+1-7	20-23	Dad	_	_	_	_
+1-8	24-25	,	_	_	_	_
+1-9	26-29	can	_	_	_	_
+1-10	30-31	I	_	_	*->1-2	*[1]
+1-11	32-36	talk	_	_	_	_
+1-12	37-39	to	_	_	_	_
+1-13	40-43	you	_	_	_	_
+1-14	44-45	?	_	_	_	_
+1-15	46-47	"	_	_	_	_

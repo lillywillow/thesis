@@ -1,0 +1,64 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Asami says : " Are you sure we should n't have brought more people to collect the tax money ? " 
+1-1	0-5	Asami	*	PER	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Are	_	_	_	_
+1-6	19-22	you	_	_	*->1-1	*[1]
+1-7	23-27	sure	_	_	_	_
+1-8	28-30	we	_	_	_	_
+1-9	31-37	should	_	_	_	_
+1-10	38-41	n't	_	_	_	_
+1-11	42-46	have	_	_	_	_
+1-12	47-54	brought	_	_	_	_
+1-13	55-59	more	_	_	_	_
+1-14	60-66	people	_	_	_	_
+1-15	67-69	to	_	_	_	_
+1-16	70-77	collect	_	_	_	_
+1-17	78-81	the	_	_	_	_
+1-18	82-85	tax	_	_	_	_
+1-19	86-91	money	_	_	_	_
+1-20	92-93	?	_	_	_	_
+1-21	94-95	"	_	_	_	_
+
+#Text=Korra says : " There are royal guards waiting at the vault . 
+2-1	96-101	Korra	*	PER	*->2-1	*[2]
+2-2	102-106	says	_	_	_	_
+2-3	107-108	:	_	_	_	_
+2-4	109-110	"	_	_	_	_
+2-5	111-116	There	_	_	_	_
+2-6	117-120	are	_	_	_	_
+2-7	121-126	royal	_	_	_	_
+2-8	127-133	guards	_	_	_	_
+2-9	134-141	waiting	_	_	_	_
+2-10	142-144	at	_	_	_	_
+2-11	145-148	the	_	_	_	_
+2-12	149-154	vault	_	_	_	_
+2-13	155-156	.	_	_	_	_
+
+#Text=I doubt anything will happen . 
+3-1	157-158	I	_	_	*->2-2	*[2]
+3-2	159-164	doubt	_	_	_	_
+3-3	165-173	anything	_	_	_	_
+3-4	174-178	will	_	_	_	_
+3-5	179-185	happen	_	_	_	_
+3-6	186-187	.	_	_	_	_
+
+#Text=I think Her Majesty likes ordering me around . 
+4-1	188-189	I	_	_	*->2-3	*[2]
+4-2	190-195	think	_	_	_	_
+4-3	196-199	Her	_	_	*->1-2	*[1]
+4-4	200-207	Majesty	_	_	_	_
+4-5	208-213	likes	_	_	_	_
+4-6	214-222	ordering	_	_	_	_
+4-7	223-225	me	_	_	*->2-4	*[2]
+4-8	226-232	around	_	_	_	_
+4-9	233-234	.	_	_	_	_
+
+#Text=" 
+5-1	235-236	"	_	_	_	_
