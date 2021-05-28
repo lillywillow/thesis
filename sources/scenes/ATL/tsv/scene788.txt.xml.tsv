@@ -1,0 +1,63 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " I do n't know about this . 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-15	I	_	_	*->1-2	*[1]
+1-6	16-18	do	_	_	_	_
+1-7	19-22	n't	_	_	_	_
+1-8	23-27	know	_	_	_	_
+1-9	28-33	about	_	_	_	_
+1-10	34-38	this	_	_	_	_
+1-11	39-40	.	_	_	_	_
+
+#Text=These clothes belong to somebody . 
+2-1	41-46	These	_	_	_	_
+2-2	47-54	clothes	_	_	_	_
+2-3	55-61	belong	_	_	_	_
+2-4	62-64	to	_	_	_	_
+2-5	65-73	somebody	_	_	_	_
+2-6	74-75	.	_	_	_	_
+
+#Text=" Katara says : " I call the silk robe ! 
+3-1	76-77	"	_	_	_	_
+3-2	78-84	Katara	*	PER	*->2-1	*[2]
+3-3	85-89	says	_	_	_	_
+3-4	90-91	:	_	_	_	_
+3-5	92-93	"	_	_	_	_
+3-6	94-95	I	_	_	*->2-2	*[2]
+3-7	96-100	call	_	_	_	_
+3-8	101-104	the	_	_	*->3-1	*[3]
+3-9	105-109	silk	_	_	*->3-1	*[3]
+3-10	110-114	robe	_	_	*->3-1	*[3]
+3-11	115-116	!	_	_	_	_
+
+#Text=" Aang says : " But if it 's essential to our survival ... then I call the suit ! 
+4-1	117-118	"	_	_	_	_
+4-2	119-123	Aang	*	PER	*->1-3	*[1]
+4-3	124-128	says	_	_	_	_
+4-4	129-130	:	_	_	_	_
+4-5	131-132	"	_	_	_	_
+4-6	133-136	But	_	_	_	_
+4-7	137-139	if	_	_	_	_
+4-8	140-142	it	_	_	*->3-2	*[3]
+4-9	143-145	's	_	_	_	_
+4-10	146-155	essential	_	_	_	_
+4-11	156-158	to	_	_	_	_
+4-12	159-162	our	_	_	_	_
+4-13	163-171	survival	_	_	_	_
+4-14	172-175	...	_	_	_	_
+4-15	176-180	then	_	_	_	_
+4-16	181-182	I	_	_	*->1-4	*[1]
+4-17	183-187	call	_	_	_	_
+4-18	188-191	the	_	_	_	_
+4-19	192-196	suit	_	_	_	_
+4-20	197-198	!	_	_	_	_
+
+#Text=" 
+5-1	199-200	"	_	_	_	_

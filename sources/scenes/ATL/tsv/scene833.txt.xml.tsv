@@ -1,0 +1,126 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Ozai says : " I am proud of you , Prince Zuko . 
+1-1	0-4	Ozai	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-15	I	_	_	*->1-2	*[1]
+1-6	16-18	am	_	_	_	_
+1-7	19-24	proud	_	_	_	_
+1-8	25-27	of	_	_	_	_
+1-9	28-31	you	_	_	*->3-1	*[3]
+1-10	32-33	,	_	_	_	_
+1-11	34-40	Prince	*	PER	*->2-1	*[2]
+1-12	41-45	Zuko	*	PER	*->2-1	*[2]
+1-13	46-47	.	_	_	_	_
+
+#Text=I am proud because you and your sister conquered Ba Sing Se . 
+2-1	48-49	I	_	_	*->1-3	*[1]
+2-2	50-52	am	_	_	_	_
+2-3	53-58	proud	_	_	_	_
+2-4	59-66	because	_	_	_	_
+2-5	67-70	you	_	_	*->3-2	*[3]
+2-6	71-74	and	_	_	_	_
+2-7	75-79	your	_	_	*->3-3	*[3]
+2-8	80-86	sister	_	_	_	_
+2-9	87-96	conquered	_	_	_	_
+2-10	97-99	Ba	_	_	_	_
+2-11	100-104	Sing	_	_	_	_
+2-12	105-107	Se	_	_	_	_
+2-13	108-109	.	_	_	_	_
+
+#Text=I am proud because when your loyalty was tested by your treacherous uncle , you did the right thing and captured the traitor . 
+3-1	110-111	I	_	_	*->1-4	*[1]
+3-2	112-114	am	_	_	_	_
+3-3	115-120	proud	_	_	_	_
+3-4	121-128	because	_	_	_	_
+3-5	129-133	when	_	_	_	_
+3-6	134-138	your	_	_	*->3-4	*[3]
+3-7	139-146	loyalty	_	_	_	_
+3-8	147-150	was	_	_	_	_
+3-9	151-157	tested	_	_	_	_
+3-10	158-160	by	_	_	_	_
+3-11	161-165	your	_	_	*->3-5	*[3]
+3-12	166-177	treacherous	_	_	_	_
+3-13	178-183	uncle	_	_	_	_
+3-14	184-185	,	_	_	_	_
+3-15	186-189	you	_	_	*->3-6	*[3]
+3-16	190-193	did	_	_	_	_
+3-17	194-197	the	_	_	_	_
+3-18	198-203	right	_	_	_	_
+3-19	204-209	thing	_	_	_	_
+3-20	210-213	and	_	_	_	_
+3-21	214-222	captured	_	_	_	_
+3-22	223-226	the	_	_	_	_
+3-23	227-234	traitor	_	_	_	_
+3-24	235-236	.	_	_	_	_
+
+#Text=And I am proudest of all of your most legendary accomplishment : you slayed the Avatar . 
+4-1	237-240	And	_	_	_	_
+4-2	241-242	I	_	_	*->1-5	*[1]
+4-3	243-245	am	_	_	_	_
+4-4	246-254	proudest	_	_	_	_
+4-5	255-257	of	_	_	_	_
+4-6	258-261	all	_	_	_	_
+4-7	262-264	of	_	_	_	_
+4-8	265-269	your	_	_	_	_
+4-9	270-274	most	_	_	_	_
+4-10	275-284	legendary	_	_	_	_
+4-11	285-299	accomplishment	_	_	_	_
+4-12	300-301	:	_	_	_	_
+4-13	302-305	you	_	_	*->3-7	*[3]
+4-14	306-312	slayed	_	_	_	_
+4-15	313-316	the	_	_	_	_
+4-16	317-323	Avatar	_	_	_	_
+4-17	324-325	.	_	_	_	_
+
+#Text=" Zuko says : " What did you hear ? 
+5-1	326-327	"	_	_	_	_
+5-2	328-332	Zuko	*	PER	*->2-2	*[2]
+5-3	333-337	says	_	_	_	_
+5-4	338-339	:	_	_	_	_
+5-5	340-341	"	_	_	_	_
+5-6	342-346	What	_	_	_	_
+5-7	347-350	did	_	_	_	_
+5-8	351-354	you	_	_	*->1-6	*[1]
+5-9	355-359	hear	_	_	_	_
+5-10	360-361	?	_	_	_	_
+
+#Text=" Ozai says : " Azula told me everything . 
+6-1	362-363	"	_	_	_	_
+6-2	364-368	Ozai	*	PER	*->1-7	*[1]
+6-3	369-373	says	_	_	_	_
+6-4	374-375	:	_	_	_	_
+6-5	376-377	"	_	_	_	_
+6-6	378-383	Azula	*	PER	_	_
+6-7	384-388	told	_	_	_	_
+6-8	389-391	me	_	_	*->1-8	*[1]
+6-9	392-402	everything	_	_	_	_
+6-10	403-404	.	_	_	_	_
+
+#Text=She said she was amazed and impressed at your power and ferocity at the moment of truth . 
+7-1	405-408	She	_	_	*->4-1	*[4]
+7-2	409-413	said	_	_	_	_
+7-3	414-417	she	_	_	*->4-2	*[4]
+7-4	418-421	was	_	_	_	_
+7-5	422-428	amazed	_	_	_	_
+7-6	429-432	and	_	_	_	_
+7-7	433-442	impressed	_	_	_	_
+7-8	443-445	at	_	_	_	_
+7-9	446-450	your	_	_	*->3-8	*[3]
+7-10	451-456	power	_	_	_	_
+7-11	457-460	and	_	_	_	_
+7-12	461-469	ferocity	_	_	_	_
+7-13	470-472	at	_	_	_	_
+7-14	473-476	the	_	_	_	_
+7-15	477-483	moment	_	_	_	_
+7-16	484-486	of	_	_	_	_
+7-17	487-492	truth	_	_	_	_
+7-18	493-494	.	_	_	_	_
+
+#Text=" 
+8-1	495-496	"	_	_	_	_

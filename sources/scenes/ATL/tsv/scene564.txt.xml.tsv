@@ -1,0 +1,123 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Zuko says : " Please . 
+1-1	0-4	Zuko	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-20	Please	_	_	_	_
+1-6	21-22	.	_	_	_	_
+
+#Text=The real hero is the Avatar . 
+2-1	23-26	The	_	_	_	_
+2-2	27-31	real	_	_	_	_
+2-3	32-36	hero	_	_	_	_
+2-4	37-39	is	_	_	_	_
+2-5	40-43	the	_	_	*->2-1	*[2]
+2-6	44-50	Avatar	_	_	*->2-1	*[2]
+2-7	51-52	.	_	_	_	_
+
+#Text=Today this war is finally over ! 
+3-1	53-58	Today	_	_	_	_
+3-2	59-63	this	_	_	_	_
+3-3	64-67	war	_	_	_	_
+3-4	68-70	is	_	_	_	_
+3-5	71-78	finally	_	_	_	_
+3-6	79-83	over	_	_	_	_
+3-7	84-85	!	_	_	_	_
+
+#Text=I promised my uncle that I would restore the honor of the Fire Nation . 
+4-1	86-87	I	_	_	_	_
+4-2	88-96	promised	_	_	_	_
+4-3	97-99	my	_	_	_	_
+4-4	100-105	uncle	_	_	_	_
+4-5	106-110	that	_	_	_	_
+4-6	111-112	I	_	_	_	_
+4-7	113-118	would	_	_	_	_
+4-8	119-126	restore	_	_	_	_
+4-9	127-130	the	_	_	_	_
+4-10	131-136	honor	_	_	_	_
+4-11	137-139	of	_	_	_	_
+4-12	140-143	the	_	_	_	_
+4-13	144-148	Fire	_	_	_	_
+4-14	149-155	Nation	_	_	_	_
+4-15	156-157	.	_	_	_	_
+
+#Text=And I will . 
+5-1	158-161	And	_	_	_	_
+5-2	162-163	I	_	_	_	_
+5-3	164-168	will	_	_	_	_
+5-4	169-170	.	_	_	_	_
+
+#Text=The road ahead of us is challenging . 
+6-1	171-174	The	_	_	_	_
+6-2	175-179	road	_	_	_	_
+6-3	180-185	ahead	_	_	_	_
+6-4	186-188	of	_	_	_	_
+6-5	189-191	us	_	_	*->4-1	*[4]
+6-6	192-194	is	_	_	_	_
+6-7	195-206	challenging	_	_	_	_
+6-8	207-208	.	_	_	_	_
+
+#Text=A hundred years of fighting has left the world scarred and divided . 
+7-1	209-210	A	_	_	_	_
+7-2	211-218	hundred	_	_	_	_
+7-3	219-224	years	_	_	_	_
+7-4	225-227	of	_	_	_	_
+7-5	228-236	fighting	_	_	_	_
+7-6	237-240	has	_	_	_	_
+7-7	241-245	left	_	_	_	_
+7-8	246-249	the	_	_	_	_
+7-9	250-255	world	_	_	_	_
+7-10	256-263	scarred	_	_	_	_
+7-11	264-267	and	_	_	_	_
+7-12	268-275	divided	_	_	_	_
+7-13	276-277	.	_	_	_	_
+
+#Text=But with the Avatar 's help , we can get it back on the right path and begin a new era of love and peace . 
+8-1	278-281	But	_	_	_	_
+8-2	282-286	with	_	_	_	_
+8-3	287-290	the	_	_	*->2-2	*[2]
+8-4	291-297	Avatar	_	_	*->2-2	*[2]
+8-5	298-300	's	_	_	*->2-2	*[2]
+8-6	301-305	help	_	_	*->5-1	*[5]
+8-7	306-307	,	_	_	_	_
+8-8	308-310	we	_	_	*->4-2	*[4]
+8-9	311-314	can	_	_	_	_
+8-10	315-318	get	_	_	_	_
+8-11	319-321	it	_	_	*->5-2	*[5]
+8-12	322-326	back	_	_	_	_
+8-13	327-329	on	_	_	_	_
+8-14	330-333	the	_	_	_	_
+8-15	334-339	right	_	_	_	_
+8-16	340-344	path	_	_	_	_
+8-17	345-348	and	_	_	_	_
+8-18	349-354	begin	_	_	_	_
+8-19	355-356	a	_	_	_	_
+8-20	357-360	new	_	_	_	_
+8-21	361-364	era	_	_	_	_
+8-22	365-367	of	_	_	_	_
+8-23	368-372	love	_	_	_	_
+8-24	373-376	and	_	_	_	_
+8-25	377-382	peace	_	_	_	_
+8-26	383-384	.	_	_	_	_
+
+#Text=" Fire Sage says : " All hail Fire Lord Zuko ! 
+9-1	385-386	"	_	_	_	_
+9-2	387-391	Fire	_	_	*->3-1	*[3]
+9-3	392-396	Sage	_	_	*->3-1	*[3]
+9-4	397-401	says	_	_	_	_
+9-5	402-403	:	_	_	_	_
+9-6	404-405	"	_	_	_	_
+9-7	406-409	All	_	_	_	_
+9-8	410-414	hail	_	_	_	_
+9-9	415-419	Fire	_	_	_	_
+9-10	420-424	Lord	_	_	*->1-1	*[1]
+9-11	425-429	Zuko	*	PER	*->1-1	*[1]
+9-12	430-431	!	_	_	_	_
+
+#Text=" 
+10-1	432-433	"	_	_	_	_

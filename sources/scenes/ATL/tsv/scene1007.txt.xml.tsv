@@ -1,0 +1,62 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " But we were too late . 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	But	_	_	_	_
+1-6	20-22	we	_	_	*->2-1	*[2]
+1-7	23-27	were	_	_	_	_
+1-8	28-31	too	_	_	_	_
+1-9	32-36	late	_	_	_	_
+1-10	37-38	.	_	_	_	_
+
+#Text=When we got there , the man was gone . 
+2-1	39-43	When	_	_	_	_
+2-2	44-46	we	_	_	*->2-2	*[2]
+2-3	47-50	got	_	_	_	_
+2-4	51-56	there	_	_	_	_
+2-5	57-58	,	_	_	_	_
+2-6	59-62	the	_	_	_	_
+2-7	63-66	man	_	_	_	_
+2-8	67-70	was	_	_	_	_
+2-9	71-75	gone	_	_	_	_
+2-10	76-77	.	_	_	_	_
+
+#Text=And so was she . 
+3-1	78-81	And	_	_	_	_
+3-2	82-84	so	_	_	_	_
+3-3	85-88	was	_	_	_	_
+3-4	89-92	she	_	_	_	_
+3-5	93-94	.	_	_	_	_
+
+#Text=" Zuko says : " Your mother was a brave woman . 
+4-1	95-96	"	_	_	_	_
+4-2	97-101	Zuko	*	PER	_	_
+4-3	102-106	says	_	_	_	_
+4-4	107-108	:	_	_	_	_
+4-5	109-110	"	_	_	_	_
+4-6	111-115	Your	_	_	*->1-2	*[1]
+4-7	116-122	mother	_	_	*->3-2	*[3]
+4-8	123-126	was	_	_	_	_
+4-9	127-128	a	_	_	*->3-1	*[3]
+4-10	129-134	brave	_	_	*->3-1	*[3]
+4-11	135-140	woman	_	_	*->3-1	*[3]
+4-12	141-142	.	_	_	_	_
+
+#Text=" Katara says : " I know . 
+5-1	143-144	"	_	_	_	_
+5-2	145-151	Katara	*	PER	*->1-3	*[1]
+5-3	152-156	says	_	_	_	_
+5-4	157-158	:	_	_	_	_
+5-5	159-160	"	_	_	_	_
+5-6	161-162	I	_	_	*->1-4	*[1]
+5-7	163-167	know	_	_	_	_
+5-8	168-169	.	_	_	_	_
+
+#Text=" 
+6-1	170-171	"	_	_	_	_

@@ -1,0 +1,93 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Ugh . 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	Ugh	_	_	_	_
+1-6	18-19	.	_	_	_	_
+
+#Text=This is so itchy . 
+2-1	20-24	This	_	_	_	_
+2-2	25-27	is	_	_	_	_
+2-3	28-30	so	_	_	_	_
+2-4	31-36	itchy	_	_	_	_
+2-5	37-38	.	_	_	_	_
+
+#Text=How do you live in this stuff ? 
+3-1	39-42	How	_	_	_	_
+3-2	43-45	do	_	_	_	_
+3-3	46-49	you	_	_	*->2-1	*[2]
+3-4	50-54	live	_	_	_	_
+3-5	55-57	in	_	_	_	_
+3-6	58-62	this	_	_	_	_
+3-7	63-68	stuff	_	_	_	_
+3-8	69-70	?	_	_	_	_
+
+#Text=" Sokka says : " Great ! 
+4-1	71-72	"	_	_	*->3-1	*[3]
+4-2	73-78	Sokka	_	_	*->3-1	*[3]
+4-3	79-83	says	_	_	_	_
+4-4	84-85	:	_	_	_	_
+4-5	86-87	"	_	_	_	_
+4-6	88-93	Great	_	_	_	_
+4-7	94-95	!	_	_	_	_
+
+#Text=Now you look just like my grandfather . 
+5-1	96-99	Now	_	_	_	_
+5-2	100-103	you	_	_	*->2-2	*[2]
+5-3	104-108	look	_	_	_	_
+5-4	109-113	just	_	_	_	_
+5-5	114-118	like	_	_	_	_
+5-6	119-121	my	_	_	*->3-2	*[3]
+5-7	122-133	grandfather	_	_	_	_
+5-8	134-135	.	_	_	_	_
+
+#Text=" Katara says : " Technically , Aang is 112 years old . 
+6-1	136-137	"	_	_	_	_
+6-2	138-144	Katara	*	PER	_	_
+6-3	145-149	says	_	_	_	_
+6-4	150-151	:	_	_	_	_
+6-5	152-153	"	_	_	_	_
+6-6	154-165	Technically	_	_	_	_
+6-7	166-167	,	_	_	_	_
+6-8	168-172	Aang	*	PER	*->1-2	*[1]
+6-9	173-175	is	_	_	_	_
+6-10	176-179	112	_	_	_	_
+6-11	180-185	years	_	_	_	_
+6-12	186-189	old	_	_	_	_
+6-13	190-191	.	_	_	_	_
+
+#Text=" Aang says : " Now let 's get to skippin ' , young whipper - snappers . 
+7-1	192-193	"	_	_	_	_
+7-2	194-198	Aang	*	PER	*->1-3	*[1]
+7-3	199-203	says	_	_	_	_
+7-4	204-205	:	_	_	_	_
+7-5	206-207	"	_	_	_	_
+7-6	208-211	Now	_	_	*->4-1	*[4]
+7-7	212-215	let	_	_	_	_
+7-8	216-218	's	_	_	*->4-2	*[4]
+7-9	219-222	get	_	_	_	_
+7-10	223-225	to	_	_	_	_
+7-11	226-233	skippin	_	_	_	_
+7-12	234-235	'	_	_	_	_
+7-13	236-237	,	_	_	_	_
+7-14	238-243	young	_	_	_	_
+7-15	244-251	whipper	_	_	_	_
+7-16	252-253	-	_	_	_	_
+7-17	254-262	snappers	_	_	_	_
+7-18	263-264	.	_	_	_	_
+
+#Text=The big city awaits ! 
+8-1	265-268	The	_	_	_	_
+8-2	269-272	big	_	_	_	_
+8-3	273-277	city	_	_	_	_
+8-4	278-284	awaits	_	_	_	_
+8-5	285-286	!	_	_	_	_
+
+#Text=" 
+9-1	287-288	"	_	_	_	_

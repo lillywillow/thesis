@@ -1,0 +1,84 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Bato says : " The eclipse is only minutes away . 
+1-1	0-4	Bato	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	The	_	_	*->2-1	*[2]
+1-6	18-25	eclipse	_	_	*->2-1	*[2]
+1-7	26-28	is	_	_	_	_
+1-8	29-33	only	_	_	_	_
+1-9	34-41	minutes	_	_	_	_
+1-10	42-46	away	_	_	_	_
+1-11	47-48	.	_	_	_	_
+
+#Text=We should be able to make it up to hill by the time it starts and secure the entire palace by the time it 's finished . 
+2-1	49-51	We	_	_	*->3-1	*[3]
+2-2	52-58	should	_	_	_	_
+2-3	59-61	be	_	_	_	_
+2-4	62-66	able	_	_	_	_
+2-5	67-69	to	_	_	_	_
+2-6	70-74	make	_	_	_	_
+2-7	75-77	it	_	_	*->2-2	*[2]
+2-8	78-80	up	_	_	_	_
+2-9	81-83	to	_	_	_	_
+2-10	84-88	hill	_	_	_	_
+2-11	89-91	by	_	_	_	_
+2-12	92-95	the	_	_	_	_
+2-13	96-100	time	_	_	_	_
+2-14	101-103	it	_	_	*->2-3	*[2]
+2-15	104-110	starts	_	_	_	_
+2-16	111-114	and	_	_	_	_
+2-17	115-121	secure	_	_	_	_
+2-18	122-125	the	_	_	_	_
+2-19	126-132	entire	_	_	_	_
+2-20	133-139	palace	_	_	_	_
+2-21	140-142	by	_	_	_	_
+2-22	143-146	the	_	_	_	_
+2-23	147-151	time	_	_	_	_
+2-24	152-154	it	_	_	*->2-4	*[2]
+2-25	155-157	's	_	_	_	_
+2-26	158-166	finished	_	_	_	_
+2-27	167-168	.	_	_	_	_
+
+#Text=" Katara says : " We can wait here if you want . 
+3-1	169-170	"	_	_	_	_
+3-2	171-177	Katara	*	PER	_	_
+3-3	178-182	says	_	_	_	_
+3-4	183-184	:	_	_	_	_
+3-5	185-186	"	_	_	_	_
+3-6	187-189	We	_	_	*->3-2	*[3]
+3-7	190-193	can	_	_	_	_
+3-8	194-198	wait	_	_	_	_
+3-9	199-203	here	_	_	_	_
+3-10	204-206	if	_	_	_	_
+3-11	207-210	you	_	_	*->1-2	*[1]
+3-12	211-215	want	_	_	_	_
+3-13	216-217	.	_	_	_	_
+
+#Text=" Hakoda says : " No . 
+4-1	218-219	"	_	_	_	_
+4-2	220-226	Hakoda	*	PER	*->4-1	*[4]
+4-3	227-231	says	_	_	_	_
+4-4	232-233	:	_	_	_	_
+4-5	234-235	"	_	_	_	_
+4-6	236-238	No	_	_	_	_
+4-7	239-240	.	_	_	_	_
+
+#Text=I wan na press forward with the others . 
+5-1	241-242	I	_	_	*->4-2	*[4]
+5-2	243-246	wan	_	_	_	_
+5-3	247-249	na	_	_	_	_
+5-4	250-255	press	_	_	_	_
+5-5	256-263	forward	_	_	_	_
+5-6	264-268	with	_	_	_	_
+5-7	269-272	the	_	_	_	_
+5-8	273-279	others	_	_	_	_
+5-9	280-281	.	_	_	_	_
+
+#Text=" 
+6-1	282-283	"	_	_	_	_

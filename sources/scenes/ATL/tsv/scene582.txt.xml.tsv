@@ -1,0 +1,124 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Pet store owner says : " I 'm sorry , but I have n't heard anything about a flying bison . 
+1-1	0-3	Pet	_	_	*->1-1	*[1]
+1-2	4-9	store	_	_	*->1-1	*[1]
+1-3	10-15	owner	*	PER	*->1-1	*[1]
+1-4	16-20	says	_	_	_	_
+1-5	21-22	:	_	_	_	_
+1-6	23-24	"	_	_	_	_
+1-7	25-26	I	_	_	*->1-2	*[1]
+1-8	27-29	'm	_	_	_	_
+1-9	30-35	sorry	_	_	_	_
+1-10	36-37	,	_	_	_	_
+1-11	38-41	but	_	_	_	_
+1-12	42-43	I	_	_	*->1-3	*[1]
+1-13	44-48	have	_	_	_	_
+1-14	49-52	n't	_	_	_	_
+1-15	53-58	heard	_	_	_	_
+1-16	59-67	anything	_	_	_	_
+1-17	68-73	about	_	_	_	_
+1-18	74-75	a	_	_	_	_
+1-19	76-82	flying	_	_	_	_
+1-20	83-88	bison	_	_	_	_
+1-21	89-90	.	_	_	_	_
+
+#Text=I did n't even know there were any . 
+2-1	91-92	I	_	_	*->1-4	*[1]
+2-2	93-96	did	_	_	_	_
+2-3	97-100	n't	_	_	_	_
+2-4	101-105	even	_	_	_	_
+2-5	106-110	know	_	_	_	_
+2-6	111-116	there	_	_	_	_
+2-7	117-121	were	_	_	_	_
+2-8	122-125	any	_	_	_	_
+2-9	126-127	.	_	_	_	_
+
+#Text=" Aang says : " If someone wanted to sell a stolen animal without anyone knowing , where would they go ? 
+3-1	128-129	"	_	_	_	_
+3-2	130-134	Aang	*	PER	*->2-1	*[2]
+3-3	135-139	says	_	_	_	_
+3-4	140-141	:	_	_	_	_
+3-5	142-143	"	_	_	_	_
+3-6	144-146	If	_	_	_	_
+3-7	147-154	someone	_	_	_	_
+3-8	155-161	wanted	_	_	_	_
+3-9	162-164	to	_	_	_	_
+3-10	165-169	sell	_	_	_	_
+3-11	170-171	a	_	_	_	_
+3-12	172-178	stolen	_	_	_	_
+3-13	179-185	animal	_	_	_	_
+3-14	186-193	without	_	_	_	_
+3-15	194-200	anyone	_	_	_	_
+3-16	201-208	knowing	_	_	_	_
+3-17	209-210	,	_	_	_	_
+3-18	211-216	where	_	_	_	_
+3-19	217-222	would	_	_	_	_
+3-20	223-227	they	_	_	_	_
+3-21	228-230	go	_	_	_	_
+3-22	231-232	?	_	_	_	_
+
+#Text=" Sokka says : " Where 's the black market ? 
+4-1	233-234	"	_	_	_	_
+4-2	235-240	Sokka	_	_	*->3-1	*[3]
+4-3	241-245	says	_	_	_	_
+4-4	246-247	:	_	_	_	_
+4-5	248-249	"	_	_	_	_
+4-6	250-255	Where	_	_	_	_
+4-7	256-258	's	_	_	_	_
+4-8	259-262	the	_	_	*->4-1	*[4]
+4-9	263-268	black	_	_	*->4-1	*[4]
+4-10	269-275	market	_	_	*->4-1	*[4]
+4-11	276-277	?	_	_	_	_
+
+#Text=Who runs it ? 
+5-1	278-281	Who	_	_	_	_
+5-2	282-286	runs	_	_	_	_
+5-3	287-289	it	_	_	*->4-2	*[4]
+5-4	290-291	?	_	_	_	_
+
+#Text=Come on , you know ! 
+6-1	292-296	Come	_	_	_	_
+6-2	297-299	on	_	_	_	_
+6-3	300-301	,	_	_	_	_
+6-4	302-305	you	_	_	*->2-2	*[2]
+6-5	306-310	know	_	_	_	_
+6-6	311-312	!	_	_	_	_
+
+#Text=" Pet store owner says : " Uh ... That would be illegal . 
+7-1	313-314	"	_	_	_	_
+7-2	315-318	Pet	_	_	*->1-5	*[1]
+7-3	319-324	store	_	_	*->1-5	*[1]
+7-4	325-330	owner	*	PER	*->1-5	*[1]
+7-5	331-335	says	_	_	_	_
+7-6	336-337	:	_	_	_	_
+7-7	338-339	"	_	_	_	_
+7-8	340-342	Uh	_	_	_	_
+7-9	343-346	...	_	_	_	_
+7-10	347-351	That	_	_	*->2-3	*[2]
+7-11	352-357	would	_	_	_	_
+7-12	358-360	be	_	_	_	_
+7-13	361-368	illegal	_	_	_	_
+7-14	369-370	.	_	_	_	_
+
+#Text=You 'll have to leave now ; your lemur is harassing my sparrowkeets . 
+8-1	371-374	You	_	_	*->3-2	*[3]
+8-2	375-378	'll	_	_	_	_
+8-3	379-383	have	_	_	_	_
+8-4	384-386	to	_	_	_	_
+8-5	387-392	leave	_	_	_	_
+8-6	393-396	now	_	_	_	_
+8-7	397-398	;	_	_	_	_
+8-8	399-403	your	_	_	*->3-3	*[3]
+8-9	404-409	lemur	_	_	_	_
+8-10	410-412	is	_	_	_	_
+8-11	413-422	harassing	_	_	_	_
+8-12	423-425	my	_	_	*->1-6	*[1]
+8-13	426-438	sparrowkeets	_	_	_	_
+8-14	439-440	.	_	_	_	_
+
+#Text=" 
+9-1	441-442	"	_	_	_	_

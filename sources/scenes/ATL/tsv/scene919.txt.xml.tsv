@@ -1,0 +1,94 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Let 's go , Appa ! 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-17	Let	_	_	_	_
+1-6	18-20	's	_	_	*->2-1	*[2]
+1-7	21-23	go	_	_	_	_
+1-8	24-25	,	_	_	_	_
+1-9	26-30	Appa	*	PER	_	_
+1-10	31-32	!	_	_	_	_
+
+#Text=Come on , boy ! 
+2-1	33-37	Come	_	_	_	_
+2-2	38-40	on	_	_	_	_
+2-3	41-42	,	_	_	_	_
+2-4	43-46	boy	_	_	_	_
+2-5	47-48	!	_	_	_	_
+
+#Text=Look I 'm sorry , but Katara and Sokka are n't coming to the Fire Nation with us . 
+3-1	49-53	Look	_	_	_	_
+3-2	54-55	I	_	_	*->1-2	*[1]
+3-3	56-58	'm	_	_	_	_
+3-4	59-64	sorry	_	_	_	_
+3-5	65-66	,	_	_	_	_
+3-6	67-70	but	_	_	_	_
+3-7	71-77	Katara	*	PER	*->3-1	*[3]
+3-8	78-81	and	_	_	*->3-1	*[3]
+3-9	82-87	Sokka	_	_	*->3-1	*[3]
+3-10	88-91	are	_	_	_	_
+3-11	92-95	n't	_	_	_	_
+3-12	96-102	coming	_	_	_	_
+3-13	103-105	to	_	_	_	_
+3-14	106-109	the	_	_	_	_
+3-15	110-114	Fire	_	_	_	_
+3-16	115-121	Nation	_	_	_	_
+3-17	122-126	with	_	_	_	_
+3-18	127-129	us	_	_	*->2-2	*[2]
+3-19	130-131	.	_	_	_	_
+
+#Text=If they got hurt , I 'd never forgive myself . 
+4-1	132-134	If	_	_	_	_
+4-2	135-139	they	_	_	*->3-2	*[3]
+4-3	140-143	got	_	_	_	_
+4-4	144-148	hurt	_	_	_	_
+4-5	149-150	,	_	_	_	_
+4-6	151-152	I	_	_	*->1-3	*[1]
+4-7	153-155	'd	_	_	_	_
+4-8	156-161	never	_	_	_	_
+4-9	162-169	forgive	_	_	_	_
+4-10	170-176	myself	_	_	*->1-4	*[1]
+4-11	177-178	.	_	_	_	_
+
+#Text=So get your big butt off the ground and let 's go ! 
+5-1	179-181	So	_	_	_	_
+5-2	182-185	get	_	_	_	_
+5-3	186-190	your	_	_	*->5-1	*[5]
+5-4	191-194	big	_	_	*->5-1	*[5]
+5-5	195-199	butt	_	_	*->5-1	*[5]
+5-6	200-203	off	_	_	_	_
+5-7	204-207	the	_	_	_	_
+5-8	208-214	ground	_	_	_	_
+5-9	215-218	and	_	_	_	_
+5-10	219-222	let	_	_	_	_
+5-11	223-225	's	_	_	*->5-2	*[5]
+5-12	226-228	go	_	_	_	_
+5-13	229-230	!	_	_	_	_
+
+#Text=" Sokka says : " I think his big butt is trying to tell ya something . 
+6-1	231-232	"	_	_	_	_
+6-2	233-238	Sokka	_	_	*->4-2	*[4]
+6-3	239-243	says	_	_	_	_
+6-4	244-245	:	_	_	_	_
+6-5	246-247	"	_	_	_	_
+6-6	248-249	I	_	_	*->4-3	*[4]
+6-7	250-255	think	_	_	_	_
+6-8	256-259	his	_	_	*->5-3	*[5]
+6-9	260-263	big	_	_	*->5-3	*[5]
+6-10	264-268	butt	_	_	*->5-3	*[5]
+6-11	269-271	is	_	_	_	_
+6-12	272-278	trying	_	_	_	_
+6-13	279-281	to	_	_	_	_
+6-14	282-286	tell	_	_	_	_
+6-15	287-289	ya	_	_	*->5-4	*[5]
+6-16	290-299	something	_	_	_	_
+6-17	300-301	.	_	_	_	_
+
+#Text=" 
+7-1	302-303	"	_	_	_	_

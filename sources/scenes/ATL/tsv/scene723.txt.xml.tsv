@@ -1,0 +1,106 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Head of the Dai Li says : " The movements of the Earth King and all the generals have been plotted out step - by - step . " 
+1-1	0-4	Head	_	_	_	_
+1-2	5-7	of	_	_	_	_
+1-3	8-11	the	_	_	*->1-1	*[1]
+1-4	12-15	Dai	*	PER	*->1-1	*[1]
+1-5	16-18	Li	*	PER	*->1-1	*[1]
+1-6	19-23	says	_	_	_	_
+1-7	24-25	:	_	_	_	_
+1-8	26-27	"	_	_	_	_
+1-9	28-31	The	_	_	_	_
+1-10	32-41	movements	_	_	_	_
+1-11	42-44	of	_	_	_	_
+1-12	45-48	the	_	_	_	_
+1-13	49-54	Earth	_	_	_	_
+1-14	55-59	King	*	PER	_	_
+1-15	60-63	and	_	_	_	_
+1-16	64-67	all	_	_	_	_
+1-17	68-71	the	_	_	_	_
+1-18	72-80	generals	_	_	_	_
+1-19	81-85	have	_	_	_	_
+1-20	86-90	been	_	_	_	_
+1-21	91-98	plotted	_	_	_	_
+1-22	99-102	out	_	_	_	_
+1-23	103-107	step	_	_	_	_
+1-24	108-109	-	_	_	_	_
+1-25	110-112	by	_	_	_	_
+1-26	113-114	-	_	_	_	_
+1-27	115-119	step	_	_	_	_
+1-28	120-121	.	_	_	_	_
+1-29	122-123	"	_	_	_	_
+
+#Text=Long Feng says : " Good . 
+2-1	124-128	Long	_	_	_	_
+2-2	129-133	Feng	_	_	_	_
+2-3	134-138	says	_	_	_	_
+2-4	139-140	:	_	_	_	_
+2-5	141-142	"	_	_	_	_
+2-6	143-147	Good	_	_	_	_
+2-7	148-149	.	_	_	_	_
+
+#Text=And the Fire Nation princess is cooperating ? 
+3-1	150-153	And	_	_	_	_
+3-2	154-157	the	_	_	_	_
+3-3	158-162	Fire	_	_	_	_
+3-4	163-169	Nation	_	_	_	_
+3-5	170-178	princess	*	PER	_	_
+3-6	179-181	is	_	_	_	_
+3-7	182-193	cooperating	_	_	_	_
+3-8	194-195	?	_	_	_	_
+
+#Text=" Head of the Dai Li says : " Oh , yes . 
+4-1	196-197	"	_	_	_	_
+4-2	198-202	Head	_	_	_	_
+4-3	203-205	of	_	_	_	_
+4-4	206-209	the	_	_	*->1-2	*[1]
+4-5	210-213	Dai	*	PER	*->1-2	*[1]
+4-6	214-216	Li	*	PER	*->1-2	*[1]
+4-7	217-221	says	_	_	_	_
+4-8	222-223	:	_	_	_	_
+4-9	224-225	"	_	_	_	_
+4-10	226-228	Oh	_	_	_	_
+4-11	229-230	,	_	_	_	_
+4-12	231-234	yes	_	_	_	_
+4-13	235-236	.	_	_	_	_
+
+#Text=More than cooperating . 
+5-1	237-241	More	_	_	*->2-1	*[2]
+5-2	242-246	than	_	_	*->2-1	*[2]
+5-3	247-258	cooperating	_	_	_	_
+5-4	259-260	.	_	_	_	_
+
+#Text=She 's really taken charge . 
+6-1	261-264	She	_	_	*->2-2	*[2]
+6-2	265-267	's	_	_	_	_
+6-3	268-274	really	_	_	_	_
+6-4	275-280	taken	_	_	_	_
+6-5	281-287	charge	_	_	_	_
+6-6	288-289	.	_	_	_	_
+
+#Text=She 's terrifying and inspirational at the same time . 
+7-1	290-293	She	_	_	*->2-3	*[2]
+7-2	294-296	's	_	_	_	_
+7-3	297-307	terrifying	_	_	_	_
+7-4	308-311	and	_	_	_	_
+7-5	312-325	inspirational	_	_	_	_
+7-6	326-328	at	_	_	_	_
+7-7	329-332	the	_	_	*->3-1	*[3]
+7-8	333-337	same	_	_	*->3-1	*[3]
+7-9	338-342	time	_	_	*->3-1	*[3]
+7-10	343-344	.	_	_	_	_
+
+#Text=It 's hard to explain . 
+8-1	345-347	It	_	_	*->3-2	*[3]
+8-2	348-350	's	_	_	_	_
+8-3	351-355	hard	_	_	_	_
+8-4	356-358	to	_	_	_	_
+8-5	359-366	explain	_	_	_	_
+8-6	367-368	.	_	_	_	_
+
+#Text=" 
+9-1	369-370	"	_	_	_	_

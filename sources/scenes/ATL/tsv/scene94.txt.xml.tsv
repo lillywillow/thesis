@@ -1,0 +1,155 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Toph says : " Yeah , congratulations , Sokka . 
+1-1	0-4	Toph	_	_	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	Yeah	_	_	_	_
+1-6	19-20	,	_	_	_	_
+1-7	21-36	congratulations	_	_	_	_
+1-8	37-38	,	_	_	_	_
+1-9	39-44	Sokka	_	_	*->1-1	*[1]
+1-10	45-46	.	_	_	_	_
+
+#Text=You managed to invent a worse way of travel than flying . 
+2-1	47-50	You	_	_	_	_
+2-2	51-58	managed	_	_	_	_
+2-3	59-61	to	_	_	_	_
+2-4	62-68	invent	_	_	_	_
+2-5	69-70	a	_	_	_	_
+2-6	71-76	worse	_	_	_	_
+2-7	77-80	way	_	_	_	_
+2-8	81-83	of	_	_	_	_
+2-9	84-90	travel	_	_	_	_
+2-10	91-95	than	_	_	_	_
+2-11	96-102	flying	_	_	_	_
+2-12	103-104	.	_	_	_	_
+
+#Text=" The Duke says : " Helmet ? 
+3-1	105-106	"	_	_	_	_
+3-2	107-110	The	_	_	_	_
+3-3	111-115	Duke	*	PER	_	_
+3-4	116-120	says	_	_	_	_
+3-5	121-122	:	_	_	_	_
+3-6	123-124	"	_	_	_	_
+3-7	125-131	Helmet	_	_	_	_
+3-8	132-133	?	_	_	_	_
+
+#Text=" Sokka says : " Well , I just came up with the idea . 
+4-1	134-135	"	_	_	_	_
+4-2	136-141	Sokka	_	_	*->1-2	*[1]
+4-3	142-146	says	_	_	_	_
+4-4	147-148	:	_	_	_	_
+4-5	149-150	"	_	_	_	_
+4-6	151-155	Well	_	_	_	_
+4-7	156-157	,	_	_	_	_
+4-8	158-159	I	_	_	*->1-3	*[1]
+4-9	160-164	just	_	_	_	_
+4-10	165-169	came	_	_	_	_
+4-11	170-172	up	_	_	_	_
+4-12	173-177	with	_	_	_	_
+4-13	178-181	the	_	_	_	_
+4-14	182-186	idea	_	_	_	_
+4-15	187-188	.	_	_	_	_
+
+#Text=The mechanist did all the work . 
+5-1	189-192	The	_	_	_	_
+5-2	193-202	mechanist	_	_	_	_
+5-3	203-206	did	_	_	_	_
+5-4	207-210	all	_	_	_	_
+5-5	211-214	the	_	_	_	_
+5-6	215-219	work	_	_	_	_
+5-7	220-221	.	_	_	_	_
+
+#Text=" Mechanist says : " Now do n't sell yourself short , my boy . 
+6-1	222-223	"	_	_	_	_
+6-2	224-233	Mechanist	*	PER	*->2-1	*[2]
+6-3	234-238	says	_	_	_	_
+6-4	239-240	:	_	_	_	_
+6-5	241-242	"	_	_	_	_
+6-6	243-246	Now	_	_	_	_
+6-7	247-249	do	_	_	_	_
+6-8	250-253	n't	_	_	_	_
+6-9	254-258	sell	_	_	_	_
+6-10	259-267	yourself	_	_	*->3-1	*[3]
+6-11	268-273	short	_	_	_	_
+6-12	274-275	,	_	_	_	_
+6-13	276-278	my	_	_	*->2-3	*[2]
+6-14	279-282	boy	_	_	_	_
+6-15	283-284	.	_	_	_	_
+
+#Text=It was your idea to use waterbending to make the subs sink and float , brilliant ! 
+7-1	285-287	It	_	_	_	_
+7-2	288-291	was	_	_	_	_
+7-3	292-296	your	_	_	*->3-2	*[3]
+7-4	297-301	idea	_	_	_	_
+7-5	302-304	to	_	_	_	_
+7-6	305-308	use	_	_	_	_
+7-7	309-321	waterbending	_	_	_	_
+7-8	322-324	to	_	_	_	_
+7-9	325-329	make	_	_	_	_
+7-10	330-333	the	_	_	*->4-1	*[4]
+7-11	334-338	subs	_	_	*->4-1	*[4]
+7-12	339-343	sink	_	_	_	_
+7-13	344-347	and	_	_	_	_
+7-14	348-353	float	_	_	_	_
+7-15	354-355	,	_	_	_	_
+7-16	356-365	brilliant	_	_	_	_
+7-17	366-367	!	_	_	_	_
+
+#Text=Though your original designs were a bit difficult to decipher . 
+8-1	368-374	Though	_	_	_	_
+8-2	375-379	your	_	_	*->3-3	*[3]
+8-3	380-388	original	_	_	_	_
+8-4	389-396	designs	_	_	_	_
+8-5	397-401	were	_	_	_	_
+8-6	402-403	a	_	_	_	_
+8-7	404-407	bit	_	_	_	_
+8-8	408-417	difficult	_	_	_	_
+8-9	418-420	to	_	_	_	_
+8-10	421-429	decipher	_	_	_	_
+8-11	430-431	.	_	_	_	_
+
+#Text=Unfortunately there is one problem I could n't fix . 
+9-1	432-445	Unfortunately	_	_	_	_
+9-2	446-451	there	_	_	_	_
+9-3	452-454	is	_	_	_	_
+9-4	455-458	one	_	_	_	_
+9-5	459-466	problem	_	_	_	_
+9-6	467-468	I	_	_	*->2-4	*[2]
+9-7	469-474	could	_	_	_	_
+9-8	475-478	n't	_	_	_	_
+9-9	479-482	fix	_	_	_	_
+9-10	483-484	.	_	_	_	_
+
+#Text=The subs have a limited air supply . 
+10-1	485-488	The	_	_	*->4-2	*[4]
+10-2	489-493	subs	_	_	*->4-2	*[4]
+10-3	494-498	have	_	_	_	_
+10-4	499-500	a	_	_	_	_
+10-5	501-508	limited	_	_	_	_
+10-6	509-512	air	_	_	_	_
+10-7	513-519	supply	_	_	_	_
+10-8	520-521	.	_	_	_	_
+
+#Text=Before we land on the beaches , we 'll need to resurface . 
+11-1	522-528	Before	_	_	_	_
+11-2	529-531	we	_	_	*->5-1	*[5]
+11-3	532-536	land	_	_	_	_
+11-4	537-539	on	_	_	_	_
+11-5	540-543	the	_	_	_	_
+11-6	544-551	beaches	_	_	_	_
+11-7	552-553	,	_	_	_	_
+11-8	554-556	we	_	_	*->5-2	*[5]
+11-9	557-560	'll	_	_	_	_
+11-10	561-565	need	_	_	_	_
+11-11	566-568	to	_	_	_	_
+11-12	569-578	resurface	_	_	_	_
+11-13	579-580	.	_	_	_	_
+
+#Text=" 
+12-1	581-582	"	_	_	_	_

@@ -1,0 +1,73 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Iroh says : " Happy birthday , my son . 
+1-1	0-4	Iroh	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-19	Happy	_	_	_	_
+1-6	20-28	birthday	_	_	_	_
+1-7	29-30	,	_	_	_	_
+1-8	31-33	my	_	_	*->1-2	*[1]
+1-9	34-37	son	_	_	_	_
+1-10	38-39	.	_	_	_	_
+
+#Text=If only I could have helped you . 
+2-1	40-42	If	_	_	_	_
+2-2	43-47	only	_	_	_	_
+2-3	48-49	I	_	_	*->1-3	*[1]
+2-4	50-55	could	_	_	_	_
+2-5	56-60	have	_	_	_	_
+2-6	61-67	helped	_	_	_	_
+2-7	68-71	you	_	_	_	_
+2-8	72-73	.	_	_	_	_
+
+#Text=Leaves from the vine , falling so slow . 
+3-1	74-80	Leaves	_	_	_	_
+3-2	81-85	from	_	_	_	_
+3-3	86-89	the	_	_	_	_
+3-4	90-94	vine	_	_	_	_
+3-5	95-96	,	_	_	_	_
+3-6	97-104	falling	_	_	_	_
+3-7	105-107	so	_	_	_	_
+3-8	108-112	slow	_	_	_	_
+3-9	113-114	.	_	_	_	_
+
+#Text=Like fragile , tiny shells , drifting in the foam . 
+4-1	115-119	Like	_	_	_	_
+4-2	120-127	fragile	_	_	_	_
+4-3	128-129	,	_	_	_	_
+4-4	130-134	tiny	_	_	_	_
+4-5	135-141	shells	_	_	_	_
+4-6	142-143	,	_	_	_	_
+4-7	144-152	drifting	_	_	_	_
+4-8	153-155	in	_	_	_	_
+4-9	156-159	the	_	_	_	_
+4-10	160-164	foam	_	_	_	_
+4-11	165-166	.	_	_	_	_
+
+#Text=Little soldier boy , come marching home . 
+5-1	167-173	Little	_	_	_	_
+5-2	174-181	soldier	*	PER	_	_
+5-3	182-185	boy	_	_	_	_
+5-4	186-187	,	_	_	_	_
+5-5	188-192	come	_	_	_	_
+5-6	193-201	marching	_	_	_	_
+5-7	202-206	home	_	_	_	_
+5-8	207-208	.	_	_	_	_
+
+#Text=Brave soldier boy , comes marching home . 
+6-1	209-214	Brave	_	_	_	_
+6-2	215-222	soldier	*	PER	_	_
+6-3	223-226	boy	_	_	_	_
+6-4	227-228	,	_	_	_	_
+6-5	229-234	comes	_	_	_	_
+6-6	235-243	marching	_	_	_	_
+6-7	244-248	home	_	_	_	_
+6-8	249-250	.	_	_	_	_
+
+#Text=" 
+7-1	251-252	"	_	_	_	_

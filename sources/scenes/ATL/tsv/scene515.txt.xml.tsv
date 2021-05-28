@@ -1,0 +1,100 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " There it is ! " 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-19	There	_	_	_	_
+1-6	20-22	it	_	_	_	_
+1-7	23-25	is	_	_	_	_
+1-8	26-27	!	_	_	_	_
+1-9	28-29	"	_	_	_	_
+
+#Text=Katara says : " The Northern Water Tribe . " 
+2-1	30-36	Katara	*	PER	*->2-1	*[2]
+2-2	37-41	says	_	_	_	_
+2-3	42-43	:	_	_	_	_
+2-4	44-45	"	_	_	_	_
+2-5	46-49	The	_	_	_	_
+2-6	50-58	Northern	_	_	_	_
+2-7	59-64	Water	_	_	_	_
+2-8	65-70	Tribe	_	_	_	_
+2-9	71-72	.	_	_	_	_
+2-10	73-74	"	_	_	_	_
+
+#Text=Sokka says : " We 're finally here . " 
+3-1	75-80	Sokka	*	PER	*->3-1	*[3]
+3-2	81-85	says	_	_	_	_
+3-3	86-87	:	_	_	_	_
+3-4	88-89	"	_	_	_	_
+3-5	90-92	We	_	_	_	_
+3-6	93-96	're	_	_	_	_
+3-7	97-104	finally	_	_	_	_
+3-8	105-109	here	_	_	_	_
+3-9	110-111	.	_	_	_	_
+3-10	112-113	"	_	_	_	_
+
+#Text=Katara says : " I ca n't believe how many waterbenders live up here ! " 
+4-1	114-120	Katara	*	PER	*->2-2	*[2]
+4-2	121-125	says	_	_	_	_
+4-3	126-127	:	_	_	_	_
+4-4	128-129	"	_	_	_	_
+4-5	130-131	I	_	_	*->2-3	*[2]
+4-6	132-134	ca	_	_	_	_
+4-7	135-138	n't	_	_	_	_
+4-8	139-146	believe	_	_	_	_
+4-9	147-150	how	_	_	_	_
+4-10	151-155	many	_	_	_	_
+4-11	156-168	waterbenders	_	_	*->4-1	*[4]
+4-12	169-173	live	_	_	_	_
+4-13	174-176	up	_	_	_	_
+4-14	177-181	here	_	_	_	_
+4-15	182-183	!	_	_	_	_
+4-16	184-185	"	_	_	_	_
+
+#Text=Aang says : " We 'll find a master to teach us , no problem . " 
+5-1	186-190	Aang	*	PER	*->1-2	*[1]
+5-2	191-195	says	_	_	_	_
+5-3	196-197	:	_	_	_	_
+5-4	198-199	"	_	_	_	_
+5-5	200-202	We	_	_	*->4-2	*[4]
+5-6	203-206	'll	_	_	_	_
+5-7	207-211	find	_	_	_	_
+5-8	212-213	a	_	_	_	_
+5-9	214-220	master	_	_	_	_
+5-10	221-223	to	_	_	_	_
+5-11	224-229	teach	_	_	_	_
+5-12	230-232	us	_	_	*->4-3	*[4]
+5-13	233-234	,	_	_	_	_
+5-14	235-237	no	_	_	_	_
+5-15	238-245	problem	_	_	_	_
+5-16	246-247	.	_	_	_	_
+5-17	248-249	"	_	_	_	_
+
+#Text=Katara says : " This place is beautiful . " 
+6-1	250-256	Katara	*	PER	*->2-4	*[2]
+6-2	257-261	says	_	_	_	_
+6-3	262-263	:	_	_	_	_
+6-4	264-265	"	_	_	_	_
+6-5	266-270	This	_	_	_	_
+6-6	271-276	place	_	_	_	_
+6-7	277-279	is	_	_	_	_
+6-8	280-289	beautiful	_	_	_	_
+6-9	290-291	.	_	_	_	_
+6-10	292-293	"	_	_	_	_
+
+#Text=Sokka says : " Yeah ... she is ... " 
+7-1	294-299	Sokka	_	_	*->3-2	*[3]
+7-2	300-304	says	_	_	_	_
+7-3	305-306	:	_	_	_	_
+7-4	307-308	"	_	_	_	_
+7-5	309-313	Yeah	_	_	_	_
+7-6	314-317	...	_	_	_	_
+7-7	318-321	she	_	_	*->1-3	*[1]
+7-8	322-324	is	_	_	_	_
+7-9	325-328	...	_	_	_	_
+7-10	329-330	"	_	_	_	_

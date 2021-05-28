@@ -1,0 +1,135 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Warden Poon says : " I bet you 're tired of being in this cell old man . 
+1-1	0-6	Warden	*	PER	*->1-1	*[1]
+1-2	7-11	Poon	*	PER	*->1-1	*[1]
+1-3	12-16	says	_	_	_	_
+1-4	17-18	:	_	_	_	_
+1-5	19-20	"	_	_	_	_
+1-6	21-22	I	_	_	*->1-2	*[1]
+1-7	23-26	bet	_	_	_	_
+1-8	27-30	you	_	_	*->2-1	*[2]
+1-9	31-34	're	_	_	_	_
+1-10	35-40	tired	_	_	_	_
+1-11	41-43	of	_	_	_	_
+1-12	44-49	being	_	_	_	_
+1-13	50-52	in	_	_	_	_
+1-14	53-57	this	_	_	_	_
+1-15	58-62	cell	_	_	_	_
+1-16	63-66	old	_	_	_	_
+1-17	67-70	man	_	_	_	_
+1-18	71-72	.	_	_	_	_
+
+#Text=Well too bad . 
+2-1	73-77	Well	_	_	_	_
+2-2	78-81	too	_	_	_	_
+2-3	82-85	bad	_	_	_	_
+2-4	86-87	.	_	_	_	_
+
+#Text=You 're never stepping outside these walls again . 
+3-1	88-91	You	_	_	*->2-2	*[2]
+3-2	92-95	're	_	_	_	_
+3-3	96-101	never	_	_	_	_
+3-4	102-110	stepping	_	_	_	_
+3-5	111-118	outside	_	_	_	_
+3-6	119-124	these	_	_	_	_
+3-7	125-130	walls	_	_	_	_
+3-8	131-136	again	_	_	_	_
+3-9	137-138	.	_	_	_	_
+
+#Text=" Ming says : " Breakfast . 
+4-1	139-140	"	_	_	*->3-1	*[3]
+4-2	141-145	Ming	*	PER	*->3-1	*[3]
+4-3	146-150	says	_	_	_	_
+4-4	151-152	:	_	_	_	_
+4-5	153-154	"	_	_	_	_
+4-6	155-164	Breakfast	_	_	_	_
+4-7	165-166	.	_	_	_	_
+
+#Text=" Warden Poon says : " Careful , Ming , do n't get too close . 
+5-1	167-168	"	_	_	_	_
+5-2	169-175	Warden	*	PER	*->1-3	*[1]
+5-3	176-180	Poon	*	PER	*->1-3	*[1]
+5-4	181-185	says	_	_	_	_
+5-5	186-187	:	_	_	_	_
+5-6	188-189	"	_	_	_	_
+5-7	190-197	Careful	_	_	_	_
+5-8	198-199	,	_	_	_	_
+5-9	200-204	Ming	*	PER	*->3-2	*[3]
+5-10	205-206	,	_	_	_	_
+5-11	207-209	do	_	_	_	_
+5-12	210-213	n't	_	_	_	_
+5-13	214-217	get	_	_	_	_
+5-14	218-221	too	_	_	_	_
+5-15	222-227	close	_	_	_	_
+5-16	228-229	.	_	_	_	_
+
+#Text=His stench will knock you right out . 
+6-1	230-233	His	_	_	*->3-3	*[3]
+6-2	234-240	stench	_	_	_	_
+6-3	241-245	will	_	_	_	_
+6-4	246-251	knock	_	_	_	_
+6-5	252-255	you	_	_	_	_
+6-6	256-261	right	_	_	_	_
+6-7	262-265	out	_	_	_	_
+6-8	266-267	.	_	_	_	_
+
+#Text=" Ming says : " I snuck in some white jade tea . 
+7-1	268-269	"	_	_	_	_
+7-2	270-274	Ming	*	PER	*->3-4	*[3]
+7-3	275-279	says	_	_	_	_
+7-4	280-281	:	_	_	_	_
+7-5	282-283	"	_	_	_	_
+7-6	284-285	I	_	_	*->3-5	*[3]
+7-7	286-291	snuck	_	_	_	_
+7-8	292-294	in	_	_	_	_
+7-9	295-299	some	_	_	_	_
+7-10	300-305	white	_	_	_	_
+7-11	306-310	jade	_	_	_	_
+7-12	311-314	tea	_	_	_	_
+7-13	315-316	.	_	_	_	_
+
+#Text=I know you like rare teas . 
+8-1	317-318	I	_	_	*->3-6	*[3]
+8-2	319-323	know	_	_	_	_
+8-3	324-327	you	_	_	*->1-4	*[1]
+8-4	328-332	like	_	_	_	_
+8-5	333-337	rare	_	_	_	_
+8-6	338-342	teas	_	_	_	_
+8-7	343-344	.	_	_	_	_
+
+#Text=" Iroh says : " Thank you , Ming . 
+9-1	345-346	"	_	_	_	_
+9-2	347-351	Iroh	*	PER	*->4-1	*[4]
+9-3	352-356	says	_	_	_	_
+9-4	357-358	:	_	_	_	_
+9-5	359-360	"	_	_	_	_
+9-6	361-366	Thank	_	_	_	_
+9-7	367-370	you	_	_	*->5-1	*[5]
+9-8	371-372	,	_	_	_	_
+9-9	373-377	Ming	*	PER	*->3-7	*[3]
+9-10	378-379	.	_	_	_	_
+
+#Text=Ever since I was put in here , you have been very kind to me . 
+10-1	380-384	Ever	_	_	_	_
+10-2	385-390	since	_	_	_	_
+10-3	391-392	I	_	_	*->4-2	*[4]
+10-4	393-396	was	_	_	_	_
+10-5	397-400	put	_	_	_	_
+10-6	401-403	in	_	_	_	_
+10-7	404-408	here	_	_	_	_
+10-8	409-410	,	_	_	_	_
+10-9	411-414	you	_	_	*->5-2	*[5]
+10-10	415-419	have	_	_	_	_
+10-11	420-424	been	_	_	_	_
+10-12	425-429	very	_	_	_	_
+10-13	430-434	kind	_	_	_	_
+10-14	435-437	to	_	_	_	_
+10-15	438-440	me	_	_	*->4-3	*[4]
+10-16	441-442	.	_	_	_	_
+
+#Text=" 
+11-1	443-444	"	_	_	_	_

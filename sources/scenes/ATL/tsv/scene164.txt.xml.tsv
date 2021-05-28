@@ -1,0 +1,72 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Engineer says : " War Minister , an engineer was ambushed ! 
+1-1	0-8	Engineer	*	PER	_	_
+1-2	9-13	says	_	_	_	_
+1-3	14-15	:	_	_	_	_
+1-4	16-17	"	_	_	_	_
+1-5	18-21	War	_	_	*->1-1	*[1]
+1-6	22-30	Minister	*	PER	*->1-1	*[1]
+1-7	31-32	,	_	_	_	_
+1-8	33-35	an	_	_	_	_
+1-9	36-44	engineer	*	PER	_	_
+1-10	45-48	was	_	_	_	_
+1-11	49-57	ambushed	_	_	_	_
+1-12	58-59	!	_	_	_	_
+
+#Text=His schematics were stolen ! 
+2-1	60-63	His	_	_	*->1-2	*[1]
+2-2	64-74	schematics	_	_	_	_
+2-3	75-79	were	_	_	_	_
+2-4	80-86	stolen	_	_	_	_
+2-5	87-88	!	_	_	_	_
+
+#Text=" Second Engineer says : " War Minister , a brace on the starboard side has been cut clean through ! 
+3-1	89-90	"	_	_	_	_
+3-2	91-97	Second	_	_	*->2-1	*[2]
+3-3	98-106	Engineer	*	PER	_	_
+3-4	107-111	says	_	_	_	_
+3-5	112-113	:	_	_	_	_
+3-6	114-115	"	_	_	_	_
+3-7	116-119	War	_	_	*->1-3	*[1]
+3-8	120-128	Minister	*	PER	*->1-3	*[1]
+3-9	129-130	,	_	_	_	_
+3-10	131-132	a	_	_	_	_
+3-11	133-138	brace	_	_	_	_
+3-12	139-141	on	_	_	_	_
+3-13	142-145	the	_	_	_	_
+3-14	146-155	starboard	_	_	_	_
+3-15	156-160	side	_	_	_	_
+3-16	161-164	has	_	_	_	_
+3-17	165-169	been	_	_	_	_
+3-18	170-173	cut	_	_	_	_
+3-19	174-179	clean	_	_	_	_
+3-20	180-187	through	_	_	_	_
+3-21	188-189	!	_	_	_	_
+
+#Text=It 's sabotage , sir ! 
+4-1	190-192	It	_	_	*->2-2	*[2]
+4-2	193-195	's	_	_	_	_
+4-3	196-204	sabotage	_	_	_	_
+4-4	205-206	,	_	_	_	_
+4-5	207-210	sir	_	_	_	_
+4-6	211-212	!	_	_	_	_
+
+#Text=" Azula says : " Let 's go , ladies ! 
+5-1	213-214	"	_	_	_	_
+5-2	215-220	Azula	*	PER	_	_
+5-3	221-225	says	_	_	_	_
+5-4	226-227	:	_	_	_	_
+5-5	228-229	"	_	_	_	_
+5-6	230-233	Let	_	_	_	_
+5-7	234-236	's	_	_	*->2-3	*[2]
+5-8	237-239	go	_	_	_	_
+5-9	240-241	,	_	_	_	_
+5-10	242-248	ladies	_	_	_	_
+5-11	249-250	!	_	_	_	_
+
+#Text=" 
+6-1	251-252	"	_	_	_	_

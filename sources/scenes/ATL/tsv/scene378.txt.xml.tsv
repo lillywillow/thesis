@@ -1,0 +1,111 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Cabbage merchant says : " My cabbages ! 
+1-1	0-7	Cabbage	_	_	*->1-1	*[1]
+1-2	8-16	merchant	*	PER	*->1-1	*[1]
+1-3	17-21	says	_	_	_	_
+1-4	22-23	:	_	_	_	_
+1-5	24-25	"	_	_	_	_
+1-6	26-28	My	_	_	*->1-2	*[1]
+1-7	29-37	cabbages	_	_	_	_
+1-8	38-39	!	_	_	_	_
+
+#Text=This place is worse than Omashu ! 
+2-1	40-44	This	_	_	_	_
+2-2	45-50	place	_	_	_	_
+2-3	51-53	is	_	_	_	_
+2-4	54-59	worse	_	_	_	_
+2-5	60-64	than	_	_	_	_
+2-6	65-71	Omashu	_	_	_	_
+2-7	72-73	!	_	_	_	_
+
+#Text=" Pirate says : " I hope that lemur of yours has nine lives ! 
+3-1	74-75	"	_	_	_	_
+3-2	76-82	Pirate	*	PER	_	_
+3-3	83-87	says	_	_	_	_
+3-4	88-89	:	_	_	_	_
+3-5	90-91	"	_	_	_	_
+3-6	92-93	I	_	_	*->1-3	*[1]
+3-7	94-98	hope	_	_	_	_
+3-8	99-103	that	_	_	_	_
+3-9	104-109	lemur	_	_	_	_
+3-10	110-112	of	_	_	_	_
+3-11	113-118	yours	_	_	_	_
+3-12	119-122	has	_	_	_	_
+3-13	123-127	nine	_	_	_	_
+3-14	128-133	lives	_	_	_	_
+3-15	134-135	!	_	_	_	_
+
+#Text=" Oh says : " Now , who gets to taste the steel of my blade first ? 
+4-1	136-137	"	_	_	_	_
+4-2	138-140	Oh	_	_	*->2-1	*[2]
+4-3	141-145	says	_	_	_	_
+4-4	146-147	:	_	_	_	_
+4-5	148-149	"	_	_	_	_
+4-6	150-153	Now	_	_	_	_
+4-7	154-155	,	_	_	_	_
+4-8	156-159	who	_	_	*->1-4	*[1]
+4-9	160-164	gets	_	_	_	_
+4-10	165-167	to	_	_	_	_
+4-11	168-173	taste	_	_	_	_
+4-12	174-177	the	_	_	_	_
+4-13	178-183	steel	_	_	_	_
+4-14	184-186	of	_	_	_	_
+4-15	187-189	my	_	_	*->2-2	*[2]
+4-16	190-195	blade	_	_	_	_
+4-17	196-201	first	_	_	_	_
+4-18	202-203	?	_	_	_	_
+
+#Text=" Aang says : " No thanks . 
+5-1	204-205	"	_	_	_	_
+5-2	206-210	Aang	*	PER	*->3-1	*[3]
+5-3	211-215	says	_	_	_	_
+5-4	216-217	:	_	_	_	_
+5-5	218-219	"	_	_	_	_
+5-6	220-222	No	_	_	_	_
+5-7	223-229	thanks	_	_	_	_
+5-8	230-231	.	_	_	_	_
+
+#Text=Grab on tight ! 
+6-1	232-236	Grab	_	_	_	_
+6-2	237-239	on	_	_	_	_
+6-3	240-245	tight	_	_	_	_
+6-4	246-247	!	_	_	_	_
+
+#Text=" Katara says : " Aang ! 
+7-1	248-249	"	_	_	_	_
+7-2	250-256	Katara	*	PER	*->4-1	*[4]
+7-3	257-261	says	_	_	_	_
+7-4	262-263	:	_	_	_	_
+7-5	264-265	"	_	_	*->3-2	*[3]
+7-6	266-270	Aang	_	_	*->3-2	*[3]
+7-7	271-272	!	_	_	_	_
+
+#Text=I thought we were running away from the pirates ! 
+8-1	273-274	I	_	_	*->4-2	*[4]
+8-2	275-282	thought	_	_	_	_
+8-3	283-285	we	_	_	_	_
+8-4	286-290	were	_	_	_	_
+8-5	291-298	running	_	_	_	_
+8-6	299-303	away	_	_	_	_
+8-7	304-308	from	_	_	_	_
+8-8	309-312	the	_	_	_	_
+8-9	313-320	pirates	_	_	_	_
+8-10	321-322	!	_	_	_	_
+
+#Text=" Aang says : " Just hang on ! 
+9-1	323-324	"	_	_	_	_
+9-2	325-329	Aang	*	PER	*->3-3	*[3]
+9-3	330-334	says	_	_	_	_
+9-4	335-336	:	_	_	_	_
+9-5	337-338	"	_	_	_	_
+9-6	339-343	Just	_	_	_	_
+9-7	344-348	hang	_	_	_	_
+9-8	349-351	on	_	_	_	_
+9-9	352-353	!	_	_	_	_
+
+#Text=" 
+10-1	354-355	"	_	_	_	_

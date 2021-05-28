@@ -1,0 +1,175 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sokka says : " That 's called Sokka style . 
+1-1	0-5	Sokka	_	_	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-19	That	_	_	*->2-1	*[2]
+1-6	20-22	's	_	_	_	_
+1-7	23-29	called	_	_	_	_
+1-8	30-35	Sokka	_	_	_	_
+1-9	36-41	style	_	_	_	_
+1-10	42-43	.	_	_	_	_
+
+#Text=Learn it . 
+2-1	44-49	Learn	_	_	_	_
+2-2	50-52	it	_	_	*->2-2	*[2]
+2-3	53-54	.	_	_	_	_
+
+#Text=" Sokka says : " Wait ! 
+3-1	55-56	"	_	_	_	_
+3-2	57-62	Sokka	_	_	*->1-2	*[1]
+3-3	63-67	says	_	_	_	_
+3-4	68-69	:	_	_	_	_
+3-5	70-71	"	_	_	_	_
+3-6	72-76	Wait	_	_	_	_
+3-7	77-78	!	_	_	_	_
+
+#Text=Professor , let 's go . 
+4-1	79-88	Professor	*	PER	*->3-1	*[3]
+4-2	89-90	,	_	_	_	_
+4-3	91-94	let	_	_	_	_
+4-4	95-97	's	_	_	*->3-2	*[3]
+4-5	98-100	go	_	_	_	_
+4-6	101-102	.	_	_	_	_
+
+#Text=" Zei says : " I 'm not leaving . 
+5-1	103-104	"	_	_	_	_
+5-2	105-108	Zei	*	PER	*->4-1	*[4]
+5-3	109-113	says	_	_	_	_
+5-4	114-115	:	_	_	_	_
+5-5	116-117	"	_	_	_	_
+5-6	118-119	I	_	_	*->4-2	*[4]
+5-7	120-122	'm	_	_	_	_
+5-8	123-126	not	_	_	_	_
+5-9	127-134	leaving	_	_	_	_
+5-10	135-136	.	_	_	_	_
+
+#Text=I ca n't . 
+6-1	137-138	I	_	_	*->4-3	*[4]
+6-2	139-141	ca	_	_	_	_
+6-3	142-145	n't	_	_	_	_
+6-4	146-147	.	_	_	_	_
+
+#Text=I 've spent too long trying to find this place . 
+7-1	148-149	I	_	_	*->4-4	*[4]
+7-2	150-153	've	_	_	_	_
+7-3	154-159	spent	_	_	_	_
+7-4	160-163	too	_	_	_	_
+7-5	164-168	long	_	_	_	_
+7-6	169-175	trying	_	_	_	_
+7-7	176-178	to	_	_	_	_
+7-8	179-183	find	_	_	_	_
+7-9	184-188	this	_	_	_	_
+7-10	189-194	place	_	_	_	_
+7-11	195-196	.	_	_	_	_
+
+#Text=There 's not another collection of knowledge like this on earth . 
+8-1	197-202	There	_	_	_	_
+8-2	203-205	's	_	_	_	_
+8-3	206-209	not	_	_	_	_
+8-4	210-217	another	_	_	_	_
+8-5	218-228	collection	_	_	_	_
+8-6	229-231	of	_	_	_	_
+8-7	232-241	knowledge	_	_	_	_
+8-8	242-246	like	_	_	_	_
+8-9	247-251	this	_	_	_	_
+8-10	252-254	on	_	_	_	_
+8-11	255-260	earth	_	_	_	_
+8-12	261-262	.	_	_	_	_
+
+#Text=I could spend an eternity in here . 
+9-1	263-264	I	_	_	*->4-5	*[4]
+9-2	265-270	could	_	_	_	_
+9-3	271-276	spend	_	_	_	_
+9-4	277-279	an	_	_	*->5-1	*[5]
+9-5	280-288	eternity	_	_	*->5-1	*[5]
+9-6	289-291	in	_	_	_	_
+9-7	292-296	here	_	_	_	_
+9-8	297-298	.	_	_	_	_
+
+#Text=" Katara says : " Just go ! 
+10-1	299-300	"	_	_	_	_
+10-2	301-307	Katara	*	PER	_	_
+10-3	308-312	says	_	_	_	_
+10-4	313-314	:	_	_	_	_
+10-5	315-316	"	_	_	_	_
+10-6	317-321	Just	_	_	*->6-1	*[6]
+10-7	322-324	go	_	_	_	_
+10-8	325-326	!	_	_	_	_
+
+#Text=" Sokka says : " We got it . 
+11-1	327-328	"	_	_	_	_
+11-2	329-334	Sokka	_	_	*->1-3	*[1]
+11-3	335-339	says	_	_	_	_
+11-4	340-341	:	_	_	_	_
+11-5	342-343	"	_	_	_	_
+11-6	344-346	We	_	_	*->6-2	*[6]
+11-7	347-350	got	_	_	_	_
+11-8	351-353	it	_	_	*->5-2	*[5]
+11-9	354-355	.	_	_	_	_
+
+#Text=There 's a solar eclipse coming . 
+12-1	356-361	There	_	_	_	_
+12-2	362-364	's	_	_	_	_
+12-3	365-366	a	_	_	_	_
+12-4	367-372	solar	_	_	_	_
+12-5	373-380	eclipse	_	_	_	_
+12-6	381-387	coming	_	_	_	_
+12-7	388-389	.	_	_	_	_
+
+#Text=The Fire Nation 's in trouble now ! 
+13-1	390-393	The	_	_	_	_
+13-2	394-398	Fire	_	_	_	_
+13-3	399-405	Nation	_	_	_	_
+13-4	406-408	's	_	_	_	_
+13-5	409-411	in	_	_	_	_
+13-6	412-419	trouble	_	_	_	_
+13-7	420-423	now	_	_	_	_
+13-8	424-425	!	_	_	_	_
+
+#Text=" Aang says : " Where 's Appa ? 
+14-1	426-427	"	_	_	_	_
+14-2	428-432	Aang	*	PER	_	_
+14-3	433-437	says	_	_	_	_
+14-4	438-439	:	_	_	_	_
+14-5	440-441	"	_	_	_	_
+14-6	442-447	Where	_	_	_	_
+14-7	448-450	's	_	_	_	_
+14-8	451-455	Appa	_	_	_	_
+14-9	456-457	?	_	_	_	_
+
+#Text=" Main Aang Appa Katara Momo Sokka Toph Zei Antagonists Ghashiun Si Wong tribes Wan Shi Tong says : " Minor Knowledge Seekers Zhao ( flashback only ) " 
+15-1	458-459	"	_	_	_	_
+15-2	460-464	Main	_	_	_	_
+15-3	465-469	Aang	*	PER	_	_
+15-4	470-474	Appa	*	PER	_	_
+15-5	475-481	Katara	*	PER	_	_
+15-6	482-486	Momo	*	PER	_	_
+15-7	487-492	Sokka	*	PER	_	_
+15-8	493-497	Toph	*	PER	_	_
+15-9	498-501	Zei	*	PER	_	_
+15-10	502-513	Antagonists	*	PER	_	_
+15-11	514-522	Ghashiun	*	PER	_	_
+15-12	523-525	Si	*	PER	_	_
+15-13	526-530	Wong	*	PER	_	_
+15-14	531-537	tribes	_	_	_	_
+15-15	538-541	Wan	*	PER	_	_
+15-16	542-545	Shi	*	PER	_	_
+15-17	546-550	Tong	*	PER	_	_
+15-18	551-555	says	_	_	_	_
+15-19	556-557	:	_	_	_	_
+15-20	558-559	"	_	_	_	_
+15-21	560-565	Minor	_	_	_	_
+15-22	566-575	Knowledge	_	_	_	_
+15-23	576-583	Seekers	_	_	_	_
+15-24	584-588	Zhao	*	PER	_	_
+15-25	589-590	(	_	_	_	_
+15-26	591-600	flashback	_	_	_	_
+15-27	601-605	only	_	_	_	_
+15-28	606-607	)	_	_	_	_
+15-29	608-609	"	_	_	_	_

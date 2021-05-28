@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Male Fire Nation soldier says : " No one 's on board , sir . " 
+1-1	0-4	Male	_	_	_	_
+1-2	5-9	Fire	_	_	_	_
+1-3	10-16	Nation	_	_	*->1-1	*[1]
+1-4	17-24	soldier	*	PER	*->1-1	*[1]
+1-5	25-29	says	_	_	_	_
+1-6	30-31	:	_	_	_	_
+1-7	32-33	"	_	_	_	_
+1-8	34-36	No	_	_	_	_
+1-9	37-40	one	_	_	_	_
+1-10	41-43	's	_	_	_	_
+1-11	44-46	on	_	_	_	_
+1-12	47-52	board	_	_	_	_
+1-13	53-54	,	_	_	_	_
+1-14	55-58	sir	_	_	_	_
+1-15	59-60	.	_	_	_	_
+1-16	61-62	"	_	_	_	_
+
+#Text=Female Fire Nation soldier says : " Where 'd they go ? " 
+2-1	63-69	Female	_	_	_	_
+2-2	70-74	Fire	_	_	_	_
+2-3	75-81	Nation	_	_	*->1-2	*[1]
+2-4	82-89	soldier	*	PER	*->1-2	*[1]
+2-5	90-94	says	_	_	_	_
+2-6	95-96	:	_	_	_	_
+2-7	97-98	"	_	_	_	_
+2-8	99-104	Where	_	_	_	_
+2-9	105-107	'd	_	_	_	_
+2-10	108-112	they	_	_	_	_
+2-11	113-115	go	_	_	_	_
+2-12	116-117	?	_	_	_	_
+2-13	118-119	"	_	_	_	_
+
+#Text=Hakoda says : " You 've really outdone yourself this time , son . " 
+3-1	120-126	Hakoda	*	PER	_	_
+3-2	127-131	says	_	_	_	_
+3-3	132-133	:	_	_	_	_
+3-4	134-135	"	_	_	_	_
+3-5	136-139	You	_	_	*->2-1	*[2]
+3-6	140-143	've	_	_	_	_
+3-7	144-150	really	_	_	_	_
+3-8	151-158	outdone	_	_	_	_
+3-9	159-167	yourself	_	_	*->2-2	*[2]
+3-10	168-172	this	_	_	_	_
+3-11	173-177	time	_	_	_	_
+3-12	178-179	,	_	_	_	_
+3-13	180-183	son	_	_	_	_
+3-14	184-185	.	_	_	_	_
+3-15	186-187	"	_	_	_	_

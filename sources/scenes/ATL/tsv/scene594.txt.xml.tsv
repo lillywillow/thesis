@@ -1,0 +1,62 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Jet says : " You must be getting tired of using those swords . 
+1-1	0-3	Jet	_	_	_	_
+1-2	4-8	says	_	_	_	_
+1-3	9-10	:	_	_	_	_
+1-4	11-12	"	_	_	_	_
+1-5	13-16	You	_	_	*->1-1	*[1]
+1-6	17-21	must	_	_	_	_
+1-7	22-24	be	_	_	_	_
+1-8	25-32	getting	_	_	_	_
+1-9	33-38	tired	_	_	_	_
+1-10	39-41	of	_	_	_	_
+1-11	42-47	using	_	_	_	_
+1-12	48-53	those	_	_	_	_
+1-13	54-60	swords	_	_	_	_
+1-14	61-62	.	_	_	_	_
+
+#Text=Why do n't you go ahead and firebend at me ? 
+2-1	63-66	Why	_	_	_	_
+2-2	67-69	do	_	_	_	_
+2-3	70-73	n't	_	_	_	_
+2-4	74-77	you	_	_	*->1-2	*[1]
+2-5	78-80	go	_	_	_	_
+2-6	81-86	ahead	_	_	_	_
+2-7	87-90	and	_	_	_	_
+2-8	91-99	firebend	_	_	_	_
+2-9	100-102	at	_	_	_	_
+2-10	103-105	me	_	_	_	_
+2-11	106-107	?	_	_	_	_
+
+#Text=" Iroh says : " Please , son , you 're confused ! 
+3-1	108-109	"	_	_	_	_
+3-2	110-114	Iroh	*	PER	_	_
+3-3	115-119	says	_	_	_	_
+3-4	120-121	:	_	_	_	_
+3-5	122-123	"	_	_	_	_
+3-6	124-130	Please	_	_	_	_
+3-7	131-132	,	_	_	_	_
+3-8	133-136	son	_	_	_	_
+3-9	137-138	,	_	_	_	_
+3-10	139-142	you	_	_	*->2-1	*[2]
+3-11	143-146	're	_	_	_	_
+3-12	147-155	confused	_	_	_	_
+3-13	156-157	!	_	_	_	_
+
+#Text=You do n't know what you 're doing ! 
+4-1	158-161	You	_	_	*->2-2	*[2]
+4-2	162-164	do	_	_	_	_
+4-3	165-168	n't	_	_	_	_
+4-4	169-173	know	_	_	_	_
+4-5	174-178	what	_	_	_	_
+4-6	179-182	you	_	_	*->2-3	*[2]
+4-7	183-186	're	_	_	_	_
+4-8	187-192	doing	_	_	_	_
+4-9	193-194	!	_	_	_	_
+
+#Text=" 
+5-1	195-196	"	_	_	_	_

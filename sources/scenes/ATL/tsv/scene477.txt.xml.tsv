@@ -1,0 +1,98 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Hello ? 
+1-1	0-4	Aang	*	PER	_	_
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-19	Hello	_	_	_	_
+1-6	20-21	?	_	_	_	_
+
+#Text=I 'm sorry to disturb you . 
+2-1	22-23	I	_	_	_	_
+2-2	24-26	'm	_	_	_	_
+2-3	27-32	sorry	_	_	_	_
+2-4	33-35	to	_	_	_	_
+2-5	36-43	disturb	_	_	_	_
+2-6	44-47	you	_	_	*->2-1	*[2]
+2-7	48-49	.	_	_	_	_
+
+#Text=I just really need to find the Moon and the Ocean Spirits . 
+3-1	50-51	I	_	_	_	_
+3-2	52-56	just	_	_	_	_
+3-3	57-63	really	_	_	_	_
+3-4	64-68	need	_	_	_	_
+3-5	69-71	to	_	_	_	_
+3-6	72-76	find	_	_	_	_
+3-7	77-80	the	_	_	_	_
+3-8	81-85	Moon	_	_	_	_
+3-9	86-89	and	_	_	_	_
+3-10	90-93	the	_	_	_	_
+3-11	94-99	Ocean	_	_	_	_
+3-12	100-107	Spirits	_	_	_	_
+3-13	108-109	.	_	_	_	_
+
+#Text=" Baboon spirit says : " Go . 
+4-1	110-111	"	_	_	_	_
+4-2	112-118	Baboon	_	_	*->3-1	*[3]
+4-3	119-125	spirit	_	_	_	_
+4-4	126-130	says	_	_	_	_
+4-5	131-132	:	_	_	_	_
+4-6	133-134	"	_	_	_	_
+4-7	135-137	Go	_	_	_	_
+4-8	138-139	.	_	_	_	_
+
+#Text=Away . 
+5-1	140-144	Away	_	_	_	_
+5-2	145-146	.	_	_	_	_
+
+#Text=You 're still here ? 
+6-1	147-150	You	_	_	*->2-2	*[2]
+6-2	151-154	're	_	_	_	_
+6-3	155-160	still	_	_	_	_
+6-4	161-165	here	_	_	_	_
+6-5	166-167	?	_	_	_	_
+
+#Text=" Aang says : " Yes , I need - " Baboon spirit says : " Ohm ! 
+7-1	168-169	"	_	_	*->1-1	*[1]
+7-2	170-174	Aang	*	PER	*->1-1	*[1]
+7-3	175-179	says	_	_	_	_
+7-4	180-181	:	_	_	_	_
+7-5	182-183	"	_	_	_	_
+7-6	184-187	Yes	_	_	_	_
+7-7	188-189	,	_	_	_	_
+7-8	190-191	I	_	_	*->1-5	*[1]
+7-9	192-196	need	_	_	_	_
+7-10	197-198	-	_	_	_	_
+7-11	199-200	"	_	_	_	_
+7-12	201-207	Baboon	_	_	*->3-2	*[3]
+7-13	208-214	spirit	_	_	_	_
+7-14	215-219	says	_	_	_	_
+7-15	220-221	:	_	_	_	_
+7-16	222-223	"	_	_	_	_
+7-17	224-227	Ohm	_	_	_	_
+7-18	228-229	!	_	_	_	_
+
+#Text=Perhaps that thing will help you . 
+8-1	230-237	Perhaps	_	_	_	_
+8-2	238-242	that	_	_	*->4-1	*[4]
+8-3	243-248	thing	_	_	*->4-1	*[4]
+8-4	249-253	will	_	_	_	_
+8-5	254-258	help	_	_	_	_
+8-6	259-262	you	_	_	*->2-3	*[2]
+8-7	263-264	.	_	_	_	_
+
+#Text=Chase it . 
+9-1	265-270	Chase	_	_	_	_
+9-2	271-273	it	_	_	*->4-2	*[4]
+9-3	274-275	.	_	_	_	_
+
+#Text=Finally . 
+10-1	276-283	Finally	_	_	_	_
+10-2	284-285	.	_	_	_	_
+
+#Text=" 
+11-1	286-287	"	_	_	_	_

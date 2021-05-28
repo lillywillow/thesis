@@ -1,0 +1,95 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " But why would you agree to train someone from the Water Tribe ? " 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	But	_	_	_	_
+1-6	20-23	why	_	_	_	_
+1-7	24-29	would	_	_	_	_
+1-8	30-33	you	_	_	*->2-1	*[2]
+1-9	34-39	agree	_	_	_	_
+1-10	40-42	to	_	_	_	_
+1-11	43-48	train	_	_	_	_
+1-12	49-56	someone	_	_	_	_
+1-13	57-61	from	_	_	_	_
+1-14	62-65	the	_	_	_	_
+1-15	66-71	Water	_	_	_	_
+1-16	72-77	Tribe	_	_	_	_
+1-17	78-79	?	_	_	_	_
+1-18	80-81	"	_	_	_	_
+
+#Text=Piandao says : " The way of the sword does n't belong to any one nation . 
+2-1	82-89	Piandao	*	PER	*->3-1	*[3]
+2-2	90-94	says	_	_	_	_
+2-3	95-96	:	_	_	_	_
+2-4	97-98	"	_	_	_	_
+2-5	99-102	The	_	_	_	_
+2-6	103-106	way	_	_	_	_
+2-7	107-109	of	_	_	_	_
+2-8	110-113	the	_	_	_	_
+2-9	114-119	sword	_	_	_	_
+2-10	120-124	does	_	_	_	_
+2-11	125-128	n't	_	_	_	_
+2-12	129-135	belong	_	_	_	_
+2-13	136-138	to	_	_	_	_
+2-14	139-142	any	_	_	_	_
+2-15	143-146	one	_	_	_	_
+2-16	147-153	nation	_	_	_	_
+2-17	154-155	.	_	_	_	_
+
+#Text=Knowledge of the arts belongs to us all . 
+3-1	156-165	Knowledge	_	_	_	_
+3-2	166-168	of	_	_	_	_
+3-3	169-172	the	_	_	_	_
+3-4	173-177	arts	_	_	_	_
+3-5	178-185	belongs	_	_	_	_
+3-6	186-188	to	_	_	_	_
+3-7	189-191	us	_	_	*->2-2	*[2]
+3-8	192-195	all	_	_	*->2-2	*[2]
+3-9	196-197	.	_	_	_	_
+
+#Text=Sokka , you must continue your training on your own . 
+4-1	198-203	Sokka	_	_	_	_
+4-2	204-205	,	_	_	_	_
+4-3	206-209	you	_	_	*->1-2	*[1]
+4-4	210-214	must	_	_	_	_
+4-5	215-223	continue	_	_	_	_
+4-6	224-228	your	_	_	*->1-3	*[1]
+4-7	229-237	training	_	_	_	_
+4-8	238-240	on	_	_	_	_
+4-9	241-245	your	_	_	*->1-4	*[1]
+4-10	246-249	own	_	_	_	_
+4-11	250-251	.	_	_	_	_
+
+#Text=If you stay on this path , I know that one day you will become an even greater master than I am . 
+5-1	252-254	If	_	_	_	_
+5-2	255-258	you	_	_	*->1-5	*[1]
+5-3	259-263	stay	_	_	_	_
+5-4	264-266	on	_	_	_	_
+5-5	267-271	this	_	_	_	_
+5-6	272-276	path	_	_	_	_
+5-7	277-278	,	_	_	_	_
+5-8	279-280	I	_	_	*->3-2	*[3]
+5-9	281-285	know	_	_	_	_
+5-10	286-290	that	_	_	_	_
+5-11	291-294	one	_	_	_	_
+5-12	295-298	day	_	_	_	_
+5-13	299-302	you	_	_	*->1-6	*[1]
+5-14	303-307	will	_	_	_	_
+5-15	308-314	become	_	_	_	_
+5-16	315-317	an	_	_	_	_
+5-17	318-322	even	_	_	_	_
+5-18	323-330	greater	_	_	_	_
+5-19	331-337	master	_	_	_	_
+5-20	338-342	than	_	_	_	_
+5-21	343-344	I	_	_	*->3-3	*[3]
+5-22	345-347	am	_	_	_	_
+5-23	348-349	.	_	_	_	_
+
+#Text=" 
+6-1	350-351	"	_	_	_	_

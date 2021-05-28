@@ -1,0 +1,87 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Tashi says : " You chose them because they were familiar . " 
+1-1	0-5	Tashi	*	PER	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	You	_	_	*->2-1	*[2]
+1-6	19-24	chose	_	_	_	_
+1-7	25-29	them	_	_	*->3-1	*[3]
+1-8	30-37	because	_	_	_	_
+1-9	38-42	they	_	_	*->3-2	*[3]
+1-10	43-47	were	_	_	_	_
+1-11	48-56	familiar	_	_	_	_
+1-12	57-58	.	_	_	_	_
+1-13	59-60	"	_	_	_	_
+
+#Text=Gyatso says : " Normally we would have told you of your identity when you turned sixteen , but there are troubling signs . 
+2-1	61-67	Gyatso	*	PER	*->4-1	*[4]
+2-2	68-72	says	_	_	_	_
+2-3	73-74	:	_	_	_	_
+2-4	75-76	"	_	_	_	_
+2-5	77-85	Normally	_	_	_	_
+2-6	86-88	we	_	_	*->2-2	*[2]
+2-7	89-94	would	_	_	_	_
+2-8	95-99	have	_	_	_	_
+2-9	100-104	told	_	_	_	_
+2-10	105-108	you	_	_	*->1-2	*[1]
+2-11	109-111	of	_	_	_	_
+2-12	112-116	your	_	_	*->1-3	*[1]
+2-13	117-125	identity	_	_	_	_
+2-14	126-130	when	_	_	_	_
+2-15	131-134	you	_	_	*->1-4	*[1]
+2-16	135-141	turned	_	_	_	_
+2-17	142-149	sixteen	_	_	_	_
+2-18	150-151	,	_	_	_	_
+2-19	152-155	but	_	_	_	_
+2-20	156-161	there	_	_	_	_
+2-21	162-165	are	_	_	_	_
+2-22	166-175	troubling	_	_	_	_
+2-23	176-181	signs	_	_	_	_
+2-24	182-183	.	_	_	_	_
+
+#Text=Storm clouds are gathering . 
+3-1	184-189	Storm	_	_	_	_
+3-2	190-196	clouds	_	_	_	_
+3-3	197-200	are	_	_	_	_
+3-4	201-210	gathering	_	_	_	_
+3-5	211-212	.	_	_	_	_
+
+#Text=" Pasang says : " I fear that war may be upon us , young Avatar . 
+4-1	213-214	"	_	_	_	_
+4-2	215-221	Pasang	*	PER	*->5-1	*[5]
+4-3	222-226	says	_	_	_	_
+4-4	227-228	:	_	_	_	_
+4-5	229-230	"	_	_	_	_
+4-6	231-232	I	_	_	*->5-2	*[5]
+4-7	233-237	fear	_	_	_	_
+4-8	238-242	that	_	_	_	_
+4-9	243-246	war	_	_	_	_
+4-10	247-250	may	_	_	_	_
+4-11	251-253	be	_	_	_	_
+4-12	254-258	upon	_	_	_	_
+4-13	259-261	us	_	_	*->2-3	*[2]
+4-14	262-263	,	_	_	_	_
+4-15	264-269	young	_	_	_	_
+4-16	270-276	Avatar	_	_	_	_
+4-17	277-278	.	_	_	_	_
+
+#Text=" Gyatso says : " We need you , Aang . 
+5-1	279-280	"	_	_	_	_
+5-2	281-287	Gyatso	*	PER	*->4-2	*[4]
+5-3	288-292	says	_	_	_	_
+5-4	293-294	:	_	_	_	_
+5-5	295-296	"	_	_	_	_
+5-6	297-299	We	_	_	*->2-4	*[2]
+5-7	300-304	need	_	_	_	_
+5-8	305-308	you	_	_	*->5-3	*[5]
+5-9	309-310	,	_	_	_	_
+5-10	311-315	Aang	*	PER	_	_
+5-11	316-317	.	_	_	_	_
+
+#Text=" 
+6-1	318-319	"	_	_	_	_

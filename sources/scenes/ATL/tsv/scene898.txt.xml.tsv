@@ -1,0 +1,42 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " I ca n't move ! 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-15	I	_	_	*->1-2	*[1]
+1-6	16-18	ca	_	_	_	_
+1-7	19-22	n't	_	_	_	_
+1-8	23-27	move	_	_	_	_
+1-9	28-29	!	_	_	_	_
+
+#Text=Zuko , do something ! 
+2-1	30-34	Zuko	*	PER	_	_
+2-2	35-36	,	_	_	_	_
+2-3	37-39	do	_	_	_	_
+2-4	40-49	something	_	_	_	_
+2-5	50-51	!	_	_	_	_
+
+#Text=" Zuko says : " Me ? 
+3-1	52-53	"	_	_	*->2-1	*[2]
+3-2	54-58	Zuko	*	PER	*->2-1	*[2]
+3-3	59-63	says	_	_	_	_
+3-4	64-65	:	_	_	_	_
+3-5	66-67	"	_	_	_	_
+3-6	68-70	Me	_	_	*->2-3	*[2]
+3-7	71-72	?	_	_	_	_
+
+#Text=I ca n't move either ! 
+4-1	73-74	I	_	_	*->2-4	*[2]
+4-2	75-77	ca	_	_	_	_
+4-3	78-81	n't	_	_	_	_
+4-4	82-86	move	_	_	_	_
+4-5	87-93	either	_	_	_	_
+4-6	94-95	!	_	_	_	_
+
+#Text=" 
+5-1	96-97	"	_	_	_	_

@@ -1,0 +1,60 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " You know , I do n't think there 's such a thing as " space earth " . 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-19	You	_	_	_	_
+1-6	20-24	know	_	_	_	_
+1-7	25-26	,	_	_	_	_
+1-8	27-28	I	_	_	*->1-2	*[1]
+1-9	29-31	do	_	_	_	_
+1-10	32-35	n't	_	_	_	_
+1-11	36-41	think	_	_	_	_
+1-12	42-47	there	_	_	_	_
+1-13	48-50	's	_	_	_	_
+1-14	51-55	such	_	_	*->2-1	*[2]
+1-15	56-57	a	_	_	*->2-1	*[2]
+1-16	58-63	thing	_	_	*->2-1	*[2]
+1-17	64-66	as	_	_	*->2-1	*[2]
+1-18	67-68	"	_	_	*->2-1	*[2]
+1-19	69-74	space	_	_	*->2-1	*[2]
+1-20	75-80	earth	_	_	*->2-1	*[2]
+1-21	81-82	"	_	_	*->2-1	*[2]
+1-22	83-84	.	_	_	_	_
+
+#Text=If it 's from space , then it 's not really " earth " . 
+2-1	85-87	If	_	_	_	_
+2-2	88-90	it	_	_	*->2-2	*[2]
+2-3	91-93	's	_	_	_	_
+2-4	94-98	from	_	_	_	_
+2-5	99-104	space	_	_	_	_
+2-6	105-106	,	_	_	_	_
+2-7	107-111	then	_	_	_	_
+2-8	112-114	it	_	_	*->3-2	*[3]
+2-9	115-117	's	_	_	_	_
+2-10	118-121	not	_	_	_	_
+2-11	122-128	really	_	_	_	_
+2-12	129-130	"	_	_	*->3-3	*[3]
+2-13	131-136	earth	_	_	*->3-3	*[3]
+2-14	137-138	"	_	_	*->3-3	*[3]
+2-15	139-140	.	_	_	_	_
+
+#Text=" Sokka says : " Must you ruin everything ? 
+3-1	141-142	"	_	_	_	_
+3-2	143-148	Sokka	_	_	_	_
+3-3	149-153	says	_	_	_	_
+3-4	154-155	:	_	_	_	_
+3-5	156-157	"	_	_	_	_
+3-6	158-162	Must	_	_	_	_
+3-7	163-166	you	_	_	_	_
+3-8	167-171	ruin	_	_	_	_
+3-9	172-182	everything	_	_	_	_
+3-10	183-184	?	_	_	_	_
+
+#Text=" 
+4-1	185-186	"	_	_	_	_

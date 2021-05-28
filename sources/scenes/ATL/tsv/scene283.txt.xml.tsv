@@ -1,0 +1,48 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " Aang , do something ! 
+1-1	0-6	Katara	*	PER	_	_
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-20	Aang	_	_	_	_
+1-6	21-22	,	_	_	_	_
+1-7	23-25	do	_	_	_	_
+1-8	26-35	something	_	_	_	_
+1-9	36-37	!	_	_	_	_
+
+#Text=Use your airbending ! 
+2-1	38-41	Use	_	_	_	_
+2-2	42-46	your	_	_	*->2-1	*[2]
+2-3	47-57	airbending	_	_	_	_
+2-4	58-59	!	_	_	_	_
+
+#Text=" Aang says : " Yeah ! 
+3-1	60-61	"	_	_	*->1-1	*[1]
+3-2	62-66	Aang	*	PER	*->1-1	*[1]
+3-3	67-71	says	_	_	_	_
+3-4	72-73	:	_	_	_	_
+3-5	74-75	"	_	_	_	_
+3-6	76-80	Yeah	_	_	_	_
+3-7	81-82	!	_	_	_	_
+
+#Text=Good idea ! 
+4-1	83-87	Good	_	_	_	_
+4-2	88-92	idea	_	_	_	_
+4-3	93-94	!	_	_	_	_
+
+#Text=That 'll make us go even faster ! 
+5-1	95-99	That	_	_	*->1-3	*[1]
+5-2	100-103	'll	_	_	_	_
+5-3	104-108	make	_	_	_	_
+5-4	109-111	us	_	_	*->2-2	*[2]
+5-5	112-114	go	_	_	_	_
+5-6	115-119	even	_	_	_	_
+5-7	120-126	faster	_	_	_	_
+5-8	127-128	!	_	_	_	_
+
+#Text=" 
+6-1	129-130	"	_	_	_	_

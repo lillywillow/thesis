@@ -1,0 +1,36 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Roku says : " My earthbending master , Sud , was uncompromising , stubborn , and blunt ... " Roku says : " ... And a lifelong friend . " 
+1-1	0-4	Roku	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-16	My	_	_	*->1-2	*[1]
+1-6	17-29	earthbending	_	_	*->2-2	*[2]
+1-7	30-36	master	_	_	*->2-2	*[2]
+1-8	37-38	,	_	_	_	_
+1-9	39-42	Sud	*	PER	*->2-1	*[2]
+1-10	43-44	,	_	_	*->2-1	*[2]
+1-11	45-48	was	_	_	*->2-1	*[2]
+1-12	49-63	uncompromising	_	_	*->2-1	*[2]
+1-13	64-65	,	_	_	*->2-1	*[2]
+1-14	66-74	stubborn	_	_	*->2-1	*[2]
+1-15	75-76	,	_	_	*->2-1	*[2]
+1-16	77-80	and	_	_	*->2-1	*[2]
+1-17	81-86	blunt	_	_	*->2-1	*[2]
+1-18	87-90	...	_	_	*->2-1	*[2]
+1-19	91-92	"	_	_	*->2-1	*[2]
+1-20	93-97	Roku	*	PER	*->1-3	*[1]
+1-21	98-102	says	_	_	*->2-1	*[2]
+1-22	103-104	:	_	_	_	_
+1-23	105-106	"	_	_	_	_
+1-24	107-110	...	_	_	_	_
+1-25	111-114	And	_	_	_	_
+1-26	115-116	a	_	_	_	_
+1-27	117-125	lifelong	_	_	_	_
+1-28	126-132	friend	_	_	_	_
+1-29	133-134	.	_	_	_	_
+1-30	135-136	"	_	_	_	_

@@ -1,0 +1,71 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Good work , everybody . " 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	Good	_	_	_	_
+1-6	19-23	work	_	_	_	_
+1-7	24-25	,	_	_	_	_
+1-8	26-35	everybody	_	_	_	_
+1-9	36-37	.	_	_	_	_
+1-10	38-39	"	_	_	_	_
+
+#Text=Warden Poon says : " Look at you , you 're just a fat , disgusting old man . 
+2-1	40-46	Warden	*	PER	_	_
+2-2	47-51	Poon	*	PER	_	_
+2-3	52-56	says	_	_	_	_
+2-4	57-58	:	_	_	_	_
+2-5	59-60	"	_	_	_	_
+2-6	61-65	Look	_	_	_	_
+2-7	66-68	at	_	_	_	_
+2-8	69-72	you	_	_	*->1-2	*[1]
+2-9	73-74	,	_	_	_	_
+2-10	75-78	you	_	_	*->1-3	*[1]
+2-11	79-82	're	_	_	_	_
+2-12	83-87	just	_	_	_	_
+2-13	88-89	a	_	_	_	_
+2-14	90-93	fat	_	_	_	_
+2-15	94-95	,	_	_	_	_
+2-16	96-106	disgusting	_	_	_	_
+2-17	107-110	old	_	_	_	_
+2-18	111-114	man	_	_	_	_
+2-19	115-116	.	_	_	_	_
+
+#Text=You do nothing , you say nothing , you just eat and roll around in your own filth like a pig . 
+3-1	117-120	You	_	_	*->1-4	*[1]
+3-2	121-123	do	_	_	_	_
+3-3	124-131	nothing	_	_	_	_
+3-4	132-133	,	_	_	_	_
+3-5	134-137	you	_	_	*->1-5	*[1]
+3-6	138-141	say	_	_	_	_
+3-7	142-149	nothing	_	_	_	_
+3-8	150-151	,	_	_	_	_
+3-9	152-155	you	_	_	*->1-6	*[1]
+3-10	156-160	just	_	_	_	_
+3-11	161-164	eat	_	_	_	_
+3-12	165-168	and	_	_	_	_
+3-13	169-173	roll	_	_	_	_
+3-14	174-180	around	_	_	_	_
+3-15	181-183	in	_	_	_	_
+3-16	184-188	your	_	_	*->1-7	*[1]
+3-17	189-192	own	_	_	_	_
+3-18	193-198	filth	_	_	_	_
+3-19	199-203	like	_	_	_	_
+3-20	204-205	a	_	_	_	_
+3-21	206-209	pig	_	_	_	_
+3-22	210-211	.	_	_	_	_
+
+#Text=You 're a disgrace . 
+4-1	212-215	You	_	_	*->1-8	*[1]
+4-2	216-219	're	_	_	_	_
+4-3	220-221	a	_	_	_	_
+4-4	222-230	disgrace	_	_	_	_
+4-5	231-232	.	_	_	_	_
+
+#Text=" 
+5-1	233-234	"	_	_	_	_

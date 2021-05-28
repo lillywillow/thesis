@@ -1,0 +1,75 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sokka says : " Dad ... " Main Chit Sang Sokka Suki Zuko Antagonists Bully guard Gondola guards Warden Warden 's bodyguards says : " Minor Aang Appa Chit Sang 's friend Chit Sang 's girlfriend The Duke Hakoda Haru Katara Momo Teo Toph " Aang says : " How could you let them take Appa ?! 
+1-1	0-5	Sokka	_	_	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-18	Dad	_	_	_	_
+1-6	19-22	...	_	_	_	_
+1-7	23-24	"	_	_	_	_
+1-8	25-29	Main	_	_	_	_
+1-9	30-34	Chit	_	_	_	_
+1-10	35-39	Sang	_	_	_	_
+1-11	40-45	Sokka	_	_	_	_
+1-12	46-50	Suki	_	_	_	_
+1-13	51-55	Zuko	_	_	_	_
+1-14	56-67	Antagonists	_	_	_	_
+1-15	68-73	Bully	_	_	_	_
+1-16	74-79	guard	*	PER	*->1-1	*[1]
+1-17	80-87	Gondola	_	_	*->1-1	*[1]
+1-18	88-94	guards	_	_	*->1-1	*[1]
+1-19	95-101	Warden	*	PER	*->1-1	*[1]
+1-20	102-108	Warden	*	PER	*->1-1	*[1]
+1-21	109-111	's	_	_	*->1-1	*[1]
+1-22	112-122	bodyguards	_	_	_	_
+1-23	123-127	says	_	_	_	_
+1-24	128-129	:	_	_	_	_
+1-25	130-131	"	_	_	_	_
+1-26	132-137	Minor	_	_	_	_
+1-27	138-142	Aang	_	_	_	_
+1-28	143-147	Appa	_	_	*->2-1	*[2]
+1-29	148-152	Chit	_	_	*->2-1	*[2]
+1-30	153-157	Sang	_	_	*->2-1	*[2]
+1-31	158-160	's	_	_	*->2-1	*[2]
+1-32	161-167	friend	_	_	_	_
+1-33	168-172	Chit	_	_	*->2-2	*[2]
+1-34	173-177	Sang	_	_	*->2-2	*[2]
+1-35	178-180	's	_	_	*->2-2	*[2]
+1-36	181-191	girlfriend	_	_	_	_
+1-37	192-195	The	_	_	_	_
+1-38	196-200	Duke	*	PER	_	_
+1-39	201-207	Hakoda	*	PER	_	_
+1-40	208-212	Haru	*	PER	_	_
+1-41	213-219	Katara	*	PER	_	_
+1-42	220-224	Momo	*	PER	_	_
+1-43	225-228	Teo	*	PER	_	_
+1-44	229-233	Toph	*	PER	_	_
+1-45	234-235	"	_	_	_	_
+1-46	236-240	Aang	*	PER	_	_
+1-47	241-245	says	_	_	_	_
+1-48	246-247	:	_	_	_	_
+1-49	248-249	"	_	_	_	_
+1-50	250-253	How	_	_	_	_
+1-51	254-259	could	_	_	_	_
+1-52	260-263	you	_	_	*->3-1	*[3]
+1-53	264-267	let	_	_	_	_
+1-54	268-272	them	_	_	*->1-2	*[1]
+1-55	273-277	take	_	_	_	_
+1-56	278-282	Appa	_	_	_	_
+1-57	283-285	?!	_	_	_	_
+
+#Text=Why did n't you stop them ?! 
+2-1	286-289	Why	_	_	_	_
+2-2	290-293	did	_	_	_	_
+2-3	294-297	n't	_	_	_	_
+2-4	298-301	you	_	_	*->3-2	*[3]
+2-5	302-306	stop	_	_	_	_
+2-6	307-311	them	_	_	*->1-3	*[1]
+2-7	312-314	?!	_	_	_	_
+
+#Text=" 
+3-1	315-316	"	_	_	_	_

@@ -1,0 +1,54 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Mother Superior says : " Aha ! 
+1-1	0-6	Mother	*	PER	_	_
+1-2	7-15	Superior	*	PER	_	_
+1-3	16-20	says	_	_	_	_
+1-4	21-22	:	_	_	_	_
+1-5	23-24	"	_	_	_	_
+1-6	25-28	Aha	_	_	_	_
+1-7	29-30	!	_	_	_	_
+
+#Text=I caught you . 
+2-1	31-32	I	_	_	_	_
+2-2	33-39	caught	_	_	_	_
+2-3	40-43	you	_	_	*->2-1	*[2]
+2-4	44-45	.	_	_	_	_
+
+#Text=You should be ashamed of yourself ... Littering in the courtyard . 
+3-1	46-49	You	_	_	*->2-2	*[2]
+3-2	50-56	should	_	_	_	_
+3-3	57-59	be	_	_	_	_
+3-4	60-67	ashamed	_	_	_	_
+3-5	68-70	of	_	_	_	_
+3-6	71-79	yourself	_	_	*->2-3	*[2]
+3-7	80-83	...	_	_	_	_
+3-8	84-93	Littering	_	_	_	_
+3-9	94-96	in	_	_	_	_
+3-10	97-100	the	_	_	_	_
+3-11	101-110	courtyard	_	_	_	_
+3-12	111-112	.	_	_	_	_
+
+#Text=" Aang says : " I 'm sorry , I 'll take care of this . 
+4-1	113-114	"	_	_	_	_
+4-2	115-119	Aang	*	PER	*->1-1	*[1]
+4-3	120-124	says	_	_	_	_
+4-4	125-126	:	_	_	_	_
+4-5	127-128	"	_	_	_	_
+4-6	129-130	I	_	_	*->1-3	*[1]
+4-7	131-133	'm	_	_	_	_
+4-8	134-139	sorry	_	_	_	_
+4-9	140-141	,	_	_	_	_
+4-10	142-143	I	_	_	*->1-4	*[1]
+4-11	144-147	'll	_	_	_	_
+4-12	148-152	take	_	_	_	_
+4-13	153-157	care	_	_	_	_
+4-14	158-160	of	_	_	_	_
+4-15	161-165	this	_	_	_	_
+4-16	166-167	.	_	_	_	_
+
+#Text=" 
+5-1	168-169	"	_	_	_	_

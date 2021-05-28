@@ -1,0 +1,69 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " So you were upset that you were the Avatar ? 
+1-1	0-6	Katara	*	PER	_	_
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-18	So	_	_	_	_
+1-6	19-22	you	_	_	*->1-1	*[1]
+1-7	23-27	were	_	_	_	_
+1-8	28-33	upset	_	_	_	_
+1-9	34-38	that	_	_	_	_
+1-10	39-42	you	_	_	*->1-2	*[1]
+1-11	43-47	were	_	_	_	_
+1-12	48-51	the	_	_	*->2-1	*[2]
+1-13	52-58	Avatar	_	_	*->2-1	*[2]
+1-14	59-60	?	_	_	_	_
+
+#Text=Why would n't you be excited about it ? 
+2-1	61-64	Why	_	_	_	_
+2-2	65-70	would	_	_	_	_
+2-3	71-74	n't	_	_	_	_
+2-4	75-78	you	_	_	*->1-3	*[1]
+2-5	79-81	be	_	_	_	_
+2-6	82-89	excited	_	_	_	_
+2-7	90-95	about	_	_	_	_
+2-8	96-98	it	_	_	*->2-2	*[2]
+2-9	99-100	?	_	_	_	_
+
+#Text=" Aang says : " Well , I did n't know how to feel about it . 
+3-1	101-102	"	_	_	_	_
+3-2	103-107	Aang	*	PER	*->3-1	*[3]
+3-3	108-112	says	_	_	_	_
+3-4	113-114	:	_	_	_	_
+3-5	115-116	"	_	_	_	_
+3-6	117-121	Well	_	_	_	_
+3-7	122-123	,	_	_	_	_
+3-8	124-125	I	_	_	*->3-2	*[3]
+3-9	126-129	did	_	_	_	_
+3-10	130-133	n't	_	_	_	_
+3-11	134-138	know	_	_	_	_
+3-12	139-142	how	_	_	_	_
+3-13	143-145	to	_	_	_	_
+3-14	146-150	feel	_	_	_	_
+3-15	151-156	about	_	_	_	_
+3-16	157-159	it	_	_	*->2-3	*[2]
+3-17	160-161	.	_	_	_	_
+
+#Text=All I knew was that after I found out , everything began changing . 
+4-1	162-165	All	_	_	_	_
+4-2	166-167	I	_	_	*->3-3	*[3]
+4-3	168-172	knew	_	_	_	_
+4-4	173-176	was	_	_	_	_
+4-5	177-181	that	_	_	_	_
+4-6	182-187	after	_	_	_	_
+4-7	188-189	I	_	_	*->3-4	*[3]
+4-8	190-195	found	_	_	_	_
+4-9	196-199	out	_	_	_	_
+4-10	200-201	,	_	_	_	_
+4-11	202-212	everything	_	_	_	_
+4-12	213-218	began	_	_	_	_
+4-13	219-227	changing	_	_	_	_
+4-14	228-229	.	_	_	_	_
+
+#Text=" 
+5-1	230-231	"	_	_	_	_

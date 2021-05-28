@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Actor Zuko says : " I do n't have time to stuff my face ! 
+1-1	0-5	Actor	*	PER	*->1-1	*[1]
+1-2	6-10	Zuko	*	PER	*->1-1	*[1]
+1-3	11-15	says	_	_	_	_
+1-4	16-17	:	_	_	_	_
+1-5	18-19	"	_	_	_	_
+1-6	20-21	I	_	_	*->1-2	*[1]
+1-7	22-24	do	_	_	_	_
+1-8	25-28	n't	_	_	_	_
+1-9	29-33	have	_	_	_	_
+1-10	34-38	time	_	_	_	_
+1-11	39-41	to	_	_	_	_
+1-12	42-47	stuff	_	_	_	_
+1-13	48-50	my	_	_	*->1-3	*[1]
+1-14	51-55	face	_	_	_	_
+1-15	56-57	!	_	_	_	_
+
+#Text=I must capture the Avatar to regain my honor ! 
+2-1	58-59	I	_	_	*->1-4	*[1]
+2-2	60-64	must	_	_	_	_
+2-3	65-72	capture	_	_	_	_
+2-4	73-76	the	_	_	*->2-1	*[2]
+2-5	77-83	Avatar	_	_	*->2-1	*[2]
+2-6	84-86	to	_	_	_	_
+2-7	87-93	regain	_	_	_	_
+2-8	94-96	my	_	_	*->1-5	*[1]
+2-9	97-102	honor	_	_	_	_
+2-10	103-104	!	_	_	_	_
+
+#Text=" Actor Iroh says : " Well , while you do that , maybe I 'll capture another slice . 
+3-1	105-106	"	_	_	_	_
+3-2	107-112	Actor	*	PER	*->3-1	*[3]
+3-3	113-117	Iroh	*	PER	*->3-1	*[3]
+3-4	118-122	says	_	_	_	_
+3-5	123-124	:	_	_	_	_
+3-6	125-126	"	_	_	_	_
+3-7	127-131	Well	_	_	_	_
+3-8	132-133	,	_	_	_	_
+3-9	134-139	while	_	_	_	_
+3-10	140-143	you	_	_	*->1-6	*[1]
+3-11	144-146	do	_	_	_	_
+3-12	147-151	that	_	_	*->2-2	*[2]
+3-13	152-153	,	_	_	_	_
+3-14	154-159	maybe	_	_	*->1-7	*[1]
+3-15	160-161	I	_	_	*->1-7	*[1]
+3-16	162-165	'll	_	_	_	_
+3-17	166-173	capture	_	_	_	_
+3-18	174-181	another	_	_	_	_
+3-19	182-187	slice	_	_	_	_
+3-20	188-189	.	_	_	_	_
+
+#Text=" Actor Zuko says : " You sicken me ! 
+4-1	190-191	"	_	_	_	_
+4-2	192-197	Actor	*	PER	*->1-8	*[1]
+4-3	198-202	Zuko	*	PER	*->1-8	*[1]
+4-4	203-207	says	_	_	_	_
+4-5	208-209	:	_	_	_	_
+4-6	210-211	"	_	_	_	_
+4-7	212-215	You	_	_	*->3-2	*[3]
+4-8	216-222	sicken	_	_	_	_
+4-9	223-225	me	_	_	*->1-9	*[1]
+4-10	226-227	!	_	_	_	_
+
+#Text=" 
+5-1	228-229	"	_	_	_	_

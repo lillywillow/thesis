@@ -1,0 +1,68 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=June says : " Oh great . 
+1-1	0-4	June	_	_	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-16	Oh	_	_	_	_
+1-6	17-22	great	_	_	_	_
+1-7	23-24	.	_	_	_	_
+
+#Text=It 's Prince Pouty . 
+2-1	25-27	It	_	_	*->2-2	*[2]
+2-2	28-30	's	_	_	_	_
+2-3	31-37	Prince	*	PER	*->2-1	*[2]
+2-4	38-43	Pouty	_	_	*->2-1	*[2]
+2-5	44-45	.	_	_	_	_
+
+#Text=Where 's your creepy grandpa ? 
+3-1	46-51	Where	_	_	_	_
+3-2	52-54	's	_	_	_	_
+3-3	55-59	your	_	_	*->3-1	*[3]
+3-4	60-66	creepy	_	_	*->3-1	*[3]
+3-5	67-74	grandpa	_	_	*->3-1	*[3]
+3-6	75-76	?	_	_	_	_
+
+#Text=" Zuko says : " He 's my uncle . 
+4-1	77-78	"	_	_	_	_
+4-2	79-83	Zuko	*	PER	*->4-1	*[4]
+4-3	84-88	says	_	_	_	_
+4-4	89-90	:	_	_	_	_
+4-5	91-92	"	_	_	_	_
+4-6	93-95	He	_	_	*->3-2	*[3]
+4-7	96-98	's	_	_	_	_
+4-8	99-101	my	_	_	*->3-3	*[3]
+4-9	102-107	uncle	_	_	*->3-3	*[3]
+4-10	108-109	.	_	_	_	_
+
+#Text=And he 's not here . 
+5-1	110-113	And	_	_	_	_
+5-2	114-116	he	_	_	*->3-4	*[3]
+5-3	117-119	's	_	_	_	_
+5-4	120-123	not	_	_	_	_
+5-5	124-128	here	_	_	_	_
+5-6	129-130	.	_	_	_	_
+
+#Text=" June says : " I see you worked things out with your girlfriend . 
+6-1	131-132	"	_	_	_	_
+6-2	133-137	June	_	_	*->1-2	*[1]
+6-3	138-142	says	_	_	_	_
+6-4	143-144	:	_	_	_	_
+6-5	145-146	"	_	_	_	_
+6-6	147-148	I	_	_	*->1-3	*[1]
+6-7	149-152	see	_	_	_	_
+6-8	153-156	you	_	_	*->4-3	*[4]
+6-9	157-163	worked	_	_	_	_
+6-10	164-170	things	_	_	_	_
+6-11	171-174	out	_	_	_	_
+6-12	175-179	with	_	_	_	_
+6-13	180-184	your	_	_	*->4-4	*[4]
+6-14	185-195	girlfriend	_	_	_	_
+6-15	196-197	.	_	_	_	_
+
+#Text=" 
+7-1	198-199	"	_	_	_	_

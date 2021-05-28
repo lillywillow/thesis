@@ -1,0 +1,110 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sokka says : " People disappearing in the woods , weird stuff happening during full moons ? 
+1-1	0-5	Sokka	_	_	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-21	People	_	_	_	_
+1-6	22-34	disappearing	_	_	_	_
+1-7	35-37	in	_	_	_	_
+1-8	38-41	the	_	_	_	_
+1-9	42-47	woods	_	_	_	_
+1-10	48-49	,	_	_	_	_
+1-11	50-55	weird	_	_	_	_
+1-12	56-61	stuff	_	_	_	_
+1-13	62-71	happening	_	_	_	_
+1-14	72-78	during	_	_	_	_
+1-15	79-83	full	_	_	_	_
+1-16	84-89	moons	_	_	_	_
+1-17	90-91	?	_	_	_	_
+
+#Text=This just reeks of Spirit World shenanigans . 
+2-1	92-96	This	_	_	*->3-1	*[3]
+2-2	97-101	just	_	_	_	_
+2-3	102-107	reeks	_	_	_	_
+2-4	108-110	of	_	_	_	_
+2-5	111-117	Spirit	_	_	_	_
+2-6	118-123	World	_	_	_	_
+2-7	124-135	shenanigans	_	_	_	_
+2-8	136-137	.	_	_	_	_
+
+#Text=" Aang says : " I bet if we take a little walk around town , we 'll find out what these people did to the environment to make the spirits mad . 
+3-1	138-139	"	_	_	_	_
+3-2	140-144	Aang	*	PER	*->4-1	*[4]
+3-3	145-149	says	_	_	_	_
+3-4	150-151	:	_	_	_	_
+3-5	152-153	"	_	_	_	_
+3-6	154-155	I	_	_	*->4-2	*[4]
+3-7	156-159	bet	_	_	_	_
+3-8	160-162	if	_	_	_	_
+3-9	163-165	we	_	_	*->3-2	*[3]
+3-10	166-170	take	_	_	_	_
+3-11	171-172	a	_	_	_	_
+3-12	173-179	little	_	_	_	_
+3-13	180-184	walk	_	_	_	_
+3-14	185-191	around	_	_	_	_
+3-15	192-196	town	_	_	_	_
+3-16	197-198	,	_	_	_	_
+3-17	199-201	we	_	_	*->3-3	*[3]
+3-18	202-205	'll	_	_	_	_
+3-19	206-210	find	_	_	_	_
+3-20	211-214	out	_	_	_	_
+3-21	215-219	what	_	_	_	_
+3-22	220-225	these	_	_	*->2-1	*[2]
+3-23	226-232	people	_	_	*->2-1	*[2]
+3-24	233-236	did	_	_	_	_
+3-25	237-239	to	_	_	_	_
+3-26	240-243	the	_	_	_	_
+3-27	244-255	environment	_	_	_	_
+3-28	256-258	to	_	_	_	_
+3-29	259-263	make	_	_	_	_
+3-30	264-267	the	_	_	_	_
+3-31	268-275	spirits	_	_	_	_
+3-32	276-279	mad	_	_	_	_
+3-33	280-281	.	_	_	_	_
+
+#Text=" Sokka says : " And then you can sew up this little mystery lickety - split , Avatar style ! 
+4-1	282-283	"	_	_	_	_
+4-2	284-289	Sokka	_	_	*->1-2	*[1]
+4-3	290-294	says	_	_	_	_
+4-4	295-296	:	_	_	_	_
+4-5	297-298	"	_	_	_	_
+4-6	299-302	And	_	_	_	_
+4-7	303-307	then	_	_	_	_
+4-8	308-311	you	_	_	*->4-3	*[4]
+4-9	312-315	can	_	_	_	_
+4-10	316-319	sew	_	_	_	_
+4-11	320-322	up	_	_	_	_
+4-12	323-327	this	_	_	_	_
+4-13	328-334	little	_	_	_	_
+4-14	335-342	mystery	_	_	_	_
+4-15	343-350	lickety	_	_	*->5-1	*[5]
+4-16	351-352	-	_	_	*->5-1	*[5]
+4-17	353-358	split	_	_	*->5-1	*[5]
+4-18	359-360	,	_	_	_	_
+4-19	361-367	Avatar	_	_	*->5-2	*[5]
+4-20	368-373	style	_	_	*->5-2	*[5]
+4-21	374-375	!	_	_	_	_
+
+#Text=" Aang says : " Helping people ... that 's what I do . 
+5-1	376-377	"	_	_	_	_
+5-2	378-382	Aang	*	PER	*->4-4	*[4]
+5-3	383-387	says	_	_	_	_
+5-4	388-389	:	_	_	_	_
+5-5	390-391	"	_	_	_	_
+5-6	392-399	Helping	_	_	_	_
+5-7	400-406	people	_	_	*->2-3	*[2]
+5-8	407-410	...	_	_	_	_
+5-9	411-415	that	_	_	*->2-4	*[2]
+5-10	416-418	's	_	_	_	_
+5-11	419-423	what	_	_	_	_
+5-12	424-425	I	_	_	*->4-5	*[4]
+5-13	426-428	do	_	_	_	_
+5-14	429-430	.	_	_	_	_
+
+#Text=" 
+6-1	431-432	"	_	_	_	_

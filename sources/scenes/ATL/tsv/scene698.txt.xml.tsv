@@ -1,0 +1,70 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sokka says : " What 's their deal ? " 
+1-1	0-5	Sokka	_	_	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-19	What	_	_	_	_
+1-6	20-22	's	_	_	_	_
+1-7	23-28	their	_	_	*->2-1	*[2]
+1-8	29-33	deal	_	_	_	_
+1-9	34-35	?	_	_	_	_
+1-10	36-37	"	_	_	_	_
+
+#Text=Toph says : " I do n't know . 
+2-1	38-42	Toph	*	PER	*->3-1	*[3]
+2-2	43-47	says	_	_	_	_
+2-3	48-49	:	_	_	_	_
+2-4	50-51	"	_	_	_	_
+2-5	52-53	I	_	_	*->3-2	*[3]
+2-6	54-56	do	_	_	_	_
+2-7	57-60	n't	_	_	_	_
+2-8	61-65	know	_	_	_	_
+2-9	66-67	.	_	_	_	_
+
+#Text=They missed you or something . 
+3-1	68-72	They	_	_	*->2-2	*[2]
+3-2	73-79	missed	_	_	_	_
+3-3	80-83	you	_	_	_	_
+3-4	84-86	or	_	_	_	_
+3-5	87-96	something	_	_	_	_
+3-6	97-98	.	_	_	_	_
+
+#Text=I did n't care . 
+4-1	99-100	I	_	_	*->3-3	*[3]
+4-2	101-104	did	_	_	_	_
+4-3	105-108	n't	_	_	_	_
+4-4	109-113	care	_	_	_	_
+4-5	114-115	.	_	_	_	_
+
+#Text=" Sokka says : " Thanks . 
+5-1	116-117	"	_	_	*->1-1	*[1]
+5-2	118-123	Sokka	_	_	*->1-1	*[1]
+5-3	124-128	says	_	_	_	_
+5-4	129-130	:	_	_	_	_
+5-5	131-132	"	_	_	_	_
+5-6	133-139	Thanks	_	_	*->4-1	*[4]
+5-7	140-141	.	_	_	_	_
+
+#Text=That warms my heart . 
+6-1	142-146	That	_	_	*->4-2	*[4]
+6-2	147-152	warms	_	_	_	_
+6-3	153-155	my	_	_	*->1-4	*[1]
+6-4	156-161	heart	_	_	_	_
+6-5	162-163	.	_	_	_	_
+
+#Text=Anyway , I need some help . 
+7-1	164-170	Anyway	_	_	_	_
+7-2	171-172	,	_	_	_	_
+7-3	173-174	I	_	_	*->1-5	*[1]
+7-4	175-179	need	_	_	_	_
+7-5	180-184	some	_	_	_	_
+7-6	185-189	help	_	_	_	_
+7-7	190-191	.	_	_	_	_
+
+#Text=" 
+8-1	192-193	"	_	_	_	_

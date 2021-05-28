@@ -1,0 +1,125 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sun Warrior chief says : " Facing the judgment of the firebending masters will be very dangerous for you . 
+1-1	0-3	Sun	_	_	*->1-1	*[1]
+1-2	4-11	Warrior	_	_	*->1-1	*[1]
+1-3	12-17	chief	_	_	*->1-1	*[1]
+1-4	18-22	says	_	_	_	_
+1-5	23-24	:	_	_	_	_
+1-6	25-26	"	_	_	_	_
+1-7	27-33	Facing	_	_	_	_
+1-8	34-37	the	_	_	_	_
+1-9	38-46	judgment	_	_	_	_
+1-10	47-49	of	_	_	_	_
+1-11	50-53	the	_	_	*->2-1	*[2]
+1-12	54-65	firebending	_	_	*->2-1	*[2]
+1-13	66-73	masters	_	_	*->2-1	*[2]
+1-14	74-78	will	_	_	_	_
+1-15	79-81	be	_	_	_	_
+1-16	82-86	very	_	_	_	_
+1-17	87-96	dangerous	_	_	_	_
+1-18	97-100	for	_	_	_	_
+1-19	101-104	you	_	_	*->3-1	*[3]
+1-20	105-106	.	_	_	_	_
+
+#Text=Your ancestors are directly responsible for the dragons ' disappearance . 
+2-1	107-111	Your	_	_	*->3-2	*[3]
+2-2	112-121	ancestors	_	_	_	_
+2-3	122-125	are	_	_	_	_
+2-4	126-134	directly	_	_	_	_
+2-5	135-146	responsible	_	_	_	_
+2-6	147-150	for	_	_	_	_
+2-7	151-154	the	_	_	*->4-1	*[4]
+2-8	155-162	dragons	_	_	*->4-1	*[4]
+2-9	163-164	'	_	_	*->4-1	*[4]
+2-10	165-178	disappearance	_	_	_	_
+2-11	179-180	.	_	_	_	_
+
+#Text=The masters might not be so happy to see you . 
+3-1	181-184	The	_	_	*->2-2	*[2]
+3-2	185-192	masters	_	_	*->2-2	*[2]
+3-3	193-198	might	_	_	_	_
+3-4	199-202	not	_	_	_	_
+3-5	203-205	be	_	_	_	_
+3-6	206-208	so	_	_	_	_
+3-7	209-214	happy	_	_	_	_
+3-8	215-217	to	_	_	_	_
+3-9	218-221	see	_	_	_	_
+3-10	222-225	you	_	_	*->3-3	*[3]
+3-11	226-227	.	_	_	_	_
+
+#Text=" Ham Ghao says : " I know I would n't be . 
+4-1	228-229	"	_	_	_	_
+4-2	230-233	Ham	*	PER	*->5-1	*[5]
+4-3	234-238	Ghao	*	PER	*->5-1	*[5]
+4-4	239-243	says	_	_	_	_
+4-5	244-245	:	_	_	_	_
+4-6	246-247	"	_	_	_	_
+4-7	248-249	I	_	_	*->5-2	*[5]
+4-8	250-254	know	_	_	_	_
+4-9	255-256	I	_	_	*->5-3	*[5]
+4-10	257-262	would	_	_	_	_
+4-11	263-266	n't	_	_	_	_
+4-12	267-269	be	_	_	_	_
+4-13	270-271	.	_	_	_	_
+
+#Text=" Aang says : " But once they find out I 'm the Avatar ... " Sun Warrior chief says : " Have you forgotten that you vanished , allowing the Fire Nation to wreak havoc on the world ? 
+5-1	272-273	"	_	_	_	_
+5-2	274-278	Aang	*	PER	_	_
+5-3	279-283	says	_	_	_	_
+5-4	284-285	:	_	_	_	_
+5-5	286-287	"	_	_	_	_
+5-6	288-291	But	_	_	_	_
+5-7	292-296	once	_	_	_	_
+5-8	297-301	they	_	_	*->2-3	*[2]
+5-9	302-306	find	_	_	_	_
+5-10	307-310	out	_	_	_	_
+5-11	311-312	I	_	_	*->1-2	*[1]
+5-12	313-315	'm	_	_	_	_
+5-13	316-319	the	_	_	_	_
+5-14	320-326	Avatar	_	_	_	_
+5-15	327-330	...	_	_	_	_
+5-16	331-332	"	_	_	_	_
+5-17	333-336	Sun	_	_	*->1-3	*[1]
+5-18	337-344	Warrior	_	_	*->1-3	*[1]
+5-19	345-350	chief	_	_	*->1-3	*[1]
+5-20	351-355	says	_	_	_	_
+5-21	356-357	:	_	_	_	_
+5-22	358-359	"	_	_	_	_
+5-23	360-364	Have	_	_	_	_
+5-24	365-368	you	_	_	*->6-1	*[6]
+5-25	369-378	forgotten	_	_	_	_
+5-26	379-383	that	_	_	_	_
+5-27	384-387	you	_	_	*->6-2	*[6]
+5-28	388-396	vanished	_	_	_	_
+5-29	397-398	,	_	_	_	_
+5-30	399-407	allowing	_	_	_	_
+5-31	408-411	the	_	_	_	_
+5-32	412-416	Fire	_	_	_	_
+5-33	417-423	Nation	_	_	_	_
+5-34	424-426	to	_	_	_	_
+5-35	427-432	wreak	_	_	_	_
+5-36	433-438	havoc	_	_	_	_
+5-37	439-441	on	_	_	_	_
+5-38	442-445	the	_	_	_	_
+5-39	446-451	world	_	_	_	_
+5-40	452-453	?	_	_	_	_
+
+#Text=The decline of the dragons is your burden , too . 
+6-1	454-457	The	_	_	*->7-1	*[7]
+6-2	458-465	decline	_	_	*->7-1	*[7]
+6-3	466-468	of	_	_	*->7-1	*[7]
+6-4	469-472	the	_	_	*->4-2	*[4]
+6-5	473-480	dragons	_	_	*->4-2	*[4]
+6-6	481-483	is	_	_	_	_
+6-7	484-488	your	_	_	*->6-3	*[6]
+6-8	489-495	burden	_	_	*->7-2	*[7]
+6-9	496-497	,	_	_	_	_
+6-10	498-501	too	_	_	_	_
+6-11	502-503	.	_	_	_	_
+
+#Text=" 
+7-1	504-505	"	_	_	_	_

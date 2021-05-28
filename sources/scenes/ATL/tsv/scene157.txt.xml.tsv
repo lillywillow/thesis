@@ -1,0 +1,71 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sokka says : " It looks like the drill is made up of two main structures . 
+1-1	0-5	Sokka	_	_	_	_
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-17	It	_	_	_	_
+1-6	18-23	looks	_	_	_	_
+1-7	24-28	like	_	_	_	_
+1-8	29-32	the	_	_	_	_
+1-9	33-38	drill	_	_	_	_
+1-10	39-41	is	_	_	_	_
+1-11	42-46	made	_	_	_	_
+1-12	47-49	up	_	_	_	_
+1-13	50-52	of	_	_	_	_
+1-14	53-56	two	_	_	_	_
+1-15	57-61	main	_	_	_	_
+1-16	62-72	structures	_	_	_	_
+1-17	73-74	.	_	_	_	_
+
+#Text=There 's the inner mechanism where we are now and the outer shell . 
+2-1	75-80	There	_	_	_	_
+2-2	81-83	's	_	_	_	_
+2-3	84-87	the	_	_	_	_
+2-4	88-93	inner	_	_	_	_
+2-5	94-103	mechanism	_	_	_	_
+2-6	104-109	where	_	_	_	_
+2-7	110-112	we	_	_	*->1-1	*[1]
+2-8	113-116	are	_	_	_	_
+2-9	117-120	now	_	_	_	_
+2-10	121-124	and	_	_	_	_
+2-11	125-128	the	_	_	_	_
+2-12	129-134	outer	_	_	_	_
+2-13	135-140	shell	_	_	_	_
+2-14	141-142	.	_	_	_	_
+
+#Text=The inner part and the outer part are connected by these braces . 
+3-1	143-146	The	_	_	_	_
+3-2	147-152	inner	_	_	_	_
+3-3	153-157	part	_	_	_	_
+3-4	158-161	and	_	_	_	_
+3-5	162-165	the	_	_	_	_
+3-6	166-171	outer	_	_	_	_
+3-7	172-176	part	_	_	_	_
+3-8	177-180	are	_	_	_	_
+3-9	181-190	connected	_	_	_	_
+3-10	191-193	by	_	_	_	_
+3-11	194-199	these	_	_	_	_
+3-12	200-206	braces	_	_	_	_
+3-13	207-208	.	_	_	_	_
+
+#Text=If we cut through them , the entire thing will collapse . 
+4-1	209-211	If	_	_	_	_
+4-2	212-214	we	_	_	*->1-2	*[1]
+4-3	215-218	cut	_	_	_	_
+4-4	219-226	through	_	_	_	_
+4-5	227-231	them	_	_	_	_
+4-6	232-233	,	_	_	_	_
+4-7	234-237	the	_	_	_	_
+4-8	238-244	entire	_	_	_	_
+4-9	245-250	thing	_	_	_	_
+4-10	251-255	will	_	_	_	_
+4-11	256-264	collapse	_	_	_	_
+4-12	265-266	.	_	_	_	_
+
+#Text=" 
+5-1	267-268	"	_	_	_	_

@@ -1,0 +1,31 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Aang says : " Your days of tyranny are over , Fire Lord ! 
+1-1	0-4	Aang	*	PER	*->1-1	*[1]
+1-2	5-9	says	_	_	_	_
+1-3	10-11	:	_	_	_	_
+1-4	12-13	"	_	_	_	_
+1-5	14-18	Your	_	_	*->2-1	*[2]
+1-6	19-23	days	_	_	_	_
+1-7	24-26	of	_	_	_	_
+1-8	27-34	tyranny	_	_	_	_
+1-9	35-38	are	_	_	_	_
+1-10	39-43	over	_	_	_	_
+1-11	44-45	,	_	_	_	_
+1-12	46-50	Fire	_	_	_	_
+1-13	51-55	Lord	_	_	_	_
+1-14	56-57	!	_	_	_	_
+
+#Text=I 'm bringing you down . 
+2-1	58-59	I	_	_	*->1-2	*[1]
+2-2	60-62	'm	_	_	_	_
+2-3	63-71	bringing	_	_	_	_
+2-4	72-75	you	_	_	*->2-2	*[2]
+2-5	76-80	down	_	_	_	_
+2-6	81-82	.	_	_	_	_
+
+#Text=" 
+3-1	83-84	"	_	_	_	_

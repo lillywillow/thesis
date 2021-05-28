@@ -1,0 +1,57 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Katara says : " Aang ! 
+1-1	0-6	Katara	*	PER	*->1-1	*[1]
+1-2	7-11	says	_	_	_	_
+1-3	12-13	:	_	_	_	_
+1-4	14-15	"	_	_	_	_
+1-5	16-20	Aang	_	_	_	_
+1-6	21-22	!	_	_	_	_
+
+#Text=Sokka ! 
+2-1	23-28	Sokka	_	_	_	_
+2-2	29-30	!	_	_	_	_
+
+#Text=" Katara says : " Hello ? 
+3-1	31-32	"	_	_	_	_
+3-2	33-39	Katara	*	PER	*->1-2	*[1]
+3-3	40-44	says	_	_	_	_
+3-4	45-46	:	_	_	_	_
+3-5	47-48	"	_	_	_	_
+3-6	49-54	Hello	_	_	_	_
+3-7	55-56	?	_	_	_	_
+
+#Text=Hello ? 
+4-1	57-62	Hello	_	_	_	_
+4-2	63-64	?	_	_	_	_
+
+#Text=Can you help me ? 
+5-1	65-68	Can	_	_	_	_
+5-2	69-72	you	_	_	_	_
+5-3	73-77	help	_	_	_	_
+5-4	78-80	me	_	_	*->1-3	*[1]
+5-5	81-82	?	_	_	_	_
+
+#Text=Mom ? 
+6-1	83-86	Mom	_	_	*->2-1	*[2]
+6-2	87-88	?	_	_	*->2-1	*[2]
+
+#Text=Mom ! 
+7-1	89-92	Mom	_	_	*->2-2	*[2]
+7-2	93-94	!	_	_	*->2-2	*[2]
+
+#Text=" Katara says : " I ca n't believe ... " 
+8-1	95-96	"	_	_	_	_
+8-2	97-103	Katara	*	PER	*->1-4	*[1]
+8-3	104-108	says	_	_	_	_
+8-4	109-110	:	_	_	_	_
+8-5	111-112	"	_	_	_	_
+8-6	113-114	I	_	_	*->1-5	*[1]
+8-7	115-117	ca	_	_	_	_
+8-8	118-121	n't	_	_	_	_
+8-9	122-129	believe	_	_	_	_
+8-10	130-133	...	_	_	_	_
+8-11	134-135	"	_	_	_	_

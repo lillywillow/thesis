@@ -1,0 +1,32 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Sokka says : " So what , I 'm just a lemur sitter ? 
+1-1	0-5	Sokka	_	_	*->1-1	*[1]
+1-2	6-10	says	_	_	_	_
+1-3	11-12	:	_	_	_	_
+1-4	13-14	"	_	_	_	_
+1-5	15-17	So	_	_	_	_
+1-6	18-22	what	_	_	_	_
+1-7	23-24	,	_	_	_	_
+1-8	25-26	I	_	_	*->1-2	*[1]
+1-9	27-29	'm	_	_	_	_
+1-10	30-34	just	_	_	_	_
+1-11	35-36	a	_	_	*->1-3	*[1]
+1-12	37-42	lemur	_	_	*->1-3	*[1]
+1-13	43-49	sitter	_	_	*->1-3	*[1]
+1-14	50-51	?	_	_	_	_
+
+#Text=There , there , feel better ? 
+2-1	52-57	There	_	_	_	_
+2-2	58-59	,	_	_	_	_
+2-3	60-65	there	_	_	_	_
+2-4	66-67	,	_	_	_	_
+2-5	68-72	feel	_	_	_	_
+2-6	73-79	better	_	_	_	_
+2-7	80-81	?	_	_	_	_
+
+#Text=" 
+3-1	82-83	"	_	_	_	_

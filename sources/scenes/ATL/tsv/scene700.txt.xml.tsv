@@ -1,0 +1,157 @@
+#FORMAT=WebAnno TSV 3.2
+#T_SP=de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity|identifier|value
+#T_CH=de.tudarmstadt.ukp.dkpro.core.api.coref.type.CoreferenceLink|referenceRelation|referenceType
+
+
+#Text=Piandao says : " Sokka , when you first arrived , you were so unsure . 
+1-1	0-7	Piandao	*	PER	*->1-1	*[1]
+1-2	8-12	says	_	_	_	_
+1-3	13-14	:	_	_	_	_
+1-4	15-16	"	_	_	_	_
+1-5	17-22	Sokka	_	_	_	_
+1-6	23-24	,	_	_	_	_
+1-7	25-29	when	_	_	_	_
+1-8	30-33	you	_	_	*->2-1	*[2]
+1-9	34-39	first	_	_	_	_
+1-10	40-47	arrived	_	_	_	_
+1-11	48-49	,	_	_	_	_
+1-12	50-53	you	_	_	*->2-2	*[2]
+1-13	54-58	were	_	_	_	_
+1-14	59-61	so	_	_	_	_
+1-15	62-68	unsure	_	_	_	_
+1-16	69-70	.	_	_	_	_
+
+#Text=You even seemed down on yourself . 
+2-1	71-74	You	_	_	*->2-3	*[2]
+2-2	75-79	even	_	_	_	_
+2-3	80-86	seemed	_	_	_	_
+2-4	87-91	down	_	_	_	_
+2-5	92-94	on	_	_	_	_
+2-6	95-103	yourself	_	_	*->2-4	*[2]
+2-7	104-105	.	_	_	_	_
+
+#Text=But I saw something in you right away . 
+3-1	106-109	But	_	_	_	_
+3-2	110-111	I	_	_	*->1-2	*[1]
+3-3	112-115	saw	_	_	_	_
+3-4	116-125	something	_	_	_	_
+3-5	126-128	in	_	_	_	_
+3-6	129-132	you	_	_	*->2-5	*[2]
+3-7	133-138	right	_	_	_	_
+3-8	139-143	away	_	_	_	_
+3-9	144-145	.	_	_	_	_
+
+#Text=I saw a heart as strong as a lion turtle , and twice as big . 
+4-1	146-147	I	_	_	*->1-3	*[1]
+4-2	148-151	saw	_	_	_	_
+4-3	152-153	a	_	_	_	_
+4-4	154-159	heart	_	_	_	_
+4-5	160-162	as	_	_	_	_
+4-6	163-169	strong	_	_	_	_
+4-7	170-172	as	_	_	_	_
+4-8	173-174	a	_	_	_	_
+4-9	175-179	lion	_	_	_	_
+4-10	180-186	turtle	_	_	_	_
+4-11	187-188	,	_	_	_	_
+4-12	189-192	and	_	_	_	_
+4-13	193-198	twice	_	_	_	_
+4-14	199-201	as	_	_	_	_
+4-15	202-205	big	_	_	_	_
+4-16	206-207	.	_	_	_	_
+
+#Text=And as we trained , it was n't your skills that impressed me . 
+5-1	208-211	And	_	_	_	_
+5-2	212-214	as	_	_	_	_
+5-3	215-217	we	_	_	_	_
+5-4	218-225	trained	_	_	_	_
+5-5	226-227	,	_	_	_	_
+5-6	228-230	it	_	_	_	_
+5-7	231-234	was	_	_	_	_
+5-8	235-238	n't	_	_	_	_
+5-9	239-243	your	_	_	*->2-6	*[2]
+5-10	244-250	skills	_	_	*->5-1	*[5]
+5-11	251-255	that	_	_	*->5-1	*[5]
+5-12	256-265	impressed	_	_	*->5-1	*[5]
+5-13	266-268	me	_	_	*->1-4	*[1]
+5-14	269-270	.	_	_	_	_
+
+#Text=No , it certainly was n't your skills . 
+6-1	271-273	No	_	_	_	_
+6-2	274-275	,	_	_	_	_
+6-3	276-278	it	_	_	_	_
+6-4	279-288	certainly	_	_	_	_
+6-5	289-292	was	_	_	_	_
+6-6	293-296	n't	_	_	_	_
+6-7	297-301	your	_	_	*->2-7	*[2]
+6-8	302-308	skills	_	_	*->5-2	*[5]
+6-9	309-310	.	_	_	_	_
+
+#Text=You showed something beyond that . 
+7-1	311-314	You	_	_	*->2-8	*[2]
+7-2	315-321	showed	_	_	_	_
+7-3	322-331	something	_	_	_	_
+7-4	332-338	beyond	_	_	_	_
+7-5	339-343	that	_	_	*->5-3	*[5]
+7-6	344-345	.	_	_	_	_
+
+#Text=Creativity , versatility , intelligence ... these are the traits that define a great swordsman . 
+8-1	346-356	Creativity	_	_	*->3-1	*[3]
+8-2	357-358	,	_	_	_	_
+8-3	359-370	versatility	_	_	*->3-2	*[3]
+8-4	371-372	,	_	_	*->3-2	*[3]
+8-5	373-385	intelligence	_	_	*->3-2	*[3]
+8-6	386-389	...	_	_	_	_
+8-7	390-395	these	_	_	*->4-2	*[4]
+8-8	396-399	are	_	_	_	_
+8-9	400-403	the	_	_	*->4-1	*[4]
+8-10	404-410	traits	_	_	*->4-1	*[4]
+8-11	411-415	that	_	_	*->4-1	*[4]
+8-12	416-422	define	_	_	*->4-1	*[4]
+8-13	423-424	a	_	_	*->4-1	*[4]
+8-14	425-430	great	_	_	*->4-1	*[4]
+8-15	431-440	swordsman	_	_	*->4-1	*[4]
+8-16	441-442	.	_	_	_	_
+
+#Text=And these are the traits that define you . 
+9-1	443-446	And	_	_	_	_
+9-2	447-452	these	_	_	*->4-3	*[4]
+9-3	453-456	are	_	_	_	_
+9-4	457-460	the	_	_	*->4-4	*[4]
+9-5	461-467	traits	_	_	*->4-4	*[4]
+9-6	468-472	that	_	_	*->4-4	*[4]
+9-7	473-479	define	_	_	*->4-4	*[4]
+9-8	480-483	you	_	_	*->2-9	*[2]
+9-9	484-485	.	_	_	_	_
+
+#Text=You told me you did n't know if you were worthy , but I believe that you are more worthy than any man I have ever trained . 
+10-1	486-489	You	_	_	*->2-10	*[2]
+10-2	490-494	told	_	_	_	_
+10-3	495-497	me	_	_	*->1-5	*[1]
+10-4	498-501	you	_	_	*->2-11	*[2]
+10-5	502-505	did	_	_	_	_
+10-6	506-509	n't	_	_	_	_
+10-7	510-514	know	_	_	_	_
+10-8	515-517	if	_	_	_	_
+10-9	518-521	you	_	_	*->2-12	*[2]
+10-10	522-526	were	_	_	_	_
+10-11	527-533	worthy	_	_	_	_
+10-12	534-535	,	_	_	_	_
+10-13	536-539	but	_	_	_	_
+10-14	540-541	I	_	_	*->1-6	*[1]
+10-15	542-549	believe	_	_	_	_
+10-16	550-554	that	_	_	_	_
+10-17	555-558	you	_	_	*->2-13	*[2]
+10-18	559-562	are	_	_	_	_
+10-19	563-567	more	_	_	_	_
+10-20	568-574	worthy	_	_	_	_
+10-21	575-579	than	_	_	_	_
+10-22	580-583	any	_	_	_	_
+10-23	584-587	man	_	_	_	_
+10-24	588-589	I	_	_	*->1-7	*[1]
+10-25	590-594	have	_	_	_	_
+10-26	595-599	ever	_	_	_	_
+10-27	600-607	trained	_	_	_	_
+10-28	608-609	.	_	_	_	_
+
+#Text=" 
+11-1	610-611	"	_	_	_	_
