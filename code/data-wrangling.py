@@ -82,6 +82,25 @@ def wrangle(content, code):
         else:
             return content.strip()
 
+    def group3(content, colon):
+    # ('GRA', 'GUM', 'MLP', 'RAM', 'STU')
+        content = content.split("\nSite navigation\n")[0]
+        content = content.split("\nv ")[0]
+        content = content.split("v • d")[0]
+        if (len(content.split("all transcripts on a single page")) > 1):
+            content = content.split("all transcripts on a single page")[1]
+        if (len(content.split("\nDialogue\n")) > 1):
+            content = content.split("\nDialogue\n")[1]
+        if (len(re.split(r'Next: "[a-zA-Z0-9,\' !\/]*"', content, re.M)) > 1):
+            content = re.split(r'Next: "[a-zA-Z0-9,\' !\/]*"', content, re.M)[1].strip()
+        if (len(re.split(r'\nTranscripts?\n', content, re.M)) > 1):
+            content = max(re.split(r'\nTranscripts?\n', content, re.M), key = len).strip()
+        content = content = max(content.split("\n\n"), key = len)
+        if colon:
+            return colonize(content)
+        else:
+            return content.strip()
+
     def colonize(content):
     # converts columns to "<speaker>: <sentence>"
         lines = content.splitlines()
@@ -96,20 +115,20 @@ def wrangle(content, code):
     
     switcher = {
         'ADV': [group2, False],
-        'ATL': [group0, True],
+        'ATL': [group1, True],
         'CLW': [group2, False],
         'DUC': [group2, True],
         'FUT': [group2, False],
-        'GRA': [group0, True],
-        'GUM': [group0, False],
+        'GRA': [group3, True],
+        'GUM': [group3, False],
         'KOR': [group1, True],
-        'MLP': [group0, False],
+        'MLP': [group3, False],
         'OWL': [group2, False],
         'PPG': [group2, False],
-        'RAM': [group0, False],
+        'RAM': [group3, False],
         'SHE': [group2, False],
         'SPO': [group2, False],
-        'STU': [group0, True],
+        'STU': [group3, True],
         'VOL': [group2, False],
     }
 
@@ -117,4 +136,4 @@ def wrangle(content, code):
 
 if __name__ == "__main__":
     show_paths = initial_setup()
-    convert_all(show_paths, path = ('GRA', 'GUM', 'MLP', 'RAM', 'STU'))
+    convert_all(show_paths, path = ())
